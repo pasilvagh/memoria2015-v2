@@ -1,0 +1,78 @@
+\begin{thebibliography}{10}
+
+\bibitem{goertzel2007software}
+Karen~M Goertzel, Theodore Winograd, Holly~L McKinley, Lyndon~J Oh, Michael
+  Colon, Thomas McGibbon, Elaine Fedchak, and Robert Vienneau.
+\newblock Software security assurance: A state-of-art report (sar).
+\newblock Technical report, DTIC Document, 2007.
+
+\bibitem{Yoder1998}
+J.~Yoder, J.~Yoder, J.~Barcalow, and J.~Barcalow.
+\newblock {Architectural patterns for enabling application security}.
+\newblock {\em Proceedings of PLoP 1997}, 51:31, 1998.
+
+\bibitem{fernandez2004methodology}
+Eduardo~B Fernandez.
+\newblock A methodology for secure software design.
+\newblock In {\em Software Engineering Research and Practice}, pages 130--136,
+  2004.
+
+\bibitem{WhyteHarrison}
+Bill Whyte and John Harrison.
+\newblock {State of Practice in Secure Software: Experts’ Views on Best Ways
+  Ahead}.
+\newblock IGI Global.
+
+\bibitem{cert}
+Carnegie Mellon~University Computer Emergency Response~Team.
+\newblock Early identification reduces total cost (segment from cert's podcasts
+  for bussiness leaders).
+
+\bibitem{interCoursera}
+Mike Hicks.
+\newblock Interview to \textbf{Kevin Haley} (from \textbf{Symantec}), 2014.
+\newblock Mike Hicks (Profesor of Software Security course in Coursera.org).
+
+\bibitem{fernandez2013security}
+Eduardo Fernandez-Buglioni.
+\newblock {\em Security patterns in practice: designing secure architectures
+  using software patterns}.
+\newblock John Wiley \& Sons, 2013.
+
+\bibitem{535061}
+M.M. Larrondo-Petrie, K.R. Nair, and G.K. Raghavan.
+\newblock A domain analysis of web browser architectures, languages and
+  features.
+\newblock In {\em Southcon/96. Conference Record}, pages 168--174, Jun 1996.
+
+\bibitem{2005-grosskurth-browser-refarch}
+Alan Grosskurth and Michael~W. Godfrey.
+\newblock A reference architecture for web browsers.
+\newblock pages 661--664, 2005.
+\newblock URL: {\tt http://grosskurth.ca/papers.html\#browser-refarch}.
+
+\bibitem{preprint-grosskurth-browser-archevol}
+Alan Grosskurth and Michael~W. Godfrey.
+\newblock {Architecture and evolution of the modern web browser}.
+\newblock URL: {\tt http://grosskurth.ca/papers.html\#browser-archevol}. Note:
+  submitted for publication.
+
+\bibitem{fernandez2006defining}
+Eduardo~B Fernandez, Michael VanHilst, Maria M~Larrondo Petrie, and Shihong
+  Huang.
+\newblock Defining security requirements through misuse actions.
+\newblock In {\em Advanced Software Engineering: Expanding the Frontiers of
+  Software Technology}, pages 123--137. Springer US, 2006.
+
+\bibitem{braz2008eliciting}
+Fabricio~A Braz, Eduardo~B Fernandez, and Michael VanHilst.
+\newblock Eliciting security requirements through misuse activities.
+\newblock In {\em Database and Expert Systems Application, 2008. DEXA'08. 19th
+  International Workshop on}, pages 328--333. IEEE, 2008.
+
+\bibitem{buschman1996system}
+Frank Buschman, Regine Meunier, Hans Rohnert, Peter Sommerlad, and Michael
+  Stal.
+\newblock A system of patterns: pattern-oriented software architecture, 1996.
+
+\end{thebibliography}

@@ -1,0 +1,106 @@
+
+%Intro CHECKED!!
+
+
+\chapter{Introducción}
+\label{chap1:intro}
+
+\section{Contexto General}
+\label{chap1:CG}
+
+Entre 1989 y 1990, Tim Berners-Lee acuñó el concepto de \textit{World Wide Web} y con ésto realizó la construcción del primer \textit{Web Server}, \textit{Web Browser} y las primeras páginas \textit{Web}. Mucho antes que aparecieran los grandes sistemas que ahora conocemos, el \textit{Web Browser} permitía navegar páginas estáticas y realizar una serie de acciones limitadas a las tecnologías de ese tiempo. En la actualidad el \textit{browser} es la herramienta predilecta por todos, desde comprar tickets para una película, realizar reuniones por videoconferencia y muchas otras tareas que invitan a nuevas formas de interactuar y comunicar.
+
+En el último tiempo el mercado de los \textit{Web Browser} ha crecido bastante (Figura \ref{fig:UsageShare}), principalmente debido a la robustez que éstos poseen y a la cantidad de años que llevan desarrollándose en la industria del Desarrollo de Software. Los navegadores más conocidos son: Google Chrome o su versión Open Source Chromium, Firefox, Internet Explorer, Opera y Safari; siendo los primeros 3 el enfoque de este trabajo.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1\textwidth]{figures/StatCounter-browser-ww-yearly-2010-2015.png}
+        \caption{Porcentaje de uso de Navegadores \cite{statcounter}}
+        \label{fig:UsageShare}
+    \end{figure}
+
+La \textit{Web 2.0} se inició con el uso intensivo de tecnologías como AJAX, y ésto ha permitido una nueva simbiosis entre el usuario, el Web Browser y el Servidor o Web Server que se comunican entre sí. El Navegador Web es una herramienta indispensable para todo tipo de tareas computacionales como comunicacionales, su existencia a penetrado completamente en las labores diarias de todos nosotros. En este mismo instante, la Web a evolucionado nuevamente obteniendo un nuevo nombre: \textit{Web 3.0}, donde se realiza el uso de inteligencia artificial y sistemas de recomendación para generar nuevos tipos de contenido media para el usuario.
+
+
+\section{El Problema: Desarrollo de Software y Seguridad}
+\label{chap1:SD_SS}
+
+Ningún Desarrollo de Software es igual al anterior. Por cada nuevo proyecto que surge es necesario ver qué tipo de proceso es el que se usará, qué personas serán parte del grupo de trabajo, qué condiciones económicas estará expuesto, qué \textit{Stakeholder} están pendientes de que el Proyecto salga exitoso y un sin numero de variables, no menos importantes a considerar. Por lo tanto dependiendo de lo anterior, los sistemas podrían llegar a ser simples o muy complejos. En consecuencia, se hace necesario tener ciertas metodologías que aseguren que se cumplan con todos los Requerimientos Funcionales como No-Funcionales del Sistema a construir. Sin embargo un problema que existe recurrentemente, es que la mayoría del Software construído contiene numerosos \textbf{defectos} y \textbf{errores}, generando así \textbf{vulnerabilidades} que son encontradas y explotadas por los atacantes, generandp un compromiso parcial o total del sistema \cite{goertzel2007software}. Lo anterior sucede frecuentemente por que los sistemas no son desarrollados teniendo en cuenta la seguridad \cite{Yoder1998, fernandez2004methodology, WhyteHarrison}.
+
+Un fenómeno en la literatura llamado \textit{Zero-day attack}, se refiere al momento clave donde un atacante explota una vulnerabilidad - hasta ese momento desconocida - de algún sistema (importante o no), y que si no es parchado lo antes posible puede comprometer no solo a sistemas, si no también a los usuarios que hacen uso de éste. Junto con lo anterior muchas veces ocurre que aunque se corrijan estos nuevos ataques, no todos los sistemas que podrían llegar a necesitar del mismo parche para protegerse del ataque, realizan la actualización y su adecuada configuración para así protegerse de una posible amenaza que explote la vulnerabilidad recientemente encontrada. Si bien un \textbf{Zero-day Attack} es un evento que podría no ocurrir tan repetidamente, dado que se produce por el largo estudio llevado por el atacante, sobre el sistema a vulnerar, existen otras formas de comprometer a un sistema. Muchas veces al desarrollar sistemas, se prefiere utilizar API's\footnote{Application Programming Interface} de otros sistemas para poder incluir funcionalidades ya implementadas, fomentando así el Reuso de piezas de Software. Si bien lo anterior es una buena práctica, si el sistema no cuenta con las medidas de seguridad necesarias, estas piezas podrían ser causa de amenazas de seguridad que terminarían por corromper el sistema y en consecuencia podría causar una pérdida monetaria a los \textit{Stakeholders}. 
+
+En general lo expuesto anteriormente ejemplifica perfectamente lo que tienen que lidiar los equipos de trabajo en proyectos de Desarrollo de Software, cuando dentro de sus preocupaciones la seguridad queda como un trabajo extra y no como parte del desarrollo completo. Bien es sabido que un proyecto en producción que presente problemas que involucren a varias entidades, el costo asociado puede llegar a ser altísimo \cite{cert}, sin olvidar que podría llegar a afectar la Confidencialidad, Integridad y Disponibilidad de los datos de los involucrados con el sistema  \cite{interCoursera}. Por esto mismo, es imperante que sean entendidos, desde el comienzo, los \textit{concerns} de los \textit{Stakeholders} y los Requerimientos de Seguridad asociados, y que adémás todos los involucrados los entiendan perfectamente. Según \cite{WhyteHarrison} la falta de preocupación en temas de seguridad en desarrollos de software no tiene una raíz principal, diversos factores como: la falta de estudios de seguridad en las mallas curriculares de las Universidades, pocos fondos para la investigación, la falta de iniciativa en la industria, el exceso de confianza de los desarrolladores, etc., son los causantes de las futuras vulneraciones de códigos en sistemas críticos.
+
+La literatura que habla de la construcción de \textit{Secure Software} o Software Seguro, indica que los practicantes de Desarrollo de Software deben entender, en gran medida, los problemas de seguridad que podrían llegar a ocurrir en sus sistemas. No basta con saber como unir las piezas, no basta con que cada pieza de por si sea segura, si los componentes del sistema no actuan de forma coordinada probablemente éste no será seguro \cite{fernandez2013security}, dado que la seguridad es una Propiedad Sistémica que necesita ser vista de manera holística y al inicio del proceso.  
+
+
+\section{Motivación: ¿Por qué estudiar el Browser?}
+\label{chap1:motiv}
+
+Con la aparición de la \textit{Web 2.0 y 3.0}, con el uso de \textit{AJAX}, inteligencia artificial y sistemas de recomendación, permitieron nuevas formas de interacción entre usuarios y sistemas, lo que causó que el browser fuera usado extensivamente en los nuevos Desarrollos de Software dado que:
+\begin{itemize}
+	\item Permite disminuir los costos de construir un programa Cliente (desde cero) para el usuario del sistema.
+	\item Actualmente la Seguridad implementada en los \textit{Web Browser} es bastante buena, dado que existen grandes compañias que se aseguran de ello (Google, Microsft, Mozilla entre las más conocidas). 
+	\item El \textit{browser} es una herramienta indispensable. La mayoría de los sistemas que lo usan en la vida cotidiana son de tipo: \textit{online banking}, declaración de impuestos, promoción de empresas o tiendas, compras, y mucho más.
+\end{itemize}
+
+Sin embargo los sistemas que dependen del uso del \textit{Browser}, deben de tener en cuenta las posibles amenazas de seguridad a las que se enfrentarán por el solo hecho de usarlo. Para un proyecto de gran envergadura, sería un error no tener en consideración los posibles peligros que trae el uso del \textit{Browser}, y es el deber de todo integrante del equipo de Desarrollo tener el conocimiento de la seguridad del Cliente Web. El entendimiento de la estructura subyacente del Web Browser podría asegurar que las personas que trabajen en el desarrollo, comprendan los \textit{trade-off} al momento de diseñar un Software que necesite la colaboración del Navegador Web \cite{535061, 2005-grosskurth-browser-refarch,preprint-grosskurth-browser-archevol}.
+
+%(Nota: preguntar en otras universidades). 
+En \cite{goertzel2007software} menciona que en cursos de Ingeniería de Software los estudiantes no aprenden mucho sobre Principios de Diseño en Seguridad, ni técnicas que permitan una segura implementación de código, a menos que lo necesiten en algún momento. Más aún, la falta de este tipo de conocimiento puede hacer creer que la seguridad es un requerimiento que puede o no ser tomado en cuenta al comienzo del Desarrollo. En este trabajo el enfoque es otro, la seguridad es una propiedad sistémica que debe ser tomada en cuenta desde el inicio del sistema \cite{fernandez2004methodology, fernandez2006defining, braz2008eliciting, fernandez2013security}.
+
+Este trabajo tiene una motivación principal. Ésta es ayudar a quién lo necesite con el conocimiento necesario para entender el funcionamiento y construcción del Cliente, el Web Browser, los beneficios detrás de la Seguridad implementada en el Browser y de los peligros existentes de los que nos protegen. De esta manera se espera que alguien que lea este trabajo, tanto Estudiantes como Desarrolladores de Softwares, obtengan el conocimiento necesario al momento de trabajar junto con el Navegador Web al realizar un Desarrollo de Software que dependa de éste.
+
+
+
+\section{Contribuciones}
+\label{chap1:contr}
+
+El Objetivo General de esta Memoria es generar un cuerpo organizado de información sobre el Web Browser y su Seguridad, de tal manera que se pueda sistematizar, organizar y clasificar el conocimiento adquirido en un documento, con formato semi-formal, tanto para Profesionales como Estudiantes del área Informática que estén insertos en el área de Desarrollo de Software. 
+
+Este trabajo busca cumplir con los siguientes Objetivos Específicos:
+
+\begin{itemize}
+	\item Comprender los conceptos relacionados al navegador web, sus componentes, interacciones o formas de comunicación, amenazas y ataques a los que puede estar sometido, como los también los mecanismos de defensa. Esto se realizará a través de un Estado del Arte sobre el Browser.
+	\item Construir una Arquitectura de Referencia del Web Browser e iniciar un pequeño catálogo de Patrones de Mal Uso o de Uso Indebido. Esto permitirá condensar el conocimiento obtenido en el punto anterior a través de documentos semi-formales, lo que permitirá generar una guía para comunicar los conceptos relevantes que pudieran afectar la relación existente entre un desarrollo de software y el navegador.
+	%\item Clasificar los ataques y mecanismos de defensa (mitigación) de los navegadores Web. %(REVISAR)
+	\item Profundizar el conocimiento en ataques relacionados con métodos de Ingeniería Social.
+	
+\end{itemize} 
+
+Particularmente se ha escogido como metodología base la dada por el autor del libro \cite{fernandez2013security}. Una Architectura de Referencia (AR) tiene como objetivo el mismo descrito en \cite{2005-grosskurth-browser-refarch, preprint-grosskurth-browser-archevol}, éste es el ayudar a los \textit{implementors} o desarrolladores del software, a entender los \textit{trade-off} cuando se diseñan nuevos sistemas, y puede ayudar a los mantenedores de estos sistemas a entender el código \textit{legacy} detrás los navegadores que trabajan a mano a mano. Además una Arquitectura de Referencia permite comparar las diferencias en decisiones de diseño del Navegador y así poder entender los cambios realizados a lo largo del Desarrollo de un sistema. Junto con lo anterior, ĺa AR permitirá tener una visión holística del sistema y mostrará las decisiones de alto nivel para asegurar la Seguridad del sistema. Por otra parte, los Patrones de Mal Uso o Uso Indebido, permitirán enseñar y comunicar las posibles formas en que tal sistema puede ser usado inapropiadamente.
+
+En este trabajo se presentará nuestra Arquitectura de Referencia y 2 Patrones de Uso Indebido, que usarán la AR contruída para mostrar los componentes y mensajes que una amenaza puede realizar, con tal de lograr un ataque en el Browser. Estos patrones serán presentados usando el template POSA \cite{buschman1996system} y UML, para así modelar las interacciones entre los diversos componentes de la arquitectura.
+
+\section{Metodología}
+\label{chap1:Met}
+Este trabajo se realizará de la siguiente forma:
+\begin{enumerate}
+	\item Introducción de un \textit{Framework conceptual} para entender los conceptos relacionados.
+	\item Contruir un Estado del Arte sobre el Browser, especialmente sobre la seguridad de éste.
+	\item Identificar los conceptos, actores, componentes, interacciones y funciones, en relación al tema principal.
+	\item Construir patrones de arquitectura que definan los componentes y responsabilidades, con el objetivo final de ser unidos en una Arquitectura de Referencia.
+	\item Contruir patrones de Mal Uso/Uso Indebido por medio del punto anterior.
+\end{enumerate}
+
+\section{Estructura del Documento}
+\label{chap1:estruct}
+
+El presente documento trata del trabajo de Memoria que se divide en las siguientes partes:
+
+\begin{itemize}
+	\item En el capítulo \ref{chap:chap2}... % se presentará la información necesaria para poder construir un completo Estado del Arte sobre el \textbf{Browser}, de tal manera de entender su funcionamientos, componentes e interacciones que realiza con otras entidades. 
+	\item Luego de tener un extenso conocimiento de lo que actualmente es conocido como \textbf{Web Browser}, el capítulo \ref{chap:chap3}
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+

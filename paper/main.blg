@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: refTodas.bib
+Warning--I didn't find a database entry for "statcounter"
+Warning--empty booktitle in WhyteHarrison
+Warning--empty year in WhyteHarrison
+Warning--empty booktitle in 2005-grosskurth-browser-refarch
+You've used 13 entries,
+            1791 wiz_defined-function locations,
+            518 strings with 5916 characters,
+and the built_in function-call counts, 3170 in all, are:
+= -- 275
+> -- 133
+< -- 5
++ -- 50
+- -- 37
+* -- 154
+:= -- 460
+add.period$ -- 40
+call.type$ -- 13
+change.case$ -- 13
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 162
+empty$ -- 333
+format.name$ -- 37
+if$ -- 753
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 9
+newline$ -- 67
+num.names$ -- 13
+pop$ -- 76
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 103
+stack$ -- 0
+substring$ -- 162
+swap$ -- 59
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 28
+width$ -- 15
+write$ -- 135
+(There were 4 warnings)
