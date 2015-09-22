@@ -1,5 +1,13 @@
 \begin{thebibliography}{10}
 
+\bibitem{statBrow}
+Global~Stats StatCounter.
+\newblock Top 5 desktop, tablet and console browsers, 2015.
+
+\bibitem{w3c}
+World Wide Web~Consortium W3C.
+\newblock About.
+
 \bibitem{goertzel2007software}
 Karen~M Goertzel, Theodore Winograd, Holly~L McKinley, Lyndon~J Oh, Michael
   Colon, Thomas McGibbon, Elaine Fedchak, and Robert Vienneau.
@@ -70,9 +78,168 @@ Fabricio~A Braz, Eduardo~B Fernandez, and Michael VanHilst.
 \newblock In {\em Database and Expert Systems Application, 2008. DEXA'08. 19th
   International Workshop on}, pages 328--333. IEEE, 2008.
 
+\bibitem{Avgeriou2003}
+Paris Avgeriou.
+\newblock {Describing, Instantiating and Evaluating a Reference Architecture: A
+  Case Study}.
+\newblock {\em Enterprise Architect Journal}, 342(1):347, 2003.
+
 \bibitem{buschman1996system}
 Frank Buschman, Regine Meunier, Hans Rohnert, Peter Sommerlad, and Michael
   Stal.
 \newblock A system of patterns: pattern-oriented software architecture, 1996.
+
+\bibitem{ieeecsd2}
+IEEE~Cyber Security.
+\newblock Avoiding the top 10 security flaws.
+
+\bibitem{cve}
+The~MITRE Coporation.
+\newblock Common vulnerabilities and exposures.
+
+\bibitem{socEngineeering}
+Jeremiah Talamantes.
+\newblock The social engineer's playbook.
+
+\bibitem{alcorn2014browser}
+Wade Alcorn, Christian Frichot, and Michele Orr{\`u}.
+\newblock {\em The Browser Hacker's Handbook}.
+\newblock John Wiley \& Sons, 2014.
+
+\bibitem{XHR}
+2014~Draft XMLHttpRequest Level~1.
+\newblock Xmlhttprequest specification.
+
+\bibitem{WebSocket}
+The~WebSocket API.
+\newblock Websocket specification.
+
+\bibitem{WebRTC}
+WebRTC 1.0:~Real time Communication Between~Browsers.
+\newblock Webrtc specification.
+
+\bibitem{htmlSpec}
+W3C~Working Group.
+\newblock Html5 specification.
+
+\bibitem{barth2009attacks}
+Adam Barth, Collin Jackson, and William Li.
+\newblock Attacks on javascript mashup communication.
+\newblock In {\em Proceedings of the Web}, volume~2. Citeseer, 2009.
+
+\bibitem{Zalewsk08}
+Michal Zalewsk.
+\newblock Browser security handbook, part 2.
+\newblock Web page, Google, 2008.
+
+\bibitem{barth2009securing}
+Adam Barth, Collin Jackson, and John~C Mitchell.
+\newblock Securing frame communication in browsers.
+\newblock {\em Communications of the ACM}, 52(6):83--91, 2009.
+
+\bibitem{bookWebAppSec}
+Bryan Sullivan and Vincent Liu.
+\newblock {\em Web application security}.
+\newblock McGraw-Hill, 2012.
+
+\bibitem{barth2008security}
+Adam Barth, Collin Jackson, Charles Reis, TGC Team, et~al.
+\newblock The security architecture of the chromium browser, 2008.
+
+\bibitem{openSecArch}
+Open~Security Architecture.
+\newblock Definitions by osa.
+
+\bibitem{Bass2012}
+Len Bass, Paul Clements, and Rick Kazman.
+\newblock {\em Software Architecture in Practice}.
+\newblock Addison-Wesley Professional, 3rd edition, 2012.
+
+\bibitem{Angelov2012}
+{A framework for analysis and design of software reference architectures}.
+\newblock {\em Information and Software Technology}, 54(4):417--431, April
+  2012.
+
+\bibitem{Submitted2014}
+Oscar Encina.
+\newblock {Towards a Security Reference Architecture for Federated Inter-Cloud
+  Systems}.
+\newblock 2014.
+
+\bibitem{Galster2011a}
+Matthias Galster and Paris Avgeriou.
+\newblock {Empirically-grounded Reference Architectures: A Proposal}.
+\newblock pages 153--157, 2011.
+
+\bibitem{Hashizume2014Reference}
+Keiko Hashizume, Eduardo~B Fernandez, and Maria~M Larrondo-petrie.
+\newblock {A reference architecturefor cloud computing. Submitted for
+  publication.}
+\newblock 2014.
+
+\bibitem{fernandez2007attack}
+Eduardo Fernandez, Juan Pelaez, and Maria Larrondo-Petrie.
+\newblock Attack patterns: A new forensic and design tool.
+\newblock In {\em Advances in digital forensics III}, pages 345--357. Springer
+  New York, 2007.
+
+\bibitem{ModMisusePatt}
+E.B. Fernandez, N.~Yoshioka, and H.~Washizaki.
+\newblock Modeling misuse patterns.
+\newblock In {\em Availability, Reliability and Security, 2009. ARES '09.
+  International Conference on}, pages 566--571, March 2009.
+
+\bibitem{yoshioka2006development}
+N~Yoshioka.
+\newblock A development method based on security patterns.
+\newblock {\em Presentation, NII, Tokyo}, 2006.
+
+\bibitem{yoshioka2007integration}
+Nobukazu Yoshioka.
+\newblock Integration of attack patterns and protective patterns.
+\newblock In {\em 1st International Workshop on Software Patterns and Quality
+  (SPAQu’07)}, page~45, 2007.
+
+\bibitem{pelaez2009misuse}
+Juan~C Pelaez, Eduardo~B Fernandez, and Maria~M Larrondo-Petrie.
+\newblock Misuse patterns in voip.
+\newblock {\em Security and Communication Networks}, 2(6):635--653, 2009.
+
+\bibitem{fernandez2010worm}
+Eduardo~B Fernandez, Nobukazu Yoshioka, and Hironori Washizaki.
+\newblock A worm misuse pattern.
+\newblock In {\em Proceedings of the 1st Asian Conference on Pattern Languages
+  of Programs}, page~2. ACM, 2010.
+
+\bibitem{hashizume2011misuse}
+Keiko Hashizume, Nobukazu Yoshioka, and Eduardo~B Fernandez.
+\newblock Misuse patterns for cloud computing.
+\newblock In {\em Proceedings of the 2nd Asian Conference on Pattern Languages
+  of Programs}, page~12. ACM, 2011.
+
+\bibitem{munoz2011misuse}
+Jaime Mu{\~n}oz-Arteaga, Eduardo~B Fernandez, and H{\'e}ctor
+  Caudel-Garc{\'\i}a.
+\newblock Misuse pattern: spoofing web services.
+\newblock In {\em Proceedings of the 2nd Asian Conference on Pattern Languages
+  of Programs}, page~11. ACM, 2011.
+
+\bibitem{fernandez2012misuse}
+Eduardo~B Fernandez, Ernest Alder, Richard Bagley, and Swati Paghdar.
+\newblock A misuse pattern for retrieving data from a database using sql
+  injection.
+\newblock In {\em BioMedical Computing (BioMedCom), 2012 ASE/IEEE International
+  Conference on}, pages 127--131. IEEE, 2012.
+
+\bibitem{alkazimi2014}
+Ali Alkazami and Eduardo~B Fernandez.
+\newblock Cipher suite rollback: A misuse pattern for the ssl/tls client/server
+  authentication handshake protocol.
+\newblock 2014.
+
+\bibitem{encinamisuse}
+Oscar Encina, Eduardo~B Fernandez, and Ra{\'u}l Monge.
+\newblock A misuse pattern for denial-of-service in federated inter-clouds.
+\newblock 2014.
 
 \end{thebibliography}

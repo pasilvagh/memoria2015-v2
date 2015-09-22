@@ -8,4 +8,30 @@
 \BOOKMARK [1][-]{section.1.4}{Contribuciones}{chapter.1}% 8
 \BOOKMARK [1][-]{section.1.5}{Metodolog\355a}{chapter.1}% 9
 \BOOKMARK [1][-]{section.1.6}{Estructura del Documento}{chapter.1}% 10
-\BOOKMARK [0][-]{chapter*.4}{Bibliograf\355a}{}% 11
+\BOOKMARK [0][-]{chapter.2}{Marco Te\363rico - Conceptual Framework}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Definiciones B\341sicas}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{Browser}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.1}{Arquitectura Cliente/Servidor}{section.2.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Procesos, Comunicaci\363n e Informaci\363n de Estado}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.3.1}{HTTP: Hypertext Transfer Protocol}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.2}{SSL/TLS Encriptaci\363n en capa de Transporte}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.3}{Speedy o Protocolo SPDY}{section.2.3}% 18
+\BOOKMARK [1][-]{section.2.4}{Tecnolog\355as usadas}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.4.1}{Markup Languages}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.2}{CSS: Cascading Style Sheets}{section.2.4}% 21
+\BOOKMARK [2][-]{subsection.2.4.3}{DOM: Document Object Model}{section.2.4}% 22
+\BOOKMARK [2][-]{subsection.2.4.4}{Javascript, VBScript y otros}{section.2.4}% 23
+\BOOKMARK [2][-]{subsection.2.4.5}{Geolocalizaci\363n}{section.2.4}% 24
+\BOOKMARK [2][-]{subsection.2.4.6}{WebWorkers}{section.2.4}% 25
+\BOOKMARK [1][-]{section.2.5}{SOP: Same Origin Policy}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.6}{CORS: Cross-Origin Resource Sharing}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.7}{Sandboxing}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.8}{Desaf\355os del Navegador}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.9}{Arquitectura de Referencia o Reference Architecture \(RA\)}{chapter.2}% 30
+\BOOKMARK [1][-]{section.2.10}{Desarrollo de Software Seguro y Dise\361o de Software Seguro}{chapter.2}% 31
+\BOOKMARK [1][-]{section.2.11}{Patrones}{chapter.2}% 32
+\BOOKMARK [1][-]{section.2.12}{Patrones de Mal Uso}{chapter.2}% 33
+\BOOKMARK [0][-]{chapter.3}{Marco Te\363rico - \(In\) Seguridad en el Browser}{}% 34
+\BOOKMARK [1][-]{section.3.1}{Social Engineering}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.2}{Ataques y Amenazas}{chapter.3}% 36
+\BOOKMARK [0][-]{chapter*.8}{Bibliograf\355a}{}% 37

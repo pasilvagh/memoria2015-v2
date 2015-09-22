@@ -1,3 +1,6 @@
 \select@language {spanish}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Porcentaje de uso de Navegadores \cite {statcounter}}}{2}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Porcentaje de uso de Navegadores \cite {statBrow}}}{2}{figure.1.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitectura de DOM \cite {w3c}}}{16}{figure.2.1}
+\addvspace {10\p@ }
