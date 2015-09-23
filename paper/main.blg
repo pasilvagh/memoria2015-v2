@@ -12,45 +12,45 @@ Warning--empty journal in Galster2011a
 Warning--empty journal in Hashizume2014Reference
 Warning--empty journal in alkazimi2014
 Warning--empty journal in encinamisuse
-You've used 46 entries,
+You've used 49 entries,
             1791 wiz_defined-function locations,
-            674 strings with 10031 characters,
-and the built_in function-call counts, 9414 in all, are:
-= -- 799
-> -- 381
+            685 strings with 10278 characters,
+and the built_in function-call counts, 9752 in all, are:
+= -- 821
+> -- 394
 < -- 14
-+ -- 149
-- -- 103
-* -- 432
-:= -- 1387
-add.period$ -- 133
-call.type$ -- 46
-change.case$ -- 45
++ -- 155
+- -- 106
+* -- 440
+:= -- 1429
+add.period$ -- 138
+call.type$ -- 49
+change.case$ -- 48
 chr.to.int$ -- 0
-cite$ -- 55
-duplicate$ -- 489
-empty$ -- 1039
-format.name$ -- 103
-if$ -- 2225
+cite$ -- 58
+duplicate$ -- 507
+empty$ -- 1089
+format.name$ -- 106
+if$ -- 2307
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 33
-newline$ -- 220
-num.names$ -- 45
-pop$ -- 242
+int.to.str$ -- 49
+missing$ -- 34
+newline$ -- 231
+num.names$ -- 46
+pop$ -- 257
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 300
+skip$ -- 319
 stack$ -- 0
 substring$ -- 378
-swap$ -- 148
+swap$ -- 151
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 82
-width$ -- 48
-write$ -- 448
+while$ -- 83
+width$ -- 51
+write$ -- 468
 (There were 9 warnings)

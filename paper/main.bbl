@@ -242,4 +242,15 @@ Oscar Encina, Eduardo~B Fernandez, and Ra{\'u}l Monge.
 \newblock A misuse pattern for denial-of-service in federated inter-clouds.
 \newblock 2014.
 
+\bibitem{Rajab2013}
+Ma~Rajab, Lucas Ballard, and N~Lutz.
+\newblock {CAMP: Content-agnostic malware protection}.
+\newblock {\em Proceedings of Annual \ldots}, 2013.
+
+\bibitem{owaspTopTen}
+{Top 10 2013 - OWASP}.
+
+\bibitem{FirefoxThreatModel}
+{Security/ProcessIsolation/ThreatModel}.
+
 \end{thebibliography}

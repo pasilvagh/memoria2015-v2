@@ -25,13 +25,22 @@
 \BOOKMARK [2][-]{subsection.2.4.6}{WebWorkers}{section.2.4}% 25
 \BOOKMARK [1][-]{section.2.5}{SOP: Same Origin Policy}{chapter.2}% 26
 \BOOKMARK [1][-]{section.2.6}{CORS: Cross-Origin Resource Sharing}{chapter.2}% 27
-\BOOKMARK [1][-]{section.2.7}{Sandboxing}{chapter.2}% 28
-\BOOKMARK [1][-]{section.2.8}{Desaf\355os del Navegador}{chapter.2}% 29
-\BOOKMARK [1][-]{section.2.9}{Arquitectura de Referencia o Reference Architecture \(RA\)}{chapter.2}% 30
-\BOOKMARK [1][-]{section.2.10}{Desarrollo de Software Seguro y Dise\361o de Software Seguro}{chapter.2}% 31
-\BOOKMARK [1][-]{section.2.11}{Patrones}{chapter.2}% 32
-\BOOKMARK [1][-]{section.2.12}{Patrones de Mal Uso}{chapter.2}% 33
-\BOOKMARK [0][-]{chapter.3}{Marco Te\363rico - \(In\) Seguridad en el Browser}{}% 34
-\BOOKMARK [1][-]{section.3.1}{Social Engineering}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.2}{Ataques y Amenazas}{chapter.3}% 36
-\BOOKMARK [0][-]{chapter*.8}{Bibliograf\355a}{}% 37
+\BOOKMARK [1][-]{section.2.7}{Desaf\355os del Navegador}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.8}{Arquitectura de Referencia o Reference Architecture \(RA\)}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.9}{Desarrollo de Software Seguro y Dise\361o de Software Seguro}{chapter.2}% 30
+\BOOKMARK [1][-]{section.2.10}{Patrones}{chapter.2}% 31
+\BOOKMARK [1][-]{section.2.11}{Patrones de Mal Uso}{chapter.2}% 32
+\BOOKMARK [0][-]{chapter.3}{Marco Te\363rico - \(In\) Seguridad en el Browser}{}% 33
+\BOOKMARK [1][-]{section.3.1}{Social Engineering}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.2}{Ataques y Amenazas}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.2.1}{Phishing}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.2}{XSS - Cross-Site Scripting \(DOM\)}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.3}{CSRF - Cross-Site Request Forgery}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.4}{Session Fixation}{section.3.2}% 39
+\BOOKMARK [1][-]{section.3.3}{Mecanismos de Defensa que se espera que el Host del Browser tenga previamente}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.4}{Mecanismos de Defensa del Browser, para los ataques revisados}{chapter.3}% 41
+\BOOKMARK [2][-]{subsection.3.4.1}{Sandboxing de procesos/componentes}{section.3.4}% 42
+\BOOKMARK [2][-]{subsection.3.4.2}{Aislaci\363n del contenido web de los componentes del Browser}{section.3.4}% 43
+\BOOKMARK [2][-]{subsection.3.4.3}{Blacklist y Whitelist de sitios web}{section.3.4}% 44
+\BOOKMARK [2][-]{subsection.3.4.4}{Detecci\363n de Malware por medio de sistemas de Reputaci\363n}{section.3.4}% 45
+\BOOKMARK [0][-]{chapter*.9}{Bibliograf\355a}{}% 46

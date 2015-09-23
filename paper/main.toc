@@ -1,7 +1,7 @@
 \select@language {spanish}
 \contentsline {chapter}{\'{I}ndice general}{\es@scroman {ii}}{chapter*.1}
-\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {iv}}{chapter*.2}
-\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {v}}{chapter*.3}
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {v}}{chapter*.2}
+\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {vi}}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Contexto General}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}El Problema: Desarrollo de Software y Seguridad}{2}{section.1.2}
@@ -30,13 +30,23 @@
 \contentsline {subsection}{\numberline {2.4.6}WebWorkers}{18}{subsection.2.4.6}
 \contentsline {section}{\numberline {2.5}SOP: Same Origin Policy}{18}{section.2.5}
 \contentsline {section}{\numberline {2.6}CORS: Cross-Origin Resource Sharing}{20}{section.2.6}
-\contentsline {section}{\numberline {2.7}Sandboxing}{21}{section.2.7}
-\contentsline {section}{\numberline {2.8}Desaf\IeC {\'\i }os del Navegador}{21}{section.2.8}
-\contentsline {section}{\numberline {2.9}Arquitectura de Referencia o Reference Architecture (RA)}{22}{section.2.9}
-\contentsline {section}{\numberline {2.10}Desarrollo de Software Seguro y Dise\IeC {\~n}o de Software Seguro}{23}{section.2.10}
-\contentsline {section}{\numberline {2.11}Patrones}{24}{section.2.11}
-\contentsline {section}{\numberline {2.12}Patrones de Mal Uso}{25}{section.2.12}
+\contentsline {section}{\numberline {2.7}Desaf\IeC {\'\i }os del Navegador}{21}{section.2.7}
+\contentsline {section}{\numberline {2.8}Arquitectura de Referencia o Reference Architecture (RA)}{21}{section.2.8}
+\contentsline {section}{\numberline {2.9}Desarrollo de Software Seguro y Dise\IeC {\~n}o de Software Seguro}{23}{section.2.9}
+\contentsline {section}{\numberline {2.10}Patrones}{24}{section.2.10}
+\contentsline {section}{\numberline {2.11}Patrones de Mal Uso}{24}{section.2.11}
 \contentsline {chapter}{\numberline {3}Marco Te\IeC {\'o}rico - (In) Seguridad en el Browser}{26}{chapter.3}
 \contentsline {section}{\numberline {3.1}Social Engineering}{26}{section.3.1}
 \contentsline {section}{\numberline {3.2}Ataques y Amenazas}{27}{section.3.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{28}{chapter*.8}
+\contentsline {subsection}{\numberline {3.2.1}Phishing}{28}{subsection.3.2.1}
+\contentsline {subsubsection}{Instalaci\IeC {\'o}n de Malware o Extensiones malignas}{28}{subsubsection*.8}
+\contentsline {subsection}{\numberline {3.2.2}XSS - Cross-Site Scripting (DOM)}{28}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}CSRF - Cross-Site Request Forgery}{28}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Session Fixation}{28}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Mecanismos de Defensa que se espera que el Host del Browser tenga previamente}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}Mecanismos de Defensa del Browser, para los ataques revisados}{28}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Sandboxing de procesos/componentes}{28}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Aislaci\IeC {\'o}n del contenido web de los componentes del Browser}{29}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Blacklist y Whitelist de sitios web}{29}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Detecci\IeC {\'o}n de Malware por medio de sistemas de Reputaci\IeC {\'o}n}{29}{subsection.3.4.4}
+\contentsline {chapter}{Bibliograf\'{\i }a}{30}{chapter*.9}
