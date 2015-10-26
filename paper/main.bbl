@@ -253,4 +253,75 @@ Ma~Rajab, Lucas Ballard, and N~Lutz.
 \bibitem{FirefoxThreatModel}
 {Security/ProcessIsolation/ThreatModel}.
 
+\bibitem{W3C-SOP}
+W3C.
+\newblock {Same Origin Policy}.
+\newblock Web page, W3C, 2010.
+
+\bibitem{Reis2009}
+Charles Reis and Steven~D Gribble.
+\newblock {Isolating web programs in modern browser architectures}.
+\newblock {\em Proceedings of the fourth ACM european conference on Computer
+  systems EuroSys 09}, 25(1):219, 2009.
+
+\bibitem{Jackson2008}
+Collin Jackson and Adam Barth.
+\newblock {Beware of finer-grained origins}.
+\newblock {\em Web 2.0 Security and Privacy}, 2008.
+
+\bibitem{Crowley2010}
+Matthew Crowley.
+\newblock {\em {Pro Internet Explorer 8 \& 9 Development: Developing Powerful
+  Applications for The Next Generation of IE}}.
+\newblock Apress, Berkely, CA, USA, 1st edition, 2010.
+
+\bibitem{Paola2006}
+Stefano~Di Paola and Giorgio Fedon.
+\newblock {Subverting Ajax}.
+\newblock {\em 23rd Chaos Communication Congress}, (December), 2006.
+
+\bibitem{Silic2010}
+Marin Silic, Jakov Krolo, and Goran Delac.
+\newblock {Security vulnerabilities in modern web browser architecture}.
+\newblock {\em MIPRO, 2010 Proceedings of the 33rd International Convention},
+  2010.
+
+\bibitem{Barth2009}
+Adam Barth, Joel Weinberger, and Dawn Song.
+\newblock {Cross-Origin JavaScript Capability Leaks : Detection , Exploitation
+  , and Defense}.
+\newblock {\em Opera}, 147:187--198, 2009.
+
+\bibitem{Yason}
+Mark~Vincent Yason.
+\newblock {D Iving I Nto Ie 10 ’ S E Nhanced P Rotected M Ode S Andbox}.
+
+\bibitem{Liu2012}
+L~Liu, X~Zhang, G~Yan, and Songqing Chen.
+\newblock {Chrome extensions: Threat analysis and countermeasures}.
+\newblock {\em \ldots of the Network and Distributed Systems \ldots}, 2012.
+
+\bibitem{Dougan2012}
+Timothy Dougan and Kevin Curran.
+\newblock {Man in the Browser Attacks}.
+\newblock {\em International Journal of Ambient Computing and Intelligence},
+  4(1):29--39, 2012.
+
+\bibitem{Utakrit2009}
+N~Utakrit.
+\newblock {Review of Browser Extensions, a Man-in-the-Browser Phishing
+  Techniques Targeting Bank Customers}.
+\newblock {\em Proceedings of the 7th Australian Information Security
+  Management Conference}, pages 110--119, 2009.
+
+\bibitem{Barth2010}
+Adam Barth, Adrienne~Porter Felt, Prateek Saxena, and Aaron Boodman.
+\newblock {Protecting Browsers from Extension Vulnerabilities}.
+\newblock {\em Ndss}, 147:1315--1329, 2010.
+
+\bibitem{fernandez2001pattern}
+Eduardo~B Fernandez and Rouyi Pan.
+\newblock {A pattern language for security models}.
+\newblock {\em proceedings of PLOP}, 1:1--13, 2001.
+
 \end{thebibliography}
