@@ -7,7 +7,7 @@ En esta sección se presentan los posibles ataques que un Browser puede sufrir y
 \cite{socEngineeering} define este tipo de acción como: El acto de manipular una persona para realizar acciones que no son parte de los mejores intereses del \textit{blanco o víctima} (la misma persona/organización/etc u otra entidad). Un ataque de éste tipo puede darse de diversas maneras, no dejando la posibilidad de un encuentro físico o digital con el que realiza el engaño. Un ataque basado en ingeniería social, es uno que se aprovecha del comportamiento humano y la confianza de la víctima. En el contexto del Web Browser, el usuario engañado es la primera y última línea de defensa contra este tipo de ataques, pues un abuso en la confianza del usuario podría abrir las puertas al Host del Browser, logrando un daño tanto del usuario como con los sistemas externos con los que interactúa.
 
 \section{Ataques y Amenazas}
-Esta sección incluye todos los ataques y amenazas posibles de realizar en un Browser y que podrían afectar tanto directa como indirectamente a un sistema externo. Acá no incluiremos ataques en donde el el Host ya ha sido vulnerado con anticipación, o aquellos que puedan correr software con los privilegios de un usuario del sistema Host, es decir, aquellos donde el Host ya ha sido controlado directamente. En el caso anterior, los Browsers ya nada pueden hacer para detener un ataque de esa magnitud.
+Esta sección incluye algunos ataques posibles de realizar en un Browser y que podrían afectar tanto directa como indirectamente a un sistema externo. Acá no incluiremos ataques en donde el Host ya ha sido vulnerado con anticipación, o aquellos que puedan correr software con los privilegios de un usuario del sistema Host, es decir, aquellos donde el Host ya ha sido controlado directamente por medio de alguna vulnerabilidad del sistema. En el caso anterior, los Browsers ya nada pueden hacer para detener un ataque de esa magnitud.
 
 En el Top Ten \cite{owaspTopTen} de la OWASP (Open Web Application Security Project) - los diez riesgos de seguridad más importantes en Aplicaciones Web - se puede distinguir en el año 2013 los riesgos directamente relacionados a amenazas de seguridad en el Browser. Algunos como: Injección (A1), Manejo de sesiones y autenticación roto (A2), XSS (A3), CSRF (A8) y uso de componentes con vulnerabilidades conocidas (A9), son los riesgos que las organizaciones podrían sufrir en sus sistemas cuando se realizan ciertos ataques en el Browser.
 
@@ -17,8 +17,7 @@ En trabajos \cite{barth2008security, FirefoxThreatModel} se puede apreciar los T
 	\item Compromiso de los componentes del Navegador (plugins incluídos) que poseen privilegios de usuario.
 	\item Compromiso del Host/Sistema.
 	\item Robo de datos en una red.
-	\item Compromiso de páginas web de origenes distintos.
-	\item Comprimiso de la data de páginas web de orígenes distintos.
+	\item Compromiso de páginas web (y su data) de origenes distintos.
 	\item Fijación de sesión o robo de ésta
 	\item Compromiso de los canales de comunicación del Browser.
 \end{enumerate}
@@ -26,13 +25,14 @@ En trabajos \cite{barth2008security, FirefoxThreatModel} se puede apreciar los T
 Una lista (parcial) de ataques asociados a las amenazas anteriores son:
 
 \subsection{Phishing}
+En el estudio realizado por NSS Labs \cite{browSecPhish}, muchos de los ataques que actualmente están ocurriendo en la actualidad se ha limitado al uso de técnicas de ingeniería social. Si bien los ataques basados en drive-by downloads y clickjacking siguen siendo de alto impacto, los atacantes parecen preferir los otros por la simplicidad de éste, pues no es necesario conocer realmente vulnerabilidades del Browser para llevarlos a cabo. 
 	\subsubsection{Instalación de Malware o Extensiones malignas}
+	Un ataque de este tipo puede ser originado desde la ejecución de un ataque Phishing a una persona; en especial cuando se hace creer que lo que se va a instalar, es completamente inofensivo.
 
-\subsection{XSS - Cross-Site Scripting (DOM)}
+\subsection{XSS - Cross-Site Scripting DOM}
 
-\subsection{CSRF - Cross-Site Request Forgery}
 
-\subsection{Session Fixation}
+\subsection{Man in the Browser (MITB)}
 
 
 
