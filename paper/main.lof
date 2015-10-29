@@ -2,13 +2,14 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Porcentaje de uso de Navegadores \cite {statBrow}}}{2}{figure.1.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitectura de DOM \cite {w3c}}}{16}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitectura de DOM \cite {w3c}}}{19}{figure.2.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama de Caso de Uso del Web Browser}}{34}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Componentes de alto nivel del Browser}}{36}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagrama de Secuencia: Browser User Realiza request}}{41}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de Actividad para los casos de uso Realizar Request y Recibir Request}}{43}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse}}{48}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia para el Mal uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}}{49}{figure.5.3}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de Caso de Uso del Web Browser}}{35}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Componentes de alto nivel del Browser}}{37}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Browser User Realiza request}}{42}{figure.5.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request}}{44}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse}}{51}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de Secuencia para el Mal uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}}{52}{figure.6.3}

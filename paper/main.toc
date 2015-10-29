@@ -11,27 +11,27 @@
 \contentsline {section}{\numberline {1.6}Estructura del Documento}{7}{section.1.6}
 \contentsline {chapter}{\numberline {2}Marco Te\IeC {\'o}rico - Conceptual Framework}{8}{chapter.2}
 \contentsline {section}{\numberline {2.1}Definiciones B\IeC {\'a}sicas}{8}{section.2.1}
-\contentsline {section}{\numberline {2.2}Browser}{10}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Arquitectura Cliente/Servidor}{10}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Procesos, Comunicaci\IeC {\'o}n e Informaci\IeC {\'o}n de Estado}{11}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}HTTP: Hypertext Transfer Protocol}{11}{subsection.2.3.1}
-\contentsline {subsubsection}{HTTP Headers}{11}{subsubsection*.4}
-\contentsline {subsubsection}{Canales de comunicaci\IeC {\'o}n en HTTP}{12}{subsubsection*.5}
-\contentsline {subsection}{\numberline {2.3.2}SSL/TLS Encriptaci\IeC {\'o}n en capa de Transporte}{13}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Speedy o Protocolo SPDY}{14}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Tecnolog\IeC {\'\i }as usadas}{15}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Markup Languages}{15}{subsection.2.4.1}
-\contentsline {subsubsection}{HTML: HyperText Markup Language}{15}{subsubsection*.6}
-\contentsline {subsubsection}{XML: eXtensible Markup Language}{15}{subsubsection*.7}
-\contentsline {subsection}{\numberline {2.4.2}CSS: Cascading Style Sheets}{15}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}DOM: Document Object Model}{16}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Javascript, VBScript y otros}{17}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Geolocalizaci\IeC {\'o}n}{18}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}WebWorkers}{18}{subsection.2.4.6}
-\contentsline {section}{\numberline {2.5}SOP: Same Origin Policy}{18}{section.2.5}
-\contentsline {section}{\numberline {2.6}CORS: Cross-Origin Resource Sharing}{20}{section.2.6}
+\contentsline {section}{\numberline {2.2}SOP: Same Origin Policy}{11}{section.2.2}
+\contentsline {section}{\numberline {2.3}CORS: Cross-Origin Resource Sharing}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}Arquitectura Cliente/Servidor}{13}{section.2.4}
+\contentsline {section}{\numberline {2.5}Procesos, Comunicaci\IeC {\'o}n e Informaci\IeC {\'o}n de Estado}{14}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}HTTP: Hypertext Transfer Protocol}{14}{subsection.2.5.1}
+\contentsline {subsubsection}{HTTP Headers}{14}{subsubsection*.4}
+\contentsline {subsubsection}{Canales de comunicaci\IeC {\'o}n en HTTP}{15}{subsubsection*.5}
+\contentsline {subsection}{\numberline {2.5.2}SSL/TLS Encriptaci\IeC {\'o}n en capa de Transporte}{16}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Speedy o Protocolo SPDY}{17}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}Tecnolog\IeC {\'\i }as usadas}{17}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Markup Languages}{17}{subsection.2.6.1}
+\contentsline {subsubsection}{HTML: HyperText Markup Language}{18}{subsubsection*.6}
+\contentsline {subsubsection}{XML: eXtensible Markup Language}{18}{subsubsection*.7}
+\contentsline {subsection}{\numberline {2.6.2}CSS: Cascading Style Sheets}{18}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}DOM: Document Object Model}{19}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}Javascript, VBScript y otros}{20}{subsection.2.6.4}
+\contentsline {subsection}{\numberline {2.6.5}Geolocalizaci\IeC {\'o}n}{20}{subsection.2.6.5}
+\contentsline {subsection}{\numberline {2.6.6}WebWorkers}{21}{subsection.2.6.6}
 \contentsline {section}{\numberline {2.7}Desaf\IeC {\'\i }os del Navegador}{21}{section.2.7}
 \contentsline {section}{\numberline {2.8}Arquitectura de Referencia o Reference Architecture (RA)}{21}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Validaci\IeC {\'o}n de la Arquitectura}{23}{subsection.2.8.1}
 \contentsline {section}{\numberline {2.9}Desarrollo de Software Seguro y Dise\IeC {\~n}o de Software Seguro}{23}{section.2.9}
 \contentsline {section}{\numberline {2.10}Patrones}{24}{section.2.10}
 \contentsline {section}{\numberline {2.11}Patrones de Mal Uso}{24}{section.2.11}
@@ -41,59 +41,61 @@
 \contentsline {subsection}{\numberline {3.2.1}Phishing}{28}{subsection.3.2.1}
 \contentsline {subsubsection}{Instalaci\IeC {\'o}n de Malware o Extensiones malignas}{28}{subsubsection*.8}
 \contentsline {subsection}{\numberline {3.2.2}XSS - Cross-Site Scripting DOM}{28}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Man in the Browser (MITB)}{28}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Mecanismos de Defensa que se espera que el Host del Browser tenga previamente}{28}{section.3.3}
-\contentsline {section}{\numberline {3.4}Mecanismos de Defensa del Browser, para los ataques revisados}{28}{section.3.4}
+\contentsline {subsection}{\numberline {3.2.3}Man in the \textit {Browser} (MITB)}{28}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Mecanismos de Defensa que se espera que el Host del \textit {Browser} tenga previamente}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}Mecanismos de Defensa del \textit {Browser}, para los ataques revisados}{28}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Sandboxing de procesos/componentes}{28}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Aislaci\IeC {\'o}n del contenido web de los componentes del Browser}{29}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.2}Aislaci\IeC {\'o}n del contenido web de los componentes del \textit {Browser}}{29}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Blacklist y Whitelist de sitios web}{29}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Detecci\IeC {\'o}n de Malware por medio de sistemas de Reputaci\IeC {\'o}n}{29}{subsection.3.4.4}
-\contentsline {chapter}{\numberline {4}Arquitectura de Referencia del Web Browser}{30}{chapter.4}
-\contentsline {section}{\numberline {4.1}Casos de Uso del Browser}{31}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Stakeholders (actores) y Concerns de estos}{31}{subsection.4.1.1}
-\contentsline {subsubsection}{Browser User (BU)}{31}{subsubsection*.9}
-\contentsline {subsubsection}{Host (H)}{31}{subsubsection*.10}
-\contentsline {subsubsection}{Provider(P)}{31}{subsubsection*.11}
-\contentsline {subsection}{\numberline {4.1.2}Casos de Uso}{31}{subsection.4.1.2}
-\contentsline {subsubsection}{Casos de Uso para Browser User (BU)}{32}{subsubsection*.12}
-\contentsline {subsubsection}{Casos de Uso para el Host (H)}{32}{subsubsection*.13}
-\contentsline {subsubsection}{Casos de Uso para el Proveedor (P)}{33}{subsubsection*.14}
-\contentsline {section}{\numberline {4.2}Patr\IeC {\'o}n Browser Infrastructure}{33}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Intent}{33}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Ejemplo}{34}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Contexto}{34}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Problema}{34}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Soluci\IeC {\'o}n}{35}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Estructura}{35}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Din\IeC {\'a}mica}{36}{subsection.4.2.7}
-\contentsline {subsubsection}{Sumario}{36}{subsubsection*.15}
-\contentsline {subsubsection}{Actor}{37}{subsubsection*.16}
-\contentsline {subsubsection}{Precondiciones}{37}{subsubsection*.17}
-\contentsline {subsubsection}{Descripci\IeC {\'o}n}{37}{subsubsection*.18}
-\contentsline {subsubsection}{Curso Alternativo}{38}{subsubsection*.19}
-\contentsline {subsubsection}{Condiciones p\IeC {\'o}stumas}{38}{subsubsection*.20}
-\contentsline {subsection}{\numberline {4.2.8}Implementaci\IeC {\'o}n}{38}{subsection.4.2.8}
-\contentsline {subsection}{\numberline {4.2.9}Consecuencias}{39}{subsection.4.2.9}
-\contentsline {subsection}{\numberline {4.2.10}Ejemplo Resuelto}{39}{subsection.4.2.10}
-\contentsline {subsection}{\numberline {4.2.11}Usos Com\IeC {\'u}nes}{40}{subsection.4.2.11}
-\contentsline {subsection}{\numberline {4.2.12}Patrones Asociados}{40}{subsection.4.2.12}
-\contentsline {chapter}{\numberline {5}Patrones de Mal Uso}{42}{chapter.5}
-\contentsline {section}{\numberline {5.1}Identificando Amenazas y Patrones de Mal Uso}{42}{section.5.1}
-\contentsline {section}{\numberline {5.2}Identificando amenazas}{42}{section.5.2}
-\contentsline {section}{\numberline {5.3}Patr\IeC {\'o}n de Mal Uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}{45}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Intent}{45}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Contexto}{45}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Problema}{46}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Soluci\IeC {\'o}n}{47}{subsection.5.3.4}
-\contentsline {subsection}{\numberline {5.3.5}Din\IeC {\'a}mica}{47}{subsection.5.3.5}
-\contentsline {subsubsection}{Sumario}{47}{subsubsection*.21}
-\contentsline {subsubsection}{Actor}{48}{subsubsection*.22}
-\contentsline {subsubsection}{Precondiciones}{48}{subsubsection*.23}
-\contentsline {subsubsection}{Descripci\IeC {\'o}n}{48}{subsubsection*.24}
-\contentsline {subsubsection}{Post condiciones}{49}{subsubsection*.25}
-\contentsline {subsubsection}{Usos Conocidos}{49}{subsubsection*.26}
-\contentsline {subsection}{\numberline {5.3.6}Consecuencias}{50}{subsection.5.3.6}
-\contentsline {subsection}{\numberline {5.3.7}Contramedidas}{51}{subsection.5.3.7}
-\contentsline {subsection}{\numberline {5.3.8}Evidencia Forense}{51}{subsection.5.3.8}
-\contentsline {subsection}{\numberline {5.3.9}Patrones relacionados}{51}{subsection.5.3.9}
-\contentsline {chapter}{Bibliograf\'{\i }a}{52}{chapter*.27}
+\contentsline {chapter}{\numberline {4}Estado del Arte}{30}{chapter.4}
+\contentsline {chapter}{\numberline {5}Arquitectura de Referencia del Web Browser}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Casos de Uso del Browser}{32}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Stakeholders (actores) y Concerns de estos}{32}{subsection.5.1.1}
+\contentsline {subsubsection}{Browser User (BU)}{32}{subsubsection*.9}
+\contentsline {subsubsection}{Host (H)}{32}{subsubsection*.10}
+\contentsline {subsubsection}{Provider(P)}{32}{subsubsection*.11}
+\contentsline {subsection}{\numberline {5.1.2}Casos de Uso}{32}{subsection.5.1.2}
+\contentsline {subsubsection}{Casos de Uso para Browser User (BU)}{33}{subsubsection*.12}
+\contentsline {subsubsection}{Casos de Uso para el Host (H)}{33}{subsubsection*.13}
+\contentsline {subsubsection}{Casos de Uso para el Proveedor (P)}{34}{subsubsection*.14}
+\contentsline {section}{\numberline {5.2}Patr\IeC {\'o}n Browser Infrastructure}{34}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Intent}{34}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Ejemplo}{35}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Contexto}{35}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Problema}{35}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Soluci\IeC {\'o}n}{36}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Estructura}{36}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.7}Din\IeC {\'a}mica}{37}{subsection.5.2.7}
+\contentsline {subsubsection}{Sumario}{37}{subsubsection*.15}
+\contentsline {subsubsection}{Actor}{38}{subsubsection*.16}
+\contentsline {subsubsection}{Precondiciones}{38}{subsubsection*.17}
+\contentsline {subsubsection}{Descripci\IeC {\'o}n}{38}{subsubsection*.18}
+\contentsline {subsubsection}{Curso Alternativo}{39}{subsubsection*.19}
+\contentsline {subsubsection}{Condiciones p\IeC {\'o}stumas}{39}{subsubsection*.20}
+\contentsline {subsection}{\numberline {5.2.8}Implementaci\IeC {\'o}n}{39}{subsection.5.2.8}
+\contentsline {subsection}{\numberline {5.2.9}Consecuencias}{40}{subsection.5.2.9}
+\contentsline {subsection}{\numberline {5.2.10}Ejemplo Resuelto}{40}{subsection.5.2.10}
+\contentsline {subsection}{\numberline {5.2.11}Usos Com\IeC {\'u}nes}{41}{subsection.5.2.11}
+\contentsline {subsection}{\numberline {5.2.12}Patrones Asociados}{41}{subsection.5.2.12}
+\contentsline {chapter}{\numberline {6}Patrones de Mal Uso}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Identificando Amenazas y Patrones de Mal Uso}{43}{section.6.1}
+\contentsline {section}{\numberline {6.2}Identificando amenazas}{43}{section.6.2}
+\contentsline {section}{\numberline {6.3}Template de Patrones de Mal Uso}{46}{section.6.3}
+\contentsline {section}{\numberline {6.4}Patr\IeC {\'o}n de Mal Uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}{48}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Intent}{48}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Contexto}{49}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Problema}{49}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Soluci\IeC {\'o}n}{50}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Din\IeC {\'a}mica}{50}{subsection.6.4.5}
+\contentsline {subsubsection}{Sumario}{51}{subsubsection*.21}
+\contentsline {subsubsection}{Actor}{51}{subsubsection*.22}
+\contentsline {subsubsection}{Precondiciones}{51}{subsubsection*.23}
+\contentsline {subsubsection}{Descripci\IeC {\'o}n}{52}{subsubsection*.24}
+\contentsline {subsubsection}{Post condiciones}{53}{subsubsection*.25}
+\contentsline {subsubsection}{Usos Conocidos}{53}{subsubsection*.26}
+\contentsline {subsection}{\numberline {6.4.6}Consecuencias}{53}{subsection.6.4.6}
+\contentsline {subsection}{\numberline {6.4.7}Contramedidas}{54}{subsection.6.4.7}
+\contentsline {subsection}{\numberline {6.4.8}Evidencia Forense}{54}{subsection.6.4.8}
+\contentsline {subsection}{\numberline {6.4.9}Patrones relacionados}{55}{subsection.6.4.9}
+\contentsline {chapter}{Bibliograf\'{\i }a}{56}{chapter*.27}

@@ -1,146 +1,165 @@
-\chapter{Patrones de Mal Uso}
-\label{chap5:Misuse}
+\chapter{Arquitectura de Referencia del Web Browser}
+\label{chap5:ArqRefWB}
 
-\section{Identificando Amenazas y Patrones de Mal Uso}
-En este capítulo presentaremos el análisis e identificación de las amenazas dentro del patrón presentado en el capítulo anterior, y 2 patrones de mal uso. Estos artefactos servirán de ejemplo de cómo usar la Arquitectura de Referencia obtenida. El objetivo de éste capítulo es conocer y visualizar los mal usos del sistema, en este caso del Browser, para poder educar a los desarrolladores de proyectos que basan sus sistemas en el uso de éste.
-Este capítulo realiza los siguientes ítems: Un análisis de amenazas realizado sobre las actividades relacionadas en el caso de uso Realizar request y Recibir Request, luego a partir del resultado del análisis se aplica la metodología explicada en el trabajo de [Bra08] para obtener una lista de amenazas. A través del listado de amenazas es posible detectar o inferir actividades de mal uso que pueden aparecer en uno o más casos de uso, que podrían resultar en una vulneración del sistema. Se presentarán los mal usos de actividades a través de patrones. Se han identificado 2 patrones y serán presentados a continuación.
 
-\section{Identificando amenazas}
-La identificación de amenazas es base para poder identificar las medidas adecuadas para poder evitarlas. A través de la metodología de [BRa08] es posible detectar y enumerar las amenazas de manera sistemática al considerar cada actividad en cada caso de uso. Para enumerar las amenazas sistemáticamente los diagramas de actividad ayudan en esta tarea.
-Usando los casos de uso listado en el capítulo anterior, es posible revelar una lista de amenazas extensas. Solo para sintetizar el proceso, se usará un caso de uso y de éste se extraerá un patrón de mal uso.
-La figura \ref{fig:ActDiagr} describe el diagrama de actividad que involucra los casos de uso Realizar Request y Recibir Request. Varias amenazas pueden ser reveladas a través de las interacciones visualizadas en el diagrama, por ejemplo: Cuando se realiza la petición al servidor del recurso especificado por la URL, y se entrega otro recurso que no es el pedido. 
+Para poder entender algún Browser se buscó en específico trabajos, papers, documentación gris a través de buscadores web como: IEEE Xplore, ACM digital Libray, Scopus y otros más, con tal de encontrar documentos formales sobre sus arquitecturas. Lo que más se encontró fueron blogs de desarrollo y White papers sobre Google Chrome, sin embargo llama la atención la escases en literatura sobre el tema. 
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.45]{figures/chap5/activityDiag.jpg}
-    \caption{Diagrama de Actividad para los casos de uso Realizar Request y Recibir Request}
-    \label{fig:ActDiagr}
-\end{figure}
 
-\begin{landscape}% Landscape page
-\begin{table}
-\caption{Tabla con amenazas}
-\centering
-\begin{tabular}{ |m{3.5em}|m{2.5em}|m{1.5em}|m{6em}|m{6em}|m{10em}|m{6em}|m{7em}|} 
-\hline
-Actor & Acción & ID & Sec. Attrib (CO/IN/AV/ACC) & Source (AIn/UIn/Out) & Descripción & Attacker & Asset\\
-\hline
-\multirow{5}{1em}{Browser User} & \multirow{5}{1em}{A1} & 1.1 & CO/IN & Out & Modificación de Tráfico/paquetes & Externo & Browser Client, Host\\ 
-& & 1.2 & IN/CO & UIn/Out/In & Pedir recurso dentro del Host & Externo & Browser Client, Host\\
-& & 1.3 & CO/IN/AV & UIn/Out & Contactar un Provider Malicioso & Externo & Browser Client, Host\\
-& & 1.4 & CO & Out/UIn & Predecir comportamiento o análisis de tráfico & Externo, Process malicioso & Browser Client\\
-& & 1.5 & CO/IN/ACC & Out & Conseguir contraseñas o información personal & Externo & Browser Client, Host\\
-\hline
-\multirow{4}{1em}{Host} & \multirow{5}{1em}{A5 y A9} & 5.1 & CO & Ain/UIn/Out & Divulgar información & Externo & Browser Client, Host\\ 
-& & 5.2 & IN/CO & AIn/Out & Imitar a un Host honesto & Administrador Malicioso de Host & Browser Client, Provider\\
-& & 5.3 & CO/IN/AV & Ain/Out/UIn & Contactar Provider Malicioso & Externo & Browser Client, Host\\
-& & 5.4 & AV & Out & Impedir navegación & Externo & Browser Client\\
-\hline
-\multirow{2}{1em}{Provider} & \multirow{5}{1em}{A10} & 10.1 & IN/AV/ACC & Out & Aceptar request de cliente comprometido & Administrador Malicioso, Externo & Provider\\ 
-& & 10.2 & CO & Ain/Out/UIn & Divulgar información & Externo & Provider\\
+En vista a la poca, casi nula, documentación formal sobre el Navegador Web, la necesidad de hacer una AR para entender cómo la arquitectura de este sistema puede relacionarse con el futuro desarrollo de otros sistemas, puede llegar a ser de gran utilidad para explicar los conceptos de seguridad detrás del Navegador. Se sabe que el Browser es un pieza de Software que ha sufrido varios cambios desde la década de los 90, por lo tanto entre los desarrolladores de ésta herramienta ya existen convenciones de qué elementos funcionan mejor. Por consiguiente, no es de extrañar que diferentes browsers estén construidos de formas muy similares, y puedan ser conceptualizados en una Arquitectura de Referencia que manifieste los componentes, mecanismos de comunicación y funciones de esta pieza de Software. 
 
-\hline
-\end{tabular}
-\label{tab:threats}
-\end{table}
-\end{landscape}
 
-Hemos identificado algunas amenazas al analizar el curso de los eventos de los casos de uso: Pedir Request y Recibir Request (Figura \ref{fig:ActDiagr}). La tabla \ref{tab:threats} hace un sumario del análisis de cada acción en el diagrama de actividad, teniendo en cuenta los atributos de seguridad que podrían ser comprometidos, el origen de la amenaza y los recursos que pueden peligrar. Los atributos de seguridad principales son: Confidencialidad (CO), Disponibilidad (IN), Acontabilidad (AC) e Integridad (IN). El origen de la amenaza puede ser: actor autorizado (Ain), un actor no autorizado (UIn) o un externo (Out).
-Listar las amenazas que pueden ocurrir en el sistema no es suficiente para entender como los ataques ocurren. Es por esto que utilizaremos 2 patrones de mal uso, que permitirán describir como un ataque ocurre desde el punto de vista del atacante.
+La arquitectura de referencia a construir en este trabajo, fue realizada principalmente a través de la abstracción de las propuestas actuales de los Web Browsers más usados: Google Chrome, Internet Explorer y Firefox (propuesta Electrolysis). Primero se identificarán y analizarán los stakeholders, se identificarán los casos de uso relacionados a cada uno de estos stakeholders y se dará una descripción breve. Luego se presentan 2 patrones que formarán parte de nuestra AR; Browser Infrastructure Pattern donde están los componentes principales, la comunicación con el host y la interacción entre éstos. Y luego el patrón RendererContentTab que muestra el interior del encargado de renderizar una página web. Éstos patrones serán descritos utilizando un template POSA \cite{buschman1996system} y notación UML para precisar cómo los componentes de la AR se relacionan. 
 
-\section{Patrón de Mal Uso: Modificación de tráfico en el Web Browser}
-En esta sección presentaremos un patrones de mal uso que describe la amenaza encontrada en el patrón Browser Infrastructure que hemos obtenido en este trabajo.
-Una de las amenazas es que un atacante haya sido capaz de comprometer la respuesta obtenida desde el Provider contactado. El atacante podría tratar de reemplazar algunos parámetros de la respuesta del provider, entregando al Browser User un contenido distinto al original..
-}
+\section{Casos de Uso del Browser}
+	\subsection{Stakeholders (actores) y Concerns de estos}
+	Se es necesario encontrar los actores (definido por sus roles) que participan en el uso y operación del Navegador, estos son:
+		\subsubsection{Browser User (BU)}
+		De este stakeholder depende que se realice el inicio de una petición para buscar una página web, recurso o servicio (Sin éste la utilidad del Web Browser es nula). Una entidad no humana, como un plugin, extensión o instancia de una página web, pueden requerir hacer peticiones por medio de las interfaces del navegador, con la intención de cumplir con los deseo del usuario del host de mostrar el contenido en el Browser.
+		\subsubsection{Host (H)}
+		Crea los procesos necesarios para iniciar el Navegador, además de entregar un ambiente al Browser para que éste pueda funcionar adecuadamente.  Ésta identidad se encarga de aplicar políticas de seguridad sobre el Browser cuando se necesiten realizar operaciones o el navegador desee crear nuevos procesos.
+		\subsubsection{Provider(P)}
+		Este puede ser un: Web Server, Web Aplicación, Servicio de actualización del Browser, etc. Su interacción con el Browser se limita a entregar contenido a éste.
+		\subsection{Casos de Uso}
+Los casos de usos y actores están listados a continuación. Notar que lo que se presentarán aquellos casos de uso relacionados exclusivamente con el Browser.
+
+\subsubsection{Casos de Uso para Browser User (BU)}
+		El BU representa todas las interacciones posibles del usuario con el Browser y sin él no habría razón para la existencia del navegador; un servidor tampoco existiría dado el mismo principio. Al encontrar los casos de uso de éste stakeholder veremos los concerns de éste, lo que nos permitirá entender las necesidades de seguridad para proteger al navegador. Los casos de uso principales de éste son: Realizar request, Cancelar request y Guardar recurso.
+			\begin{enumerate}	
+				\item Realizar Petición/Request: El caso de uso más importante de éste sistema, se basa en la arquitectura cliente/servidor. Esta acción considera la petición de recursos al host y la búsqueda del recurso bajo la URI dada y la consecuente response del servidor. La descarga no es siempre necesaria, pues existe lo que se conoce como una petición \textit{preflight} donde solo se envía una petición para saber si es seguro realizar una petición/request. Tanto request como response se han condensado en un solo caso de uso. Este caso de uso considera la visualización del recurso en el Host a través del periférico predeterminado.
+				\item Cancelar request: Un BU pide al Browser detener la búsqueda y todo proceso en transito. Si el recurso es obtenido por el Browser, la detención de éste puede considerar la detención del componente Renderer para mostrar por pantalla la proyección de la página web obtenida.			
+				\item Guardar recurso: Un BU puede necesitar guardar el recurso recientemente adquirido en el sistema de archivos del host (H). El caso de uso inicia una vez que el Browser User haya manifestado el donde desea guardar el recurso.
+			\end{enumerate}
+
+\subsubsection{Casos de Uso para el Host (H)}
+Los casos de uso del Host representan todas las interacciones que relacionan servicios proveídos al BU al hacer uso de \textit{system calls}, por medio del Browser. El Host debe para esto contar con la respuesta explícita del usuario detrás de BU. Los casos de uso principales de H son: Operación CRUD en el sistema de archivos del host, Monitorear proceso y Pedir recursos.
+			\begin{enumerate}
+				\item Operación CRUD en el sistema de archivos del host: Acción realizada cuando el Browser obtiene una solicitud explícita o no (automática), del usuario para realizar acciones que involucren permitir el acceso al sistema de archivos para: leer, escribir o modificar/eliminar algún recurso del host.
+
+				\item Monitorear proceso: En un browser es normal la comunicación entre los procesos que lo componen y el Sistema operativo por medio de un canal de comunicación, en especial cuando se necesita ver la cantidad de recursos usados.
+
+				\item Pedir recursos: Bajo el pedido explícito del usuario, la entidad Browser User, se requieren recursos para iniciar las operaciones deseadas. Estos recursos son obtenidos a partir de llamadas al sistema al host.
+			\end{enumerate}
+
+		\subsubsection{Casos de Uso para el Proveedor (P)}
+		La meta del Proveedor es escuchar las peticiones provenientes de diversos tipos de Browser User que necesiten los servicios o recursos del Proveedor. En este escenario tan heterogéneo y distribuido que es la Internet, se enfocará solamente en las peticiones de Browser User. Además, no para toda request del BU habrá un response de P, pues puede pasar que BU esté solamente intentando averiguar si P existe.
+			\begin{enumerate}
+				\item Escuchar requests: P siempre está escuchando en sus puertos habilitados a posibles peticiones de sus clientes. Una petición es recibida en un formato que P pueda interpretar y en consecuencia realizar las acciones correspondientes que BU le pide. 
+				\item Enviar Response: Por cada solicitud del cliente, en este caso el Web Browser, habrá una respuesta/response por parte del P con la data Resource asociada. Este caso de uso no se realiza, si dentro del header de uno de los paquetes está indicado que la petición fue hecha en modo \textit{preflight}.
+				\item Crear recurso: Por cada recurso que P crea, una URL única será usada para ser identificada en la Internet. Un Browser User hace uso de tal URL para adquirir el recurso, mientras el host del Proveedor lo deje visible.
+				\item Configurar opciones: definir distintas medidas en el Proveedor como: acceso a recursos, acceso de Browser users, etc.
+			\end{enumerate}
+
+		Los casos de Uso descritos anteriormente se pueden divisar en la Figura \ref{fig:CUBrowser}
+
+	    \begin{figure}[h]
+	        \centering
+	        \includegraphics[scale=0.45]{figures/chap4/UCBrowser.jpg}
+	        \caption{Diagrama de Caso de Uso del Web Browser}
+	        \label{fig:CUBrowser}
+	    \end{figure}
+
+
+\section{Patrón Browser Infrastructure}
+\label{chap4:BrokerPatt}
 \subsection{Intent}
-Un atacante podría cambiar contenido o dar uno diferente al esperado cuando el Web Browser (Browser User) recibe la response del Servidor o Provider. Realizando esta acción, el Navegador podría interpretar la información de una manera distinta a que si hubiera recibido el tráfico original.
+El patron Browser Infrastructure pattern permite la realización de la solicitud o request de un recurso web en la internet por parte de un Browser User, que es un usuario del Host que utiliza un navegador. El patrón permite visualizar la comunicación entre los componentes que conforman el browser así como la comunicación con el proveedor, al que se le realiza el request.
+
+\subsection{Ejemplo}
+Dentro de un host es posible que exista una falta de recursos que el usuario que lo opera necesite. La solicitud de servicios o recursos externos es una de las razones de existir de la Internet. Ésta operación es posible de realizarlo de diferentes maneras, todo depende de lo que el Provider desea entregar.
 
 \subsection{Contexto}
-Un Navegador web obtiene resources desde un Provider para poder un Browser User que lo necesita. Un Provider posee resources en forma de páginas web, servicios web u otro tipo. El Provider generalmente consiste en una Web App o Web server, que puede permitir entrada y salida de datos a otras aplicaciones, normalmente éstos están construidos usando HTML, Javascript y CCS. Sea que éste desea entregar servicios, como también otros deseen conectarse a él, todo tipo de comunicación estará encima del protocolo HTTP. Un Provider, dependiendo del tipo, puede llegar a recibir muchas peticiones de diversos Host para obtener resources de éste. Dependiendo del tipo de peticiones, estas pueden o no ser permitidas. Aquellas que son permitidas, el Provider generará una response a la request del Host, la cuál terminará llegando de vuelta (o no) al Browser Client que generó el request.
-
+Browser User se encuentra al interior del Host y el Provider es accedido a través de internet.  Es común que el contacto se da a través de aplicaciones web, servers que se comunican a través del protocolo HTTP. Para poder visualizar los recursos que el usuario del host puede necesitar y que el proveedor pueda quizás entregar, un navegador web permite completar tal labor de forma transparente al usuario.
 \subsection{Problema}
-¿Cómo podría un atacante engañar al Browser User y Host, por medio de la modificación de tráfico entre las entidades participantes en la comunicación? Es posible que un atacante esté escondido entre medio de la comunicación que hay entre el Host y el Povider, lo que resulta en que el contenido modificado podría afectar dentro del RendererContentTab o el Browser Client. Esto en consecuencia podría traer diferentes resultados, desde el robo de información privada del Browser User que utiliza el Browser Client para personalizar la navegación como también los token de autenticación hacia los Providers que el Browser User ha utilizado previamente. Dependiendo del tipo de atacante, es posible que este pueda incluso afectar al Host del Browser, dejando que el atacante pueda realizar actos maliciosos con los recursos del Host. 
-El ataque puede sacar ventaja de las siguientes vulnerabilidades:
+Algunos usuario del Host puede que necesiten obtener recursos desde un Provider, pero el usuario puede que necesite utilizarlos en algún formato en especial o que sean presentados por pantalla para ser mejor visualizados. En este caso, si no se utiliza la herramienta adecuada puede que no sirva de mucho haber conseguido el recurso si no se puede ocupar correctamente. ¿Cómo pueden el Host y Provider estar preparados para esta situación?
+La solución a este problema debe resolver las siguientes problemáticas:
 \begin{itemize}
-	\item El origen u \textbf{origin} que define el Same Origin Policy que hace cumplir el Browser difiere en cada tipo de Web Browser \cite{W3C-SOP,Reis2009, Jackson2008, Crowley2010, Paola2006}.
-	\item El \textbf{origin} no es suficiente como método de aislación entre resources (páginas web, scripts, css y otros) \cite{Silic2010, Barth2009, Yason, Liu2012}.
-	\item Cualquiera puede crear una extensión o plugin, etc. para algún tipo de Browser y hacerlo pasar como algo inofensivo, pero el usuario no se daría cuenta que un Man in the Browser podría estar ocurriendo \cite{Dougan2012,Utakrit2009,Liu2012,Barth2010}.  Éste programa, posiblemente malicioso podría, afectar el tráfico sin que queden rastros, pues tiene permisos del usuario al ser éste mismo quién autorizó su instalación.
-	\item Es posible afectar al Browser Client y en consecuencia al Host, sin tener que buscar vulnerabilidades en el Web Browser. Solamente utilizando métodos de ingeniería social, sobre el usuario del Host basta para lograr un ataque, pues es “the weakest link”.
-	\item La arquitectura para extender la funcionalidad del navegador, a través de extensiones, plugins y otros, depende demasiado del manufacturador. Y probablemente posee una gran superficie de ataque.
+	\item Transparencia: el user detrás del Host no se debe preocupar de la maquinaria que existe mientras se realiza una petición a un Provider.
+	\item Estabilidad/Aislación: cada request realizada no debe interferir las con otras.
+	\item Heterogeneidad: Sin importar el tipo de Provider con el que se comunique, el Browser User debe poder comunicarse con cualquier tipo de Provider y también debe poder mostrar adecuadamente al usuario el recurso obtenido.
+	\item Disponibilidad: El user del Host debe ser capaz de poder realizar peticiones en todo momento, sin perder fluidez.
 \end{itemize}
 
-El ataque puede ser facilitado por:
-\begin{itemize}
-	\item Existen muchas herramientas para realizar ataques de ingeniería social, lo que permite hacer que el Browser User acepte realizar la instalación de extensiones o plugin maliciosos más fácilmente.
-	\item Cualquier script basado en texto puede ser usado para explotar el intérprete del navegador web. Muchas veces también es posible utilizar los mismos elementos del lenguaje de scripting para poder pasar ciertas barreras de seguridad entregadas por el SOP, pues el lenguaje es basado en prototipos. 
-	\item Los manufacturadores de Navegadores no poseen aún mecanismos de defensa que permitan identificar efectivamente cuando un resource puede ser malicioso.
-	\item Los métodos de encriptación no pueden hacer nada contra un ataque que puede modificar el tráfico antes de enviar el mensaje o después de recibir el mensaje.
-	\item No existen mecanismos de defensa estandarizados, pues cada manufacturador realiza lo necesario para la marca a la que se acopla. Si el Host posee muchos browser, la superficie de ataque es bastante mayor.
-\end{itemize}
 \subsection{Solución}
-La solución estructural usada es la misma creada por el patrón Browser Infrastructure que se revisó en el capítulo 4. La clase Attacker es cualquier entidad que podría llevar a cabo una acción arriesgada contra la integridad del Browser, usuario, Host y Provider (Figura \ref{fig:BIMisuse}). El atacante es capaz tanto de interceptar las response que el Provider envía al Browser Client usando al Host como receptor, o haciendo que el Browser realice modificaciones en el input que va hacia el Provider, utilizando scripts u otro resources.
-\begin{figure}[h]
+Un Web Browser puede satisfacer las request del user del Host a través de un Browser User, ya sea por una o varias instancias de Browser User lo que permite tener una diversidad de opciones para navegar por sitios de internet. Un Browser debe ser capaz de poder entregar una navegación rápida y estable, sin que cada sitio accedido afecte a los otros recursos adquiridos.
+\subsection{Estructura}
+El Browser Client (BC) es la entidad que representa el proceso principal de un Navegador Web y comprende la cantidad mínima de componentes que constituye un Web Browser. Browser Client, Sandbox, GPU Instance (GPUI) y Plugin son del tipo Process (Pr), que residen dentro de un Host (H) con un cierto tipo de sistema Operativo (OS). La mayoría de los navegadores existentes usan un componente céntrico para realizar las operaciones que necesitan afectar al Host del Browser. La figura \ref{fig:BIPatt} muestra el diagrama del clases para el patrón Browser Infrastructure. Por cada recurso que un BC solicite, se crearán Sandbox (S) que alojarán una instancia del patrón RendererContentTab el que permiten realizar la navegación y posterior visualización del recurso.
+El componente BC actúa como un broker de las solicitudes de las Sandbox, lo que permite tener un control fino de los mensajes enviados, usando IPC/IPDL/COM, entre los procesos que se comunican. El GPU Instance y Plugins son elementos que pueden comunicarse directamente con el Sandbox, de esta manera cualquier necesidad de recursos del Host pasarán también por el Browser Client. 
+Un usuario que desee hacer un request de un recurso en Internet por medio de un navegador es lo que llamaremos Browser User (BU). Éste usa el Browser Client para realizar peticiones al Provider, donde éste último posiblemente utilice un Web Server para ese cometido (Figura \ref{fig:BIPatt})
+
+	    \begin{figure}[h]
 	        \centering
-	        \includegraphics[scale=0.45]{figures/chap5/patronMisuse.jpg}
-	        \caption{Diagrama de Clases para el patrón de Misuse}
-	        \label{fig:BIMisuse}
-    \end{figure}
+	        \includegraphics[scale=0.45]{figures/chap4/browserInfraPattern.jpg}
+	        \caption{Componentes de alto nivel del Browser}
+	        \label{fig:BIPatt}
+	    \end{figure}
 
 \subsection{Dinámica}
-En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para realizar uno de los tantos mal usos que se pueden realizar durante el caso de uso Realizar Request. El atacante queda entre el Browser Client y el Host, interceptando la realización del request original y modificando el tráfico a su gusto; usualmente un ataque basado en este mal uso se le llama Man-in-the-Browser (MITB) \cite{Liu2012, Barth2010, Utakrit2009, Dougan2012}. Esto podría perfectamente suceder cuando el Browser User ha permitido la instalación de plugins, extensiones o programas externos en el Host y Browser Client [ref]
-\begin{figure}[h]
+Casos de uso relacionados al patrón son los siguientes:
+\begin{itemize}
+	\item Realizar request (actor: Browser User)
+	\item Cancelar request (actor: Browser User)
+	\item Guardar recurso (actor: Browser User)
+	\item Recibir Request (actor: Provider)
+	\item Pedir recursos (actor: Host)
+\end{itemize}
+Detallaremos el caso de uso Realizar request (Figura X):
+\subsubsection{Sumario} Un Browser User requiere de abrir un recurso URL que puede ser obtenido mediante el uso del protocolo HTTP, según los requerimientos del Provider. El Browser Client será usado por un Browser User para poder realizar la visualización del recurso URL.
+\subsubsection{Actor} Browser User
+\subsubsection{Precondiciones} El Host debe tener uno o más Browser Client para el usuario del Host. Además de estar conectado a una red o Internet. El Provider al que se desea contactar también debe estar disponible.
+\subsubsection{Descripción}
+Nota: Los mensajes entre el Browser Client y el Sandbox pueden ser tanto síncronos como asíncronos. No especificaremos en gran detalle , pues lo que importa en este trabajo será el origen y destino de los mensajes (no está dentro del ámbito ver la sincronización).
+	\begin{enumerate}
+		\item Un Browser User requiere acceder a una URL para obtener cierto recurso de un Provider, para esto usa un Browser Client ya instanciado por el Host. En el interior del Sandbox, existe una instancia del patrón RendererContentTab en su interior. 
+\item El Sandbox requiere los recursos del Host para obtener lo que hay detrás de la URL. Una petición es realizada desde el Sandbox al Browser Client a través de un canal de comunicación como: IPC, IPDL o COM (dependiendo el tipo de Browser usado), usando la API limitada que posee para comunicarse a un proceso de mayor privilegio. 
+\item El Browser Client recibe la solicitud, verifica a través de su motor de políticas/normas si la acción del Sandbox puede ser permitida.
+\item Si es permita la acción del Sandbox, se utilizará la Network API que contiene el Browser Client para obtener recursos del Host (a través de llamadas al sistema). El Browser Client se comunica internamente con el Host, y este último debe revisar sus políticas y asegurarse que el Browser Client posee el privilegio de hacer la petición del recurso del Host.
+\item Si se permite el acceso el recurso, el Browser Client podrá realizar un request a través de la Network API. Si el request no es del tipo \textit{pre-flight}, el Provider recibirá el request y trabajará sobre la petición.
+\item El Provider enviará un response al request enviado. Dependiendo como esté implementado el Browser Client, este podría o no tener que esperar a la respuesta (síncrono o asíncrono) del Provider.
+\item Una vez obtenida la respuesta esta es almacenada en cache o podría ser guardada dentro del Host. 
+\item La respuesta del request es enviada por el canal de comunicación al Sandbox del que se originó y posteriormente al RendererContentTab. Si fue recibida una respuesta por parte de la request, el RendererContentTab está listo para preparar el parsing de la página web o utiliza un plugin o GPU para apoyar la visualización del recurso obtenido por la URL. En caso contrario el RendererContentTab dentro del Sandbox creará una página de error.
+	\end{enumerate}
+\subsubsection{Curso Alternativo} 
+\begin{itemize}
+\item El Provider no esté disponible.
+\item El recurso al que apunta la URL no exista.
+\item Se cancela el request realizado.
+	\end{itemize}
+\subsubsection{Condiciones póstumas} El Browser recibe el recurso indicado por la URL y se muestra por el perísférico la salida del recurso al usuario del Host.
+	    \begin{figure}[h]
 	        \centering
-	        \includegraphics[scale=0.45]{figures/chap5/patronMisuseSeq.jpg}
-	        \caption{Diagrama de Secuencia para el Mal uso: Modificación de tráfico en el Web Browser}
-	        \label{fig:SeqMisuse}
-    \end{figure}
-	
-	\subsubsection{Sumario} El atacante intercepta el tráfico entre Host y Browser Client.
-	\subsubsection{Actor} Atacante
-	\subsubsection{Precondiciones} Para que el ataque pueda pasar desapercibido, es necesario que el Browser User o el usuario detrás del browser haya caído primero en un ataque de ingeniería social o el atacante haya podido instalar directamente un process malicioso en el Host directamente.
-	\subsubsection{Descripción}
-			\begin{enumerate}
-				\item Un atacante utiliza alguna técnica de ingeniería social o vulnerabilidad en el sistema, para crear una entidad que se encargará de estar entre medio del Browser Client y el Provider. Para esto realiza el caso de uso Pedir Resources para que el proceso, plugin o extensión se aloje en el Host.
-				\item Un Browser Consumer desea hacer un request a cierta URL, por lo que los primeros pasos de Realizar Request son similares.
-				\item En el momento en que el Browser Client va a realizar la llamada al sistema para enviar el mensaje del Host al Provider, el Browser Client llamará al plugin, extensión o process malicioso, pues el Browser Client ha sido interferido para que realice esa acción.
-				\item El atacante entonces recibirá todo el tráfico del Browser Client, con el cuál podría modificar a su antojo.
-				\item Finalmente la víctima está totalmente comprometida.
-			\end{enumerate}
-	\subsubsection{Post condiciones} La victima quedará completamente comprometida y probablemente no sea posible detectar la alteración del mensaje, pues también es posible que se modifiquen los log del Host.
-	\subsubsection{Usos Conocidos} El Web Browser es un software que posee diversas implementaciones, por lo tanto la cantidad de vectores de ataque es significativa. Algunos de éstos son:
-			\begin{itemize}
-				\item  Una extensión basada en la arquitectura de Chrome o la API WebExtension Firefox, podría interceptar los datos antes que llegue al Browser Client \cite{Paola2006} o dado a una vulnerabilidad del mismo elemento un atacante se está aprovechando de su funcionalidad para realizar ataques \cite{Liu2012, Barth2010}. Dado que el Plugin, la extensión o el process son elementos que el Host confía, es posible que pase indetectable el ataque y además los métodos de encriptación no sirven como medida de mitigación.
-				\item Éste tipo de ataque puede ser usado como base para otros ataques más avanzados. Un ejemplo es cuando el Browser posee vulnerabilidades \textit{cross-origin javascript capability leaks}, donde los diferentes modelos de seguridad usados por Javascript y el DOM pueden interferir entre si, causando que una petición \textit{cross-origin} se pueda realizar aún cuando SOP debería ser capaz de detener tal ataque \cite{Barth2009}.
-				\item 
-			\end{itemize}
-
-
+	        \includegraphics[scale=0.35]{figures/chap4/requestResource.jpg}
+	        \caption{Diagrama de Secuencia: Browser User Realiza request}
+	        \label{fig:SecReq}
+	    \end{figure}
+\subsection{Implementación}
+\begin{itemize}
+\item El Sandbox puede ser implementado de diversas maneras. Google Chrome [referencia a página de sandbox de cg] se basa en no reinventar la rueda y utiliza los mecanismos de protección que Windows ya tiene incorporados para proteger al usuario, evitando que el proceso no tenga acceso al sistema de archivos y teniendo una API de llamadas al sistema muy restrictivas en el RendererContentTab. Google Chrome, Firefox e Internet Explorer asumen que los Sandoboxs son procesos que deben regirse bajo el principio de menor privilegio (least privilege). La mínima configuración del Sandbox se compone de 2 procesos: El proceso privilegiado o Broker que es representado por el BrowserClient, y el o los procesos que están bajo el Sandbox o targets.
+\item Para hacer cumplir con el Same Origin Policy Google Chrome, Firefox e Internet Explorer utilizan diferentes esquemas, por ejemplo: Google Chrome deja el trabajo a su Renderer (RendererContentTab en este caso) para dejar aisladas las páginas/recursos de diversos sitios.
+\end{itemize}
 \subsection{Consecuencias}
-	El mal uso tiene las siguientes consecuencias para el Attacker:
-	\begin{itemize}
-		\item Objetivos: pueden ser diversos, destacándose el vandalismo, personificar a otra persona u obtener una ganancia monetaria. Mientras el atacante se pueda interponer entre el Host y el tráfico que se envía al Provider, la confidencialidad e integridad de los datos está completamente perdida. La privacidad del usuario ya no se puede asegurar tampoco.
-		\item Silencioso: Dado que el atacante ha logrado interponerse entre las llamadas de sistema que se realizan al Host para enviar los datos al Provider, el Host no reconocerá ni logueará ninguna anomalía. Las llamadas hechas al Host son totalmente legales y nada fuera de lo normal para éste.
-		\item El atacante podría realizar acciones que afecten la integridad del Host.
-	\end{itemize}
-	Posibles fuentes de fallo:
-	\begin{itemize}
-		\item Si el Browser User es capaz de evitar o ignorar el ataque de Ingeniería Social realizado al comienzo, no existiría este mal uso. Esto debe considerar que el usuario también no se encuentre con páginas o contenido malicioso, que podrían afectar otro componente de Browser, pero que causarían en el mismo efecto del Mal Uso señalado.
-	\end{itemize}
+El patrón Browser Infrastructure provee los siguientes beneficios:
+\begin{itemize}
+	\item Transparencia: La navegación del usuario se realizará casi de manera automática, solo en casos muy puntuales el usuario tendrá que tomar una decisión sobre el recurso que desea pedir.
+\item Estabilidad/Aislación: Gracias a que el Browser Client, Sandbox, Plugin y GPU Instance son procesos del Host independientes, el fallo de uno no generará problemas en el otro (crash, corrupción de memoria, etc).
+	\item Heterogeneidad: Dado que cada Browser Client trata de seguir los estándares de la W3C, toda página que también siga éstas guías podrá ser visualizada, así como también otro tipo de recursos.
+	\item Disponibilidad: Cada proceso es independiente y posee sus propias hebras de ejecución, y fueron creadas específicamente para que la interfaz de usuaria pueda mantenerse fluida para el usuario.
+\end{itemize}
+Al mismo tiempo el patrón posee las siguientes debilidades:
+\begin{itemize}
+	\item Dado que se inician procesos independientes para navegar a un recurso (dependiendo el esquema que utilice el browser), es posible que una gran cantidad de recursos se vayan a usar para mantener todo abierto.
+	\item Aquellos Provider que no hayan cumplido con las especificaciones de la W3C, mostraran su resource de forma incorrecta por el Web Browser.
+\end{itemize}
+\subsection{Ejemplo Resuelto}
+Con el patrón entregado ahora es posible poder navegar de forma fluida a todos los recursos en la Internet que deseamos. Es posible proveer a través de la aislación de los componentes: rapidez, seguridad y estabilidad. El Browser User solamente se molestará en la navegación, cuando se requiera de su autorización para ingresar a ciertos recursos del Host que sean privilegiados, como el sistema de archivos. Cada usuario del Host, puede utilizar el Browser Client que desee, dado que cada uno de ellos es aislado por procesos independientes, así también los otros Browser Clients entre si.
 
-\subsection{Contramedidas} 
-	Para prevenir este tipo de mal uso se recomienda tomar las siguientes medidas preventivas:
-	\begin{itemize}
-		\item Servicios de Reputación como Smart Screen de Internet Explorer y Download Application de Google Chrome, ayudan a identificar páginas y contenido/resources que podrían contener malware que se instale como plugins, entensiones o process en el Host del Browser User.
-		\item Entregando educación sobre los peligros de navegar por internet y aclarar al usuario que él es la última línea de defensa contra éste tipo de ataques.
-		\item White y Black list instaladas en los browser son una medida preventiva para evitar la navegación en páginas o recursos maliciosos ya conocidos.
-		\item Navegadores como Google Chrome e Internet Explorer ofrecen el Sandboxing. Éste mecanismo de defensa limita las acciones del atacante, que pudieran afectar la integridad del sistema.
-	\end{itemize}
-
-\subsection{Evidencia Forense}
-	¿Dónde es posible encontrar evidencia?
-	Dependiendo de lo deseado por el atacante, las acciones que cometerá pueden diferir. Sin embargo el log interno del browser debería de poder servir para auditar el sistema, esto gracias a que mientras no se haya encontrado una vulnerabilidad en el Sandbox del Browser, el atacante no puede borrar completamente sus huellas.
-
-\subsection{Patrones relacionados}
-	\begin{itemize}
-		\item En el patrón Browser Infrastructure, el Browser Client actúa como el Reference Monitor explicado en \cite{fernandez2001pattern}.
-	\end{itemize}
+\subsection{Usos Comúnes}
+\begin{itemize}
+	\item Google Chrome
+	\item Internet Explorer
+	\item Firefox
+\end{itemize}
+\subsection{Patrones Asociados}
+\begin{itemize}
+	\item Reference Monitor [Fer13]
+	\item Policy authorization
+\end{itemize}

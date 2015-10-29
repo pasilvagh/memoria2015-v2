@@ -10,23 +10,23 @@
 \BOOKMARK [1][-]{section.1.6}{Estructura del Documento}{chapter.1}% 10
 \BOOKMARK [0][-]{chapter.2}{Marco Te\363rico - Conceptual Framework}{}% 11
 \BOOKMARK [1][-]{section.2.1}{Definiciones B\341sicas}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.2}{Browser}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.1}{Arquitectura Cliente/Servidor}{section.2.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Procesos, Comunicaci\363n e Informaci\363n de Estado}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.3.1}{HTTP: Hypertext Transfer Protocol}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.2}{SSL/TLS Encriptaci\363n en capa de Transporte}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.3}{Speedy o Protocolo SPDY}{section.2.3}% 18
-\BOOKMARK [1][-]{section.2.4}{Tecnolog\355as usadas}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.4.1}{Markup Languages}{section.2.4}% 20
-\BOOKMARK [2][-]{subsection.2.4.2}{CSS: Cascading Style Sheets}{section.2.4}% 21
-\BOOKMARK [2][-]{subsection.2.4.3}{DOM: Document Object Model}{section.2.4}% 22
-\BOOKMARK [2][-]{subsection.2.4.4}{Javascript, VBScript y otros}{section.2.4}% 23
-\BOOKMARK [2][-]{subsection.2.4.5}{Geolocalizaci\363n}{section.2.4}% 24
-\BOOKMARK [2][-]{subsection.2.4.6}{WebWorkers}{section.2.4}% 25
-\BOOKMARK [1][-]{section.2.5}{SOP: Same Origin Policy}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.6}{CORS: Cross-Origin Resource Sharing}{chapter.2}% 27
-\BOOKMARK [1][-]{section.2.7}{Desaf\355os del Navegador}{chapter.2}% 28
-\BOOKMARK [1][-]{section.2.8}{Arquitectura de Referencia o Reference Architecture \(RA\)}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.2}{SOP: Same Origin Policy}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.3}{CORS: Cross-Origin Resource Sharing}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{Arquitectura Cliente/Servidor}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.5}{Procesos, Comunicaci\363n e Informaci\363n de Estado}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.5.1}{HTTP: Hypertext Transfer Protocol}{section.2.5}% 17
+\BOOKMARK [2][-]{subsection.2.5.2}{SSL/TLS Encriptaci\363n en capa de Transporte}{section.2.5}% 18
+\BOOKMARK [2][-]{subsection.2.5.3}{Speedy o Protocolo SPDY}{section.2.5}% 19
+\BOOKMARK [1][-]{section.2.6}{Tecnolog\355as usadas}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.6.1}{Markup Languages}{section.2.6}% 21
+\BOOKMARK [2][-]{subsection.2.6.2}{CSS: Cascading Style Sheets}{section.2.6}% 22
+\BOOKMARK [2][-]{subsection.2.6.3}{DOM: Document Object Model}{section.2.6}% 23
+\BOOKMARK [2][-]{subsection.2.6.4}{Javascript, VBScript y otros}{section.2.6}% 24
+\BOOKMARK [2][-]{subsection.2.6.5}{Geolocalizaci\363n}{section.2.6}% 25
+\BOOKMARK [2][-]{subsection.2.6.6}{WebWorkers}{section.2.6}% 26
+\BOOKMARK [1][-]{section.2.7}{Desaf\355os del Navegador}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.8}{Arquitectura de Referencia o Reference Architecture \(RA\)}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.8.1}{Validaci\363n de la Arquitectura}{section.2.8}% 29
 \BOOKMARK [1][-]{section.2.9}{Desarrollo de Software Seguro y Dise\361o de Software Seguro}{chapter.2}% 30
 \BOOKMARK [1][-]{section.2.10}{Patrones}{chapter.2}% 31
 \BOOKMARK [1][-]{section.2.11}{Patrones de Mal Uso}{chapter.2}% 32
@@ -42,34 +42,36 @@
 \BOOKMARK [2][-]{subsection.3.4.2}{Aislaci\363n del contenido web de los componentes del Browser}{section.3.4}% 42
 \BOOKMARK [2][-]{subsection.3.4.3}{Blacklist y Whitelist de sitios web}{section.3.4}% 43
 \BOOKMARK [2][-]{subsection.3.4.4}{Detecci\363n de Malware por medio de sistemas de Reputaci\363n}{section.3.4}% 44
-\BOOKMARK [0][-]{chapter.4}{Arquitectura de Referencia del Web Browser}{}% 45
-\BOOKMARK [1][-]{section.4.1}{Casos de Uso del Browser}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.1.1}{Stakeholders \(actores\) y Concerns de estos}{section.4.1}% 47
-\BOOKMARK [2][-]{subsection.4.1.2}{Casos de Uso}{section.4.1}% 48
-\BOOKMARK [1][-]{section.4.2}{Patr\363n Browser Infrastructure}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.2.1}{Intent}{section.4.2}% 50
-\BOOKMARK [2][-]{subsection.4.2.2}{Ejemplo}{section.4.2}% 51
-\BOOKMARK [2][-]{subsection.4.2.3}{Contexto}{section.4.2}% 52
-\BOOKMARK [2][-]{subsection.4.2.4}{Problema}{section.4.2}% 53
-\BOOKMARK [2][-]{subsection.4.2.5}{Soluci\363n}{section.4.2}% 54
-\BOOKMARK [2][-]{subsection.4.2.6}{Estructura}{section.4.2}% 55
-\BOOKMARK [2][-]{subsection.4.2.7}{Din\341mica}{section.4.2}% 56
-\BOOKMARK [2][-]{subsection.4.2.8}{Implementaci\363n}{section.4.2}% 57
-\BOOKMARK [2][-]{subsection.4.2.9}{Consecuencias}{section.4.2}% 58
-\BOOKMARK [2][-]{subsection.4.2.10}{Ejemplo Resuelto}{section.4.2}% 59
-\BOOKMARK [2][-]{subsection.4.2.11}{Usos Com\372nes}{section.4.2}% 60
-\BOOKMARK [2][-]{subsection.4.2.12}{Patrones Asociados}{section.4.2}% 61
-\BOOKMARK [0][-]{chapter.5}{Patrones de Mal Uso}{}% 62
-\BOOKMARK [1][-]{section.5.1}{Identificando Amenazas y Patrones de Mal Uso}{chapter.5}% 63
-\BOOKMARK [1][-]{section.5.2}{Identificando amenazas}{chapter.5}% 64
-\BOOKMARK [1][-]{section.5.3}{Patr\363n de Mal Uso: Modificaci\363n de tr\341fico en el Web Browser}{chapter.5}% 65
-\BOOKMARK [2][-]{subsection.5.3.1}{Intent}{section.5.3}% 66
-\BOOKMARK [2][-]{subsection.5.3.2}{Contexto}{section.5.3}% 67
-\BOOKMARK [2][-]{subsection.5.3.3}{Problema}{section.5.3}% 68
-\BOOKMARK [2][-]{subsection.5.3.4}{Soluci\363n}{section.5.3}% 69
-\BOOKMARK [2][-]{subsection.5.3.5}{Din\341mica}{section.5.3}% 70
-\BOOKMARK [2][-]{subsection.5.3.6}{Consecuencias}{section.5.3}% 71
-\BOOKMARK [2][-]{subsection.5.3.7}{Contramedidas}{section.5.3}% 72
-\BOOKMARK [2][-]{subsection.5.3.8}{Evidencia Forense}{section.5.3}% 73
-\BOOKMARK [2][-]{subsection.5.3.9}{Patrones relacionados}{section.5.3}% 74
-\BOOKMARK [0][-]{chapter*.27}{Bibliograf\355a}{}% 75
+\BOOKMARK [0][-]{chapter.4}{Estado del Arte}{}% 45
+\BOOKMARK [0][-]{chapter.5}{Arquitectura de Referencia del Web Browser}{}% 46
+\BOOKMARK [1][-]{section.5.1}{Casos de Uso del Browser}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.1.1}{Stakeholders \(actores\) y Concerns de estos}{section.5.1}% 48
+\BOOKMARK [2][-]{subsection.5.1.2}{Casos de Uso}{section.5.1}% 49
+\BOOKMARK [1][-]{section.5.2}{Patr\363n Browser Infrastructure}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.2.1}{Intent}{section.5.2}% 51
+\BOOKMARK [2][-]{subsection.5.2.2}{Ejemplo}{section.5.2}% 52
+\BOOKMARK [2][-]{subsection.5.2.3}{Contexto}{section.5.2}% 53
+\BOOKMARK [2][-]{subsection.5.2.4}{Problema}{section.5.2}% 54
+\BOOKMARK [2][-]{subsection.5.2.5}{Soluci\363n}{section.5.2}% 55
+\BOOKMARK [2][-]{subsection.5.2.6}{Estructura}{section.5.2}% 56
+\BOOKMARK [2][-]{subsection.5.2.7}{Din\341mica}{section.5.2}% 57
+\BOOKMARK [2][-]{subsection.5.2.8}{Implementaci\363n}{section.5.2}% 58
+\BOOKMARK [2][-]{subsection.5.2.9}{Consecuencias}{section.5.2}% 59
+\BOOKMARK [2][-]{subsection.5.2.10}{Ejemplo Resuelto}{section.5.2}% 60
+\BOOKMARK [2][-]{subsection.5.2.11}{Usos Com\372nes}{section.5.2}% 61
+\BOOKMARK [2][-]{subsection.5.2.12}{Patrones Asociados}{section.5.2}% 62
+\BOOKMARK [0][-]{chapter.6}{Patrones de Mal Uso}{}% 63
+\BOOKMARK [1][-]{section.6.1}{Identificando Amenazas y Patrones de Mal Uso}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.2}{Identificando amenazas}{chapter.6}% 65
+\BOOKMARK [1][-]{section.6.3}{Template de Patrones de Mal Uso}{chapter.6}% 66
+\BOOKMARK [1][-]{section.6.4}{Patr\363n de Mal Uso: Modificaci\363n de tr\341fico en el Web Browser}{chapter.6}% 67
+\BOOKMARK [2][-]{subsection.6.4.1}{Intent}{section.6.4}% 68
+\BOOKMARK [2][-]{subsection.6.4.2}{Contexto}{section.6.4}% 69
+\BOOKMARK [2][-]{subsection.6.4.3}{Problema}{section.6.4}% 70
+\BOOKMARK [2][-]{subsection.6.4.4}{Soluci\363n}{section.6.4}% 71
+\BOOKMARK [2][-]{subsection.6.4.5}{Din\341mica}{section.6.4}% 72
+\BOOKMARK [2][-]{subsection.6.4.6}{Consecuencias}{section.6.4}% 73
+\BOOKMARK [2][-]{subsection.6.4.7}{Contramedidas}{section.6.4}% 74
+\BOOKMARK [2][-]{subsection.6.4.8}{Evidencia Forense}{section.6.4}% 75
+\BOOKMARK [2][-]{subsection.6.4.9}{Patrones relacionados}{section.6.4}% 76
+\BOOKMARK [0][-]{chapter*.27}{Bibliograf\355a}{}% 77
