@@ -186,27 +186,27 @@ En \cite{2005-grosskurth-browser-refarch} y \cite{preprint-grosskurth-browser-ar
                 \end{itemize}
         La arquitectura de Mozilla se distingue de las demás en que la visualización especificada por la plataforma y la librería de \textit{widgets} son usados directamente en el navegador, lo que minimiza el costo necesario para soportar diferentes plataformas.
 
-        \subsubsubsection{Gecko}
-         \label{chap2:Gecko}
-         Es un motor de renderizado \textit{Open Source}, escrito en C++, creado en un comienzo por Netscape, predecesor de Mozilla Foundation/Corporation. La función de este componente en Firefox (y otros browsers que lo integran) es leer el \textit{web content} de tipo HTML, CSS, XUL (para renderizar \textit{User Interface}) y Javascript, y mostrarlo al usuario en un formato gráfico. Tiene un gran rendiemiento al transformar a formato gráfico una página con lenguaje de marcado ya que soporta multithreading en el parser de HTML. Gecko fue diseñado para soportar \textit{Open Internet Standards} y por ende sigue al pie de la letra todas las especificaciones de HTML 4, CCS 1 y 2, DOM, XML y Javascript. Los componentes de Gecko incluyen:
-             \begin{itemize}
-                 \item Parser de Documentos (HTML y XML).
-                 \item \textit{Layout Engine} con un modelo de contenido; ésta es la información que el display del host mostrará al usuario.
-                 \item Sistema de estilos.
-                 \item Motor de Javascript. En el caso de Gecko éste se llama \textbf{SpiderMonkey} que está escrito en C/C++.
-                 \item Librería de imágenes.
-                 \item Librería de \textit{Networking}.
-                 \item Renderizado gráfico específico a la plataforma y widget de acuerdo al sistema operativo.
-                 \item Librerías de Seguridad.
-                 \item librería de preferencias de usuario, entre otros más.
-             \end{itemize}
+        Gecko es un motor de renderizado \textit{Open Source} que utiliza Firefox, escrito en C++, creado en un comienzo por Netscape, predecesor de Mozilla Foundation/Corporation. La función de este componente en Firefox (y otros browsers que lo integran) es leer el \textit{web content} de tipo HTML, CSS, XUL (para renderizar \textit{User Interface}) y Javascript, y mostrarlo al usuario en un formato gráfico. Tiene un gran rendiemiento al transformar a formato gráfico una página con lenguaje de marcado ya que soporta multithreading en el parser de HTML. Gecko fue diseñado para soportar \textit{Open Internet Standards} y por ende sigue al pie de la letra todas las especificaciones de HTML 4, CCS 1 y 2, DOM, XML y Javascript. Los componentes de Gecko incluyen:
+            \begin{itemize}
+                \item Parser de Documentos (HTML y XML).
+                \item \textit{Layout Engine} con un modelo de contenido; ésta es la información que el display del host mostrará al usuario.
+                \item Sistema de estilos.
+                \item Motor de Javascript. En el caso de Gecko éste se llama \textbf{SpiderMonkey} que está escrito en C/C++.
+                \item Librería de imágenes.
+                \item Librería de \textit{Networking}.
+                \item Renderizado gráfico específico a la plataforma y widget de acuerdo al sistema operativo.
+                \item Librerías de Seguridad.
+                \item librería de preferencias de usuario, entre otros más.
+            \end{itemize}
 
-         \begin{figure}[h!t]
+        \begin{figure}[h!t]
             \centering
-             \includegraphics[width=0.8\textwidth]{figures/Gecko_Overview_9.png}
-             \caption{Gecko Rendering Engine. Fuente: \cite{gecko}}
-             \label{fig:Gecko}
-         \end{figure}
+            \includegraphics[width=0.8\textwidth]{figures/Gecko_Overview_9.png}
+            \caption{Gecko Rendering Engine. Fuente: \cite{gecko}}
+            \label{fig:Gecko}
+        \end{figure}
+
+        
     \subsubsection{Firefox Multi-proceso (Electrolysis)} 
 
             

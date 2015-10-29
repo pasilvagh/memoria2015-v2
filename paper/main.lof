@@ -6,16 +6,17 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Esquematizaci\IeC {\'o}n de ataques de tipo Social Engineering. Fuente: Elaboraci\IeC {\'o}n Propia.}}{27}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Architectura Multi procesos de Google Chrome. Fuente: \cite {multiProcGC}}}{33}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Architectura de Chromium en detalle. Fuente: \cite {ChrRenderPipe}}}{33}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Arquitectura de Internet Explorer. Fuente: \cite {IEArchImg}}}{35}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de Internet Explorer m\IeC {\'a}s detallada. Fuente: \cite {IE8LCIE}}}{35}{figure.4.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architectura Multi procesos de Google Chrome. Fuente: \cite {multiProcGC}}}{35}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Architectura de Chromium en detalle. Fuente: \cite {ChrRenderPipe}}}{35}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Arquitectura de Internet Explorer. Fuente: \cite {IEArchImg}}}{38}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de Internet Explorer m\IeC {\'a}s detallada. Fuente: \cite {IE8LCIE}}}{38}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Gecko Rendering Engine. Fuente: \cite {gecko}}}{41}{figure.4.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de Caso de Uso del Web Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{45}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Componentes de alto nivel del Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{47}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Browser User Realiza request. Fuente: Elaboraci\IeC {\'o}n Propia.}}{50}{figure.5.3}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de Caso de Uso del Web Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{46}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Componentes de alto nivel del Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{48}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Browser User Realiza request. Fuente: Elaboraci\IeC {\'o}n Propia.}}{51}{figure.5.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request. Fuente: Elaboraci\IeC {\'o}n Propia.}}{54}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse. Fuente: Elaboraci\IeC {\'o}n Propia.}}{61}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de Secuencia para el Mal uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{62}{figure.6.3}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request. Fuente: Elaboraci\IeC {\'o}n Propia.}}{55}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse. Fuente: Elaboraci\IeC {\'o}n Propia.}}{62}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de Secuencia para el Mal uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{63}{figure.6.3}
 \addvspace {10\p@ }

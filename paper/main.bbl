@@ -445,6 +445,19 @@ S.~D. Paola and G.~Fedon, ``{Subverting Ajax},'' \emph{23rd Chaos Communication
   \url{http://events.ccc.de/congress/2006/Fahrplan/attachments/1158-Subverting\_Ajax.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Godfrey2000}
+\BIBentryALTinterwordspacing
+M.~W. Godfrey and E.~H.~S. Lee, ``{Secrets from the Monster: Extracting
+  Mozilla's Software Architecture},'' \emph{In Proc. of 2000 Intl. Symposium on
+  Constructing software engineering tools (CoSET 2000}, pp. 15--23, 2000.
+  [Online]. Available:
+  \url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.9211}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Lwin2009}
+A.~Systems and N.~Lwin, ``{Agent Based Web Browser},'' \emph{2009 Fifth
+  International Conference on Autonomic and Autonomous Systems}, 2009.
+
 \bibitem{EvolutionofWeb}
 \BIBentryALTinterwordspacing
 G.~Team, ``Evolution of the web.'' [Online]. Available:
@@ -459,6 +472,12 @@ C.~Reis, A.~Barth, and C.~Pizano, ``{Browser Security: Lessons from Google
   \url{http://dl.acm.org/ft\_gateway.cfm?id=1556050\&type=html$\backslash$npapers3://publication/doi/10.1145/1538947.1556050}
 \BIBentrySTDinterwordspacing
 
+\bibitem{GoogleChromeIsolation}
+\BIBentryALTinterwordspacing
+``{Site Isolation - The Chromium Projects}.'' [Online]. Available:
+  \url{https://www.chromium.org/developers/design-documents/site-isolation}
+\BIBentrySTDinterwordspacing
+
 \bibitem{IEArch}
 \BIBentryALTinterwordspacing
 ``{Internet Explorer Architecture (Internet Explorer)}.'' [Online]. Available:
@@ -469,19 +488,6 @@ C.~Reis, A.~Barth, and C.~Pizano, ``{Browser Security: Lessons from Google
 M.~Crowley, \emph{{Pro Internet Explorer 8 \& 9 Development: Developing
   Powerful Applications for The Next Generation of IE}}, 1st~ed.\hskip 1em plus
   0.5em minus 0.4em\relax Berkely, CA, USA: Apress, 2010.
-
-\bibitem{Godfrey2000}
-\BIBentryALTinterwordspacing
-M.~W. Godfrey and E.~H.~S. Lee, ``{Secrets from the Monster: Extracting
-  Mozilla's Software Architecture},'' \emph{In Proc. of 2000 Intl. Symposium on
-  Constructing software engineering tools (CoSET 2000}, pp. 15--23, 2000.
-  [Online]. Available:
-  \url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.9211}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Lwin2009}
-A.~Systems and N.~Lwin, ``{Agent Based Web Browser},'' \emph{2009 Fifth
-  International Conference on Autonomic and Autonomous Systems}, 2009.
 
 \bibitem{W3C-SOP}
 \BIBentryALTinterwordspacing
