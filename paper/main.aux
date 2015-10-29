@@ -29,6 +29,10 @@
 \@writefile{toc}{\contentsline {chapter}{\'{I}ndice general}{\es@scroman  {iii}}{chapter*.1}}
 \citation{statBrow}
 \citation{w3c}
+\citation{multiProcGC}
+\citation{ChrRenderPipe}
+\citation{IEArchImg}
+\citation{IE8LCIE}
 \@writefile{toc}{\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman  {vii}}{chapter*.2}}
 \@writefile{toc}{\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman  {viii}}{chapter*.3}}
 \citation{statBrow}
@@ -42,8 +46,8 @@
 \citation{Yoder1998}
 \citation{fernandez2004methodology}
 \citation{WhyteHarrison}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Porcentaje de uso de Navegadores \cite  {statBrow}}}{2}{figure.1.1}}
-\newlabel{fig:UsageShare}{{1.1}{2}{Porcentaje de uso de Navegadores \cite {statBrow}}{figure.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Porcentaje de uso de Navegadores. Fuente: \cite  {statBrow}}}{2}{figure.1.1}}
+\newlabel{fig:UsageShare}{{1.1}{2}{Porcentaje de uso de Navegadores. Fuente: \cite {statBrow}}{figure.1.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}El Problema: Desarrollo de Software y Seguridad}{2}{section.1.2}}
 \newlabel{chap1:SD_SS}{{1.2}{2}{El Problema: Desarrollo de Software y Seguridad}{section.1.2}{}}
 \citation{cert}
@@ -102,11 +106,14 @@
 \newlabel{chap2:HTTP}{{2.5.1}{14}{HTTP: Hypertext Transfer Protocol}{subsection.2.5.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{HTTP Headers}{14}{subsubsection*.4}}
 \newlabel{chap2:headers}{{2.5.1}{14}{HTTP Headers}{subsubsection*.4}{}}
+\citation{RFC-6797}
+\citation{webMessaging}
 \citation{XHR}
 \citation{WebSocket}
 \@writefile{toc}{\contentsline {subsubsection}{Canales de comunicaci\IeC {\'o}n en HTTP}{15}{subsubsection*.5}}
 \newlabel{chap2:comunHTTP}{{2.5.1}{15}{Canales de comunicación en HTTP}{subsubsection*.5}{}}
 \citation{WebRTC}
+\citation{RFC-5246}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}SSL/TLS Encriptaci\IeC {\'o}n en capa de Transporte}{16}{subsection.2.5.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Speedy o Protocolo SPDY}{17}{subsection.2.5.3}}
 \newlabel{chap2:spdy}{{2.5.3}{17}{Speedy o Protocolo SPDY}{subsection.2.5.3}{}}
@@ -124,8 +131,8 @@
 \citation{w3c}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}DOM: Document Object Model}{19}{subsection.2.6.3}}
 \newlabel{chap2:DOM}{{2.6.3}{19}{DOM: Document Object Model}{subsection.2.6.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitectura de DOM \cite  {w3c}}}{19}{figure.2.1}}
-\newlabel{fig:DOM}{{2.1}{19}{Arquitectura de DOM \cite {w3c}}{figure.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitectura de DOM. Fuente: \cite  {w3c}}}{19}{figure.2.1}}
+\newlabel{fig:DOM}{{2.1}{19}{Arquitectura de DOM. Fuente: \cite {w3c}}{figure.2.1}{}}
 \citation{barth2009attacks}
 \citation{Barth2009}
 \citation{Barth2010}
@@ -138,7 +145,6 @@
 \citation{IE8-LCIE}
 \citation{preprint-grosskurth-browser-archevol}
 \citation{barth2008security}
-\citation{}
 \citation{Reis2009}
 \citation{barth2009securing}
 \citation{Barth2010}
@@ -198,89 +204,153 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2.11}Patrones de Mal Uso}{24}{section.2.11}}
 \citation{socEngineeering}
 \citation{Rajab2013}
+\citation{Labs2013}
 \citation{socEngineeering}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}Marco Te\IeC {\'o}rico - (In) Seguridad en el Browser}{26}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{chap3:MT}{{3}{26}{Marco Teórico - (In) Seguridad en el Browser}{chapter.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Social Engineering o Ingenier\IeC {\'\i }a Social}{26}{section.3.1}}
+\citation{browSecPhish}
+\citation{Labs2013}
+\citation{rowSecSEMBlock}
+\citation{browSecPhish}
+\citation{Drake2011}
+\citation{Rajab2013}
 \citation{owaspTopTen}
 \citation{barth2008security}
 \citation{FirefoxThreatModel}
-\citation{browSecPhish}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}An\IeC {\'a}lisis de ataques}{27}{subsection.3.1.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Ataques y Amenazas}{27}{section.3.2}}
+\citation{browSecPhish}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Phishing}{28}{subsection.3.2.1}}
 \@writefile{toc}{\contentsline {subsubsection}{Instalaci\IeC {\'o}n de Malware o Extensiones malignas}{28}{subsubsection*.8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}XSS - Cross-Site Scripting DOM}{28}{subsection.3.2.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Man in the \textit  {Browser} (MITB)}{28}{subsection.3.2.3}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Mecanismos de Defensa que se espera que el Host del \textit  {Browser} tenga previamente}{28}{section.3.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Mecanismos de Defensa del \textit  {Browser}, para los ataques revisados}{28}{section.3.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Sandboxing de procesos/componentes}{28}{subsection.3.4.1}}
-\newlabel{chap3:Sandboxing}{{3.4.1}{28}{Sandboxing de procesos/componentes}{subsection.3.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Mecanismos de Defensa del \textit  {Browser}, para los ataques revisados}{29}{section.3.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Sandboxing de procesos/componentes}{29}{subsection.3.4.1}}
+\newlabel{chap3:Sandboxing}{{3.4.1}{29}{Sandboxing de procesos/componentes}{subsection.3.4.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Aislaci\IeC {\'o}n del contenido web de los componentes del \textit  {Browser}}{29}{subsection.3.4.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Blacklist y Whitelist de sitios web}{29}{subsection.3.4.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Detecci\IeC {\'o}n de Malware por medio de sistemas de Reputaci\IeC {\'o}n}{29}{subsection.3.4.4}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Estado del Arte}{30}{chapter.4}}
+\citation{EvolutionofWeb}
+\citation{statBrow}
+\citation{multiProcGC}
+\citation{ChrRenderPipe}
+\citation{multiProcGC}
+\citation{barth2008security}
+\citation{reis2009browser}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Browsers y Estado del Arte}{30}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap4:EA}{{4}{30}{Estado del Arte}{chapter.4}{}}
+\newlabel{chap4:EA}{{4}{30}{Browsers y Estado del Arte}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Navegadores Existentes}{30}{section.4.1}}
+\newlabel{chap3:BrowExis}{{4.1}{30}{Navegadores Existentes}{section.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Google Chrome y Google Chromium}{30}{subsection.4.1.1}}
+\newlabel{chap3:GC}{{4.1.1}{30}{Google Chrome y Google Chromium}{subsection.4.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Architectura Multi procesos de Google Chrome. Fuente: \cite  {multiProcGC}}}{31}{figure.4.1}}
+\newlabel{fig:archG}{{4.1}{31}{Architectura Multi procesos de Google Chrome. Fuente: \cite {multiProcGC}}{figure.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Architectura de Chromium en detalle. Fuente: \cite  {ChrRenderPipe}}}{31}{figure.4.2}}
+\newlabel{fig:archG}{{4.2}{31}{Architectura de Chromium en detalle. Fuente: \cite {ChrRenderPipe}}{figure.4.2}{}}
+\citation{reis2009browser}
+\citation{IEArch}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Internet Explorer}{32}{subsection.4.1.2}}
+\newlabel{chap3:IE}{{4.1.2}{32}{Internet Explorer}{subsection.4.1.2}{}}
+\citation{IEArchImg}
+\citation{IE8LCIE}
+\citation{Crowley2010}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Arquitectura de Internet Explorer. Fuente: \cite  {IEArchImg}}}{33}{figure.4.3}}
+\newlabel{fig:archIE}{{4.3}{33}{Arquitectura de Internet Explorer. Fuente: \cite {IEArchImg}}{figure.4.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de Internet Explorer m\IeC {\'a}s detallada. Fuente: \cite  {IE8LCIE}}}{33}{figure.4.4}}
+\newlabel{fig:archG}{{4.4}{33}{Arquitectura de Internet Explorer más detallada. Fuente: \cite {IE8LCIE}}{figure.4.4}{}}
+\newlabel{chap2:Trident}{{4.1.2}{34}{}{figure.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Firefox}{34}{subsection.4.1.3}}
+\newlabel{chap3:Firefox}{{4.1.3}{34}{Firefox}{subsection.4.1.3}{}}
+\newlabel{fig:archM}{{4.1.3}{34}{Firefox}{subsection.4.1.3}{}}
+\citation{535061}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Arquitectura de Referencia del Browser y Patrones}{35}{section.4.2}}
+\newlabel{chap3:ArqRefBrowandPatt}{{4.2}{35}{Arquitectura de Referencia del Browser y Patrones}{section.4.2}{}}
+\citation{2005-grosskurth-browser-refarch}
+\citation{preprint-grosskurth-browser-archevol}
+\citation{Godfrey2000}
+\citation{Lwin2009}
+\citation{2005-grosskurth-browser-refarch}
+\citation{2005-grosskurth-browser-refarch}
+\citation{preprint-grosskurth-browser-archevol}
+\citation{Lwin2009}
+\citation{2005-grosskurth-browser-refarch}
+\citation{preprint-grosskurth-browser-archevol}
+\citation{barth2008security}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Evoluci\IeC {\'o}n y Seguridad en el Browser}{37}{section.4.3}}
+\newlabel{chap3:EvoandSec}{{4.3}{37}{Evolución y Seguridad en el Browser}{section.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Estandarizaciones}{37}{subsection.4.3.1}}
+\newlabel{chap3:Standars}{{4.3.1}{37}{Estandarizaciones}{subsection.4.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Vulnerabilidades}{37}{subsection.4.3.2}}
+\newlabel{chap3:vuln}{{4.3.2}{37}{Vulnerabilidades}{subsection.4.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Amenazas}{37}{subsection.4.3.3}}
+\newlabel{chap3:threats}{{4.3.3}{37}{Amenazas}{subsection.4.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.4}Medidas de Mitigaci\IeC {\'o}n o Mecanismos de Defensa}{37}{subsection.4.3.4}}
+\newlabel{chap3:mitig}{{4.3.4}{37}{Medidas de Mitigación o Mecanismos de Defensa}{subsection.4.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Sumario}{38}{section.4.4}}
+\newlabel{chap3:Summ}{{4.4}{38}{Sumario}{section.4.4}{}}
 \citation{buschman1996system}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Arquitectura de Referencia del Web Browser}{31}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Arquitectura de Referencia del Web Browser}{39}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap5:ArqRefWB}{{5}{31}{Arquitectura de Referencia del Web Browser}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Casos de Uso del Browser}{32}{section.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Stakeholders (actores) y Concerns de estos}{32}{subsection.5.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Browser User (BU)}{32}{subsubsection*.9}}
-\@writefile{toc}{\contentsline {subsubsection}{Host (H)}{32}{subsubsection*.10}}
-\@writefile{toc}{\contentsline {subsubsection}{Provider(P)}{32}{subsubsection*.11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Casos de Uso}{32}{subsection.5.1.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Casos de Uso para Browser User (BU)}{33}{subsubsection*.12}}
-\@writefile{toc}{\contentsline {subsubsection}{Casos de Uso para el Host (H)}{33}{subsubsection*.13}}
-\@writefile{toc}{\contentsline {subsubsection}{Casos de Uso para el Proveedor (P)}{34}{subsubsection*.14}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Patr\IeC {\'o}n Browser Infrastructure}{34}{section.5.2}}
-\newlabel{chap4:BrokerPatt}{{5.2}{34}{Patrón Browser Infrastructure}{section.5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Intent}{34}{subsection.5.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de Caso de Uso del Web Browser}}{35}{figure.5.1}}
-\newlabel{fig:CUBrowser}{{5.1}{35}{Diagrama de Caso de Uso del Web Browser}{figure.5.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Ejemplo}{35}{subsection.5.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Contexto}{35}{subsection.5.2.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Problema}{35}{subsection.5.2.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Soluci\IeC {\'o}n}{36}{subsection.5.2.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.6}Estructura}{36}{subsection.5.2.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Componentes de alto nivel del Browser}}{37}{figure.5.2}}
-\newlabel{fig:BIPatt}{{5.2}{37}{Componentes de alto nivel del Browser}{figure.5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.7}Din\IeC {\'a}mica}{37}{subsection.5.2.7}}
-\@writefile{toc}{\contentsline {subsubsection}{Sumario}{37}{subsubsection*.15}}
-\@writefile{toc}{\contentsline {subsubsection}{Actor}{38}{subsubsection*.16}}
-\@writefile{toc}{\contentsline {subsubsection}{Precondiciones}{38}{subsubsection*.17}}
-\@writefile{toc}{\contentsline {subsubsection}{Descripci\IeC {\'o}n}{38}{subsubsection*.18}}
-\@writefile{toc}{\contentsline {subsubsection}{Curso Alternativo}{39}{subsubsection*.19}}
-\@writefile{toc}{\contentsline {subsubsection}{Condiciones p\IeC {\'o}stumas}{39}{subsubsection*.20}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.8}Implementaci\IeC {\'o}n}{39}{subsection.5.2.8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.9}Consecuencias}{40}{subsection.5.2.9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.10}Ejemplo Resuelto}{40}{subsection.5.2.10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.11}Usos Com\IeC {\'u}nes}{41}{subsection.5.2.11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.12}Patrones Asociados}{41}{subsection.5.2.12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Browser User Realiza request}}{42}{figure.5.3}}
-\newlabel{fig:SecReq}{{5.3}{42}{Diagrama de Secuencia: Browser User Realiza request}{figure.5.3}{}}
+\newlabel{chap5:ArqRefWB}{{5}{39}{Arquitectura de Referencia del Web Browser}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Casos de Uso del Browser}{40}{section.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Stakeholders (actores) y Concerns de estos}{40}{subsection.5.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Browser User (BU)}{40}{subsubsection*.9}}
+\@writefile{toc}{\contentsline {subsubsection}{Host (H)}{40}{subsubsection*.10}}
+\@writefile{toc}{\contentsline {subsubsection}{Provider(P)}{40}{subsubsection*.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Casos de Uso}{40}{subsection.5.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Casos de Uso para Browser User (BU)}{41}{subsubsection*.12}}
+\@writefile{toc}{\contentsline {subsubsection}{Casos de Uso para el Host (H)}{41}{subsubsection*.13}}
+\@writefile{toc}{\contentsline {subsubsection}{Casos de Uso para el Proveedor (P)}{42}{subsubsection*.14}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Patr\IeC {\'o}n Browser Infrastructure}{42}{section.5.2}}
+\newlabel{chap4:BrokerPatt}{{5.2}{42}{Patrón Browser Infrastructure}{section.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Intent}{42}{subsection.5.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de Caso de Uso del Web Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{43}{figure.5.1}}
+\newlabel{fig:CUBrowser}{{5.1}{43}{Diagrama de Caso de Uso del Web Browser. Fuente: Elaboración Propia}{figure.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Ejemplo}{43}{subsection.5.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Contexto}{43}{subsection.5.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Problema}{43}{subsection.5.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Soluci\IeC {\'o}n}{44}{subsection.5.2.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.6}Estructura}{44}{subsection.5.2.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Componentes de alto nivel del Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{45}{figure.5.2}}
+\newlabel{fig:BIPatt}{{5.2}{45}{Componentes de alto nivel del Browser. Fuente: Elaboración Propia}{figure.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.7}Din\IeC {\'a}mica}{45}{subsection.5.2.7}}
+\@writefile{toc}{\contentsline {subsubsection}{Sumario}{45}{subsubsection*.15}}
+\@writefile{toc}{\contentsline {subsubsection}{Actor}{46}{subsubsection*.16}}
+\@writefile{toc}{\contentsline {subsubsection}{Precondiciones}{46}{subsubsection*.17}}
+\@writefile{toc}{\contentsline {subsubsection}{Descripci\IeC {\'o}n}{46}{subsubsection*.18}}
+\@writefile{toc}{\contentsline {subsubsection}{Curso Alternativo}{47}{subsubsection*.19}}
+\@writefile{toc}{\contentsline {subsubsection}{Condiciones p\IeC {\'o}stumas}{47}{subsubsection*.20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.8}Implementaci\IeC {\'o}n}{47}{subsection.5.2.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Browser User Realiza request. Fuente: Elaboraci\IeC {\'o}n Propia.}}{48}{figure.5.3}}
+\newlabel{fig:SecReq}{{5.3}{48}{Diagrama de Secuencia: Browser User Realiza request. Fuente: Elaboración Propia}{figure.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.9}Consecuencias}{49}{subsection.5.2.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.10}Ejemplo Resuelto}{49}{subsection.5.2.10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.11}Usos Com\IeC {\'u}nes}{50}{subsection.5.2.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.12}Patrones Asociados}{50}{subsection.5.2.12}}
 \citation{braz2008eliciting}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Patrones de Mal Uso}{43}{chapter.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Patrones de Mal Uso}{51}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap6:Misuse}{{6}{43}{Patrones de Mal Uso}{chapter.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Identificando Amenazas y Patrones de Mal Uso}{43}{section.6.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Identificando amenazas}{43}{section.6.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request}}{44}{figure.6.1}}
-\newlabel{fig:ActDiagr}{{6.1}{44}{Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request}{figure.6.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Tabla con amenazas}}{45}{table.6.1}}
-\newlabel{tab:threats}{{6.1}{45}{Tabla con amenazas}{table.6.1}{}}
+\newlabel{chap6:Misuse}{{6}{51}{Patrones de Mal Uso}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Identificando Amenazas y Patrones de Mal Uso}{51}{section.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Identificando amenazas}{51}{section.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request. Fuente: Elaboraci\IeC {\'o}n Propia.}}{52}{figure.6.1}}
+\newlabel{fig:ActDiagr}{{6.1}{52}{Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request. Fuente: Elaboración Propia}{figure.6.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Tabla con amenazas. Fuente: Elaboraci\IeC {\'o}n Propia.}}{53}{table.6.1}}
+\newlabel{tab:threats}{{6.1}{53}{Tabla con amenazas. Fuente: Elaboración Propia}{table.6.1}{}}
 \citation{cve}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Template de Patrones de Mal Uso}{46}{section.6.3}}
-\newlabel{chap5:TemplateMP}{{6.3}{46}{Template de Patrones de Mal Uso}{section.6.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Template de Patrones de Mal Uso}{54}{section.6.3}}
+\newlabel{chap5:TemplateMP}{{6.3}{54}{Template de Patrones de Mal Uso}{section.6.3}{}}
 \citation{fernandez2013security}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Patr\IeC {\'o}n de Mal Uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}{48}{section.6.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Intent}{48}{subsection.6.4.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Patr\IeC {\'o}n de Mal Uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}{56}{section.6.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Intent}{56}{subsection.6.4.1}}
 \citation{W3C-SOP}
 \citation{Reis2009}
 \citation{Jackson2008}
@@ -294,100 +364,120 @@
 \citation{Utakrit2009}
 \citation{Liu2012}
 \citation{Barth2010}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Contexto}{49}{subsection.6.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.3}Problema}{49}{subsection.6.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Contexto}{57}{subsection.6.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.3}Problema}{57}{subsection.6.4.3}}
 \citation{Liu2012}
 \citation{Barth2010}
 \citation{Utakrit2009}
 \citation{Dougan2012}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.4}Soluci\IeC {\'o}n}{50}{subsection.6.4.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.5}Din\IeC {\'a}mica}{50}{subsection.6.4.5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse}}{51}{figure.6.2}}
-\newlabel{fig:BIMisuse}{{6.2}{51}{Diagrama de Clases para el patrón de Misuse}{figure.6.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Sumario}{51}{subsubsection*.21}}
-\@writefile{toc}{\contentsline {subsubsection}{Actor}{51}{subsubsection*.22}}
-\@writefile{toc}{\contentsline {subsubsection}{Precondiciones}{51}{subsubsection*.23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de Secuencia para el Mal uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}}{52}{figure.6.3}}
-\newlabel{fig:SeqMisuse}{{6.3}{52}{Diagrama de Secuencia para el Mal uso: Modificación de tráfico en el Web Browser}{figure.6.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Descripci\IeC {\'o}n}{52}{subsubsection*.24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.4}Soluci\IeC {\'o}n}{58}{subsection.6.4.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.5}Din\IeC {\'a}mica}{58}{subsection.6.4.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse. Fuente: Elaboraci\IeC {\'o}n Propia.}}{59}{figure.6.2}}
+\newlabel{fig:BIMisuse}{{6.2}{59}{Diagrama de Clases para el patrón de Misuse. Fuente: Elaboración Propia}{figure.6.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Sumario}{59}{subsubsection*.21}}
+\@writefile{toc}{\contentsline {subsubsection}{Actor}{59}{subsubsection*.22}}
+\@writefile{toc}{\contentsline {subsubsection}{Precondiciones}{59}{subsubsection*.23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de Secuencia para el Mal uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{60}{figure.6.3}}
+\newlabel{fig:SeqMisuse}{{6.3}{60}{Diagrama de Secuencia para el Mal uso: Modificación de tráfico en el Web Browser. Fuente: Elaboración Propia}{figure.6.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Descripci\IeC {\'o}n}{60}{subsubsection*.24}}
 \citation{Paola2006}
 \citation{Liu2012}
 \citation{Barth2010}
 \citation{Barth2009}
-\@writefile{toc}{\contentsline {subsubsection}{Post condiciones}{53}{subsubsection*.25}}
-\@writefile{toc}{\contentsline {subsubsection}{Usos Conocidos}{53}{subsubsection*.26}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.6}Consecuencias}{53}{subsection.6.4.6}}
+\@writefile{toc}{\contentsline {subsubsection}{Post condiciones}{61}{subsubsection*.25}}
+\@writefile{toc}{\contentsline {subsubsection}{Usos Conocidos}{61}{subsubsection*.26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.6}Consecuencias}{61}{subsection.6.4.6}}
 \citation{fernandez2001pattern}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.7}Contramedidas}{54}{subsection.6.4.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.8}Evidencia Forense}{54}{subsection.6.4.8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.9}Patrones relacionados}{55}{subsection.6.4.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.7}Contramedidas}{62}{subsection.6.4.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.8}Evidencia Forense}{62}{subsection.6.4.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.9}Patrones relacionados}{63}{subsection.6.4.9}}
 \bibdata{refTodas}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Conclusiones}{64}{chapter.7}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap7:concl}{{7}{64}{Conclusiones}{chapter.7}{}}
 \bibcite{statBrow}{1}
 \bibcite{w3c}{2}
-\bibcite{goertzel2007software}{3}
-\bibcite{Yoder1998}{4}
-\bibcite{fernandez2004methodology}{5}
-\bibcite{WhyteHarrison}{6}
-\bibcite{cert}{7}
-\bibcite{interCoursera}{8}
-\bibcite{fernandez2013security}{9}
-\bibcite{535061}{10}
-\bibcite{2005-grosskurth-browser-refarch}{11}
-\@writefile{toc}{\contentsline {chapter}{Bibliograf\'{\i }a}{56}{chapter*.27}}
-\bibcite{preprint-grosskurth-browser-archevol}{12}
-\bibcite{fernandez2006defining}{13}
-\bibcite{braz2008eliciting}{14}
-\bibcite{Fernandez2011}{15}
-\bibcite{Avgeriou2003}{16}
-\bibcite{Galster2011a}{17}
-\bibcite{buschman1996system}{18}
-\bibcite{ieeecsd2}{19}
-\bibcite{cve}{20}
-\bibcite{socEngineeering}{21}
-\bibcite{Zalewsk08}{22}
-\bibcite{barth2009securing}{23}
-\bibcite{bookWebAppSec}{24}
-\bibcite{alcorn2014browser}{25}
-\bibcite{XHR}{26}
-\bibcite{WebSocket}{27}
-\bibcite{WebRTC}{28}
-\bibcite{htmlSpec}{29}
-\bibcite{barth2009attacks}{30}
-\bibcite{Barth2009}{31}
-\bibcite{Barth2010}{32}
-\bibcite{Liu2012}{33}
-\bibcite{Singh2014}{34}
-\bibcite{barth2008security}{35}
-\bibcite{IE8-LCIE}{36}
-\bibcite{Reis2009}{37}
-\bibcite{openSecArch}{38}
-\bibcite{Bass2012}{39}
-\bibcite{Submitted2014}{40}
-\bibcite{Hashizume2014Reference}{41}
-\bibcite{Fernandez2011a}{42}
-\bibcite{Fernandez2006}{43}
-\bibcite{fernandez2007attack}{44}
-\bibcite{ModMisusePatt}{45}
-\bibcite{yoshioka2006development}{46}
-\bibcite{yoshioka2007integration}{47}
-\bibcite{pelaez2009misuse}{48}
-\bibcite{fernandez2010worm}{49}
-\bibcite{hashizume2011misuse}{50}
-\bibcite{munoz2011misuse}{51}
-\bibcite{fernandez2012misuse}{52}
-\bibcite{alkazimi2014}{53}
-\bibcite{encinamisuse}{54}
-\bibcite{Rajab2013}{55}
-\bibcite{owaspTopTen}{56}
-\bibcite{FirefoxThreatModel}{57}
-\bibcite{browSecPhish}{58}
-\bibcite{W3C-SOP}{59}
-\bibcite{Jackson2008}{60}
-\bibcite{Crowley2010}{61}
-\bibcite{Paola2006}{62}
-\bibcite{Silic2010}{63}
-\bibcite{Yason}{64}
-\bibcite{Dougan2012}{65}
-\bibcite{Utakrit2009}{66}
-\bibcite{fernandez2001pattern}{67}
+\bibcite{multiProcGC}{3}
+\bibcite{ChrRenderPipe}{4}
+\bibcite{IEArchImg}{5}
+\bibcite{IE8LCIE}{6}
+\bibcite{goertzel2007software}{7}
+\bibcite{Yoder1998}{8}
+\bibcite{fernandez2004methodology}{9}
+\bibcite{WhyteHarrison}{10}
+\bibcite{cert}{11}
+\@writefile{toc}{\contentsline {chapter}{Bibliograf\'{\i }a}{65}{chapter*.27}}
+\bibcite{interCoursera}{12}
+\bibcite{fernandez2013security}{13}
+\bibcite{535061}{14}
+\bibcite{2005-grosskurth-browser-refarch}{15}
+\bibcite{preprint-grosskurth-browser-archevol}{16}
+\bibcite{fernandez2006defining}{17}
+\bibcite{braz2008eliciting}{18}
+\bibcite{Fernandez2011}{19}
+\bibcite{Avgeriou2003}{20}
+\bibcite{Galster2011a}{21}
+\bibcite{buschman1996system}{22}
+\bibcite{ieeecsd2}{23}
+\bibcite{cve}{24}
+\bibcite{socEngineeering}{25}
+\bibcite{Zalewsk08}{26}
+\bibcite{barth2009securing}{27}
+\bibcite{bookWebAppSec}{28}
+\bibcite{alcorn2014browser}{29}
+\bibcite{RFC-6797}{30}
+\bibcite{webMessaging}{31}
+\bibcite{XHR}{32}
+\bibcite{WebSocket}{33}
+\bibcite{WebRTC}{34}
+\bibcite{RFC-5246}{35}
+\bibcite{htmlSpec}{36}
+\bibcite{barth2009attacks}{37}
+\bibcite{Barth2009}{38}
+\bibcite{Barth2010}{39}
+\bibcite{Liu2012}{40}
+\bibcite{Singh2014}{41}
+\bibcite{barth2008security}{42}
+\bibcite{IE8-LCIE}{43}
+\bibcite{Reis2009}{44}
+\bibcite{Saini2014}{45}
+\bibcite{openSecArch}{46}
+\bibcite{Bass2012}{47}
+\bibcite{Submitted2014}{48}
+\bibcite{Hashizume2014Reference}{49}
+\bibcite{Fernandez2011a}{50}
+\bibcite{Fernandez2006}{51}
+\bibcite{fernandez2007attack}{52}
+\bibcite{ModMisusePatt}{53}
+\bibcite{yoshioka2006development}{54}
+\bibcite{yoshioka2007integration}{55}
+\bibcite{pelaez2009misuse}{56}
+\bibcite{fernandez2010worm}{57}
+\bibcite{hashizume2011misuse}{58}
+\bibcite{munoz2011misuse}{59}
+\bibcite{fernandez2012misuse}{60}
+\bibcite{alkazimi2014}{61}
+\bibcite{encinamisuse}{62}
+\bibcite{Rajab2013}{63}
+\bibcite{Labs2013}{64}
+\bibcite{browSecPhish}{65}
+\bibcite{rowSecSEMBlock}{66}
+\bibcite{Drake2011}{67}
+\bibcite{owaspTopTen}{68}
+\bibcite{FirefoxThreatModel}{69}
+\bibcite{EvolutionofWeb}{70}
+\bibcite{reis2009browser}{71}
+\bibcite{IEArch}{72}
+\bibcite{Crowley2010}{73}
+\bibcite{Godfrey2000}{74}
+\bibcite{Lwin2009}{75}
+\bibcite{W3C-SOP}{76}
+\bibcite{Jackson2008}{77}
+\bibcite{Paola2006}{78}
+\bibcite{Silic2010}{79}
+\bibcite{Yason}{80}
+\bibcite{Dougan2012}{81}
+\bibcite{Utakrit2009}{82}
+\bibcite{fernandez2001pattern}{83}
 \bibstyle{IEEEtran}

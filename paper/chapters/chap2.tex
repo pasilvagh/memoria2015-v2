@@ -68,7 +68,7 @@ Para empezar este estudio es necesario introducir ciertas nociones y lenguaje qu
 
     \begin{itemize}
         \item \textbf{SOP} para acceso al \textbf{Document Object Model}: se dará permiso de modificar el \textbf{DOM} y sus propiedades solamente aquellos scripts que tienen el mismo dominio, puerto (para todos los browsers excepto Internet Explorer) y protocolo. Visto de otro modo, el mecanismo entrega una especie de Sandboxing para el contenido potencialmente peligroso y no confiable. Sin embargo éste no es suficiente, pues posee varias desventajas: el dominio es posible de cambiar a la conveniencia del atacante, limita las acciones a los desarrolladores lo que se traduce en que éstos tengan que buscar bugs que permitan liberarse de estas restricciones lo que incita a atacantes a aprovecharse de ésto.
-        \item \textbf{SOP} para el objeto XmlHttpPRequest: para diferentes tipos de peticiones (GET, POST y otros) existen condiciones y suposiciones que hacen que se tome o no en cuenta el \textit{request} del cliente, además del uso de una \textit{whitelist} de las formas en que el header de la petición puede salir del browser.
+        \item \textbf{SOP} para el objeto XmlHttpRequest: para diferentes tipos de peticiones (GET, POST y otros) existen condiciones y suposiciones que hacen que se tome o no en cuenta el \textit{request} del cliente, además del uso de una \textit{whitelist} de las formas en que el header de la petición puede salir del browser.
         \item \textbf{SOP} para \textit{cookies}: restringuiendo el uso de acuerdo su dominio, \textit{path}, tiempo de uso, modificando o eliminado las cookies, e incluso protegiendo las cookies usando el \textit{keyword: secure}. Sin embargo, desde su implementación las cookies han generado bastante problemas de seguridad.
         \item Y otros como: {SOP} para Flash, donde usa políticas para realizar peticiones fuera del dominio através de un archivo \textbf{crossdomain.xml}, \textbf{SOP} para Java y \textbf{SOP} para Silverlight, parecido al de Flash solo qe utiliza otros elementos.
     \end{itemize}
@@ -84,19 +84,19 @@ Para empezar este estudio es necesario introducir ciertas nociones y lenguaje qu
 
 \section{CORS: Cross-Origin Resource Sharing}
 \label{chap2:CORS}
-    Cómo lo define su nombre es un mecanismo (especificación) que permite al cliente realizar request entre sitios de diverso \textit{Origen}, ignorando el \textbf{SOP}. \textit{CORS} define una forma en que el Browser y el Servidor Web puedan interactuar para determinar si permitir o no el request a otro origen. Un Browser utiliza SOP para restringuir los request de la red y prevenir al cliente de una Aplicación Web ejecutar código que se encuentra en un origen distinto, además de limitar los request HTTP no seguros que podrían tratar de generar un daño. CORS extiende el modelo que el Browser maneja e incluye:
+    Cómo lo define su nombre es un mecanismo (especificación) que permite al cliente realizar request entre sitios de diverso \textbf{Origen}, ignorando el \textbf{SOP}. \textit{CORS} define una forma en que el Browser y el Servidor Web puedan interactuar para determinar si permitir o no el request a otro \textbf{Origen}. Un Browser utiliza SOP para restringuir los request de la red y prevenir al cliente de una Aplicación Web ejecutar código que se encuentra en un origen distinto, además de limitar los request HTTP no seguros que podrían tratar de generar un daño. CORS extiende el modelo que el Browser maneja e incluye:
         
         \begin{itemize}
-            \item Un header en la respuesta/response del servidor solicitado llamado \textit{Access-Control-Allow-Origin}, donde se debe escribir el origen que tendrá acceso a los recursos solicitados al servidor. Si el valor de la respuesta del servidor coincide con el \textit{origen} de quién lo solicitó, se podrá realizar el uso del recurso en el navegador, de lo contrario se generará un error.
+            \item Un header en la respuesta/response del servidor solicitado llamado \textit{Access-Control-Allow-Origin}, donde se debe escribir el \textbf{Origen} que tendrá acceso a los recursos solicitados al servidor. Si el valor de la respuesta del servidor coincide con el \textbf{Origen} de quién lo solicitó, se podrá realizar el uso del recurso en el navegador, de lo contrario se generará un error.
 
-            \item Otro header llamado \textit{Origin} pero esta vez en el request de la solicitud, para permitir al Servidor hacer cumplir las limitaciones en las peticiones de distinto origen.
+            \item Otro header llamado \textbf{Origin} pero esta vez en el request de la solicitud, para permitir al Servidor hacer cumplir las limitaciones en las peticiones de distinto \textbf{Origen}.
 
             \item En algunos casos un browser deberá agregar el header \textit{Access-Control-Allow-Methods}, ya que el servidor no responderá de vuelta si no es así. Esto permite limitar la superficie de ataque en el servidor.
 
         \end{itemize}
     Existen ciertos métodos en HTTP que necesitan realizar un \textit{pre-vuelo} antes de ser ejecutados, si la response del servidor es afirmativa luego se enviará el request original con el método que se debió confirmar su utilización. Para el caso de los métodos GET y POST, los más usados, este pre-vuelo no es necesario y se puede enviar el request inmediatamente.
     
-    La gran diferencia de CORS con cualquier otro método de que permita hacer request hacia un origen distinto, es que el Browser por default no enviará ningún tipo de información que permita identificar al user. De esta manera se puede disminuir considerablemente las amenazas en la confidencialidad, pues el atacante no podrá hacerse pasar por un usuario del que no tiene información. Casi todos los navegadores web, a diferencia de Internet Explore \cite{bookWebAppSec}, realizan sus solicitudes a servidores de diverso origen por medio de la interfaz \textit{XmlHttpRequest}, en el caso de Internet Explorer esta se llama \textit{XDomainRequest}.
+    La gran diferencia de CORS con cualquier otro método de que permita hacer request hacia un \textbf{Origen} distinto, es que el Browser por default no enviará ningún tipo de información que permita identificar al user. De esta manera se puede disminuir considerablemente las amenazas en la confidencialidad, pues el atacante no podrá hacerse pasar por un usuario del que no tiene información. Casi todos los navegadores web, a diferencia de Internet Explore \cite{bookWebAppSec}, realizan sus solicitudes a servidores de diverso \textbf{Origen} por medio de la interfaz \textit{XmlHttpRequest}, en el caso de Internet Explorer esta se llama \textit{XDomainRequest}.
 
 \section{Arquitectura Cliente/Servidor}
     \label{chap2:ArqCS}
@@ -122,7 +122,7 @@ Para empezar este estudio es necesario introducir ciertas nociones y lenguaje qu
 
                 \item X-Content-Type-Options: Un servidor que manda la directiva nosniff para este header, obligará al Browser a renderizar la página así como lo dice el header content-type. La idea de este header es poder limitar la ejecución del tipo objeto que pide el browser.
 
-                \item Strict-Transport-Security: Obliga al navegador a que la comunicación con el servidor sea realizada por un tunel válido HTTPS, de manera que la comunicación sea completamente segura.
+                \item Strict-Transport-Security \cite{RFC-6797}: Obliga al navegador a que la comunicación con el servidor sea realizada por un tunel válido HTTPS, de manera que la comunicación sea completamente segura.
 
                 \item X-Frame-Options: este header previene que se realize un \textit{framing} de la página, es decir, esta opción evita que la página sea mostrada a través de un \(<\)iframe\(>\). Este control permite especialmente mitigar ataques de \textit{Clickjacking}, donde el usuario es engañado a través de lo que se muestra en la ventana del navegador.
             \end{itemize}
@@ -131,7 +131,7 @@ Para empezar este estudio es necesario introducir ciertas nociones y lenguaje qu
         \label{chap2:comunHTTP}
         Cuando se habla de HTTP usualmente ésto se relaciona con la comunicación que se lleva a cabo entre el cliente y servidor. Existen diversas formas para que ésto se lleve a cabo, las más conocidas son:
         \begin{enumerate}
-            \item postMessage: Mecanismo de comunicación entre entre ventanas y frames, disponible en la API de HTML5, entre diversos dominios. El comando window.postMessage es usado para realizar llamadas entre diversos orígenes de forma segura. Si bien SOP normalmente denega este tipo de solicitud, si se hace de forma correcta es posible cominicarse con diversos orígenes por medio del uso de este comando.
+            \item postMessage \cite{webMessaging}: Mecanismo de comunicación entre entre ventanas y frames, disponible en la API de HTML5, entre diversos dominios. El comando window.postMessage es usado para realizar llamadas entre diversos orígenes de forma segura. Si bien SOP normalmente denega este tipo de solicitud, si se hace de forma correcta es posible cominicarse con diversos orígenes por medio del uso de este comando.
 
             \item XMLHttpRequest o XHR: \cite{XHR} define una API que proporciona una guía de funcionalidad al cliente, para que éste pueda transferir datos del cliente al servidor. Dicho de otra manera, XHR es un objeto que permite la obtención de recursos en la Internet. Soporta peticiones en HTTP o HTTPS, en general soporta toda actividad relacionada con un \textit{HTTP request or response}, para los métodos definos.
 
@@ -141,7 +141,7 @@ Para empezar este estudio es necesario introducir ciertas nociones y lenguaje qu
         \end{enumerate}
 
     \subsection{SSL/TLS Encriptación en capa de Transporte}
-    Si bien existe una medida de seguridad en los headers que se implementa en la capa de Aplicación por medio de HTTP, ésto no impide que otros puedan ver qué contienen los paquetes. La confidencialidad, autenticidad y el no repudio de lo que se envía, es un aspecto relevante cuando se está trabajando con sistemas con información crítica y confidencial. SSL (Secure Socket Layer) y TLS (Transport Layer Security) tienen el objetivo de proveer un canal confiable y privado de todo lo que se envía entre dos aplicaciones que se comunican, es decir, una seguridad \textit{end-to-end}. TSL es el resultado de la estandarización de SSL por la Internet Engineering Task Force (IETF). SSL/TLS trabaja debajo del protocolo HTTP usando certificados de clave pública que permiten:
+    Si bien existe una medida de seguridad en los headers que se implementa en la capa de Aplicación por medio de HTTP, ésto no impide que otros puedan ver qué contienen los paquetes. La confidencialidad, autenticidad y el no repudio de lo que se envía, es un aspecto relevante cuando se está trabajando con sistemas con información crítica y confidencial. SSL (Secure Socket Layer) y TLS (Transport Layer Security) \cite{RFC-5246} tienen el objetivo de proveer un canal confiable y privado de todo lo que se envía entre dos aplicaciones que se comunican, es decir, una seguridad \textit{end-to-end}. TSL es el resultado de la estandarización de SSL por la Internet Engineering Task Force (IETF). SSL/TLS trabaja debajo del protocolo HTTP usando certificados de clave pública que permiten:
     \begin{itemize}
         \item Resolver parcialmente el problema de la autenticación de un usuario, al establecer un canal seguro y encriptado mediante el uso de certificados digitales.
         \item Identificar que la información enviada por los dos \textit{endpoints} sea solo de ellos dos, agregando una firma al final del paquete usando la clave privada de la entidad que envía.
@@ -192,10 +192,10 @@ Para empezar este estudio es necesario introducir ciertas nociones y lenguaje qu
     \label{chap2:DOM}
     Es una \textit{API} independiente del lenguage y multiplataforma para HTML válido y bien formado, que define la estructura lógica de un documento que permite ser accedido y manipulado. DOM es una especificación que permite a programas Javascript modificar la estructura del contenido de una página dinamicamente. Esto permite que una página pueda cambiar sin la necesidad de realizar nuevas peticiones al servidor y sin la interacción del usuario. Posteriormente la \textit{W3C} \cite{w3c} formó el \textit{DOM Working Group} y con ello se creó la especificación a través de la colaboración de muchas empresas y expertos. La arquitectura de esta \textit{API} se presenta en la Figura \ref{fig:DOM}, donde el \textit{Core Module} es donde están las interfaces que deben ser implementadas por todas las implementaciones conformes de DOM. Una implementación de DOM puede ser construida por uno o más módulos dependiendo del host, ejemplo de esto: la implementación de DOM en un servidor, donde no es necesaria la implementación de los módulos que manejen los triggers de eventos del mouse.
             
-    \begin{figure}[h]
-        \centering
+    \begin{figure}[h!t]
+            \centering
         \includegraphics[width=0.65\textwidth]{figures/dom-architecture.jpg}
-        \caption{Arquitectura de DOM \cite{w3c}}
+        \caption{Arquitectura de DOM. Fuente: \cite{w3c}}
         \label{fig:DOM}
     \end{figure}
             
@@ -225,7 +225,7 @@ Para empezar este estudio es necesario introducir ciertas nociones y lenguaje qu
     \begin{itemize}
         \item Navegación a todo tipo de contenidos/compatibilidad: sin importar el esquema de la página web, el navegador debe ser capaz de presentar todo tipo de contenido al usuario. \cite{barth2008security} asegura que los usuarios demandan compatibilidad, por que el browser es sólo útil mientras pueda mostrar las páginas.
         \item Navegación personalizada: el browser debe ser capaz de entregar la información a la Web Aplicación/sistema, para que identifique al usuario por detrás, de manera que la navegación sea personalizada.
-        \item Navegación sin inconvenientes: el navegador debe ser capaz de aislar los errores que se presenten en algunas páginas, de tal manera que no molesten a las otras páginas web que se ven al mismo tiempo \cite{IE8-LCIE, preprint-grosskurth-browser-archevol, barth2008security, }
+        \item Navegación sin inconvenientes: el navegador debe ser capaz de aislar los errores que se presenten en algunas páginas, de tal manera que no molesten a las otras páginas web que se ven al mismo tiempo \cite{IE8-LCIE, preprint-grosskurth-browser-archevol, barth2008security}
         \item Seguridad: Los datos de los usuarios y el host donde se mantiene el Browser no deben ser expuestos a terceras partes \cite{Reis2009, barth2009securing, Barth2010, Liu2012, barth2009attacks, Saini2014}.
     \end{itemize}
 

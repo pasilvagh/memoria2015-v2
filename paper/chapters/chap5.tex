@@ -51,10 +51,10 @@ Los casos de uso del Host representan todas las interacciones que relacionan ser
 
 		Los casos de Uso descritos anteriormente se pueden divisar en la Figura \ref{fig:CUBrowser}
 
-	    \begin{figure}[h]
+	    \begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.45]{figures/chap4/UCBrowser.jpg}
-	        \caption{Diagrama de Caso de Uso del Web Browser}
+	        \caption{Diagrama de Caso de Uso del Web Browser. Fuente: Elaboración Propia.}
 	        \label{fig:CUBrowser}
 	    \end{figure}
 
@@ -86,10 +86,10 @@ El Browser Client (BC) es la entidad que representa el proceso principal de un N
 El componente BC actúa como un broker de las solicitudes de las Sandbox, lo que permite tener un control fino de los mensajes enviados, usando IPC/IPDL/COM, entre los procesos que se comunican. El GPU Instance y Plugins son elementos que pueden comunicarse directamente con el Sandbox, de esta manera cualquier necesidad de recursos del Host pasarán también por el Browser Client. 
 Un usuario que desee hacer un request de un recurso en Internet por medio de un navegador es lo que llamaremos Browser User (BU). Éste usa el Browser Client para realizar peticiones al Provider, donde éste último posiblemente utilice un Web Server para ese cometido (Figura \ref{fig:BIPatt})
 
-	    \begin{figure}[h]
+	    \begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.45]{figures/chap4/browserInfraPattern.jpg}
-	        \caption{Componentes de alto nivel del Browser}
+	        \caption{Componentes de alto nivel del Browser. Fuente: Elaboración Propia.}
 	        \label{fig:BIPatt}
 	    \end{figure}
 
@@ -125,10 +125,10 @@ Nota: Los mensajes entre el Browser Client y el Sandbox pueden ser tanto síncro
 \item Se cancela el request realizado.
 	\end{itemize}
 \subsubsection{Condiciones póstumas} El Browser recibe el recurso indicado por la URL y se muestra por el perísférico la salida del recurso al usuario del Host.
-	    \begin{figure}[h]
+	    \begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.35]{figures/chap4/requestResource.jpg}
-	        \caption{Diagrama de Secuencia: Browser User Realiza request}
+	        \caption{Diagrama de Secuencia: Browser User Realiza request. Fuente: Elaboración Propia.}
 	        \label{fig:SecReq}
 	    \end{figure}
 \subsection{Implementación}

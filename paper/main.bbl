@@ -33,6 +33,31 @@ W.~W. W.~C. W3C, ``About.'' [Online]. Available:
   \url{http://www.w3.org/Consortium/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{multiProcGC}
+\BIBentryALTinterwordspacing
+``{Multi-process Architecture - The Chromium Projects}.'' [Online]. Available:
+  \url{https://www.chromium.org/developers/design-documents/multi-process-architecture}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ChrRenderPipe}
+\BIBentryALTinterwordspacing
+``{Chromium Rendering Pipeline}.'' [Online]. Available:
+  \url{http://www.slideshare.net/HyungwookLee/android-chromium-rendering-pipeline}
+\BIBentrySTDinterwordspacing
+
+\bibitem{IEArchImg}
+\BIBentryALTinterwordspacing
+``{Internet Explorer Architecture (Internet Explorer)}.'' [Online]. Available:
+  \url{https://msdn.microsoft.com/en-us/library/aa741312(v=vs.85).aspx}
+\BIBentrySTDinterwordspacing
+
+\bibitem{IE8LCIE}
+\BIBentryALTinterwordspacing
+``{IE8 and Loosely-Coupled IE (LCIE) - IEBlog - Site Home}.'' [Online].
+  Available:
+  \url{http://blogs.msdn.com/b/ie/archive/2008/03/11/ie8-and-loosely-coupled-ie-lcie.aspx}
+\BIBentrySTDinterwordspacing
+
 \bibitem{goertzel2007software}
 K.~M. Goertzel, T.~Winograd, H.~L. McKinley, L.~J. Oh, M.~Colon, T.~McGibbon,
   E.~Fedchak, and R.~Vienneau, ``Software security assurance: A state-of-art
@@ -165,6 +190,16 @@ B.~Sullivan and V.~Liu, \emph{Web application security}.\hskip 1em plus 0.5em
 W.~Alcorn, C.~Frichot, and M.~Orr{\`u}, \emph{The Browser Hacker's
   Handbook}.\hskip 1em plus 0.5em minus 0.4em\relax John Wiley \& Sons, 2014.
 
+\bibitem{RFC-6797}
+J.~Hodges, C.~Jackson, and A.~Barth, ``{HTTP Strict Transport Security
+  \{(HSTS)\}},'' Internet Engineering Task Force (IETF), RFC 6797, 2012.
+
+\bibitem{webMessaging}
+\BIBentryALTinterwordspacing
+``{HTML5 Web Messaging}.'' [Online]. Available:
+  \url{http://www.w3.org/TR/webmessaging/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{XHR}
 \BIBentryALTinterwordspacing
 .~D. XMLHttpRequest Level~1, ``Xmlhttprequest specification.'' [Online].
@@ -181,6 +216,13 @@ T.~W. API, ``Websocket specification.'' [Online]. Available:
 \BIBentryALTinterwordspacing
 W.~.~R. time Communication Between~Browsers, ``Webrtc specification.''
   [Online]. Available: \url{http://www.w3.org/TR/2015/WD-webrtc-20150210/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{RFC-5246}
+\BIBentryALTinterwordspacing
+T.~Dierks and E.~Rescorla, ``{The Transport Layer Security (TLS) Protocol
+  Version 1.2}.'' [Online]. Available:
+  \url{https://tools.ietf.org/html/rfc5246}
 \BIBentrySTDinterwordspacing
 
 \bibitem{htmlSpec}
@@ -237,6 +279,10 @@ C.~Reis and S.~D. Gribble, ``{Isolating web programs in modern browser
   Computer systems EuroSys 09}, vol.~25, no.~1, p. 219, 2009. [Online].
   Available: \url{http://portal.acm.org/citation.cfm?doid=1519065.1519090}
 \BIBentrySTDinterwordspacing
+
+\bibitem{Saini2014}
+A.~Saini, M.~S. Gaur, and V.~Laxmi, ``{Privacy Leakage Attacks in Browsers},''
+  pp. 257--276, 2014.
 
 \bibitem{openSecArch}
 \BIBentryALTinterwordspacing
@@ -331,6 +377,22 @@ M.~Rajab, L.~Ballard, and N.~Lutz, ``{CAMP: Content-agnostic malware
   \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.295.6192\&rep=rep1\&type=pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Labs2013}
+N.~S.~S. Labs and A.~R. Abrams, ``{Evolutions In Browser Security},'' no.
+  October, pp. 1--20, 2013.
+
+\bibitem{browSecPhish}
+R.~Abrams, J.~Pathak, and O.~Barrera, ``Browser security comparative analysis:
+  Phishing protection,'' 2013.
+
+\bibitem{rowSecSEMBlock}
+------, ``{Browser Security Comparative Analysis: Socially Engineered Malware
+  Blocking},'' 2014.
+
+\bibitem{Drake2011}
+J.~Drake, P.~Mehta, C.~Miller, S.~Moyer, R.~Smith, C.~Valasek, and A.~Q.
+  Approach, ``{Browser Security Comparison},'' \emph{Accuvant Labs}, 2011.
+
 \bibitem{owaspTopTen}
 \BIBentryALTinterwordspacing
 ``{Top 10 2013 - OWASP}.'' [Online]. Available:
@@ -343,9 +405,43 @@ M.~Rajab, L.~Ballard, and N.~Lutz, ``{CAMP: Content-agnostic malware
   \url{https://wiki.mozilla.org/Security/ProcessIsolation/ThreatModel}
 \BIBentrySTDinterwordspacing
 
-\bibitem{browSecPhish}
-R.~Abrams, J.~Pathak, and O.~Barrera, ``Browser security comparative analysis:
-  Phishing protection,'' 2013.
+\bibitem{EvolutionofWeb}
+\BIBentryALTinterwordspacing
+G.~Team, ``Evolution of the web.'' [Online]. Available:
+  \url{http://www.evolutionoftheweb.com/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{reis2009browser}
+\BIBentryALTinterwordspacing
+C.~Reis, A.~Barth, and C.~Pizano, ``{Browser Security: Lessons from Google
+  Chrome},'' \emph{Commun. ACM}, vol.~52, no.~8, pp. 45--49, 2009. [Online].
+  Available:
+  \url{http://dl.acm.org/ft\_gateway.cfm?id=1556050\&type=html$\backslash$npapers3://publication/doi/10.1145/1538947.1556050}
+\BIBentrySTDinterwordspacing
+
+\bibitem{IEArch}
+\BIBentryALTinterwordspacing
+``{Internet Explorer Architecture (Internet Explorer)}.'' [Online]. Available:
+  \url{https://msdn.microsoft.com/en-us/library/aa741312(v=vs.85).aspx}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Crowley2010}
+M.~Crowley, \emph{{Pro Internet Explorer 8 \& 9 Development: Developing
+  Powerful Applications for The Next Generation of IE}}, 1st~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Berkely, CA, USA: Apress, 2010.
+
+\bibitem{Godfrey2000}
+\BIBentryALTinterwordspacing
+M.~W. Godfrey and E.~H.~S. Lee, ``{Secrets from the Monster: Extracting
+  Mozilla's Software Architecture},'' \emph{In Proc. of 2000 Intl. Symposium on
+  Constructing software engineering tools (CoSET 2000}, pp. 15--23, 2000.
+  [Online]. Available:
+  \url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.9211}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Lwin2009}
+A.~Systems and N.~Lwin, ``{Agent Based Web Browser},'' \emph{2009 Fifth
+  International Conference on Autonomic and Autonomous Systems}, 2009.
 
 \bibitem{W3C-SOP}
 \BIBentryALTinterwordspacing
@@ -359,11 +455,6 @@ C.~Jackson and A.~Barth, ``{Beware of finer-grained origins},'' \emph{Web 2.0
   Security and Privacy}, 2008. [Online]. Available:
   \url{http://seclab.stanford.edu/websec/origins/fgo.pdf}
 \BIBentrySTDinterwordspacing
-
-\bibitem{Crowley2010}
-M.~Crowley, \emph{{Pro Internet Explorer 8 \& 9 Development: Developing
-  Powerful Applications for The Next Generation of IE}}, 1st~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Berkely, CA, USA: Apress, 2010.
 
 \bibitem{Paola2006}
 \BIBentryALTinterwordspacing

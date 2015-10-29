@@ -1,15 +1,20 @@
 \select@language {spanish}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Porcentaje de uso de Navegadores \cite {statBrow}}}{2}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Porcentaje de uso de Navegadores. Fuente: \cite {statBrow}}}{2}{figure.1.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitectura de DOM \cite {w3c}}}{19}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitectura de DOM. Fuente: \cite {w3c}}}{19}{figure.2.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Architectura Multi procesos de Google Chrome. Fuente: \cite {multiProcGC}}}{31}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Architectura de Chromium en detalle. Fuente: \cite {ChrRenderPipe}}}{31}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Arquitectura de Internet Explorer. Fuente: \cite {IEArchImg}}}{33}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de Internet Explorer m\IeC {\'a}s detallada. Fuente: \cite {IE8LCIE}}}{33}{figure.4.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de Caso de Uso del Web Browser}}{35}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Componentes de alto nivel del Browser}}{37}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Browser User Realiza request}}{42}{figure.5.3}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de Caso de Uso del Web Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{43}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Componentes de alto nivel del Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{45}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Browser User Realiza request. Fuente: Elaboraci\IeC {\'o}n Propia.}}{48}{figure.5.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request}}{44}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse}}{51}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de Secuencia para el Mal uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}}{52}{figure.6.3}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request. Fuente: Elaboraci\IeC {\'o}n Propia.}}{52}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse. Fuente: Elaboraci\IeC {\'o}n Propia.}}{59}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de Secuencia para el Mal uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser. Fuente: Elaboraci\IeC {\'o}n Propia.}}{60}{figure.6.3}
+\addvspace {10\p@ }
