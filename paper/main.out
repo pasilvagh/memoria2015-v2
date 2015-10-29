@@ -35,14 +35,14 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{An\341lisis de ataques}{section.3.1}% 35
 \BOOKMARK [1][-]{section.3.2}{Ataques y Amenazas}{chapter.3}% 36
 \BOOKMARK [2][-]{subsection.3.2.1}{Phishing}{section.3.2}% 37
-\BOOKMARK [2][-]{subsection.3.2.2}{XSS - Cross-Site Scripting DOM}{section.3.2}% 38
-\BOOKMARK [2][-]{subsection.3.2.3}{Man in the Browser \(MITB\)}{section.3.2}% 39
-\BOOKMARK [1][-]{section.3.3}{Mecanismos de Defensa que se espera que el Host del Browser tenga previamente}{chapter.3}% 40
-\BOOKMARK [1][-]{section.3.4}{Mecanismos de Defensa del Browser, para los ataques revisados}{chapter.3}% 41
-\BOOKMARK [2][-]{subsection.3.4.1}{Sandboxing de procesos/componentes}{section.3.4}% 42
-\BOOKMARK [2][-]{subsection.3.4.2}{Aislaci\363n del contenido web de los componentes del Browser}{section.3.4}% 43
-\BOOKMARK [2][-]{subsection.3.4.3}{Blacklist y Whitelist de sitios web}{section.3.4}% 44
-\BOOKMARK [2][-]{subsection.3.4.4}{Detecci\363n de Malware por medio de sistemas de Reputaci\363n}{section.3.4}% 45
+\BOOKMARK [1][-]{section.3.3}{Mecanismos de Defensa del Browser}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.1}{Sandboxing de procesos/componentes}{section.3.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.2}{Aislaci\363n de contenido}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.3}{Blacklist y Whitelist de sitios web}{section.3.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.4}{Sistemas de Reputaci\363n - basados en CAMP}{section.3.3}% 42
+\BOOKMARK [2][-]{subsection.3.3.5}{Filtros XSS}{section.3.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.6}{Safe Sanitization}{section.3.3}% 44
+\BOOKMARK [2][-]{subsection.3.3.7}{AdBlocker}{section.3.3}% 45
 \BOOKMARK [0][-]{chapter.4}{Browsers y Estado del Arte}{}% 46
 \BOOKMARK [1][-]{section.4.1}{Navegadores Existentes}{chapter.4}% 47
 \BOOKMARK [2][-]{subsection.4.1.1}{Google Chrome y Google Chromium}{section.4.1}% 48
@@ -87,4 +87,4 @@
 \BOOKMARK [2][-]{subsection.6.4.8}{Evidencia Forense}{section.6.4}% 87
 \BOOKMARK [2][-]{subsection.6.4.9}{Patrones relacionados}{section.6.4}% 88
 \BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 89
-\BOOKMARK [0][-]{chapter*.27}{Bibliograf\355a}{}% 90
+\BOOKMARK [0][-]{chapter*.37}{Bibliograf\355a}{}% 90

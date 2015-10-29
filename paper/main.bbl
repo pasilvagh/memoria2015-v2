@@ -405,6 +405,46 @@ J.~Drake, P.~Mehta, C.~Miller, S.~Moyer, R.~Smith, C.~Valasek, and A.~Q.
   \url{https://wiki.mozilla.org/Security/ProcessIsolation/ThreatModel}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Utakrit2009}
+\BIBentryALTinterwordspacing
+N.~Utakrit, ``{Review of Browser Extensions, a Man-in-the-Browser Phishing
+  Techniques Targeting Bank Customers},'' \emph{Proceedings of the 7th
+  Australian Information Security Management Conference}, pp. 110--119, 2009.
+  [Online]. Available:
+  \url{http://www.scopus.com/inward/record.url?eid=2-s2.0-84864552184\&partnerID=40\&md5=3d08a9c7c4ba9dbe5e04fb831ad5257b$\backslash$nhttp://ro.ecu.edu.au/ism/19/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Dougan2012}
+T.~Dougan and K.~Curran, ``{Man in the Browser Attacks},'' \emph{International
+  Journal of Ambient Computing and Intelligence}, vol.~4, no.~1, pp. 29--39,
+  2012.
+
+\bibitem{XSSDOMOwasp}
+\BIBentryALTinterwordspacing
+``{DOM Based XSS - OWASP}.'' [Online]. Available:
+  \url{https://www.owasp.org/index.php/DOM\_Based\_XSS}
+\BIBentrySTDinterwordspacing
+
+\bibitem{XSSDOM}
+\BIBentryALTinterwordspacing
+``{[DOM Based Cross Site Scripting or XSS of the Third Kind] Web Security
+  Articles - Web Application Security Consortium}.'' [Online]. Available:
+  \url{http://www.webappsec.org/projects/articles/071105.shtml}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bugzillaXSSDOM}
+\BIBentryALTinterwordspacing
+``{272620 – XSS vulnerability in internal error messages}.'' [Online].
+  Available: \url{https://bugzilla.mozilla.org/show\_bug.cgi?id=272620}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Paola2006}
+\BIBentryALTinterwordspacing
+S.~D. Paola and G.~Fedon, ``{Subverting Ajax},'' \emph{23rd Chaos Communication
+  Congress}, no. December, 2006. [Online]. Available:
+  \url{http://events.ccc.de/congress/2006/Fahrplan/attachments/1158-Subverting\_Ajax.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{EvolutionofWeb}
 \BIBentryALTinterwordspacing
 G.~Team, ``Evolution of the web.'' [Online]. Available:
@@ -456,35 +496,13 @@ C.~Jackson and A.~Barth, ``{Beware of finer-grained origins},'' \emph{Web 2.0
   \url{http://seclab.stanford.edu/websec/origins/fgo.pdf}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Paola2006}
-\BIBentryALTinterwordspacing
-S.~D. Paola and G.~Fedon, ``{Subverting Ajax},'' \emph{23rd Chaos Communication
-  Congress}, no. December, 2006. [Online]. Available:
-  \url{http://events.ccc.de/congress/2006/Fahrplan/attachments/1158-Subverting\_Ajax.pdf}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Silic2010}
 M.~Silic, J.~Krolo, and G.~Delac, ``{Security vulnerabilities in modern web
   browser architecture},'' \emph{MIPRO, 2010 Proceedings of the 33rd
   International Convention}, 2010.
 
 \bibitem{Yason}
-M.~V. Yason, ``{D Iving I Nto Ie 10 ’ S E Nhanced P Rotected M Ode S
-  Andbox}.''
-
-\bibitem{Dougan2012}
-T.~Dougan and K.~Curran, ``{Man in the Browser Attacks},'' \emph{International
-  Journal of Ambient Computing and Intelligence}, vol.~4, no.~1, pp. 29--39,
-  2012.
-
-\bibitem{Utakrit2009}
-\BIBentryALTinterwordspacing
-N.~Utakrit, ``{Review of Browser Extensions, a Man-in-the-Browser Phishing
-  Techniques Targeting Bank Customers},'' \emph{Proceedings of the 7th
-  Australian Information Security Management Conference}, pp. 110--119, 2009.
-  [Online]. Available:
-  \url{http://www.scopus.com/inward/record.url?eid=2-s2.0-84864552184\&partnerID=40\&md5=3d08a9c7c4ba9dbe5e04fb831ad5257b$\backslash$nhttp://ro.ecu.edu.au/ism/19/}
-\BIBentrySTDinterwordspacing
+M.~V. Yason, ``{Diving into IE 10’s Enhanced Protected Mode Sandbox}.''
 
 \bibitem{fernandez2001pattern}
 \BIBentryALTinterwordspacing
