@@ -9,9 +9,12 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: refTodas.bib
 Warning--I didn't find a database entry for "gecko"
+Warning--I didn't find a database entry for ""
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Yason
+Warning--empty year in Yason
 Warning--empty booktitle in WhyteHarrison
 Warning--empty year in WhyteHarrison
 Warning--empty booktitle in 2005-grosskurth-browser-refarch
@@ -28,49 +31,47 @@ Warning--empty journal in encinamisuse
 Warning--empty journal in Labs2013
 Warning--empty journal in browSecPhish
 Warning--empty journal in rowSecSEMBlock
-Warning--empty journal in Yason
-Warning--empty year in Yason
 
 Done.
-You've used 87 entries,
+You've used 89 entries,
             4039 wiz_defined-function locations,
-            1270 strings with 21158 characters,
-and the built_in function-call counts, 45169 in all, are:
-= -- 3489
-> -- 957
+            1278 strings with 21407 characters,
+and the built_in function-call counts, 45713 in all, are:
+= -- 3521
+> -- 959
 < -- 228
-+ -- 497
++ -- 499
 - -- 180
-* -- 2022
-:= -- 7285
-add.period$ -- 183
-call.type$ -- 87
-change.case$ -- 88
+* -- 2040
+:= -- 7373
+add.period$ -- 187
+call.type$ -- 89
+change.case$ -- 90
 chr.to.int$ -- 525
-cite$ -- 105
-duplicate$ -- 3571
-empty$ -- 4060
+cite$ -- 107
+duplicate$ -- 3625
+empty$ -- 4126
 format.name$ -- 230
-if$ -- 10115
+if$ -- 10231
 int.to.chr$ -- 0
-int.to.str$ -- 87
-missing$ -- 682
-newline$ -- 368
+int.to.str$ -- 89
+missing$ -- 694
+newline$ -- 378
 num.names$ -- 76
-pop$ -- 1937
+pop$ -- 1985
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 3464
+skip$ -- 3504
 stack$ -- 0
-substring$ -- 1313
-swap$ -- 2377
+substring$ -- 1315
+swap$ -- 2399
 text.length$ -- 53
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 87
+type$ -- 89
 warning$ -- 18
 while$ -- 174
-width$ -- 89
-write$ -- 814
-(There were 19 warnings)
+width$ -- 91
+write$ -- 830
+(There were 20 warnings)

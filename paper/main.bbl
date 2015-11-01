@@ -58,6 +58,9 @@ W.~W. W.~C. W3C, ``About.'' [Online]. Available:
   \url{http://blogs.msdn.com/b/ie/archive/2008/03/11/ie8-and-loosely-coupled-ie-lcie.aspx}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Yason}
+M.~V. Yason, ``{Diving into IE 10’s Enhanced Protected Mode Sandbox}.''
+
 \bibitem{goertzel2007software}
 K.~M. Goertzel, T.~Winograd, H.~L. McKinley, L.~J. Oh, M.~Colon, T.~McGibbon,
   E.~Fedchak, and R.~Vienneau, ``Software security assurance: A state-of-art
@@ -445,6 +448,26 @@ S.~D. Paola and G.~Fedon, ``{Subverting Ajax},'' \emph{23rd Chaos Communication
   \url{http://events.ccc.de/congress/2006/Fahrplan/attachments/1158-Subverting\_Ajax.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{reis2009browser}
+\BIBentryALTinterwordspacing
+C.~Reis, A.~Barth, and C.~Pizano, ``{Browser Security: Lessons from Google
+  Chrome},'' \emph{Commun. ACM}, vol.~52, no.~8, pp. 45--49, 2009. [Online].
+  Available:
+  \url{http://dl.acm.org/ft\_gateway.cfm?id=1556050\&type=html$\backslash$npapers3://publication/doi/10.1145/1538947.1556050}
+\BIBentrySTDinterwordspacing
+
+\bibitem{sandboxGC}
+\BIBentryALTinterwordspacing
+``{Sandbox - The Chromium Projects}.'' [Online]. Available:
+  \url{http://www.chromium.org/developers/design-documents/sandbox}
+\BIBentrySTDinterwordspacing
+
+\bibitem{NeckoElectro}
+\BIBentryALTinterwordspacing
+``{Necko: Electrolysis design and subprojects}.'' [Online]. Available:
+  \url{https://wiki.mozilla.org/Necko:\_Electrolysis\_design\_and\_subprojects}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Godfrey2000}
 \BIBentryALTinterwordspacing
 M.~W. Godfrey and E.~H.~S. Lee, ``{Secrets from the Monster: Extracting
@@ -462,14 +485,6 @@ A.~Systems and N.~Lwin, ``{Agent Based Web Browser},'' \emph{2009 Fifth
 \BIBentryALTinterwordspacing
 G.~Team, ``Evolution of the web.'' [Online]. Available:
   \url{http://www.evolutionoftheweb.com/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{reis2009browser}
-\BIBentryALTinterwordspacing
-C.~Reis, A.~Barth, and C.~Pizano, ``{Browser Security: Lessons from Google
-  Chrome},'' \emph{Commun. ACM}, vol.~52, no.~8, pp. 45--49, 2009. [Online].
-  Available:
-  \url{http://dl.acm.org/ft\_gateway.cfm?id=1556050\&type=html$\backslash$npapers3://publication/doi/10.1145/1538947.1556050}
 \BIBentrySTDinterwordspacing
 
 \bibitem{GoogleChromeIsolation}
@@ -506,9 +521,6 @@ C.~Jackson and A.~Barth, ``{Beware of finer-grained origins},'' \emph{Web 2.0
 M.~Silic, J.~Krolo, and G.~Delac, ``{Security vulnerabilities in modern web
   browser architecture},'' \emph{MIPRO, 2010 Proceedings of the 33rd
   International Convention}, 2010.
-
-\bibitem{Yason}
-M.~V. Yason, ``{Diving into IE 10’s Enhanced Protected Mode Sandbox}.''
 
 \bibitem{fernandez2001pattern}
 \BIBentryALTinterwordspacing
