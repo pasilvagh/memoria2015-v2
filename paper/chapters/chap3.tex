@@ -37,24 +37,24 @@ En trabajos \cite{barth2008security, FirefoxThreatModel} se puede observar que e
 Una lista (parcial) de ataques asociados a las amenazas anteriores son:
 
 \subsection{Phishing}
-Este ataque consta principalmente del engaño al usuario, confundiendolo a que visite una página deshonesta en vez de la que tenía pensado; es uno de los tantos ataques que usan la ingeniería social para dañar a un usuario. En el estudio realizado por NSS Labs \cite{browSecPhish} afirma que muchos de los ataques que actualmente están ocurriendo se han limitado al uso de técnicas de ingeniería social. Si bien los ataques basados en drive-by downloads y clickjacking siguen siendo de alto impacto, los atacantes parecen preferir los otros por la simplicidad de éste, pues no es necesario conocer realmente vulnerabilidades del \textit{Browser} para llevarlos a cabo. 
-
+Este ataque consta principalmente del engaño al usuario, confundiendolo a que visite una página deshonesta en vez de la que tenía pensado. En el último tiempo muchos de los ataques que actualmente están ocurriendo se han limitado al uso de técnicas de ingeniería social. Si bien los ataques basados en drive-by downloads y clickjacking siguen siendo de alto impacto, los atacantes parecen preferir los otros por la simplicidad de éste, pues no es necesario conocer realmente vulnerabilidades del \textit{Browser} para llevarlos a cabo. Sin embargo, el Phishing es una buena herramienta que permite generar muchos otros ataques, que son mucho más peligrosos. Un resultado obtenido dentro del experimento en \cite{browSecPhish}, menciona que la vida útil en promedio de un sitio de Phishing es de aproximadamente 26 horas. Esto principalmente es debido a que el sitio, antes de saber si es malicioso o no, debe descubrir, validar y clasificar en el sistema de reputación, tan pronto como sea posible.
 
 	\subsubsection{Instalación de Malware o Extensiones malignas}
-	Un ataque de este tipo puede ser originado desde la ejecución de un ataque Phishing a una persona; en especial cuando se hace creer que lo que se va a instalar es completamente inofensivo. Sin embargo, el resultado de la aceptación de usuario a la instalación puede tener consecuencias bastante graves tanto en el Browser como en el Host, donde la mayoría de las veces el ataque puede terminar como un Man-in-the-Browser \cite{Utakrit2009, Dougan2012}. 
+	Un ataque de este tipo puede ser originado desde la ejecución de un ataque Phishing a una persona; en especial cuando se hace creer que lo que se va a instalar es completamente inofensivo. Sin embargo, el resultado de la aceptación de usuario a la instalación puede tener consecuencias bastante graves tanto en el Browser como en el Host, donde la mayoría de las veces el ataque puede terminar como un Man-in-the-Browser \cite{Utakrit2009, Dougan2012}. En la jerga de NSS Labs estos ataques son llamados SEM o Social Enginerring Malware, en el estudio \cite{rowSecSEMBlock} afirma que conocer la identidad de los atacantes que utilizan Social Engineering permite una mejor protección contra los SEM. El trabajo recomienda que las Empresas y grandes organizaciones deberían revisar los reportes de otros Laboratorios de Seguridad cuando seleccionan un tipo de Web Browser; Las empresas deben entender que el mercado de los Browsers no es estático y muchas amenazas aparecen constantemente. El estudio concluye que la Educación es un componente importante en la protección de SEM, pues aquellos usuarios que son capaces de identificar ataques de Ingeniería Social (SE), necesitan menos tecnologías para la protección de estos ataques.
 
 	\subsubsection{Extensiones vulnerables}
 	Muchas veces un ataque Phishing se aprovechará de las extensiones \textit{benign-but-buggy}, es decir, de extensiones que tienen un propósito benigno para el usuario que las usa, pero que un atacante puede aprovecharse de alguna vulnerabilidad \cite{Barth2010, Liu2012}. Además dependiendo del tipo de arquitectura que el Browser pueda tener, es posible que el atacante utilice una extensión que tenga permisos a ciertos recursos del Host o que pueda coludirse con otra extensión benigna para lograr un ataque en forma conjunta \cite{Saini2014}; donde lo peor de todo, es que el tráfico no será detectado como malicioso.
 
 	\subsubsection{Ejecución de Código Javascript}
-	En ciertas situaciones un atacante podría aprovecharse de alguna vulnerabilidad asociada a los modelos de seguridad que Javascript y DOM poseen, pues ambos son totalmente transversales. Javascript utiliza un modelo de seguridad en sus objetos basado en \textbf{Capabilities}, mientras que DOM refuerza el \textbf{Same Origin Policy} por medio del uso de un \textbf{Reference Monitor} para controlar el acceso de código de diversos \textbf{orígenes}. Es en esta situación donde podría llevarse a cabo la ejecución de código javascript aún cuando éste pueda ser de un \textbf{origen} distinto al receptor \cite{Barth2009}.
+    Este tipo de ataques ocurren cuando es posible ejecutar un script en el interprete del cliente, de manera que pueda generar acciones maliciosas dentro del Browser del Cliente. Este tipo de ataque funciona muy bien, cuando el atacante desea que el Web Browser de la victima realice acciones en nombre del atacante, de tal manera que la identificación de este se haga casi imposible. En ciertas situaciones un atacante podría aprovecharse de alguna vulnerabilidad asociada a los modelos de seguridad que Javascript y DOM poseen, pues ambos son totalmente transversales. Javascript utiliza un modelo de seguridad en sus objetos basado en \textbf{Capabilities}, mientras que DOM refuerza el \textbf{Same Origin Policy} por medio del uso de un \textbf{Reference Monitor} para controlar el acceso de código de diversos \textbf{orígenes}. Es en esta situación donde podría llevarse a cabo la ejecución de código javascript aún cuando éste pueda ser de un \textbf{origen} distinto al receptor \cite{Barth2009}.
 
 	\subsubsection{XSS - Cross-Site Scripting DOM}
-	El ataque Cross-Site Scripting (XSS) normalmente se asocia con ataques que afectan directamente al servidor, pero existe una tercera variedad que afecta directamente al navegador \cite{Singh2014} y que puede ser tan peligrosa como su forma \textit{Reflajada} o \textit{Almacenada}, esta es llamada XSS DOM o \textbf{tipo-0 XSS} \cite{XSSDOMOwasp, XSSDOM}. Es un ataque XSS en donde su \textit{payload} de ataque es ejecutado como resultado de la modificación del \textit{ambiente} DOM en el navegador de la víctima usado por el código script original; en consecuencia el código de cliente se ejecuta de una manera inesperada. Un ejemplo de un simple XSS DOM puede verse en \cite{bugzillaXSSDOM}. Un UXSS o Universal XSS es un ataque más particular, y tiene la habilidad de ser gatillado al explotar una falla en el interior del Browser \cite{Paola2006}, a diferencia de otros XSS que buscan la vulnerabilidad dentro del Servidor Web al que se comunican.
+	Es un ataque XSS en donde su \textit{payload} de ataque es ejecutado como resultado de la modificación del \textit{ambiente} DOM en el navegador de la víctima usado por el código script original; en consecuencia el código de cliente se ejecuta de una manera inesperada. El ataque Cross-Site Scripting (XSS) normalmente se asocia con ataques que afectan directamente al servidor, pero existe una tercera variedad que afecta directamente al navegador \cite{Singh2014} y que puede ser tan peligrosa como su forma \textit{Reflajada} o \textit{Almacenada}, esta es llamada XSS DOM o \textbf{tipo-0 XSS} \cite{XSSDOMOwasp, XSSDOM}. Un ejemplo de un simple XSS DOM puede verse en \cite{bugzillaXSSDOM}. Un UXSS o Universal XSS es un ataque más particular, y tiene la habilidad de ser gatillado al explotar una falla en el interior del Browser \cite{Paola2006}, a diferencia de otros XSS que buscan la vulnerabilidad dentro del Servidor Web al que se comunican.
 
 
 	\subsubsection{Man in the \textit{Browser} (MitB)}
-	La diferencia sustancial entre un Man in the Browser (MitB) y un Man in the Middle (MitM) es el dominio que ataca, el primero es al nivel de la capa de aplicación, mientras que el segundo tiene que ver más con el canal de comunicación. \cite{Dougan2012} explica las grandes diferencias entre estos dos ataques, donde principalmente un MitB se inicia con un ataque Phishing que logra convencer al usuario de instalar alguna extensión o ejecutar una pieza de código \cite{Utakrit2009, Paola2006}, que permita al atacante estar entre el Browser y el Host, de tal manera que todas las solicitudes puedes ser escuchadas y modificadas dentro del mismo Host.
+    Un Man in the Browser es una técnica utilizada por un atacante para poder leer o modificar datos que se envían entre el cliente Web y el Servidor que responde a las request. La diferencia sustancial entre un Man in the Browser (MitB) y un Man in the Middle (MitM) es el dominio que ataca, el primero es al nivel de la capa de aplicación, mientras que el segundo tiene que ver más con el canal de comunicación. \cite{Dougan2012} explica las grandes diferencias entre estos dos ataques, donde principalmente un MitB se inicia con un ataque Phishing que logra convencer al usuario de instalar alguna extensión o ejecutar una pieza de código \cite{Utakrit2009, Paola2006}, que permita al atacante estar entre el Browser y el Host, de tal manera que todas las solicitudes puedes ser escuchadas y modificadas dentro del mismo Host.
+
 
 
 
@@ -81,49 +81,3 @@ Este ataque consta principalmente del engaño al usuario, confundiendolo a que v
     %\subsection{Export Address Table Access Filtering (EAF)}
 
     %\subsection{NULL page allocation}
-
-\section{Mecanismos de Defensa del \textit{Browser}}
-
-\subsection{Sandboxing de procesos/componentes}
-    \label{chap3:Sandboxing}
-    La idea es encapsular el área de mayor probabilidad de ataque en un espacio aislado, minimizando la superficie de ataque de un software. Sandboxing no es una técnica tan nueva, han existido sistemas que ya lo han incorporado. Ésta protección puede ser aplicada dependiendo del diseño del software, algunos ocupan Sandbox a nivel del sistema operativo como otros que ocupan al nivel del \textit{engine} de Javascript \cite{reis2009browser}. En el caso especial del \textit{Browser}, esta técnica es construida en el nivel más alto posible para un programa de usuario, lo que permite la separación de privilegios entregados por el sistema operativo al \textit{browser} y los subprocesos que corren dentro de éste. El atacante que se enfrente a un \textit{browser} que tenga este mecanismo de defensa, tendrá que realizar primero un \textit{bypass} encontrando una vulnerabilidad en el sandboxing del \textit{browser}. Existen diferentes técnicas para Sandboxing, todo depende del diseño del \textit{Browser}.
-
-    En el desarrollo de \cite{barth2008security} se define un modelo de amenazas donde se enumeran las habilidades que debería de tener un atacante y los objetivos de estos, para así caracterizar y evaluar las propiedades de seguridad necesarias para evitar que los atacantes cumplan su objetivo. Una propiedad importante que hacen destacar en el estudio es cómo aislar ciertos procesos que pueden ser aprovechados por los atacantes y ofrece una forma para poder mitigar esto: Sandboxing. El Sandboxing de Google Chrome previene al atacante de leer o escribir en el sistema de archivos del usuario, dejando al Principal Web con los privilegios necesarios para parsear un HTML/XML y ejecutar código JavaScript. Sin embargo esta arquitectura no imposibilita al atacante a atacar otros sitios web si es que el Rendering Engine fue comprometido, lo que puede convertirse en una amenaza muy grande para otros sitios web.
-
-    Mientras Google Chrome e Internet Explorer utilizan un Sandbox para sus procesos de Renderizado \cite{sandboxGC, }, Firefox no ha realizado este trabajo siquiera en su versión monoproceso \cite{NeckoElectro}.
-
- \subsection{Aislación de contenido}
- 	\textbf{Origen} debe ser aislado entre cada página renderizada.
- 	%Firefox: FirefoxThreatModel,
- 	%GC: Barth2010, Barth2009SecureFrame, Reis2009, barth2008security
- 	%IE: Crowley2010, Yason
- 	%Todo: Drake2011, Saini2014, Silic2010
-
- 	\subsubsection{En contenido}
-
- 	\subsubsection{En extensiones}
-
- \subsection{Blacklist y Whitelist de sitios web}
- 	\subsubsection{Safe Browsing}
- 		%GC y Firefox
- 	\subsubsection{SmartScreen}
-    %\cite{Crowley2010, Colvin2010}Smartscreen
-
- \subsection{Sistemas de Reputación - basados en CAMP}
- 	%Agregar que estos s complementar con blacklist y a veces whitelist (GC)
- 	\subsubsection{Google Download - Google Chrome/Chromium}
- 		%Ocupar referencias de NSS para los resultados obtenidos
- 	\subsubsection{SmartScreen - Internet Explorer}
-
- \subsection{Filtros XSS}
- 	%Google e IE
- 	%Firefox ocupa 3rd party
- 	%Vulnerabilidades mencionadas \cite{Bates2010}y la solución del paper es crear un filtro que detenga los ataques antes de que sean interpretados por el Renderer
- \subsection{Safe Sanitization}
-
- \subsection{AdBlocker}
-
- \subsection{Actualizaciones Periódicas en Background}
-
-
- 

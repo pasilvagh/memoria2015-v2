@@ -35,54 +35,53 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{An\341lisis de ataques}{section.3.1}% 35
 \BOOKMARK [1][-]{section.3.2}{Ataques y Amenazas}{chapter.3}% 36
 \BOOKMARK [2][-]{subsection.3.2.1}{Phishing}{section.3.2}% 37
-\BOOKMARK [1][-]{section.3.3}{Mecanismos de Defensa del Browser}{chapter.3}% 38
-\BOOKMARK [2][-]{subsection.3.3.1}{Sandboxing de procesos/componentes}{section.3.3}% 39
-\BOOKMARK [2][-]{subsection.3.3.2}{Aislaci\363n de contenido}{section.3.3}% 40
-\BOOKMARK [2][-]{subsection.3.3.3}{Blacklist y Whitelist de sitios web}{section.3.3}% 41
-\BOOKMARK [2][-]{subsection.3.3.4}{Sistemas de Reputaci\363n - basados en CAMP}{section.3.3}% 42
-\BOOKMARK [2][-]{subsection.3.3.5}{Filtros XSS}{section.3.3}% 43
-\BOOKMARK [2][-]{subsection.3.3.6}{Safe Sanitization}{section.3.3}% 44
-\BOOKMARK [2][-]{subsection.3.3.7}{AdBlocker}{section.3.3}% 45
-\BOOKMARK [2][-]{subsection.3.3.8}{Actualizaciones Peri\363dicas en Background}{section.3.3}% 46
-\BOOKMARK [0][-]{chapter.4}{Browsers y Estado del Arte}{}% 47
-\BOOKMARK [1][-]{section.4.1}{Arquitectura de Referencia del Browser y Patrones}{chapter.4}% 48
-\BOOKMARK [2][-]{subsection.4.1.1}{M\351todo}{section.4.1}% 49
-\BOOKMARK [2][-]{subsection.4.1.2}{Lo encontrado}{section.4.1}% 50
-\BOOKMARK [1][-]{section.4.2}{Navegadores Existentes}{chapter.4}% 51
-\BOOKMARK [2][-]{subsection.4.2.1}{Google Chrome y Google Chromium}{section.4.2}% 52
-\BOOKMARK [2][-]{subsection.4.2.2}{Internet Explorer}{section.4.2}% 53
-\BOOKMARK [2][-]{subsection.4.2.3}{Firefox}{section.4.2}% 54
-\BOOKMARK [1][-]{section.4.3}{Sumario}{chapter.4}% 55
-\BOOKMARK [0][-]{chapter.5}{Arquitectura de Referencia del Web Browser}{}% 56
-\BOOKMARK [1][-]{section.5.1}{Casos de Uso del Browser}{chapter.5}% 57
-\BOOKMARK [2][-]{subsection.5.1.1}{Stakeholders \(actores\) y Concerns de estos}{section.5.1}% 58
-\BOOKMARK [2][-]{subsection.5.1.2}{Casos de Uso}{section.5.1}% 59
-\BOOKMARK [1][-]{section.5.2}{Patr\363n Browser Infrastructure}{chapter.5}% 60
-\BOOKMARK [2][-]{subsection.5.2.1}{Intent}{section.5.2}% 61
-\BOOKMARK [2][-]{subsection.5.2.2}{Ejemplo}{section.5.2}% 62
-\BOOKMARK [2][-]{subsection.5.2.3}{Contexto}{section.5.2}% 63
-\BOOKMARK [2][-]{subsection.5.2.4}{Problema}{section.5.2}% 64
-\BOOKMARK [2][-]{subsection.5.2.5}{Soluci\363n}{section.5.2}% 65
-\BOOKMARK [2][-]{subsection.5.2.6}{Estructura}{section.5.2}% 66
-\BOOKMARK [2][-]{subsection.5.2.7}{Din\341mica}{section.5.2}% 67
-\BOOKMARK [2][-]{subsection.5.2.8}{Implementaci\363n}{section.5.2}% 68
-\BOOKMARK [2][-]{subsection.5.2.9}{Consecuencias}{section.5.2}% 69
-\BOOKMARK [2][-]{subsection.5.2.10}{Ejemplo Resuelto}{section.5.2}% 70
-\BOOKMARK [2][-]{subsection.5.2.11}{Usos Com\372nes}{section.5.2}% 71
-\BOOKMARK [2][-]{subsection.5.2.12}{Patrones Asociados}{section.5.2}% 72
-\BOOKMARK [0][-]{chapter.6}{Patrones de Mal Uso}{}% 73
-\BOOKMARK [1][-]{section.6.1}{Identificando Amenazas y Patrones de Mal Uso}{chapter.6}% 74
-\BOOKMARK [1][-]{section.6.2}{Identificando amenazas}{chapter.6}% 75
-\BOOKMARK [1][-]{section.6.3}{Template de Patrones de Mal Uso}{chapter.6}% 76
-\BOOKMARK [1][-]{section.6.4}{Patr\363n de Mal Uso: Modificaci\363n de tr\341fico en el Web Browser}{chapter.6}% 77
-\BOOKMARK [2][-]{subsection.6.4.1}{Intent}{section.6.4}% 78
-\BOOKMARK [2][-]{subsection.6.4.2}{Contexto}{section.6.4}% 79
-\BOOKMARK [2][-]{subsection.6.4.3}{Problema}{section.6.4}% 80
-\BOOKMARK [2][-]{subsection.6.4.4}{Soluci\363n}{section.6.4}% 81
-\BOOKMARK [2][-]{subsection.6.4.5}{Din\341mica}{section.6.4}% 82
-\BOOKMARK [2][-]{subsection.6.4.6}{Consecuencias}{section.6.4}% 83
-\BOOKMARK [2][-]{subsection.6.4.7}{Contramedidas}{section.6.4}% 84
-\BOOKMARK [2][-]{subsection.6.4.8}{Evidencia Forense}{section.6.4}% 85
-\BOOKMARK [2][-]{subsection.6.4.9}{Patrones relacionados}{section.6.4}% 86
-\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 87
-\BOOKMARK [0][-]{chapter*.51}{Bibliograf\355a}{}% 88
+\BOOKMARK [0][-]{chapter.4}{Browsers y Estado del Arte}{}% 38
+\BOOKMARK [1][-]{section.4.1}{Arquitectura de Referencia del Browser y Patrones}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.1.1}{M\351todo}{section.4.1}% 40
+\BOOKMARK [2][-]{subsection.4.1.2}{Lo encontrado}{section.4.1}% 41
+\BOOKMARK [1][-]{section.4.2}{Google Chrome y Google Chromium}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.2.1}{Browser Kernel/Process y Renderering Engine/Process - Blink}{section.4.2}% 43
+\BOOKMARK [1][-]{section.4.3}{Internet Explorer}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.3.1}{Frame Process y Rendering Engine}{section.4.3}% 45
+\BOOKMARK [1][-]{section.4.4}{Firefox}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.1}{Firefox Mono-proceso y Gecko}{section.4.4}% 47
+\BOOKMARK [2][-]{subsection.4.4.2}{Firefox Multi-proceso \(Electrolysis, e10s\)}{section.4.4}% 48
+\BOOKMARK [1][-]{section.4.5}{Mecanismos de Defensa del Browser}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.5.1}{Sandboxing}{section.4.5}% 50
+\BOOKMARK [2][-]{subsection.4.5.2}{Aislaci\363n de Procesos}{section.4.5}% 51
+\BOOKMARK [2][-]{subsection.4.5.3}{Blacklist y Whitelist de sitios web}{section.4.5}% 52
+\BOOKMARK [2][-]{subsection.4.5.4}{Sistemas de Reputaci\363n}{section.4.5}% 53
+\BOOKMARK [2][-]{subsection.4.5.5}{Actualizaciones Peri\363dicas en Background}{section.4.5}% 54
+\BOOKMARK [0][-]{chapter.5}{Arquitectura de Referencia del Web Browser}{}% 55
+\BOOKMARK [1][-]{section.5.1}{Casos de Uso del Browser}{chapter.5}% 56
+\BOOKMARK [2][-]{subsection.5.1.1}{Stakeholders \(actores\) y Concerns de estos}{section.5.1}% 57
+\BOOKMARK [2][-]{subsection.5.1.2}{Casos de Uso}{section.5.1}% 58
+\BOOKMARK [1][-]{section.5.2}{Patr\363n Browser Infrastructure}{chapter.5}% 59
+\BOOKMARK [2][-]{subsection.5.2.1}{Intent}{section.5.2}% 60
+\BOOKMARK [2][-]{subsection.5.2.2}{Ejemplo}{section.5.2}% 61
+\BOOKMARK [2][-]{subsection.5.2.3}{Contexto}{section.5.2}% 62
+\BOOKMARK [2][-]{subsection.5.2.4}{Problema}{section.5.2}% 63
+\BOOKMARK [2][-]{subsection.5.2.5}{Soluci\363n}{section.5.2}% 64
+\BOOKMARK [2][-]{subsection.5.2.6}{Estructura}{section.5.2}% 65
+\BOOKMARK [2][-]{subsection.5.2.7}{Din\341mica}{section.5.2}% 66
+\BOOKMARK [2][-]{subsection.5.2.8}{Implementaci\363n}{section.5.2}% 67
+\BOOKMARK [2][-]{subsection.5.2.9}{Consecuencias}{section.5.2}% 68
+\BOOKMARK [2][-]{subsection.5.2.10}{Ejemplo Resuelto}{section.5.2}% 69
+\BOOKMARK [2][-]{subsection.5.2.11}{Usos Com\372nes}{section.5.2}% 70
+\BOOKMARK [2][-]{subsection.5.2.12}{Patrones Asociados}{section.5.2}% 71
+\BOOKMARK [0][-]{chapter.6}{Patrones de Mal Uso}{}% 72
+\BOOKMARK [1][-]{section.6.1}{Identificando Amenazas y Patrones de Mal Uso}{chapter.6}% 73
+\BOOKMARK [1][-]{section.6.2}{Identificando amenazas}{chapter.6}% 74
+\BOOKMARK [1][-]{section.6.3}{Template de Patrones de Mal Uso}{chapter.6}% 75
+\BOOKMARK [1][-]{section.6.4}{Patr\363n de Mal Uso: Modificaci\363n de tr\341fico en el Web Browser}{chapter.6}% 76
+\BOOKMARK [2][-]{subsection.6.4.1}{Intent}{section.6.4}% 77
+\BOOKMARK [2][-]{subsection.6.4.2}{Contexto}{section.6.4}% 78
+\BOOKMARK [2][-]{subsection.6.4.3}{Problema}{section.6.4}% 79
+\BOOKMARK [2][-]{subsection.6.4.4}{Soluci\363n}{section.6.4}% 80
+\BOOKMARK [2][-]{subsection.6.4.5}{Din\341mica}{section.6.4}% 81
+\BOOKMARK [2][-]{subsection.6.4.6}{Consecuencias}{section.6.4}% 82
+\BOOKMARK [2][-]{subsection.6.4.7}{Contramedidas}{section.6.4}% 83
+\BOOKMARK [2][-]{subsection.6.4.8}{Evidencia Forense}{section.6.4}% 84
+\BOOKMARK [2][-]{subsection.6.4.9}{Patrones relacionados}{section.6.4}% 85
+\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 86
+\BOOKMARK [0][-]{chapter*.35}{Bibliograf\355a}{}% 87

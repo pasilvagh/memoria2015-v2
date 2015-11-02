@@ -8,16 +8,14 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: refTodas.bib
-Warning--I didn't find a database entry for "gecko"
-Warning--I didn't find a database entry for ""
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty booktitle in 2005-grosskurth-browser-refarch
 Warning--empty journal in Yason
 Warning--empty year in Yason
 Warning--empty booktitle in WhyteHarrison
 Warning--empty year in WhyteHarrison
-Warning--empty booktitle in 2005-grosskurth-browser-refarch
 Warning--empty journal in Galster2011a
 Warning--empty journal in RFC-5246
 Warning--empty year in RFC-5246
@@ -33,45 +31,45 @@ Warning--empty journal in browSecPhish
 Warning--empty journal in rowSecSEMBlock
 
 Done.
-You've used 89 entries,
+You've used 95 entries,
             4039 wiz_defined-function locations,
-            1278 strings with 21407 characters,
-and the built_in function-call counts, 45713 in all, are:
-= -- 3521
-> -- 959
+            1301 strings with 22141 characters,
+and the built_in function-call counts, 47434 in all, are:
+= -- 3630
+> -- 968
 < -- 228
-+ -- 499
-- -- 180
-* -- 2040
-:= -- 7373
-add.period$ -- 187
-call.type$ -- 89
-change.case$ -- 90
++ -- 506
+- -- 181
+* -- 2098
+:= -- 7663
+add.period$ -- 199
+call.type$ -- 95
+change.case$ -- 96
 chr.to.int$ -- 525
-cite$ -- 107
-duplicate$ -- 3625
-empty$ -- 4126
-format.name$ -- 230
-if$ -- 10231
+cite$ -- 113
+duplicate$ -- 3790
+empty$ -- 4327
+format.name$ -- 231
+if$ -- 10597
 int.to.chr$ -- 0
-int.to.str$ -- 89
-missing$ -- 694
-newline$ -- 378
-num.names$ -- 76
-pop$ -- 1985
+int.to.str$ -- 95
+missing$ -- 731
+newline$ -- 408
+num.names$ -- 77
+pop$ -- 2127
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 3504
+skip$ -- 3632
 stack$ -- 0
-substring$ -- 1315
-swap$ -- 2399
+substring$ -- 1321
+swap$ -- 2470
 text.length$ -- 53
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 89
+type$ -- 95
 warning$ -- 18
-while$ -- 174
-width$ -- 91
-write$ -- 830
-(There were 20 warnings)
+while$ -- 175
+width$ -- 97
+write$ -- 880
+(There were 18 warnings)

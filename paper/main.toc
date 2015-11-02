@@ -1,7 +1,7 @@
 \select@language {spanish}
 \contentsline {chapter}{\'{I}ndice general}{\es@scroman {iii}}{chapter*.1}
 \contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {vii}}{chapter*.2}
-\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {viii}}{chapter*.3}
+\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {ix}}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Contexto General}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}El Problema: Desarrollo de Software y Seguridad}{2}{section.1.2}
@@ -42,95 +42,78 @@
 \contentsline {subsection}{\numberline {3.2.1}Phishing}{28}{subsection.3.2.1}
 \contentsline {subsubsection}{Instalaci\IeC {\'o}n de Malware o Extensiones malignas}{29}{subsubsection*.8}
 \contentsline {subsubsection}{Extensiones vulnerables}{29}{subsubsection*.9}
-\contentsline {subsubsection}{Ejecuci\IeC {\'o}n de C\IeC {\'o}digo Javascript}{29}{subsubsection*.10}
-\contentsline {subsubsection}{XSS - Cross-Site Scripting DOM}{29}{subsubsection*.11}
+\contentsline {subsubsection}{Ejecuci\IeC {\'o}n de C\IeC {\'o}digo Javascript}{30}{subsubsection*.10}
+\contentsline {subsubsection}{XSS - Cross-Site Scripting DOM}{30}{subsubsection*.11}
 \contentsline {subsubsection}{Man in the \textit {Browser} (MitB)}{30}{subsubsection*.12}
-\contentsline {section}{\numberline {3.3}Mecanismos de Defensa del \textit {Browser}}{30}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Sandboxing de procesos/componentes}{30}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Aislaci\IeC {\'o}n de contenido}{31}{subsection.3.3.2}
-\contentsline {subsubsection}{En contenido}{32}{subsubsection*.13}
-\contentsline {subsubsection}{En extensiones}{32}{subsubsection*.14}
-\contentsline {subsection}{\numberline {3.3.3}Blacklist y Whitelist de sitios web}{32}{subsection.3.3.3}
-\contentsline {subsubsection}{Safe Browsing}{32}{subsubsection*.15}
-\contentsline {subsubsection}{SmartScreen}{32}{subsubsection*.16}
-\contentsline {subsection}{\numberline {3.3.4}Sistemas de Reputaci\IeC {\'o}n - basados en CAMP}{32}{subsection.3.3.4}
-\contentsline {subsubsection}{Google Download - Google Chrome/Chromium}{32}{subsubsection*.17}
-\contentsline {subsubsection}{SmartScreen - Internet Explorer}{32}{subsubsection*.18}
-\contentsline {subsection}{\numberline {3.3.5}Filtros XSS}{32}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Safe Sanitization}{32}{subsection.3.3.6}
-\contentsline {subsection}{\numberline {3.3.7}AdBlocker}{32}{subsection.3.3.7}
-\contentsline {subsection}{\numberline {3.3.8}Actualizaciones Peri\IeC {\'o}dicas en Background}{32}{subsection.3.3.8}
-\contentsline {chapter}{\numberline {4}Browsers y Estado del Arte}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Arquitectura de Referencia del Browser y Patrones}{33}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}M\IeC {\'e}todo}{33}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Lo encontrado}{34}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Navegadores Existentes}{35}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Google Chrome y Google Chromium}{35}{subsection.4.2.1}
-\contentsline {subsubsection}{Browser Kernel/Process}{38}{subsubsection*.19}
-\contentsline {subsubsection}{Renderering Engine/Process - Blink}{38}{subsubsection*.20}
-\contentsline {subsubsection}{Extensions}{38}{subsubsection*.21}
-\contentsline {subsubsection}{Plugins}{38}{subsubsection*.22}
-\contentsline {subsubsection}{Aislaci\IeC {\'o}n - Isolation}{38}{subsubsection*.23}
-\contentsline {subsubsection}{Sandbox}{38}{subsubsection*.24}
-\contentsline {subsection}{\numberline {4.2.2}Internet Explorer}{39}{subsection.4.2.2}
-\contentsline {subsubsection}{Frame Process}{40}{subsubsection*.25}
-\contentsline {subsubsection}{Rendering Engine}{40}{subsubsection*.26}
-\contentsline {subsubsection}{HBO}{41}{subsubsection*.27}
-\contentsline {subsubsection}{Plugins}{41}{subsubsection*.28}
-\contentsline {subsubsection}{Aislaci\IeC {\'o}n}{41}{subsubsection*.29}
-\contentsline {subsubsection}{Sandbox}{41}{subsubsection*.30}
-\contentsline {subsection}{\numberline {4.2.3}Firefox}{41}{subsection.4.2.3}
-\contentsline {subsubsection}{Firefox Mono-proceso}{42}{subsubsection*.31}
-\contentsline {subsubsection}{Firefox Multi-proceso (Electrolysis)}{43}{subsubsection*.32}
-\contentsline {section}{\numberline {4.3}Sumario}{43}{section.4.3}
-\contentsline {chapter}{\numberline {5}Arquitectura de Referencia del Web Browser}{44}{chapter.5}
-\contentsline {section}{\numberline {5.1}Casos de Uso del Browser}{45}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Stakeholders (actores) y Concerns de estos}{45}{subsection.5.1.1}
-\contentsline {subsubsection}{Browser User (BU)}{45}{subsubsection*.33}
-\contentsline {subsubsection}{Host (H)}{45}{subsubsection*.34}
-\contentsline {subsubsection}{Provider(P)}{45}{subsubsection*.35}
-\contentsline {subsection}{\numberline {5.1.2}Casos de Uso}{45}{subsection.5.1.2}
-\contentsline {subsubsection}{Casos de Uso para Browser User (BU)}{46}{subsubsection*.36}
-\contentsline {subsubsection}{Casos de Uso para el Host (H)}{46}{subsubsection*.37}
-\contentsline {subsubsection}{Casos de Uso para el Proveedor (P)}{47}{subsubsection*.38}
-\contentsline {section}{\numberline {5.2}Patr\IeC {\'o}n Browser Infrastructure}{47}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Intent}{47}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Ejemplo}{48}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Contexto}{48}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Problema}{48}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}Soluci\IeC {\'o}n}{49}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}Estructura}{49}{subsection.5.2.6}
-\contentsline {subsection}{\numberline {5.2.7}Din\IeC {\'a}mica}{50}{subsection.5.2.7}
-\contentsline {subsubsection}{Sumario}{50}{subsubsection*.39}
-\contentsline {subsubsection}{Actor}{51}{subsubsection*.40}
-\contentsline {subsubsection}{Precondiciones}{51}{subsubsection*.41}
-\contentsline {subsubsection}{Descripci\IeC {\'o}n}{51}{subsubsection*.42}
-\contentsline {subsubsection}{Curso Alternativo}{52}{subsubsection*.43}
-\contentsline {subsubsection}{Condiciones p\IeC {\'o}stumas}{52}{subsubsection*.44}
-\contentsline {subsection}{\numberline {5.2.8}Implementaci\IeC {\'o}n}{52}{subsection.5.2.8}
-\contentsline {subsection}{\numberline {5.2.9}Consecuencias}{54}{subsection.5.2.9}
-\contentsline {subsection}{\numberline {5.2.10}Ejemplo Resuelto}{54}{subsection.5.2.10}
-\contentsline {subsection}{\numberline {5.2.11}Usos Com\IeC {\'u}nes}{55}{subsection.5.2.11}
-\contentsline {subsection}{\numberline {5.2.12}Patrones Asociados}{55}{subsection.5.2.12}
-\contentsline {chapter}{\numberline {6}Patrones de Mal Uso}{56}{chapter.6}
-\contentsline {section}{\numberline {6.1}Identificando Amenazas y Patrones de Mal Uso}{56}{section.6.1}
-\contentsline {section}{\numberline {6.2}Identificando amenazas}{56}{section.6.2}
-\contentsline {section}{\numberline {6.3}Template de Patrones de Mal Uso}{59}{section.6.3}
-\contentsline {section}{\numberline {6.4}Patr\IeC {\'o}n de Mal Uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}{61}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Intent}{61}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Contexto}{62}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Problema}{62}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Soluci\IeC {\'o}n}{63}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Din\IeC {\'a}mica}{63}{subsection.6.4.5}
-\contentsline {subsubsection}{Sumario}{64}{subsubsection*.45}
-\contentsline {subsubsection}{Actor}{64}{subsubsection*.46}
-\contentsline {subsubsection}{Precondiciones}{64}{subsubsection*.47}
-\contentsline {subsubsection}{Descripci\IeC {\'o}n}{65}{subsubsection*.48}
-\contentsline {subsubsection}{Post condiciones}{66}{subsubsection*.49}
-\contentsline {subsubsection}{Usos Conocidos}{66}{subsubsection*.50}
-\contentsline {subsection}{\numberline {6.4.6}Consecuencias}{66}{subsection.6.4.6}
-\contentsline {subsection}{\numberline {6.4.7}Contramedidas}{67}{subsection.6.4.7}
-\contentsline {subsection}{\numberline {6.4.8}Evidencia Forense}{67}{subsection.6.4.8}
-\contentsline {subsection}{\numberline {6.4.9}Patrones relacionados}{68}{subsection.6.4.9}
-\contentsline {chapter}{\numberline {7}Conclusiones}{69}{chapter.7}
-\contentsline {chapter}{Bibliograf\'{\i }a}{70}{chapter*.51}
+\contentsline {chapter}{\numberline {4}Browsers y Estado del Arte}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Arquitectura de Referencia del Browser y Patrones}{31}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}M\IeC {\'e}todo}{31}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Lo encontrado}{32}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Google Chrome y Google Chromium}{33}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Browser Kernel/Process y Renderering Engine/Process - Blink}{35}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Internet Explorer}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Frame Process y Rendering Engine}{38}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Firefox}{38}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Firefox Mono-proceso y Gecko}{38}{subsection.4.4.1}
+\contentsline {subsubsection}{Estabilidad y Recuperaci\IeC {\'o}n a fallos}{40}{subsubsection*.13}
+\contentsline {subsection}{\numberline {4.4.2}Firefox Multi-proceso (Electrolysis, e10s)}{41}{subsection.4.4.2}
+\contentsline {subsubsection}{Chrome Process y Content Process}{41}{subsubsection*.14}
+\contentsline {section}{\numberline {4.5}Mecanismos de Defensa del \textit {Browser}}{42}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Sandboxing}{42}{subsection.4.5.1}
+\contentsline {subsubsection}{Google}{43}{subsubsection*.15}
+\contentsline {subsubsection}{Internet Explorer}{44}{subsubsection*.16}
+\contentsline {subsection}{\numberline {4.5.2}Aislaci\IeC {\'o}n de Procesos}{44}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Blacklist y Whitelist de sitios web}{46}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Sistemas de Reputaci\IeC {\'o}n}{46}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Actualizaciones Peri\IeC {\'o}dicas en Background}{47}{subsection.4.5.5}
+\contentsline {chapter}{\numberline {5}Arquitectura de Referencia del Web Browser}{48}{chapter.5}
+\contentsline {section}{\numberline {5.1}Casos de Uso del Browser}{49}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Stakeholders (actores) y Concerns de estos}{49}{subsection.5.1.1}
+\contentsline {subsubsection}{Browser User (BU)}{49}{subsubsection*.17}
+\contentsline {subsubsection}{Host (H)}{49}{subsubsection*.18}
+\contentsline {subsubsection}{Provider(P)}{49}{subsubsection*.19}
+\contentsline {subsection}{\numberline {5.1.2}Casos de Uso}{49}{subsection.5.1.2}
+\contentsline {subsubsection}{Casos de Uso para Browser User (BU)}{50}{subsubsection*.20}
+\contentsline {subsubsection}{Casos de Uso para el Host (H)}{50}{subsubsection*.21}
+\contentsline {subsubsection}{Casos de Uso para el Proveedor (P)}{51}{subsubsection*.22}
+\contentsline {section}{\numberline {5.2}Patr\IeC {\'o}n Browser Infrastructure}{51}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Intent}{51}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Ejemplo}{52}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Contexto}{52}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Problema}{52}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Soluci\IeC {\'o}n}{53}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Estructura}{53}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.7}Din\IeC {\'a}mica}{54}{subsection.5.2.7}
+\contentsline {subsubsection}{Sumario}{54}{subsubsection*.23}
+\contentsline {subsubsection}{Actor}{55}{subsubsection*.24}
+\contentsline {subsubsection}{Precondiciones}{55}{subsubsection*.25}
+\contentsline {subsubsection}{Descripci\IeC {\'o}n}{55}{subsubsection*.26}
+\contentsline {subsubsection}{Curso Alternativo}{56}{subsubsection*.27}
+\contentsline {subsubsection}{Condiciones p\IeC {\'o}stumas}{56}{subsubsection*.28}
+\contentsline {subsection}{\numberline {5.2.8}Implementaci\IeC {\'o}n}{56}{subsection.5.2.8}
+\contentsline {subsection}{\numberline {5.2.9}Consecuencias}{58}{subsection.5.2.9}
+\contentsline {subsection}{\numberline {5.2.10}Ejemplo Resuelto}{58}{subsection.5.2.10}
+\contentsline {subsection}{\numberline {5.2.11}Usos Com\IeC {\'u}nes}{59}{subsection.5.2.11}
+\contentsline {subsection}{\numberline {5.2.12}Patrones Asociados}{59}{subsection.5.2.12}
+\contentsline {chapter}{\numberline {6}Patrones de Mal Uso}{60}{chapter.6}
+\contentsline {section}{\numberline {6.1}Identificando Amenazas y Patrones de Mal Uso}{60}{section.6.1}
+\contentsline {section}{\numberline {6.2}Identificando amenazas}{60}{section.6.2}
+\contentsline {section}{\numberline {6.3}Template de Patrones de Mal Uso}{63}{section.6.3}
+\contentsline {section}{\numberline {6.4}Patr\IeC {\'o}n de Mal Uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}{65}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Intent}{65}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Contexto}{66}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Problema}{66}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Soluci\IeC {\'o}n}{67}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Din\IeC {\'a}mica}{67}{subsection.6.4.5}
+\contentsline {subsubsection}{Sumario}{68}{subsubsection*.29}
+\contentsline {subsubsection}{Actor}{68}{subsubsection*.30}
+\contentsline {subsubsection}{Precondiciones}{68}{subsubsection*.31}
+\contentsline {subsubsection}{Descripci\IeC {\'o}n}{69}{subsubsection*.32}
+\contentsline {subsubsection}{Post condiciones}{70}{subsubsection*.33}
+\contentsline {subsubsection}{Usos Conocidos}{70}{subsubsection*.34}
+\contentsline {subsection}{\numberline {6.4.6}Consecuencias}{70}{subsection.6.4.6}
+\contentsline {subsection}{\numberline {6.4.7}Contramedidas}{71}{subsection.6.4.7}
+\contentsline {subsection}{\numberline {6.4.8}Evidencia Forense}{71}{subsection.6.4.8}
+\contentsline {subsection}{\numberline {6.4.9}Patrones relacionados}{72}{subsection.6.4.9}
+\contentsline {chapter}{\numberline {7}Conclusiones}{73}{chapter.7}
+\contentsline {chapter}{Bibliograf\'{\i }a}{74}{chapter*.35}
