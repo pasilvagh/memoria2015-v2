@@ -1,6 +1,7 @@
 \chapter{Patrones de Mal Uso}
 \label{chap6:Misuse}
 
+
 \section{Identificando Amenazas y Patrones de Mal Uso}
 En este capítulo presentaremos el análisis e identificación de las amenazas dentro del patrón presentado en el capítulo anterior, y 2 patrones de mal uso. Estos artefactos servirán de ejemplo de cómo usar la Arquitectura de Referencia obtenida. El objetivo de éste capítulo es conocer y visualizar los mal usos del sistema, en este caso del Browser, para poder educar a los desarrolladores de proyectos que basan sus sistemas en el uso de éste.
 Este capítulo realiza los siguientes ítems: Un análisis de amenazas realizado sobre las actividades relacionadas en el caso de uso Realizar request y Recibir Request, luego a partir del resultado del análisis se aplica la metodología explicada en el trabajo de [Bra08] para obtener una lista de amenazas. A través del listado de amenazas es posible detectar o inferir actividades de mal uso que pueden aparecer en uno o más casos de uso, que podrían resultar en una vulneración del sistema. Se presentarán los mal usos de actividades a través de patrones. Se han identificado 2 patrones y serán presentados a continuación.
@@ -10,7 +11,7 @@ La identificación de amenazas es base para poder identificar las medidas adecua
 Usando los casos de uso listado en el capítulo anterior, es posible revelar una lista de amenazas extensas. Solo para sintetizar el proceso, se usará un caso de uso y de éste se extraerá un patrón de mal uso.
 La figura \ref{fig:ActDiagr} describe el diagrama de actividad compuesto que involucra los casos de uso Realizar Request y Recibir Request. Varias amenazas pueden ser reveladas a través de las interacciones visualizadas en el diagrama, por ejemplo: Cuando se realiza la petición al servidor del recurso especificado por la URL, y se entrega otro recurso que no es el pedido. 
 
-\begin{figure}[h]
+\begin{figure}[h!t]
     \centering
     \includegraphics[scale=0.45]{figures/chap5/activityDiag.jpg}
     \caption{Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request. Fuente: Elaboración Propia.}
@@ -18,7 +19,7 @@ La figura \ref{fig:ActDiagr} describe el diagrama de actividad compuesto que inv
 \end{figure}
 
 \begin{landscape}% Landscape page
-\begin{table}
+\begin{table}[h!t]
 \caption{Tabla con amenazas. Fuente: Elaboración Propia.}
 \centering
 \begin{tabular}{ |m{3.5em}|m{2.5em}|m{1.5em}|m{6em}|m{6em}|m{10em}|m{6em}|m{7em}|} 
@@ -85,8 +86,8 @@ Discute otros patrones de mal uso o uso indebido con diferentes objetivos pero r
 
 \section{Patrón de Mal Uso: Modificación de tráfico en el Web Browser}
 En esta sección presentaremos un patrones de mal uso que describe la amenaza encontrada en el patrón Browser Infrastructure que hemos obtenido en este trabajo.
-Una de las amenazas es que un atacante haya sido capaz de comprometer la respuesta obtenida desde el Provider contactado. El atacante podría tratar de reemplazar algunos parámetros de la respuesta del provider, entregando al Browser User un contenido distinto al original..
-}
+Una de las amenazas es que un atacante haya sido capaz de comprometer la respuesta obtenida desde el Provider contactado. El atacante podría tratar de reemplazar algunos parámetros de la respuesta del provider, entregando al Browser User un contenido distinto al original.
+
 \subsection{Intent}
 Un atacante podría cambiar contenido o dar uno diferente al esperado cuando el Web Browser (Browser User) recibe la response del Servidor o Provider. Realizando esta acción, el Navegador podría interpretar la información de una manera distinta a que si hubiera recibido el tráfico original.
 
@@ -114,7 +115,7 @@ El ataque puede ser facilitado por:
 \end{itemize}
 \subsection{Solución}
 La solución estructural usada es la misma creada por el patrón Browser Infrastructure que se revisó en el capítulo 4. La clase Attacker es cualquier entidad que podría llevar a cabo una acción arriesgada contra la integridad del Browser, usuario, Host y Provider (Figura \ref{fig:BIMisuse}). El atacante es capaz tanto de interceptar las response que el Provider envía al Browser Client usando al Host como receptor, o haciendo que el Browser realice modificaciones en el input que va hacia el Provider, utilizando scripts u otro resources.
-\begin{figure}[h]
+\begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.45]{figures/chap5/patronMisuse.jpg}
 	        \caption{Diagrama de Clases para el patrón de Misuse. Fuente: Elaboración Propia.}
@@ -123,7 +124,7 @@ La solución estructural usada es la misma creada por el patrón Browser Infrast
 
 \subsection{Dinámica}
 En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para realizar uno de los tantos mal usos que se pueden realizar durante el caso de uso Realizar Request. El atacante queda entre el Browser Client y el Host, interceptando la realización del request original y modificando el tráfico a su gusto; usualmente un ataque basado en este mal uso se le llama Man-in-the-Browser (MITB) \cite{Liu2012, Barth2010, Utakrit2009, Dougan2012}. Esto podría perfectamente suceder cuando el Browser User ha permitido la instalación de plugins, extensiones o programas externos en el Host y Browser Client [ref]
-\begin{figure}[h]
+\begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.45]{figures/chap5/patronMisuseSeq.jpg}
 	        \caption{Diagrama de Secuencia para el Mal uso: Modificación de tráfico en el Web Browser. Fuente: Elaboración Propia.}

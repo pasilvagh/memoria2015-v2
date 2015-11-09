@@ -33,6 +33,20 @@ W.~W. W.~C. W3C, ``About.'' [Online]. Available:
   \url{http://www.w3.org/Consortium/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{sandboxGC}
+\BIBentryALTinterwordspacing
+``{Sandbox - The Chromium Projects}.'' [Online]. Available:
+  \url{http://www.chromium.org/developers/design-documents/sandbox}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Yason}
+M.~V. Yason, ``{Diving into IE 10’s Enhanced Protected Mode Sandbox}.''
+
+\bibitem{Crowley2010}
+M.~Crowley, \emph{{Pro Internet Explorer 8 \& 9 Development: Developing
+  Powerful Applications for The Next Generation of IE}}, 1st~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Berkely, CA, USA: Apress, 2010.
+
 \bibitem{multiProcGC}
 \BIBentryALTinterwordspacing
 ``{Multi-process Architecture - The Chromium Projects}.'' [Online]. Available:
@@ -79,20 +93,6 @@ A.~Grosskurth and M.~W. Godfrey, ``A reference architecture for web browsers,''
 ``{Firefox Electrolysis 101}.'' [Online]. Available:
   \url{https://timtaubert.de/blog/2011/08/firefox-electrolysis-101/}
 \BIBentrySTDinterwordspacing
-
-\bibitem{sandboxGC}
-\BIBentryALTinterwordspacing
-``{Sandbox - The Chromium Projects}.'' [Online]. Available:
-  \url{http://www.chromium.org/developers/design-documents/sandbox}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Yason}
-M.~V. Yason, ``{Diving into IE 10’s Enhanced Protected Mode Sandbox}.''
-
-\bibitem{Crowley2010}
-M.~Crowley, \emph{{Pro Internet Explorer 8 \& 9 Development: Developing
-  Powerful Applications for The Next Generation of IE}}, 1st~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Berkely, CA, USA: Apress, 2010.
 
 \bibitem{goertzel2007software}
 K.~M. Goertzel, T.~Winograd, H.~L. McKinley, L.~J. Oh, M.~Colon, T.~McGibbon,
@@ -471,49 +471,12 @@ S.~D. Paola and G.~Fedon, ``{Subverting Ajax},'' \emph{23rd Chaos Communication
   \url{http://events.ccc.de/congress/2006/Fahrplan/attachments/1158-Subverting\_Ajax.pdf}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Godfrey2000}
-\BIBentryALTinterwordspacing
-M.~W. Godfrey and E.~H.~S. Lee, ``{Secrets from the Monster: Extracting
-  Mozilla's Software Architecture},'' \emph{In Proc. of 2000 Intl. Symposium on
-  Constructing software engineering tools (CoSET 2000}, pp. 15--23, 2000.
-  [Online]. Available:
-  \url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.9211}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Lwin2009}
-A.~Systems and N.~Lwin, ``{Agent Based Web Browser},'' \emph{2009 Fifth
-  International Conference on Autonomic and Autonomous Systems}, 2009.
-
-\bibitem{EvolutionofWeb}
-\BIBentryALTinterwordspacing
-G.~Team, ``Evolution of the web.'' [Online]. Available:
-  \url{http://www.evolutionoftheweb.com/}
-\BIBentrySTDinterwordspacing
-
 \bibitem{reis2009browser}
 \BIBentryALTinterwordspacing
 C.~Reis, A.~Barth, and C.~Pizano, ``{Browser Security: Lessons from Google
   Chrome},'' \emph{Commun. ACM}, vol.~52, no.~8, pp. 45--49, 2009. [Online].
   Available:
   \url{http://dl.acm.org/ft\_gateway.cfm?id=1556050\&type=html$\backslash$npapers3://publication/doi/10.1145/1538947.1556050}
-\BIBentrySTDinterwordspacing
-
-\bibitem{IEArch}
-\BIBentryALTinterwordspacing
-``{Internet Explorer Architecture (Internet Explorer)}.'' [Online]. Available:
-  \url{https://msdn.microsoft.com/en-us/library/aa741312(v=vs.85).aspx}
-\BIBentrySTDinterwordspacing
-
-\bibitem{ElectrolysisTalk}
-\BIBentryALTinterwordspacing
-``{Multiprocess Desktop Firefox | Air Mozilla | Mozilla, in Video}.'' [Online].
-  Available: \url{https://air.mozilla.org/inter-presentation-schuster/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{NightlyBuilds}
-\BIBentryALTinterwordspacing
-``{Firefox Nightly Builds}.'' [Online]. Available:
-  \url{https://nightly.mozilla.org/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{NeckoElectro}
@@ -541,6 +504,43 @@ R.~Colvin, ``{SmartScreen},'' 2010. [Online]. Available:
   \url{https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Godfrey2000}
+\BIBentryALTinterwordspacing
+M.~W. Godfrey and E.~H.~S. Lee, ``{Secrets from the Monster: Extracting
+  Mozilla's Software Architecture},'' \emph{In Proc. of 2000 Intl. Symposium on
+  Constructing software engineering tools (CoSET 2000}, pp. 15--23, 2000.
+  [Online]. Available:
+  \url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.9211}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Lwin2009}
+A.~Systems and N.~Lwin, ``{Agent Based Web Browser},'' \emph{2009 Fifth
+  International Conference on Autonomic and Autonomous Systems}, 2009.
+
+\bibitem{EvolutionofWeb}
+\BIBentryALTinterwordspacing
+G.~Team, ``Evolution of the web.'' [Online]. Available:
+  \url{http://www.evolutionoftheweb.com/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{IEArch}
+\BIBentryALTinterwordspacing
+``{Internet Explorer Architecture (Internet Explorer)}.'' [Online]. Available:
+  \url{https://msdn.microsoft.com/en-us/library/aa741312(v=vs.85).aspx}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ElectrolysisTalk}
+\BIBentryALTinterwordspacing
+``{Multiprocess Desktop Firefox | Air Mozilla | Mozilla, in Video}.'' [Online].
+  Available: \url{https://air.mozilla.org/inter-presentation-schuster/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{NightlyBuilds}
+\BIBentryALTinterwordspacing
+``{Firefox Nightly Builds}.'' [Online]. Available:
+  \url{https://nightly.mozilla.org/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{W3C-SOP}
 \BIBentryALTinterwordspacing
 W3C, ``{Same Origin Policy},'' W3C, Web page, 2010. [Online]. Available:
@@ -565,5 +565,10 @@ E.~B. Fernandez and R.~Pan, ``{A pattern language for security models},''
   \emph{proceedings of PLOP}, vol.~1, pp. 1--13, 2001. [Online]. Available:
   \url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.90.5898}
 \BIBentrySTDinterwordspacing
+
+\bibitem{fernandez2014security}
+E.~B. Fernandez, R.~Monge, and K.~Hashizume, ``{Building a security reference
+  architecture for cloud systems},'' in \emph{Proceedings of the WICSA 2014
+  Companion Volume}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2014, p.~3.
 
 \end{thebibliography}

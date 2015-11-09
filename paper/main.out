@@ -35,23 +35,23 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{An\341lisis de ataques}{section.3.1}% 35
 \BOOKMARK [1][-]{section.3.2}{Ataques y Amenazas}{chapter.3}% 36
 \BOOKMARK [2][-]{subsection.3.2.1}{Phishing}{section.3.2}% 37
-\BOOKMARK [0][-]{chapter.4}{Browsers y Estado del Arte}{}% 38
-\BOOKMARK [1][-]{section.4.1}{Arquitectura de Referencia del Browser y Patrones}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.1.1}{M\351todo}{section.4.1}% 40
-\BOOKMARK [2][-]{subsection.4.1.2}{Lo encontrado}{section.4.1}% 41
-\BOOKMARK [1][-]{section.4.2}{Google Chrome y Google Chromium}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.2.1}{Browser Kernel/Process y Renderering Engine/Process - Blink}{section.4.2}% 43
-\BOOKMARK [1][-]{section.4.3}{Internet Explorer}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.3.1}{Frame Process y Rendering Engine}{section.4.3}% 45
-\BOOKMARK [1][-]{section.4.4}{Firefox}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.4.1}{Firefox Mono-proceso y Gecko}{section.4.4}% 47
-\BOOKMARK [2][-]{subsection.4.4.2}{Firefox Multi-proceso \(Electrolysis, e10s\)}{section.4.4}% 48
-\BOOKMARK [1][-]{section.4.5}{Mecanismos de Defensa del Browser}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.5.1}{Sandboxing}{section.4.5}% 50
-\BOOKMARK [2][-]{subsection.4.5.2}{Aislaci\363n de Procesos}{section.4.5}% 51
-\BOOKMARK [2][-]{subsection.4.5.3}{Blacklist y Whitelist de sitios web}{section.4.5}% 52
-\BOOKMARK [2][-]{subsection.4.5.4}{Sistemas de Reputaci\363n}{section.4.5}% 53
-\BOOKMARK [2][-]{subsection.4.5.5}{Actualizaciones Peri\363dicas en Background}{section.4.5}% 54
+\BOOKMARK [1][-]{section.3.3}{Mecanismos de Defensa del Browser}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.1}{Sandboxing}{section.3.3}% 39
+\BOOKMARK [2][-]{subsection.3.3.2}{Aislaci\363n de Procesos}{section.3.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.3}{Blacklist y Whitelist de sitios web}{section.3.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.4}{Sistemas de Reputaci\363n}{section.3.3}% 42
+\BOOKMARK [2][-]{subsection.3.3.5}{Actualizaciones Peri\363dicas en Background}{section.3.3}% 43
+\BOOKMARK [0][-]{chapter.4}{Browsers y Estado del Arte}{}% 44
+\BOOKMARK [1][-]{section.4.1}{Arquitectura de Referencia del Browser y Patrones}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.1.1}{M\351todo}{section.4.1}% 46
+\BOOKMARK [2][-]{subsection.4.1.2}{Lo encontrado}{section.4.1}% 47
+\BOOKMARK [1][-]{section.4.2}{Google Chrome y Google Chromium}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.2.1}{Browser Kernel/Process y Renderering Engine/Process - Blink}{section.4.2}% 49
+\BOOKMARK [1][-]{section.4.3}{Internet Explorer}{chapter.4}% 50
+\BOOKMARK [2][-]{subsection.4.3.1}{Frame Process y Rendering Engine}{section.4.3}% 51
+\BOOKMARK [1][-]{section.4.4}{Firefox}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.4.1}{Firefox Mono-proceso y Gecko}{section.4.4}% 53
+\BOOKMARK [2][-]{subsection.4.4.2}{Firefox Multi-proceso \(Electrolysis, e10s\)}{section.4.4}% 54
 \BOOKMARK [0][-]{chapter.5}{Arquitectura de Referencia del Web Browser}{}% 55
 \BOOKMARK [1][-]{section.5.1}{Casos de Uso del Browser}{chapter.5}% 56
 \BOOKMARK [2][-]{subsection.5.1.1}{Stakeholders \(actores\) y Concerns de estos}{section.5.1}% 57
@@ -84,4 +84,6 @@
 \BOOKMARK [2][-]{subsection.6.4.8}{Evidencia Forense}{section.6.4}% 84
 \BOOKMARK [2][-]{subsection.6.4.9}{Patrones relacionados}{section.6.4}% 85
 \BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 86
-\BOOKMARK [0][-]{chapter*.35}{Bibliograf\355a}{}% 87
+\BOOKMARK [1][-]{section.7.1}{Contribuciones}{chapter.7}% 87
+\BOOKMARK [1][-]{section.7.2}{Trabajo Futuro}{chapter.7}% 88
+\BOOKMARK [0][-]{chapter*.35}{Bibliograf\355a}{}% 89

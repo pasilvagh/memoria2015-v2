@@ -11,9 +11,9 @@ Database file #1: refTodas.bib
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty booktitle in 2005-grosskurth-browser-refarch
 Warning--empty journal in Yason
 Warning--empty year in Yason
+Warning--empty booktitle in 2005-grosskurth-browser-refarch
 Warning--empty booktitle in WhyteHarrison
 Warning--empty year in WhyteHarrison
 Warning--empty journal in Galster2011a
@@ -31,45 +31,45 @@ Warning--empty journal in browSecPhish
 Warning--empty journal in rowSecSEMBlock
 
 Done.
-You've used 95 entries,
+You've used 96 entries,
             4039 wiz_defined-function locations,
-            1301 strings with 22141 characters,
-and the built_in function-call counts, 47434 in all, are:
-= -- 3630
-> -- 968
-< -- 228
-+ -- 506
-- -- 181
-* -- 2098
-:= -- 7663
-add.period$ -- 199
-call.type$ -- 95
-change.case$ -- 96
+            1305 strings with 22328 characters,
+and the built_in function-call counts, 48006 in all, are:
+= -- 3672
+> -- 981
+< -- 229
++ -- 512
+- -- 184
+* -- 2125
+:= -- 7753
+add.period$ -- 202
+call.type$ -- 96
+change.case$ -- 97
 chr.to.int$ -- 525
-cite$ -- 113
-duplicate$ -- 3790
-empty$ -- 4327
-format.name$ -- 231
-if$ -- 10597
+cite$ -- 114
+duplicate$ -- 3839
+empty$ -- 4390
+format.name$ -- 235
+if$ -- 10732
 int.to.chr$ -- 0
-int.to.str$ -- 95
-missing$ -- 731
-newline$ -- 408
-num.names$ -- 77
-pop$ -- 2127
+int.to.str$ -- 96
+missing$ -- 741
+newline$ -- 411
+num.names$ -- 78
+pop$ -- 2154
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 3632
+skip$ -- 3676
 stack$ -- 0
-substring$ -- 1321
-swap$ -- 2470
-text.length$ -- 53
+substring$ -- 1324
+swap$ -- 2500
+text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 95
+type$ -- 96
 warning$ -- 18
-while$ -- 175
-width$ -- 97
-write$ -- 880
+while$ -- 177
+width$ -- 98
+write$ -- 889
 (There were 18 warnings)
