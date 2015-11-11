@@ -4,21 +4,6 @@
 
 En esta sección se presentan los posibles ataques que un \textit{Browser} puede sufrir y que directamente podrían afectar al sistema con el que se comunica. Principalmente ahondaremos en los ataques en el \textit{Browser} relacionados a las técnicas de Ingeniería Social \cite{socEngineeering}. El escenario actual de los ataques en el \textit{browser} ha cambiado bastante, si es comparado a aquellos de la decada de los noventa. Cada día los Browsers son más robustos y difíciles de explotar, y por lo mismo los ataques de tipo \textit{drive-by downloads} o los basados en ejecución de código para vulnerar el sistema, cada vez son menores. Una nueva forma de ataque ha emergido y es bastante fácil de lograrlo, pues se basa en el engaño del usuario a realizar lo que el atacante desea. Una vez el usuario es engañado, el atacante puede lograr un control total tanto del \textit{Browser} o del Host, sin haber tenido que vulnerar el sistema \cite{Rajab2013,Labs2013} que aloja al \textit{Browser}. Desarrollos de sistemas críticos que interactuan a diario con diferentes usuarios en la red, deberían de ser los más preocupados de estos ataques pues atentan contra la confidencialidad, integridad y disponibilidad de los datos, tanto del usuario (personales) como los de los \textit{Stakeholders} involucrados.
 
-\section{Social Engineering o Ingeniería Social}
-\cite{socEngineeering} define este tipo de acción como: El acto de manipular una persona para realizar acciones que no son parte de los mejores intereses del \textit{blanco o víctima} (la misma persona/organización/etc u otra entidad). Un ataque de éste tipo puede darse de diversas maneras, no dejando la posibilidad de un encuentro físico o digital con el que realiza el engaño. Un ataque basado en ingeniería social, es uno que se aprovecha del comportamiento humano y la confianza de la víctima. En el contexto del Web Browser, el usuario engañado es la primera y última línea de defensa contra este tipo de ataques, pues un abuso en la confianza del usuario podría abrir las puertas al Host del \textit{Browser}, logrando un daño tanto del usuario como con los sistemas externos con los que interactúa.
-
-Si pudieramos dividir los ataques de Social Engineering, podríamos encontrarnos con un panorama parecido al de la Figura \ref{fig:SEattack}. En esta figura es posible observar que los ataques de Clickjacking se encuentran afuera del ámbito de los ataques de  Ingeniería Social, esto es dado a que el usuario que está navegando, pudo haber accedido a una página web conocida por él, sin siquiera que el atacante haya sugestionado a éste. Sin embargo, Clickjacking puede terminar convirtiendose en un ataque de Social Engineering si se combina con otros procedimientos.
-
-	\begin{figure}[h!t]
-        \centering
-        \includegraphics[scale=0.5]{figures/SEAttacks.png}
-        \caption{Esquematización de ataques de tipo Social Engineering. Fuente: Elaboración Propia.}
-        \label{fig:SEattack}
-    \end{figure}
-
- 	\subsection{Análisis de ataques}
-	Según los estudios \cite{browSecPhish, Labs2013, rowSecSEMBlock} indican que el \textit{Browser} es la primera linea de defensa en contra de multiples amenazas en la Web. Sin embargo, esto se ve afectado bastante por la falta de educación de los usuarios que utilizan los navegadores y la constante evolución de las amenazas \cite{browSecPhish} Es por esto que muchos de los manufacturadores de browsers crean mecanismos de defensa \cite{Drake2011} que actuen al momento de solicitar una página, usando black o white list, sistemas de reputación \cite{Rajab2013} con avisos de alerta al usuario, para evitar que éste al menos tome la decisión de poder ingresar al sitio malicioso.
-
 \section{Ataques y Amenazas}
 Esta sección incluye algunos ataques posibles de realizar en un \textit{Browser} y que podrían afectar tanto directa como indirectamente a un sistema externo. Acá no incluiremos ataques en donde el Host ya ha sido vulnerado con anticipación, o aquellos que puedan correr software con los privilegios de un usuario del sistema Host, es decir, aquellos donde el Host ya ha sido controlado directamente por medio de alguna vulnerabilidad del sistema. En el caso anterior, los Browsers ya nada pueden hacer para detener un ataque de esa magnitud.
 
@@ -35,10 +20,23 @@ En trabajos \cite{barth2008security, FirefoxThreatModel} se puede observar que e
 	\item Compromiso de los canales de comunicación del \textit{Browser}.
 \end{enumerate}
 
-Una lista (parcial) de ataques asociados a las amenazas anteriores son:
+\subsection{Social Engineering o Ingeniería Social}
+\cite{socEngineeering} define este tipo de acción como: El acto de manipular una persona para realizar acciones que no son parte de los mejores intereses del \textit{blanco o víctima} (la misma persona/organización/etc u otra entidad). Un ataque de éste tipo puede darse de diversas maneras, no dejando la posibilidad de un encuentro físico o digital con el que realiza el engaño. Un ataque basado en ingeniería social, es uno que se aprovecha del comportamiento humano y la confianza de la víctima. En el contexto del Web Browser, el usuario engañado es la primera y última línea de defensa contra este tipo de ataques, pues un abuso en la confianza del usuario podría abrir las puertas al Host del \textit{Browser}, logrando un daño tanto del usuario como con los sistemas externos con los que interactúa.
+
+Si pudieramos dividir los ataques de Social Engineering, podríamos encontrarnos con un panorama parecido al de la Figura \ref{fig:SEattack}. En esta figura es posible observar que los ataques de Clickjacking se encuentran afuera del ámbito de los ataques de  Ingeniería Social, esto es dado a que el usuario que está navegando, pudo haber accedido a una página web conocida por él, sin siquiera que el atacante haya sugestionado a éste. Sin embargo, Clickjacking puede terminar convirtiendose en un ataque de Social Engineering si se combina con otros procedimientos.
+
+    \begin{figure}[h!t]
+        \centering
+        \includegraphics[scale=0.5]{figures/SEAttacks.png}
+        \caption{Esquematización de ataques de tipo Social Engineering.}
+        \label{fig:SEattack}
+    \end{figure}
+
+    \subsection{Análisis de ataques}
+    Según los estudios \cite{browSecPhish, Labs2013, rowSecSEMBlock} indican que el \textit{Browser} es la primera linea de defensa en contra de multiples amenazas en la Web. Sin embargo, esto se ve afectado bastante por la falta de educación de los usuarios que utilizan los navegadores y la constante evolución de las amenazas \cite{browSecPhish} Es por esto que muchos de los manufacturadores de browsers crean mecanismos de defensa \cite{Drake2011} que actuen al momento de solicitar una página, usando black o white list, sistemas de reputación \cite{Rajab2013} con avisos de alerta al usuario, para evitar que éste al menos tome la decisión de poder ingresar al sitio malicioso.
 
 \subsection{Phishing}
-Este ataque consta principalmente del engaño al usuario, confundiendolo a que visite una página deshonesta en vez de la que tenía pensado. En el último tiempo muchos de los ataques que actualmente están ocurriendo se han limitado al uso de técnicas de ingeniería social. Si bien los ataques basados en drive-by downloads y clickjacking siguen siendo de alto impacto, los atacantes parecen preferir los otros por la simplicidad de éste, pues no es necesario conocer realmente vulnerabilidades del \textit{Browser} para llevarlos a cabo. Sin embargo, el Phishing es una buena herramienta que permite generar muchos otros ataques, que son mucho más peligrosos. Un resultado obtenido dentro del experimento en \cite{browSecPhish}, menciona que la vida útil en promedio de un sitio de Phishing es de aproximadamente 26 horas. Esto principalmente es debido a que los sistemas de defensa, antes de saber si es malicioso o no, debe descubrir, validar y clasificar en el sistema de reputación, tan pronto como sea posible.
+Este ataque consta principalmente del engaño al usuario, confundiendolo a que visite una página deshonesta en vez de la que tenía pensado. En el último tiempo muchos de los ataques que actualmente están ocurriendo se han limitado al uso de técnicas de ingeniería social. Si bien los ataques basados en drive-by downloads y clickjacking siguen siendo de alto impacto, los atacantes parecen preferir los otros por la simplicidad de éste, pues no es necesario conocer realmente vulnerabilidades del \textit{Browser} para llevarlos a cabo. Sin embargo, el Phishing es una buena herramienta que permite generar muchos otros ataques, que son mucho más peligrosos. Un resultado obtenido dentro del experimento en \cite{browSecPhish}, menciona que la vida útil en promedio de un sitio de Phishing es de aproximadamente 26 horas. Esto principalmente es debido a que los sistemas de defensa, antes de saber si es malicioso o no, debe descubrir, validar y clasificar en el sistema de reputación, tan pronto como sea posible. Un ataque de Phishing puede tener los siguientes ataques asociados:
 
 	\subsubsection{Instalación de Malware o Extensiones malignas}
 	Un ataque de este tipo puede ser originado desde la ejecución de un ataque Phishing a una persona; en especial cuando se hace creer que lo que se va a instalar es completamente inofensivo. Sin embargo, el resultado de la aceptación de usuario a la instalación puede tener consecuencias bastante graves tanto en el Browser como en el Host, donde la mayoría de las veces el ataque puede terminar como un Man-in-the-Browser \cite{Utakrit2009, Dougan2012}. En la jerga de NSS Labs estos ataques son llamados SEM o Social Enginerring Malware, en el estudio \cite{rowSecSEMBlock} afirma que conocer la identidad de los atacantes que utilizan Social Engineering permite una mejor protección contra los SEM. El trabajo recomienda que las Empresas y grandes organizaciones deberían revisar los reportes de otros Laboratorios de Seguridad cuando seleccionan un tipo de Web Browser; Las empresas deben entender que el mercado de los Browsers no es estático y muchas amenazas aparecen constantemente. El estudio concluye que la Educación es un componente importante en la protección de SEM, pues aquellos usuarios que son capaces de identificar ataques de Ingeniería Social (SE), necesitan menos tecnologías para la protección de estos ataques.
@@ -85,6 +83,69 @@ Este ataque consta principalmente del engaño al usuario, confundiendolo a que v
 
 
 \section{Mecanismos de Defensa del \textit{Browser}}
+
+\subsection{SOP: Same Origin Policy} %listo
+\label{chap2:SOP}
+
+    Es un principio de seguridad implementado (hoy en día) por cada browser existente, su principal objetivo es restringuir las formas de comunicación entre una ventana y un servidor web. \textbf{Same Origin Policy} o \textbf{SOP} es un acuerdo entre varios manufacturadores de navegadores web cómo Microsoft, Apple, Google y Mozilla (entre los más importantes), en donde se definió una estandarización de cómo limitar las funcionalidades del código de scripting ejecutado en el browser del usuario. 
+
+    Este importante concepto nace a partir del Modelo de Seguridad detrás de una Aplicación Web, al mismo tiempo que es el mecanismo más básico que el Browser tiene para protegerse de las amenazas que aparecen en el día a día, haciendo un poco más complicado el trabajo de crear un \textit{exploit}. \textbf{SOP} define lo que es un \textbf{Origen}, compuesto por el \textbf{esquema}, el \textbf{host/dominio} y \textbf{puerto} de la URL. Esta política permite que un Web Browser aisle los distintos recursos obtenidos por las páginas web y que solo permita la ejecución de \textit{Scripts} que pertenezcan a un mismo \textbf{Origen}. Inicialmente fue definido solo para recursos externos, pero fue extendido para incluir otros tipos de orígenes, esto incluye el acceso local a los archivos con el \textit{scheme} \textbf{file://} o recursos relacionados al Browser con \textbf{chrome://}.
+
+    \textbf{SOP} puede distinguir entre la información que envía y recibe el Web Browser, y solo se aplicará la política a los elementos externos que se soliciten dentro de una página web (recepción de la información). Esta imposibilidad de recibir información de un \textbf{Origen} diferente al del recurso actual, permite disminuir la superficie de ataque (\textit{Attack Surface}) y la posibilidad de explotar alguna vulnerabilidad en el sistema donde reside el Browser. Sin embargo, \textbf{SOP} no pone ninguna restricción sobre la información que el usuario puede enviar hacia otros. Sin \textbf{SOP} cualquier sitio podría accesar a la información confidencial de un usuario o de cualquier otro sitio. Por tanto es sencillo entender la razón de la existencia de \textbf{SOP}, se desea proteger la información del usuario, sus cookies, token de autenticación, etc. de las amenazas existentes en la Internet.
+
+
+    %referencia de chrome Zalewsk08
+    En \cite{Zalewsk08} menciona que no existe una sola forma de \textbf{SOP}, si no que es una serie de mecanismos que superficialmente que se parecen, pero al mismo tiempo poseen diferencias:
+
+    \begin{itemize}
+        \item \textbf{SOP} para acceso al \textbf{Document Object Model}: se dará permiso de modificar el \textbf{DOM} y sus propiedades solamente aquellos scripts que tienen el mismo dominio, puerto (para todos los browsers excepto Internet Explorer) y protocolo. Visto de otro modo, el mecanismo entrega una especie de Sandboxing para el contenido potencialmente peligroso y no confiable. Sin embargo éste no es suficiente, pues posee varias desventajas: el dominio es posible de cambiar a la conveniencia del atacante, limita las acciones a los desarrolladores lo que se traduce en que éstos tengan que buscar bugs que permitan liberarse de estas restricciones lo que incita a atacantes a aprovecharse de ésto.
+        \item \textbf{SOP} para el objeto XmlHttpRequest: para diferentes tipos de peticiones (GET, POST y otros) existen condiciones y suposiciones que hacen que se tome o no en cuenta el \textit{request} del cliente, además del uso de una \textit{whitelist} de las formas en que el header de la petición puede salir del browser.
+        \item \textbf{SOP} para \textit{cookies}: restringuiendo el uso de acuerdo su dominio, \textit{path}, tiempo de uso, modificando o eliminado las cookies, e incluso protegiendo las cookies usando el \textit{keyword: secure}. Sin embargo, desde su implementación las cookies han generado bastante problemas de seguridad.
+        \item Y otros como: {SOP} para Flash, donde usa políticas para realizar peticiones fuera del dominio através de un archivo \textbf{crossdomain.xml}, \textbf{SOP} para Java y \textbf{SOP} para Silverlight, parecido al de Flash solo qe utiliza otros elementos.
+    \end{itemize}
+
+    
+    Tanto para los atacantes como desarrolladores de Software, SOP puede llegar a ser bastante molesto. Para el primero, la respuesta es obvia, pero para el segundo está el problema de ¿cómo poder aislar los componentes no confiables o parcialmente confiables, mientras que al mismo tiempo se pueda tener una comunicación entre ellos de forma segura? Ejemplo de esto son los Mashup \cite{barth2009securing}, que permiten juntar contenido de terceros en una misma página por medio de frames, etc. 
+        
+    Existen excepciones que permiten evitar el uso de SOP, pero como es de esperar esta vía puede ser mal usada por los atacantes en contra del usuario y de la Aplicación Web. Dentro de las excepciones están los elementos en HTML \(<\)script\(>\), \(<\)img\(>\), \(<\)iframe\(>\) y otros, que si bien permiten la comunicación entre diferentes orígenes, un mal uso de este puede causar grandes estragos, desde la eliminación de registros en una base de datos hasta la propagación de un gusano o virus.
+        
+    Queda decir que si bien SOP entrega una capa de seguridad al usuario y a la Aplicación Web, contra cierto tipo de ataques (muchas veces del tipo de ataques de principiantes), esto no es suficiente. Es responsabilidad del desarrollador de Software poseer las herramientas necesarias para asegurar la confidencialidad e integridad del sistema a través de otros métodos de seguridad.
+
+
+
+\subsection{CORS: Cross-Origin Resource Sharing}
+\label{chap2:CORS}
+    Cómo lo define su nombre es un mecanismo (especificación) que permite al cliente realizar request entre sitios de diverso \textbf{Origen}, ignorando el \textbf{SOP}. \textit{CORS} define una forma en que el Browser y el Servidor Web puedan interactuar para determinar si permitir o no el request a otro \textbf{Origen}. Un Browser utiliza SOP para restringuir los request de la red y prevenir al cliente de una Aplicación Web ejecutar código que se encuentra en un origen distinto, además de limitar los request HTTP no seguros que podrían tratar de generar un daño. CORS extiende el modelo que el Browser maneja e incluye:
+        
+        \begin{itemize}
+            \item Un header en la respuesta/response del servidor solicitado llamado \textit{Access-Control-Allow-Origin}, donde se debe escribir el \textbf{Origen} que tendrá acceso a los recursos solicitados al servidor. Si el valor de la respuesta del servidor coincide con el \textbf{Origen} de quién lo solicitó, se podrá realizar el uso del recurso en el navegador, de lo contrario se generará un error.
+
+            \item Otro header llamado \textbf{Origin} pero esta vez en el request de la solicitud, para permitir al Servidor hacer cumplir las limitaciones en las peticiones de distinto \textbf{Origen}.
+
+            \item En algunos casos un browser deberá agregar el header \textit{Access-Control-Allow-Methods}, ya que el servidor no responderá de vuelta si no es así. Esto permite limitar la superficie de ataque en el servidor.
+
+        \end{itemize}
+    Existen ciertos métodos en HTTP que necesitan realizar un \textit{pre-vuelo} antes de ser ejecutados, si la response del servidor es afirmativa luego se enviará el request original con el método que se debió confirmar su utilización. Para el caso de los métodos GET y POST, los más usados, este pre-vuelo no es necesario y se puede enviar el request inmediatamente.
+    
+    La gran diferencia de CORS con cualquier otro método de que permita hacer request hacia un \textbf{Origen} distinto, es que el Browser por default no enviará ningún tipo de información que permita identificar al user. De esta manera se puede disminuir considerablemente las amenazas en la confidencialidad, pues el atacante no podrá hacerse pasar por un usuario del que no tiene información. Casi todos los navegadores web, a diferencia de Internet Explore \cite{bookWebAppSec}, realizan sus solicitudes a servidores de diverso \textbf{Origen} por medio de la interfaz \textit{XmlHttpRequest}, en el caso de Internet Explorer esta se llama \textit{XDomainRequest}.
+
+\subsection{HTTP Fields/Campos HTTP}
+    \label{chap2:headers}
+    HTTP es la implementación de la capa de aplicacón del modelo OSI que sigue todo dispositivo que desea conectarse a la Internet. Los headers o cabeceras que utiliza este protocolo permiten configurar la comunicación entre un \textit{Web Server} y un cliente web, en este caso con el Browser. Estos headers indican \textbf{dónde} debe ir el mensaje y \textbf{cómo} deben ser manejados los contenidos del mensaje. En cada petición o \textit{request} del Navegador, éste debe especificarlos para que el servidor pueda enteder las peticiones; de la misma manera, el servidor enviará cabeceras que el cliente también debe entender. Algunos \textit{headers} son necesarios y hasta obligatorios, para algunos servidores, y en otros da lo mismo como vayan.
+
+        \begin{itemize}
+            \item Content Security Policy Flag: Es un mecanismo de defensa creado exclusivamente para la defensa de ataque de tipo XSS o \textit{Cross-Site Scripting}. La misión de éste es definir bien la línea entre intrucciones y contenido, donde la primera se refiere a código que se debe ejecutar. Para que sea posible utilizar este mecanismo es necesario agregar al header del servidor, para la \textit{request} del cliente, el header Content-Security-Policy o X-Content-Security-Policy, donde se indica la localización de donde los scripts pueden ser obtenidos o \textit{loaded} y además pone restricciones a estos mismos scripts.
+
+            \item Secure Cookie Flag: El propósito de este header es de instruir al Browser de nunca mandar una \textit{cookie} sobre un canal no seguro, solo debe ser realizado por HTTPS. Esta medida permite asegurar que una cookie tampoco será enviada por canales mixtos, donde al inicio de la comunicación HTTPS y luego vuelve a HTTP.
+
+            \item HttpOnly Cookie Flag: Una opción para las \textit{cookies} que permite inhabilitar el acceso al contenido de una cookie por medio de scripts. Esta opción originalmente fue pensada para evitar ataques XSS.
+
+            \item X-Content-Type-Options: Un servidor que manda la directiva nosniff para este header, obligará al Browser a renderizar la página así como lo dice el header content-type. La idea de este header es poder limitar la ejecución del tipo objeto que pide el browser.
+
+            \item Strict-Transport-Security \cite{RFC-6797}: Obliga al navegador a que la comunicación con el servidor sea realizada por un tunel válido HTTPS, de manera que la comunicación sea completamente segura.
+
+            \item X-Frame-Options: este header previene que se realize un \textit{framing} de la página, es decir, esta opción evita que la página sea mostrada a través de un \(<\)iframe\(>\). Este control permite especialmente mitigar ataques de \textit{Clickjacking}, donde el usuario es engañado a través de lo que se muestra en la ventana del navegador.
+        \end{itemize}
 
 \subsection{Sandboxing}
     \label{chap3:Sandboxing}

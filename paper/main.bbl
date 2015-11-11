@@ -178,47 +178,9 @@ M.~Galster and P.~Avgeriou, ``{Empirically-grounded Reference Architectures: A
 F.~Buschman, R.~Meunier, H.~Rohnert, P.~Sommerlad, and M.~Stal, ``A system of
   patterns: pattern-oriented software architecture,'' 1996.
 
-\bibitem{ieeecsd2}
-\BIBentryALTinterwordspacing
-I.~C. Security, ``Avoiding the top 10 security flaws.'' [Online]. Available:
-  \url{http://cybersecurity.ieee.org/center-for-secure-design/avoiding-the-top-10-security-flaws.html}
-\BIBentrySTDinterwordspacing
-
-\bibitem{cve}
-\BIBentryALTinterwordspacing
-T.~M. Coporation, ``Common vulnerabilities and exposures.'' [Online].
-  Available: \url{https://cve.mitre.org/about/terminology.html}
-\BIBentrySTDinterwordspacing
-
-\bibitem{socEngineeering}
-\BIBentryALTinterwordspacing
-J.~Talamantes, ``The social engineer's playbook.'' [Online]. Available:
-  \url{http://www.thesocialengineersplaybook.com/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Zalewsk08}
-\BIBentryALTinterwordspacing
-M.~Zalewsk, ``Browser security handbook, part 2,'' Google, Web page, 2008.
-  [Online]. Available:
-  \url{https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy}
-\BIBentrySTDinterwordspacing
-
-\bibitem{barth2009securing}
-A.~Barth, C.~Jackson, and J.~C. Mitchell, ``Securing frame communication in
-  browsers,'' \emph{Communications of the ACM}, vol.~52, no.~6, pp. 83--91,
-  2009.
-
-\bibitem{bookWebAppSec}
-B.~Sullivan and V.~Liu, \emph{Web application security}.\hskip 1em plus 0.5em
-  minus 0.4em\relax McGraw-Hill, 2012.
-
 \bibitem{alcorn2014browser}
 W.~Alcorn, C.~Frichot, and M.~Orr{\`u}, \emph{The Browser Hacker's
   Handbook}.\hskip 1em plus 0.5em minus 0.4em\relax John Wiley \& Sons, 2014.
-
-\bibitem{RFC-6797}
-J.~Hodges, C.~Jackson, and A.~Barth, ``{HTTP Strict Transport Security
-  \{(HSTS)\}},'' Internet Engineering Task Force (IETF), RFC 6797, 2012.
 
 \bibitem{webMessaging}
 \BIBentryALTinterwordspacing
@@ -305,6 +267,11 @@ C.~Reis and S.~D. Gribble, ``{Isolating web programs in modern browser
   Computer systems EuroSys 09}, vol.~25, no.~1, p. 219, 2009. [Online].
   Available: \url{http://portal.acm.org/citation.cfm?doid=1519065.1519090}
 \BIBentrySTDinterwordspacing
+
+\bibitem{barth2009securing}
+A.~Barth, C.~Jackson, and J.~C. Mitchell, ``Securing frame communication in
+  browsers,'' \emph{Communications of the ACM}, vol.~52, no.~6, pp. 83--91,
+  2009.
 
 \bibitem{Saini2014}
 A.~Saini, M.~S. Gaur, and V.~Laxmi, ``{Privacy Leakage Attacks in Browsers},''
@@ -395,6 +362,12 @@ A.~Alkazami and E.~B. Fernandez, ``Cipher suite rollback: A misuse pattern for
 O.~Encina, E.~B. Fernandez, and R.~Monge, ``A misuse pattern for
   denial-of-service in federated inter-clouds,'' 2014.
 
+\bibitem{socEngineeering}
+\BIBentryALTinterwordspacing
+J.~Talamantes, ``The social engineer's playbook.'' [Online]. Available:
+  \url{http://www.thesocialengineersplaybook.com/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Rajab2013}
 \BIBentryALTinterwordspacing
 M.~Rajab, L.~Ballard, and N.~Lutz, ``{CAMP: Content-agnostic malware
@@ -407,18 +380,6 @@ M.~Rajab, L.~Ballard, and N.~Lutz, ``{CAMP: Content-agnostic malware
 N.~S.~S. Labs and A.~R. Abrams, ``{Evolutions In Browser Security},'' no.
   October, pp. 1--20, 2013.
 
-\bibitem{browSecPhish}
-R.~Abrams, J.~Pathak, and O.~Barrera, ``Browser security comparative analysis:
-  Phishing protection,'' 2013.
-
-\bibitem{rowSecSEMBlock}
-------, ``{Browser Security Comparative Analysis: Socially Engineered Malware
-  Blocking},'' 2014.
-
-\bibitem{Drake2011}
-J.~Drake, P.~Mehta, C.~Miller, S.~Moyer, R.~Smith, C.~Valasek, and A.~Q.
-  Approach, ``{Browser Security Comparison},'' \emph{Accuvant Labs}, 2011.
-
 \bibitem{owaspTopTen}
 \BIBentryALTinterwordspacing
 ``{Top 10 2013 - OWASP}.'' [Online]. Available:
@@ -430,6 +391,18 @@ J.~Drake, P.~Mehta, C.~Miller, S.~Moyer, R.~Smith, C.~Valasek, and A.~Q.
 ``{Security/ProcessIsolation/ThreatModel}.'' [Online]. Available:
   \url{https://wiki.mozilla.org/Security/ProcessIsolation/ThreatModel}
 \BIBentrySTDinterwordspacing
+
+\bibitem{browSecPhish}
+R.~Abrams, J.~Pathak, and O.~Barrera, ``Browser security comparative analysis:
+  Phishing protection,'' 2013.
+
+\bibitem{rowSecSEMBlock}
+------, ``{Browser Security Comparative Analysis: Socially Engineered Malware
+  Blocking},'' 2014.
+
+\bibitem{Drake2011}
+J.~Drake, P.~Mehta, C.~Miller, S.~Moyer, R.~Smith, C.~Valasek, and A.~Q.
+  Approach, ``{Browser Security Comparison},'' \emph{Accuvant Labs}, 2011.
 
 \bibitem{Utakrit2009}
 \BIBentryALTinterwordspacing
@@ -470,6 +443,21 @@ S.~D. Paola and G.~Fedon, ``{Subverting Ajax},'' \emph{23rd Chaos Communication
   Congress}, no. December, 2006. [Online]. Available:
   \url{http://events.ccc.de/congress/2006/Fahrplan/attachments/1158-Subverting\_Ajax.pdf}
 \BIBentrySTDinterwordspacing
+
+\bibitem{Zalewsk08}
+\BIBentryALTinterwordspacing
+M.~Zalewsk, ``Browser security handbook, part 2,'' Google, Web page, 2008.
+  [Online]. Available:
+  \url{https://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bookWebAppSec}
+B.~Sullivan and V.~Liu, \emph{Web application security}.\hskip 1em plus 0.5em
+  minus 0.4em\relax McGraw-Hill, 2012.
+
+\bibitem{RFC-6797}
+J.~Hodges, C.~Jackson, and A.~Barth, ``{HTTP Strict Transport Security
+  \{(HSTS)\}},'' Internet Engineering Task Force (IETF), RFC 6797, 2012.
 
 \bibitem{reis2009browser}
 \BIBentryALTinterwordspacing
@@ -541,6 +529,12 @@ G.~Team, ``Evolution of the web.'' [Online]. Available:
   \url{https://nightly.mozilla.org/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{cve}
+\BIBentryALTinterwordspacing
+T.~M. Coporation, ``Common vulnerabilities and exposures.'' [Online].
+  Available: \url{https://cve.mitre.org/about/terminology.html}
+\BIBentrySTDinterwordspacing
+
 \bibitem{W3C-SOP}
 \BIBentryALTinterwordspacing
 W3C, ``{Same Origin Policy},'' W3C, Web page, 2010. [Online]. Available:
@@ -570,5 +564,11 @@ E.~B. Fernandez and R.~Pan, ``{A pattern language for security models},''
 E.~B. Fernandez, R.~Monge, and K.~Hashizume, ``{Building a security reference
   architecture for cloud systems},'' in \emph{Proceedings of the WICSA 2014
   Companion Volume}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2014, p.~3.
+
+\bibitem{ieeecsd2}
+\BIBentryALTinterwordspacing
+I.~C. Security, ``Avoiding the top 10 security flaws.'' [Online]. Available:
+  \url{http://cybersecurity.ieee.org/center-for-secure-design/avoiding-the-top-10-security-flaws.html}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}
