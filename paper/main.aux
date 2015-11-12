@@ -107,7 +107,7 @@
 \citation{RFC-5246}
 \@writefile{toc}{\contentsline {subsubsection}{Canales de comunicaci\IeC {\'o}n en HTTP}{9}{subsubsection*.4}}
 \newlabel{chap2:comunHTTP}{{2.2.1}{9}{Canales de comunicación en HTTP}{subsubsection*.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}SSL/TLS Encriptaci\IeC {\'o}n en capa de Transporte}{10}{subsection.2.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}SSL/TLS Cifrado en capa de Transporte}{10}{subsection.2.2.2}}
 \citation{htmlSpec}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Speedy o Protocolo SPDY}{11}{subsection.2.2.3}}
 \newlabel{chap2:spdy}{{2.2.3}{11}{Speedy o Protocolo SPDY}{subsection.2.2.3}{}}
@@ -124,22 +124,24 @@
 \newlabel{chap2:css}{{2.3.2}{12}{CSS: Cascading Style Sheets}{subsection.2.3.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}DOM: Document Object Model}{12}{subsection.2.3.3}}
 \newlabel{chap2:DOM}{{2.3.3}{12}{DOM: Document Object Model}{subsection.2.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitectura de DOM. Fuente: \cite  {w3c}}}{13}{figure.2.1}}
-\newlabel{fig:DOM}{{2.1}{13}{Arquitectura de DOM. Fuente: \cite {w3c}}{figure.2.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Javascript, VBScript y otros}{13}{subsection.2.3.4}}
-\newlabel{chap2:JS}{{2.3.4}{13}{Javascript, VBScript y otros}{subsection.2.3.4}{}}
 \citation{barth2009attacks}
 \citation{Barth2009}
 \citation{Barth2010}
 \citation{Liu2012}
 \citation{Singh2014}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitectura de DOM. Fuente: \cite  {w3c}}}{13}{figure.2.1}}
+\newlabel{fig:DOM}{{2.1}{13}{Arquitectura de DOM. Fuente: \cite {w3c}}{figure.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Javascript, VBScript y otros}{13}{subsection.2.3.4}}
+\newlabel{chap2:JS}{{2.3.4}{13}{Javascript, VBScript y otros}{subsection.2.3.4}{}}
+\citation{barth2008security}
+\citation{IE8-LCIE}
+\citation{preprint-grosskurth-browser-archevol}
 \citation{barth2008security}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.5}Geolocalizaci\IeC {\'o}n}{14}{subsection.2.3.5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.6}WebWorkers}{14}{subsection.2.3.6}}
 \newlabel{chap2:WWs}{{2.3.6}{14}{WebWorkers}{subsection.2.3.6}{}}
-\citation{IE8-LCIE}
-\citation{preprint-grosskurth-browser-archevol}
-\citation{barth2008security}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Desaf\IeC {\'\i }os del Navegador}{14}{section.2.4}}
+\newlabel{chap2:Desafios}{{2.4}{14}{Desafíos del Navegador}{section.2.4}{}}
 \citation{Reis2009}
 \citation{barth2009securing}
 \citation{Barth2010}
@@ -152,10 +154,8 @@
 \citation{Bass2012}
 \citation{Avgeriou2003}
 \citation{Galster2011a}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Desaf\IeC {\'\i }os del Navegador}{15}{section.2.4}}
-\newlabel{chap2:Desafios}{{2.4}{15}{Desafíos del Navegador}{section.2.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Arquitectura de Referencia o Reference Architecture (RA)}{15}{section.2.5}}
-\newlabel{chap2:ArqRef}{{2.5}{15}{Arquitectura de Referencia o Reference Architecture (RA)}{section.2.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Arquitectura de Referencia o Reference Architecture (AR)}{15}{section.2.5}}
+\newlabel{chap2:ArqRef}{{2.5}{15}{Arquitectura de Referencia o Reference Architecture (AR)}{section.2.5}{}}
 \citation{Submitted2014}
 \citation{Galster2011a}
 \citation{Hashizume2014Reference}
@@ -174,6 +174,8 @@
 \citation{fernandez2013security}
 \@writefile{toc}{\contentsline {section}{\numberline {2.6}Desarrollo de Software Seguro y Dise\IeC {\~n}o de Software Seguro}{17}{section.2.6}}
 \newlabel{chap2:SSD}{{2.6}{17}{Desarrollo de Software Seguro y Diseño de Software Seguro}{section.2.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Patrones}{17}{section.2.7}}
+\newlabel{chap2:Patt}{{2.7}{17}{Patrones}{section.2.7}{}}
 \citation{buschman1996system}
 \citation{fernandez2006defining}
 \citation{fernandez2007attack}
@@ -192,8 +194,6 @@
 \citation{fernandez2012misuse}
 \citation{alkazimi2014}
 \citation{encinamisuse}
-\@writefile{toc}{\contentsline {section}{\numberline {2.7}Patrones}{18}{section.2.7}}
-\newlabel{chap2:Patt}{{2.7}{18}{Patrones}{section.2.7}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.8}Patrones de Mal Uso}{18}{section.2.8}}
 \citation{socEngineeering}
 \citation{Rajab2013}
@@ -236,8 +236,9 @@
 \citation{Dougan2012}
 \citation{Utakrit2009}
 \citation{Paola2006}
+\citation{SOPIEFT}
 \@writefile{toc}{\contentsline {subsubsection}{Ejecuci\IeC {\'o}n de C\IeC {\'o}digo Javascript}{24}{subsubsection*.9}}
-\@writefile{toc}{\contentsline {subsubsection}{XSS - Cross-Site Scripting DOM}{24}{subsubsection*.10}}
+\@writefile{toc}{\contentsline {subsubsection}{XSS DOM - Cross-Site Scripting DOM}{24}{subsubsection*.10}}
 \@writefile{toc}{\contentsline {subsubsection}{Man in the \textit  {Browser} (MitB)}{24}{subsubsection*.11}}
 \citation{Zalewsk08}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Mecanismos de Defensa del \textit  {Browser}}{25}{section.3.2}}
@@ -397,8 +398,8 @@
 \newlabel{chap6:Misuse}{{6}{59}{Patrones de Mal Uso}{chapter.6}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6.1}Identificando Amenazas y Patrones de Mal Uso}{59}{section.6.1}}
 \@writefile{toc}{\contentsline {section}{\numberline {6.2}Identificando amenazas}{59}{section.6.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request.}}{60}{figure.6.1}}
-\newlabel{fig:ActDiagr}{{6.1}{60}{Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request}{figure.6.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso \textbf  {Realizar Request} y \textbf  {Recibir Request}.}}{60}{figure.6.1}}
+\newlabel{fig:ActDiagr}{{6.1}{60}{Diagrama de Actividad Compuesto para los casos de uso \textbf {Realizar Request} y \textbf {Recibir Request}}{figure.6.1}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Tabla con amenazas.}}{61}{table.6.1}}
 \newlabel{tab:threats}{{6.1}{61}{Tabla con amenazas}{table.6.1}{}}
 \citation{cve}

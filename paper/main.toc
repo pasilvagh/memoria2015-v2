@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {2.2}Comunicaci\IeC {\'o}n e Informaci\IeC {\'o}n de Estado}{8}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}HTTP: Hypertext Transfer Protocol}{8}{subsection.2.2.1}
 \contentsline {subsubsection}{Canales de comunicaci\IeC {\'o}n en HTTP}{9}{subsubsection*.4}
-\contentsline {subsection}{\numberline {2.2.2}SSL/TLS Encriptaci\IeC {\'o}n en capa de Transporte}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}SSL/TLS Cifrado en capa de Transporte}{10}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Speedy o Protocolo SPDY}{11}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Tecnolog\IeC {\'\i }as usadas}{11}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Markup Languages}{11}{subsection.2.3.1}
@@ -25,11 +25,11 @@
 \contentsline {subsection}{\numberline {2.3.4}Javascript, VBScript y otros}{13}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}Geolocalizaci\IeC {\'o}n}{14}{subsection.2.3.5}
 \contentsline {subsection}{\numberline {2.3.6}WebWorkers}{14}{subsection.2.3.6}
-\contentsline {section}{\numberline {2.4}Desaf\IeC {\'\i }os del Navegador}{15}{section.2.4}
-\contentsline {section}{\numberline {2.5}Arquitectura de Referencia o Reference Architecture (RA)}{15}{section.2.5}
+\contentsline {section}{\numberline {2.4}Desaf\IeC {\'\i }os del Navegador}{14}{section.2.4}
+\contentsline {section}{\numberline {2.5}Arquitectura de Referencia o Reference Architecture (AR)}{15}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Validaci\IeC {\'o}n de la Arquitectura}{16}{subsection.2.5.1}
 \contentsline {section}{\numberline {2.6}Desarrollo de Software Seguro y Dise\IeC {\~n}o de Software Seguro}{17}{section.2.6}
-\contentsline {section}{\numberline {2.7}Patrones}{18}{section.2.7}
+\contentsline {section}{\numberline {2.7}Patrones}{17}{section.2.7}
 \contentsline {section}{\numberline {2.8}Patrones de Mal Uso}{18}{section.2.8}
 \contentsline {chapter}{\numberline {3}Marco Te\IeC {\'o}rico - (In) Seguridad en el Browser}{20}{chapter.3}
 \contentsline {section}{\numberline {3.1}Ataques y Amenazas}{20}{section.3.1}
@@ -39,7 +39,7 @@
 \contentsline {subsubsection}{Instalaci\IeC {\'o}n de Malware o Extensiones malignas}{23}{subsubsection*.7}
 \contentsline {subsubsection}{Extensiones vulnerables}{23}{subsubsection*.8}
 \contentsline {subsubsection}{Ejecuci\IeC {\'o}n de C\IeC {\'o}digo Javascript}{24}{subsubsection*.9}
-\contentsline {subsubsection}{XSS - Cross-Site Scripting DOM}{24}{subsubsection*.10}
+\contentsline {subsubsection}{XSS DOM - Cross-Site Scripting DOM}{24}{subsubsection*.10}
 \contentsline {subsubsection}{Man in the \textit {Browser} (MitB)}{24}{subsubsection*.11}
 \contentsline {section}{\numberline {3.2}Mecanismos de Defensa del \textit {Browser}}{25}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}SOP: Same Origin Policy}{25}{subsection.3.2.1}

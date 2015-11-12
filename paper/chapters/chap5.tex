@@ -23,9 +23,9 @@ La arquitectura de referencia a construir en este trabajo, fue realizada princip
 Los casos de usos y actores están listados a continuación. Notar que lo que se presentarán aquellos casos de uso relacionados exclusivamente con el Browser.
 
 \subsubsection{Casos de Uso para Browser User (BU)}
-		El BU representa todas las interacciones posibles del usuario con el Browser y sin él no habría razón para la existencia del navegador; un servidor tampoco existiría dado el mismo principio. Al encontrar los casos de uso de éste stakeholder veremos los concerns de éste, lo que nos permitirá entender las necesidades de seguridad para proteger al navegador. Los casos de uso principales de éste son: Realizar request, Cancelar request y Guardar recurso.
+		El BU representa todas las interacciones posibles del usuario con el Browser y sin él no habría razón para la existencia del navegador; un servidor tampoco existiría dado el mismo principio. Al encontrar los casos de uso de éste stakeholder veremos los concerns de éste, lo que nos permitirá entender las necesidades de seguridad para proteger al navegador. Los casos de uso principales de éste son: Realizar requestAR, Cancelar request y Guardar recurso.
 			\begin{enumerate}	
-				\item Realizar Petición/Request: El caso de uso más importante de éste sistema, se basa en la arquitectura cliente/servidor. Esta acción considera la petición de recursos al host y la búsqueda del recurso bajo la URI dada y la consecuente response del servidor. La descarga no es siempre necesaria, pues existe lo que se conoce como una petición \textit{preflight} donde solo se envía una petición para saber si es seguro realizar una petición/request. Tanto request como response se han condensado en un solo caso de uso. Este caso de uso considera la visualización del recurso en el Host a través del periférico predeterminado.
+				\item Realizar Petición/Request: El caso de uso más importante de éste sistema, se basa en la arquitectura cliente/servidor. Esta acción considera la petición de recursos al host y la búsqueda del recurso bajo la URI dada y la consecuente response del servidor. La descarga no es siempre necesaria, pues existe lo que se conoce como una petición \textit{preflight} donde solo se envía una petición para saber si es seguro realizar una petición/\textit{request}. Tanto request como response se han condensado en un solo caso de uso. Este caso de uso considera la visualización del recurso en el Host a través del periférico predeterminado.
 				\item Cancelar request: Un BU pide al Browser detener la búsqueda y todo proceso en transito. Si el recurso es obtenido por el Browser, la detención de éste puede considerar la detención del componente Renderer para mostrar por pantalla la proyección de la página web obtenida.			
 				\item Guardar recurso: Un BU puede necesitar guardar el recurso recientemente adquirido en el sistema de archivos del host (H). El caso de uso inicia una vez que el Browser User haya manifestado el donde desea guardar el recurso.
 			\end{enumerate}
@@ -41,7 +41,7 @@ Los casos de uso del Host representan todas las interacciones que relacionan ser
 			\end{enumerate}
 
 		\subsubsection{Casos de Uso para el Proveedor (P)}
-		La meta del Proveedor es escuchar las peticiones provenientes de diversos tipos de Browser User que necesiten los servicios o recursos del Proveedor. En este escenario tan heterogéneo y distribuido que es la Internet, se enfocará solamente en las peticiones de Browser User. Además, no para toda request del BU habrá un response de P, pues puede pasar que BU esté solamente intentando averiguar si P existe.
+		La meta del Proveedor es escuchar las peticiones provenientes de diversos tipos de Browser User que necesiten los servicios o recursos del Proveedor. En este escenario tan heterogéneo y distribuido que es la Internet, se enfocará solamente en las peticiones de Browser User. Además, no para toda \textit{request} del BU habrá un response de P, pues puede pasar que BU esté solamente intentando averiguar si P existe.
 			\begin{enumerate}
 				\item Escuchar requests: P siempre está escuchando en sus puertos habilitados a posibles peticiones de sus clientes. Una petición es recibida en un formato que P pueda interpretar y en consecuencia realizar las acciones correspondientes que BU le pide. 
 				\item Enviar Response: Por cada solicitud del cliente, en este caso el Web Browser, habrá una respuesta/response por parte del P con la data Resource asociada. Este caso de uso no se realiza, si dentro del header de uno de los paquetes está indicado que la petición fue hecha en modo \textit{preflight}.
@@ -62,7 +62,7 @@ Los casos de uso del Host representan todas las interacciones que relacionan ser
 \section{Patrón Browser Infrastructure}
 \label{chap4:BrokerPatt}
 \subsection{Intent}
-El patron Browser Infrastructure pattern permite la realización de la solicitud o request de un recurso web en la internet por parte de un Browser User, que es un usuario del Host que utiliza un navegador. El patrón permite visualizar la comunicación entre los componentes que conforman el browser así como la comunicación con el proveedor, al que se le realiza el request.
+El patron Browser Infrastructure pattern permite la realización de la solicitud o \textit{request} de un recurso web en la internet por parte de un Browser User, que es un usuario del Host que utiliza un navegador. El patrón permite visualizar la comunicación entre los componentes que conforman el browser así como la comunicación con el proveedor, al que se le realiza el \textit{request}.
 
 \subsection{Ejemplo}
 Dentro de un host es posible que exista una falta de recursos que el usuario que lo opera necesite. La solicitud de servicios o recursos externos es una de las razones de existir de la Internet. Ésta operación es posible de realizarlo de diferentes maneras, todo depende de lo que el Provider desea entregar.
@@ -74,17 +74,17 @@ Algunos usuario del Host puede que necesiten obtener recursos desde un Provider,
 La solución a este problema debe resolver las siguientes problemáticas:
 \begin{itemize}
 	\item Transparencia: el user detrás del Host no se debe preocupar de la maquinaria que existe mientras se realiza una petición a un Provider.
-	\item Estabilidad/Aislación: cada request realizada no debe interferir las con otras.
+	\item Estabilidad/Aislación: cada \textit{request} realizada no debe interferir las con otras.
 	\item Heterogeneidad: Sin importar el tipo de Provider con el que se comunique, el Browser User debe poder comunicarse con cualquier tipo de Provider y también debe poder mostrar adecuadamente al usuario el recurso obtenido.
 	\item Disponibilidad: El user del Host debe ser capaz de poder realizar peticiones en todo momento, sin perder fluidez.
 \end{itemize}
 
 \subsection{Solución}
-Un Web Browser puede satisfacer las request del user del Host a través de un Browser User, ya sea por una o varias instancias de Browser User lo que permite tener una diversidad de opciones para navegar por sitios de internet. Un Browser debe ser capaz de poder entregar una navegación rápida y estable, sin que cada sitio accedido afecte a los otros recursos adquiridos.
+Un Web Browser puede satisfacer las \textit{request} del user del Host a través de un Browser User, ya sea por una o varias instancias de Browser User lo que permite tener una diversidad de opciones para navegar por sitios de internet. Un Browser debe ser capaz de poder entregar una navegación rápida y estable, sin que cada sitio accedido afecte a los otros recursos adquiridos.
 \subsection{Estructura}
 El Browser Client (BC) es la entidad que representa el proceso principal de un Navegador Web y comprende la cantidad mínima de componentes que constituye un Web Browser. Browser Client, Sandbox, GPU Instance (GPUI) y Plugin son del tipo Process (Pr), que residen dentro de un Host (H) con un cierto tipo de sistema Operativo (OS). La mayoría de los navegadores existentes usan un componente céntrico para realizar las operaciones que necesitan afectar al Host del Browser. La figura \ref{fig:BIPatt} muestra el diagrama del clases para el patrón Browser Infrastructure. Por cada recurso que un BC solicite, se crearán Sandbox (S) que alojarán una instancia del patrón RendererContentTab el que permiten realizar la navegación y posterior visualización del recurso.
 El componente BC actúa como un broker de las solicitudes de las Sandbox, lo que permite tener un control fino de los mensajes enviados, usando IPC/IPDL/COM, entre los procesos que se comunican. El GPU Instance y Plugins son elementos que pueden comunicarse directamente con el Sandbox, de esta manera cualquier necesidad de recursos del Host pasarán también por el Browser Client. 
-Un usuario que desee hacer un request de un recurso en Internet por medio de un navegador es lo que llamaremos Browser User (BU). Éste usa el Browser Client para realizar peticiones al Provider, donde éste último posiblemente utilice un Web Server para ese cometido (Figura \ref{fig:BIPatt})
+Un usuario que desee hacer un \textit{request} de un recurso en Internet por medio de un navegador es lo que llamaremos Browser User (BU). Éste usa el Browser Client para realizar peticiones al Provider, donde éste último posiblemente utilice un Web Server para ese cometido (Figura \ref{fig:BIPatt})
 
 	    \begin{figure}[h!t]
 	        \centering
@@ -113,16 +113,16 @@ Nota: Los mensajes entre el Browser Client y el Sandbox pueden ser tanto síncro
 \item El Sandbox requiere los recursos del Host para obtener lo que hay detrás de la URL. Una petición es realizada desde el Sandbox al Browser Client a través de un canal de comunicación como: IPC, IPDL o COM (dependiendo el tipo de Browser usado), usando la API limitada que posee para comunicarse a un proceso de mayor privilegio. 
 \item El Browser Client recibe la solicitud, verifica a través de su motor de políticas/normas si la acción del Sandbox puede ser permitida.
 \item Si es permita la acción del Sandbox, se utilizará la Network API que contiene el Browser Client para obtener recursos del Host (a través de llamadas al sistema). El Browser Client se comunica internamente con el Host, y este último debe revisar sus políticas y asegurarse que el Browser Client posee el privilegio de hacer la petición del recurso del Host.
-\item Si se permite el acceso el recurso, el Browser Client podrá realizar un request a través de la Network API. Si el request no es del tipo \textit{pre-flight}, el Provider recibirá el request y trabajará sobre la petición.
-\item El Provider enviará un response al request enviado. Dependiendo como esté implementado el Browser Client, este podría o no tener que esperar a la respuesta (síncrono o asíncrono) del Provider.
+\item Si se permite el acceso el recurso, el Browser Client podrá realizar un \textit{request} a través de la Network API. Si el \textit{request} no es del tipo \textit{pre-flight}, el Provider recibirá el \textit{request} y trabajará sobre la petición.
+\item El Provider enviará un response al \textit{request} enviado. Dependiendo como esté implementado el Browser Client, este podría o no tener que esperar a la respuesta (síncrono o asíncrono) del Provider.
 \item Una vez obtenida la respuesta esta es almacenada en cache o podría ser guardada dentro del Host. 
-\item La respuesta del request es enviada por el canal de comunicación al Sandbox del que se originó y posteriormente al RendererContentTab. Si fue recibida una respuesta por parte de la request, el RendererContentTab está listo para preparar el parsing de la página web o utiliza un plugin o GPU para apoyar la visualización del recurso obtenido por la URL. En caso contrario el RendererContentTab dentro del Sandbox creará una página de error.
+\item La respuesta del \textit{request} es enviada por el canal de comunicación al Sandbox del que se originó y posteriormente al RendererContentTab. Si fue recibida una respuesta por parte de la \textit{request}, el RendererContentTab está listo para preparar el parsing de la página web o utiliza un plugin o GPU para apoyar la visualización del recurso obtenido por la URL. En caso contrario el RendererContentTab dentro del Sandbox creará una página de error.
 	\end{enumerate}
 \subsubsection{Curso Alternativo} 
 \begin{itemize}
 \item El Provider no esté disponible.
 \item El recurso al que apunta la URL no exista.
-\item Se cancela el request realizado.
+\item Se cancela el \textit{request} realizado.
 	\end{itemize}
 \subsubsection{Condiciones póstumas} El Browser recibe el recurso indicado por la URL y se muestra por el perísférico la salida del recurso al usuario del Host.
 	    \begin{figure}[h!t]

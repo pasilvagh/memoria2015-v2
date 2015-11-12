@@ -4,17 +4,17 @@
 
 \section{Identificando Amenazas y Patrones de Mal Uso}
 En este capítulo presentaremos el análisis e identificación de las amenazas dentro del patrón presentado en el capítulo anterior, y 2 patrones de mal uso. Estos artefactos servirán de ejemplo de cómo usar la Arquitectura de Referencia obtenida. El objetivo de éste capítulo es conocer y visualizar los mal usos del sistema, en este caso del Browser, para poder educar a los desarrolladores de proyectos que basan sus sistemas en el uso de éste.
-Este capítulo realiza los siguientes ítems: Un análisis de amenazas realizado sobre las actividades relacionadas en el caso de uso Realizar request y Recibir Request, luego a partir del resultado del análisis se aplica la metodología explicada en el trabajo de [Bra08] para obtener una lista de amenazas. A través del listado de amenazas es posible detectar o inferir actividades de mal uso que pueden aparecer en uno o más casos de uso, que podrían resultar en una vulneración del sistema. Se presentarán los mal usos de actividades a través de patrones. Se han identificado 2 patrones y serán presentados a continuación.
+Este capítulo realiza los siguientes ítems: Un análisis de amenazas realizado sobre las actividades relacionadas en el caso de uso \textbf{Realizar Request} y \textbf{Recibir Request}, luego a partir del resultado del análisis se aplica la metodología explicada en el trabajo de [Bra08] para obtener una lista de amenazas. A través del listado de amenazas es posible detectar o inferir actividades de mal uso que pueden aparecer en uno o más casos de uso, que podrían resultar en una vulneración del sistema. Se presentarán los mal usos de actividades a través de patrones. Se han identificado 2 patrones y serán presentados a continuación.
 
 \section{Identificando amenazas}
 La identificación de amenazas es base para poder identificar las medidas adecuadas para poder evitarlas. A través de la metodología de \cite{braz2008eliciting} es posible detectar y enumerar las amenazas de manera sistemática al considerar cada actividad en cada caso de uso. Para enumerar las amenazas sistemáticamente los diagramas de actividad ayudan en esta tarea.
 Usando los casos de uso listado en el capítulo anterior, es posible revelar una lista de amenazas extensas. Solo para sintetizar el proceso, se usará un caso de uso y de éste se extraerá un patrón de mal uso.
-La figura \ref{fig:ActDiagr} describe el diagrama de actividad compuesto que involucra los casos de uso Realizar Request y Recibir Request. Varias amenazas pueden ser reveladas a través de las interacciones visualizadas en el diagrama, por ejemplo: Cuando se realiza la petición al servidor del recurso especificado por la URL, y se entrega otro recurso que no es el pedido. 
+La figura \ref{fig:ActDiagr} describe el diagrama de actividad compuesto que involucra los casos de uso \textbf{Realizar Request} y \textbf{Recibir Request}. Varias amenazas pueden ser reveladas a través de las interacciones visualizadas en el diagrama, por ejemplo: Cuando se realiza la petición al servidor del recurso especificado por la URL, y se entrega otro recurso que no es el pedido. 
 
 \begin{figure}[h!t]
     \centering
     \includegraphics[scale=0.45]{figures/chap5/activityDiag.jpg}
-    \caption{Diagrama de Actividad Compuesto para los casos de uso Realizar Request y Recibir Request.}
+    \caption{Diagrama de Actividad Compuesto para los casos de uso \textbf{Realizar Request} y \textbf{Recibir Request}.}
     \label{fig:ActDiagr}
 \end{figure}
 
@@ -46,7 +46,7 @@ Actor & Acción & ID & Sec. Attrib (CO/IN/AV/ACC) & Source (AIn/UIn/Out) & Descr
 \end{table}
 \end{landscape}
 
-Hemos identificado algunas amenazas al analizar el curso de los eventos de los casos de uso: Pedir Request y Recibir Request (Figura \ref{fig:ActDiagr}). La tabla \ref{tab:threats} hace un sumario del análisis de cada acción en el diagrama de actividad, teniendo en cuenta los atributos de seguridad que podrían ser comprometidos, el origen de la amenaza y los recursos que pueden peligrar. Los atributos de seguridad principales son: Confidencialidad (CO), Disponibilidad (IN), Acontabilidad (AC) e Integridad (IN). El origen de la amenaza puede ser: actor autorizado (Ain), un actor no autorizado (UIn) o un externo (Out).
+Hemos identificado algunas amenazas al analizar el curso de los eventos de los casos de uso: \textbf{Realizar Request} y \textbf{Recibir Request} (Figura \ref{fig:ActDiagr}). La tabla \ref{tab:threats} hace un sumario del análisis de cada acción en el diagrama de actividad, teniendo en cuenta los atributos de seguridad que podrían ser comprometidos, el origen de la amenaza y los recursos que pueden peligrar. Los atributos de seguridad principales son: Confidencialidad (CO), Disponibilidad (IN), Acontabilidad (AC) e Integridad (IN). El origen de la amenaza puede ser: actor autorizado (Ain), un actor no autorizado (UIn) o un externo (Out).
 %Listar las amenazas que pueden ocurrir en el sistema no es suficiente para entender como los ataques ocurren. Es por esto que utilizaremos 2 patrones de mal uso, que permitirán describir como un ataque ocurre desde el punto de vista del atacante.
 
 \section{Template de Patrones de Mal Uso}
@@ -92,7 +92,7 @@ Una de las amenazas es que un atacante haya sido capaz de comprometer la respues
 Un atacante podría cambiar contenido o dar uno diferente al esperado cuando el Web Browser (Browser User) recibe la response del Servidor o Provider. Realizando esta acción, el Navegador podría interpretar la información de una manera distinta a que si hubiera recibido el tráfico original.
 
 \subsection{Contexto}
-Un Navegador web obtiene resources desde un Provider para poder un Browser User que lo necesita. Un Provider posee resources en forma de páginas web, servicios web u otro tipo. El Provider generalmente consiste en una Web App o Web server, que puede permitir entrada y salida de datos a otras aplicaciones, normalmente éstos están construidos usando HTML, Javascript y CCS. Sea que éste desea entregar servicios, como también otros deseen conectarse a él, todo tipo de comunicación estará encima del protocolo HTTP. Un Provider, dependiendo del tipo, puede llegar a recibir muchas peticiones de diversos Host para obtener resources de éste. Dependiendo del tipo de peticiones, estas pueden o no ser permitidas. Aquellas que son permitidas, el Provider generará una response a la request del Host, la cuál terminará llegando de vuelta (o no) al Browser Client que generó el request.
+Un Navegador web obtiene resources desde un Provider para poder un Browser User que lo necesita. Un Provider posee resources en forma de páginas web, servicios web u otro tipo. El Provider generalmente consiste en una Web App o Web server, que puede permitir entrada y salida de datos a otras aplicaciones, normalmente éstos están construidos usando HTML, Javascript y CCS. Sea que éste desea entregar servicios, como también otros deseen conectarse a él, todo tipo de comunicación estará encima del protocolo HTTP. Un Provider, dependiendo del tipo, puede llegar a recibir muchas peticiones de diversos Host para obtener resources de éste. Dependiendo del tipo de peticiones, estas pueden o no ser permitidas. Aquellas que son permitidas, el Provider generará una response a la \textit{request} del Host, la cuál terminará llegando de vuelta (o no) al Browser Client que generó el \textit{request}.
 
 \subsection{Problema}
 ¿Cómo podría un atacante engañar al Browser User y Host, por medio de la modificación de tráfico entre las entidades participantes en la comunicación? Es posible que un atacante esté escondido entre medio de la comunicación que hay entre el Host y el Povider, lo que resulta en que el contenido modificado podría afectar dentro del RendererContentTab o el Browser Client. Esto en consecuencia podría traer diferentes resultados, desde el robo de información privada del Browser User que utiliza el Browser Client para personalizar la navegación como también los token de autenticación hacia los Providers que el Browser User ha utilizado previamente. Dependiendo del tipo de atacante, es posible que este pueda incluso afectar al Host del Browser, dejando que el atacante pueda realizar actos maliciosos con los recursos del Host. 
@@ -123,7 +123,7 @@ La solución estructural usada es la misma creada por el patrón Browser Infrast
     \end{figure}
 
 \subsection{Dinámica}
-En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para realizar uno de los tantos mal usos que se pueden realizar durante el caso de uso Realizar Request. El atacante queda entre el Browser Client y el Host, interceptando la realización del request original y modificando el tráfico a su gusto; usualmente un ataque basado en este mal uso se le llama Man-in-the-Browser (MITB) \cite{Liu2012, Barth2010, Utakrit2009, Dougan2012}. Esto podría perfectamente suceder cuando el Browser User ha permitido la instalación de plugins, extensiones o programas externos en el Host y Browser Client [ref]
+En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para realizar uno de los tantos mal usos que se pueden realizar durante el caso de uso Realizar \textit{request}. El atacante queda entre el Browser Client y el Host, interceptando la realización del \textit{request} original y modificando el tráfico a su gusto; usualmente un ataque basado en este mal uso se le llama Man-in-the-Browser (MITB) \cite{Liu2012, Barth2010, Utakrit2009, Dougan2012}. Esto podría perfectamente suceder cuando el Browser User ha permitido la instalación de plugins, extensiones o programas externos en el Host y Browser Client [ref]
 \begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.45]{figures/chap5/patronMisuseSeq.jpg}
@@ -137,7 +137,7 @@ En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para r
 	\subsubsection{Descripción}
 			\begin{enumerate}
 				\item Un atacante utiliza alguna técnica de ingeniería social o vulnerabilidad en el sistema, para crear una entidad que se encargará de estar entre medio del Browser Client y el Provider. Para esto realiza el caso de uso Pedir Resources para que el proceso, plugin o extensión se aloje en el Host.
-				\item Un Browser Consumer desea hacer un request a cierta URL, por lo que los primeros pasos de Realizar Request son similares.
+				\item Un Browser Consumer desea hacer un \textit{request} a cierta URL, por lo que los primeros pasos de \textbf{Realizar Request} son similares.
 				\item En el momento en que el Browser Client va a realizar la llamada al sistema para enviar el mensaje del Host al Provider, el Browser Client llamará al plugin, extensión o process malicioso, pues el Browser Client ha sido interferido para que realice esa acción.
 				\item El atacante entonces recibirá todo el tráfico del Browser Client, con el cuál podría modificar a su antojo.
 				\item Finalmente la víctima está totalmente comprometida.

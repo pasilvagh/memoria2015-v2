@@ -17,31 +17,27 @@ Para empezar este estudio es necesario introducir ciertas nociones y lenguaje qu
     \item Superficie de Ataque - \textit{Attack Surface}:
         \\Es el conjunto de todas las posibles vulnerabilidades que un sistema puede tener, en un cierto momento, para una cierta versión del sistema, etc.
     \item Amenaza - \textit{Threat}
-        \\Es una acción/evento que se aprovecha de las vulnerabilidades del sistema, debilidades, para causar un daño, y que dependiendo del recurso al que afecte el daño puede o no ser reparable.
+        \\Es una acción/evento realizada por un sujeto que se aprovecha de las vulnerabilidades del sistema, debilidades, para causar un daño, y que dependiendo del recurso al que afecte el daño puede o no ser reparable.
     \item Ataque - \textit{Attack}
         \\Es el éxito de la amenaza en el aprovechamiento de la vulnerabilidad (explotación de ésta), de tal forma que genera una acción negativa en el sistema y favorable para el atacante.
     \item \textit{Exploit}:
         \\Usar una pieza de software para poder llevar a cabo un ataque sobre un objetivo, intentando \textbf{explotar} la vulnerabilidad de éste. Este tipo de acción permite en consecuencia obtener control en el sistema computacional, en donde la vulnerabilidad permitió su acceso.
     \item Ingeniería Social - \textit{Social Engineering}
-        \\El acto de manipular a las personas de manera que realicen acciones o divulguen información confidencial. El termino aplica al acto de engañar con el propósito de juntar información, realizar un fraude, u obtener acceso a un sistema computacional. La definición anterior encontrada en Wikipedia es extendida por el autor del libro ``The Social Engineer's Playbook'' \cite{socEngineeering}, donde agrega que además la Ingeniería Social involucra el hecho de manipular a una persona en realizar acciones que finalmente no son para beneficiar a la víctima. Un ataque de éste tipo también puede llegar a ser realizado tanto \textbf{cara a cara}, como de forma indirecta. Pero el autor del libro indica que siempre hay un \textbf{contacto} previo con la víctima.
+        \\El acto de manipular a las personas de manera que realicen acciones o divulguen información confidencial. El término aplica al acto de engañar con el propósito de juntar información, realizar un fraude, u obtener acceso a un sistema computacional. La definición anterior encontrada en Wikipedia es extendida por el autor del libro ``The Social Engineer's Playbook'' \cite{socEngineeering}, donde agrega que además la Ingeniería Social involucra el hecho de manipular a una persona en realizar acciones que finalmente no son para beneficiar a la víctima. Un ataque de éste tipo también puede llegar a ser realizado tanto \textbf{cara a cara}, como de forma indirecta. Pero el autor del libro indica que siempre hay un \textbf{contacto} previo con la víctima.
     \item Confidencialidad - \textit{Confidentiality} 
         \\Característica o propiedad que debe mantener un sistema para que la información privilegiada de alguna entidad que depende de tal sistema, no sea develada a nadie más que al que le pertenece la información.
     \item Integridad - \textit{Integrity}
         \\Característica o propiedad que asegura que la información no será modificada/alterada nada más que por la entidad a quién le pertenece y con el previo consentimiento de éste.
     \item Disponibilidad - \textit{Availability}
-        \\Característica o propiedad que permite que la información esté disponible para quién lo necesite, en el momento que sea. La imposibilidad de obtener data en un cierto instante de tiempo, conlleva a la perdida de esta propiedad.
+        \\Característica o propiedad que permite que la información esté disponible para quién lo necesite, en el momento que sea. La imposibilidad de obtener datos en un cierto instante de tiempo, conlleva a la pérdida de esta propiedad.
     \item \textit{Phishing}
-        \\Técnica de Ingeniería Social. Mediante el uso de correo elentrónico, links (url's), acortamiento de urls y otras herramientas, se busca que una victima visite un sitio o aprete un link de manera que se de la \textbf{autorización explicita} del usuario para descargar código malicioso o enviar datos a un servidor malicioso. El objetivo de esta técnica es poder obtener información valiosa de la victima o relizar algún daño en el cliente web.
+        \\Técnica de Ingeniería Social. Mediante el uso de correo elentrónico, links (url's), acortamiento de urls y otras herramientas, se busca que una víctima visite un sitio o aprete un link de manera que se de la \textbf{autorización explícita} del usuario para descargar código malicioso o enviar datos a un servidor malicioso. El objetivo de esta técnica es poder obtener información valiosa de la victima o relizar algún daño en el cliente web.
     \item \textit{Malware}
-        \\Software creado para realizar acciones maliciosas en la data o sistema de un usuario. Puede ser instalado tanto de forma discreta como indiscreta, siendo la segunda opción causada a través de un ataque previo a cierta vulnerabilidad que permitió la instalación del malware, sin el consentimiento del usuario privilegiado del sistema.
+        \\Software creado para realizar acciones maliciosas en los datos o sistema de un usuario. La mayoría de las veces puede ser instalado con el permiso del usuario realizando una técnica de Phishing, y otras veces engañando al usuario a que acepte sin darse cuenta.
     \item \textit{Man-in-the-Middle}
-        \\Ataque que causa una pérdida en la Confidencialidad de la información que es revelada. La causa de este ataque puede ser tanto:
-            \begin{itemize}
-                \item Por técnicas de Ingeniería Social, entregano un certificado malicioso que el usuario acepta con o sin intención.
-                \item A través de vulnerabilidades del sistema que debieron ser explotadas antes para causar el ataque MiTM.
-            \end{itemize}
+        \\Ataque que causa una pérdida en la Confidencialidad o la Integridad de la información que es revelada. La causa de este ataque puede ser por ataques de tipo Phishing, como a través de vulnerabilidades del sistema que debieron ser explotadas antes para causar el ataque MiTM.
     \item \textit{Fingerprinting}
-        \\Es la acción de recolectar información de un dispositivo remoto para poder identificar a quién esté detrás de él.
+        \\Es la acción de recolectar información de un dispositivo o sistema remoto para poder identificar a quién esté detrás de él.
     \item \textit{Timing attack}
         \\Es un tipo de \textit{side channel attack}, en donde el atacante intenta comprometer la implementación criptográfica de un sistema al analizar el tiempo que le toma ejecutar el algoritmo criptográfico.
     %\item \textit{Penetration Testing}
