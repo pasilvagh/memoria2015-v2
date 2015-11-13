@@ -444,6 +444,12 @@ S.~D. Paola and G.~Fedon, ``{Subverting Ajax},'' \emph{23rd Chaos Communication
   \url{http://events.ccc.de/congress/2006/Fahrplan/attachments/1158-Subverting\_Ajax.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{SOPIEFT}
+\BIBentryALTinterwordspacing
+A.~B. <ietf@adambarth.com>, ``{The Web Origin Concept}.'' [Online]. Available:
+  \url{http://tools.ietf.org/html/draft-abarth-origin-09}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Zalewsk08}
 \BIBentryALTinterwordspacing
 M.~Zalewsk, ``Browser security handbook, part 2,'' Google, Web page, 2008.

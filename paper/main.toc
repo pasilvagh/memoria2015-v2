@@ -48,7 +48,7 @@
 \contentsline {subsection}{\numberline {3.2.4}Sandboxing}{28}{subsection.3.2.4}
 \contentsline {subsubsection}{Google}{29}{subsubsection*.12}
 \contentsline {subsubsection}{Internet Explorer}{29}{subsubsection*.13}
-\contentsline {subsection}{\numberline {3.2.5}Aislaci\IeC {\'o}n de Procesos}{30}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.5}Aislaci\IeC {\'o}n de Contenido}{30}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}Blacklist y Whitelist de sitios web}{32}{subsection.3.2.6}
 \contentsline {subsection}{\numberline {3.2.7}Sistemas de Reputaci\IeC {\'o}n}{33}{subsection.3.2.7}
 \contentsline {subsection}{\numberline {3.2.8}Actualizaciones Peri\IeC {\'o}dicas en Background}{34}{subsection.3.2.8}
@@ -59,18 +59,18 @@
 \contentsline {section}{\numberline {4.2}Google Chrome y Google Chromium}{37}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Browser Kernel/Process y Renderering Engine/Process - Blink}{39}{subsection.4.2.1}
 \contentsline {section}{\numberline {4.3}Internet Explorer}{40}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Frame Process y Rendering Engine}{42}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Frame Process y Rendering Engine}{41}{subsection.4.3.1}
 \contentsline {section}{\numberline {4.4}Firefox}{42}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Firefox Mono-proceso y Gecko}{42}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Firefox Monoproceso y Gecko}{42}{subsection.4.4.1}
 \contentsline {subsubsection}{Estabilidad y Recuperaci\IeC {\'o}n a fallos}{44}{subsubsection*.14}
-\contentsline {subsection}{\numberline {4.4.2}Firefox Multi-proceso (Electrolysis, e10s)}{45}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Firefox Multiproceso (Electrolysis, e10s)}{45}{subsection.4.4.2}
 \contentsline {subsubsection}{Chrome Process y Content Process}{45}{subsubsection*.15}
-\contentsline {chapter}{\numberline {5}Arquitectura de Referencia del Web Browser}{47}{chapter.5}
+\contentsline {chapter}{\numberline {5}Definici\IeC {\'o}n de una Arquitectura de Referencia para el Web Browser}{47}{chapter.5}
 \contentsline {section}{\numberline {5.1}Casos de Uso del Browser}{48}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Stakeholders (actores) y Concerns de estos}{48}{subsection.5.1.1}
 \contentsline {subsubsection}{Browser User (BU)}{48}{subsubsection*.16}
 \contentsline {subsubsection}{Host (H)}{48}{subsubsection*.17}
-\contentsline {subsubsection}{Provider(P)}{48}{subsubsection*.18}
+\contentsline {subsubsection}{Provider (P)}{48}{subsubsection*.18}
 \contentsline {subsection}{\numberline {5.1.2}Casos de Uso}{48}{subsection.5.1.2}
 \contentsline {subsubsection}{Casos de Uso para Browser User (BU)}{49}{subsubsection*.19}
 \contentsline {subsubsection}{Casos de Uso para el Host (H)}{49}{subsubsection*.20}

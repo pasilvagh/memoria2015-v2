@@ -29,47 +29,49 @@ Warning--empty journal in encinamisuse
 Warning--empty journal in Labs2013
 Warning--empty journal in browSecPhish
 Warning--empty journal in rowSecSEMBlock
+Warning--empty journal in SOPIEFT
+Warning--empty year in SOPIEFT
 
 Done.
-You've used 96 entries,
+You've used 97 entries,
             4039 wiz_defined-function locations,
-            1305 strings with 22328 characters,
-and the built_in function-call counts, 48006 in all, are:
-= -- 3672
-> -- 981
+            1310 strings with 22447 characters,
+and the built_in function-call counts, 48326 in all, are:
+= -- 3695
+> -- 985
 < -- 229
-+ -- 512
-- -- 184
-* -- 2125
-:= -- 7753
-add.period$ -- 202
-call.type$ -- 96
-change.case$ -- 97
++ -- 514
+- -- 185
+* -- 2142
+:= -- 7818
+add.period$ -- 204
+call.type$ -- 97
+change.case$ -- 98
 chr.to.int$ -- 525
-cite$ -- 114
-duplicate$ -- 3839
-empty$ -- 4390
-format.name$ -- 235
-if$ -- 10732
+cite$ -- 117
+duplicate$ -- 3868
+empty$ -- 4420
+format.name$ -- 236
+if$ -- 10795
 int.to.chr$ -- 0
-int.to.str$ -- 96
-missing$ -- 741
-newline$ -- 411
-num.names$ -- 78
-pop$ -- 2154
+int.to.str$ -- 97
+missing$ -- 746
+newline$ -- 416
+num.names$ -- 79
+pop$ -- 2170
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 3676
+skip$ -- 3699
 stack$ -- 0
-substring$ -- 1324
-swap$ -- 2500
+substring$ -- 1325
+swap$ -- 2512
 text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 96
-warning$ -- 18
-while$ -- 177
-width$ -- 98
-write$ -- 889
-(There were 18 warnings)
+type$ -- 97
+warning$ -- 20
+while$ -- 178
+width$ -- 99
+write$ -- 898
+(There were 20 warnings)

@@ -37,7 +37,7 @@
 \BOOKMARK [2][-]{subsection.3.2.2}{CORS: Cross-Origin Resource Sharing}{section.3.2}% 37
 \BOOKMARK [2][-]{subsection.3.2.3}{HTTP Fields/Campos HTTP}{section.3.2}% 38
 \BOOKMARK [2][-]{subsection.3.2.4}{Sandboxing}{section.3.2}% 39
-\BOOKMARK [2][-]{subsection.3.2.5}{Aislaci\363n de Procesos}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.5}{Aislaci\363n de Contenido}{section.3.2}% 40
 \BOOKMARK [2][-]{subsection.3.2.6}{Blacklist y Whitelist de sitios web}{section.3.2}% 41
 \BOOKMARK [2][-]{subsection.3.2.7}{Sistemas de Reputaci\363n}{section.3.2}% 42
 \BOOKMARK [2][-]{subsection.3.2.8}{Actualizaciones Peri\363dicas en Background}{section.3.2}% 43
@@ -50,9 +50,9 @@
 \BOOKMARK [1][-]{section.4.3}{Internet Explorer}{chapter.4}% 50
 \BOOKMARK [2][-]{subsection.4.3.1}{Frame Process y Rendering Engine}{section.4.3}% 51
 \BOOKMARK [1][-]{section.4.4}{Firefox}{chapter.4}% 52
-\BOOKMARK [2][-]{subsection.4.4.1}{Firefox Mono-proceso y Gecko}{section.4.4}% 53
-\BOOKMARK [2][-]{subsection.4.4.2}{Firefox Multi-proceso \(Electrolysis, e10s\)}{section.4.4}% 54
-\BOOKMARK [0][-]{chapter.5}{Arquitectura de Referencia del Web Browser}{}% 55
+\BOOKMARK [2][-]{subsection.4.4.1}{Firefox Monoproceso y Gecko}{section.4.4}% 53
+\BOOKMARK [2][-]{subsection.4.4.2}{Firefox Multiproceso \(Electrolysis, e10s\)}{section.4.4}% 54
+\BOOKMARK [0][-]{chapter.5}{Definici\363n de una Arquitectura de Referencia para el Web Browser}{}% 55
 \BOOKMARK [1][-]{section.5.1}{Casos de Uso del Browser}{chapter.5}% 56
 \BOOKMARK [2][-]{subsection.5.1.1}{Stakeholders \(actores\) y Concerns de estos}{section.5.1}% 57
 \BOOKMARK [2][-]{subsection.5.1.2}{Casos de Uso}{section.5.1}% 58
