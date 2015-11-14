@@ -20,7 +20,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de Caso de Uso del Web Browser.}}{51}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Componentes de alto nivel del Browser.}}{53}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Browser User Realiza request.}}{56}{figure.5.3}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Realizar Request.}}{56}{figure.5.3}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso \textbf {Realizar Request} y \textbf {Recibir Request}.}}{60}{figure.6.1}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse.}}{67}{figure.6.2}

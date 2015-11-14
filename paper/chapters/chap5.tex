@@ -117,6 +117,8 @@ Nota: Los mensajes entre el Browser Client y el Sandbox pueden ser tanto síncro
 \item El Provider enviará un response al \textit{request} enviado. Dependiendo como esté implementado el Browser Client, este podría o no tener que esperar a la respuesta (síncrono o asíncrono) del Provider.
 \item Una vez obtenida la respuesta esta es almacenada en cache o podría ser guardada dentro del Host. 
 \item La respuesta del \textit{request} es enviada por el canal de comunicación al Sandbox del que se originó y posteriormente al RendererContentTab. Si fue recibida una respuesta por parte de la \textit{request}, el RendererContentTab está listo para preparar el parsing de la página web o utiliza un plugin o GPU para apoyar la visualización del recurso obtenido por la URL. En caso contrario el RendererContentTab dentro del Sandbox creará una página de error.
+\item El \textit{Renderer} obtiene un bitmap que debe enviar al Browser Client, para que el Host pueda mostrarlo visualmente. Antes de realizarlo, debe revisar que el Sandbox que contiene el RendererContentTab posea los permisos.
+\item Si los permisos son suficientes, el Browser Client envía el bitmap como parámetro en la llamada al sistema realizada al Host. Finalmente, el Host debe revisar que la llamada al sistema que realizó el Browser Client, tenga los permisos necesarios; de poseerlos, el bitmap se mostrará al Browser User por pantalla.
 	\end{enumerate}
 \subsubsection{Curso Alternativo} 
 \begin{itemize}
@@ -128,7 +130,7 @@ Nota: Los mensajes entre el Browser Client y el Sandbox pueden ser tanto síncro
 	    \begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.35]{figures/chap4/requestResource.jpg}
-	        \caption{Diagrama de Secuencia: Browser User Realiza request.}
+	        \caption{Diagrama de Secuencia: Realizar Request.}
 	        \label{fig:SecReq}
 	    \end{figure}
 \subsection{Implementación}
