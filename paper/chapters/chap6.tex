@@ -13,7 +13,7 @@ La figura \ref{fig:ActDiagr} describe el diagrama de actividad compuesto, que in
 
 \begin{figure}[h!t]
     \centering
-    \includegraphics[scale=0.45]{figures/chap5/activityDiag.jpg}
+    \includegraphics[scale=0.45]{figures/chap5/activityDiag_2.jpg}
     \caption{Diagrama de Actividad Compuesto para los casos de uso \textbf{Realizar Request} y \textbf{Recibir Request}.}
     \label{fig:ActDiagr}
 \end{figure}
@@ -119,13 +119,13 @@ El ataque puede ser facilitado por:
 La solución estructural usada es la misma creada por el patrón Browser Infrastructure que se revisó en el capítulo 4. La clase Attacker es cualquier entidad que podría llevar a cabo una acción arriesgada contra la integridad del Browser, usuario, Host y Provider (Figura \ref{fig:BIMisuse}). El atacante es capaz tanto de interceptar las response que el Provider envía al Browser Client usando al Host como receptor, o haciendo que el Browser realice modificaciones en el input que va hacia el Provider, utilizando scripts u otro resources.
 \begin{figure}[h!t]
 	        \centering
-	        \includegraphics[scale=0.45]{figures/chap5/patronMisuse.jpg}
+	        \includegraphics[scale=0.5]{figures/chap5/patronMisuse.jpg}
 	        \caption{Diagrama de Clases para el patrón de Misuse.}
 	        \label{fig:BIMisuse}
     \end{figure}
 
 \subsection{Dinámica}
-En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para realizar uno de los tantos mal usos que se pueden realizar durante el caso de uso Realizar \textit{request}. El atacante queda entre el Browser Client y el Host, interceptando la realización del \textit{request} original y modificando el tráfico a su gusto; usualmente un ataque basado en este mal uso se le llama Man-in-the-Browser (MITB) \cite{Liu2012, Barth2010, Utakrit2009, Dougan2012}. Esto podría perfectamente suceder cuando el Browser User ha permitido la instalación de plugins, extensiones o programas externos en el Host y Browser Client [ref]
+En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para realizar uno de los tantos mal usos que se pueden realizar durante el caso de uso Realizar \textit{request}. El atacante queda entre el Browser Client y el Host, interceptando la realización del \textit{request} original y modificando el tráfico a su gusto; usualmente un ataque basado en este mal uso se le llama Man-in-the-Browser (MITB) \cite{Liu2012, Barth2010, Utakrit2009, Dougan2012}. Esto podría perfectamente suceder cuando el Browser User ha permitido la instalación de plugins, extensiones o programas externos en el Host y Browser Client.
 \begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.45]{figures/chap5/patronMisuseSeq.jpg}

@@ -78,45 +78,45 @@
 \contentsline {section}{\numberline {5.2}Patr\IeC {\'o}n Browser Infrastructure}{51}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Intent}{51}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Ejemplo}{51}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Contexto}{51}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Contexto}{52}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Problema}{52}{subsection.5.2.4}
 \contentsline {subsection}{\numberline {5.2.5}Soluci\IeC {\'o}n}{52}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}Estructura}{52}{subsection.5.2.6}
-\contentsline {subsection}{\numberline {5.2.7}Din\IeC {\'a}mica}{53}{subsection.5.2.7}
+\contentsline {subsection}{\numberline {5.2.6}Estructura}{53}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.7}Din\IeC {\'a}mica}{54}{subsection.5.2.7}
 \contentsline {subsubsection}{Sumario}{54}{subsubsection*.22}
 \contentsline {subsubsection}{Actor}{54}{subsubsection*.23}
 \contentsline {subsubsection}{Precondiciones}{54}{subsubsection*.24}
 \contentsline {subsubsection}{Descripci\IeC {\'o}n}{54}{subsubsection*.25}
-\contentsline {subsubsection}{Curso Alternativo}{55}{subsubsection*.26}
+\contentsline {subsubsection}{Curso Alternativo}{56}{subsubsection*.26}
 \contentsline {subsubsection}{Condiciones p\IeC {\'o}stumas}{56}{subsubsection*.27}
 \contentsline {subsection}{\numberline {5.2.8}Implementaci\IeC {\'o}n}{56}{subsection.5.2.8}
 \contentsline {subsection}{\numberline {5.2.9}Consecuencias}{57}{subsection.5.2.9}
-\contentsline {subsection}{\numberline {5.2.10}Usos Com\IeC {\'u}nes}{57}{subsection.5.2.10}
+\contentsline {subsection}{\numberline {5.2.10}Usos Com\IeC {\'u}nes}{58}{subsection.5.2.10}
 \contentsline {subsection}{\numberline {5.2.11}Ejemplo Resuelto}{58}{subsection.5.2.11}
 \contentsline {subsection}{\numberline {5.2.12}Patrones Asociados}{58}{subsection.5.2.12}
-\contentsline {chapter}{\numberline {6}Patrones de Mal Uso}{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Identificando Amenazas y Patrones de Mal Uso}{59}{section.6.1}
-\contentsline {section}{\numberline {6.2}Identificando amenazas}{59}{section.6.2}
-\contentsline {section}{\numberline {6.3}Template de Patrones de Mal Uso}{62}{section.6.3}
-\contentsline {section}{\numberline {6.4}Patr\IeC {\'o}n de Mal Uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}{64}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Intent}{64}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Contexto}{65}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Problema}{65}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Soluci\IeC {\'o}n}{66}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Din\IeC {\'a}mica}{66}{subsection.6.4.5}
-\contentsline {subsubsection}{Sumario}{67}{subsubsection*.28}
-\contentsline {subsubsection}{Actor}{67}{subsubsection*.29}
-\contentsline {subsubsection}{Precondiciones}{67}{subsubsection*.30}
-\contentsline {subsubsection}{Descripci\IeC {\'o}n}{68}{subsubsection*.31}
-\contentsline {subsubsection}{Post condiciones}{69}{subsubsection*.32}
-\contentsline {subsubsection}{Usos Conocidos}{69}{subsubsection*.33}
-\contentsline {subsection}{\numberline {6.4.6}Consecuencias}{69}{subsection.6.4.6}
-\contentsline {subsection}{\numberline {6.4.7}Contramedidas}{70}{subsection.6.4.7}
-\contentsline {subsection}{\numberline {6.4.8}Evidencia Forense}{70}{subsection.6.4.8}
-\contentsline {subsection}{\numberline {6.4.9}Patrones relacionados}{70}{subsection.6.4.9}
-\contentsline {chapter}{\numberline {7}Conclusiones}{71}{chapter.7}
-\contentsline {section}{\numberline {7.1}Contribuciones}{71}{section.7.1}
-\contentsline {section}{\numberline {7.2}Sumario}{72}{section.7.2}
-\contentsline {section}{\numberline {7.3}Trabajo Futuro}{72}{section.7.3}
-\contentsline {chapter}{\numberline {8}Glosario}{74}{chapter.8}
-\contentsline {chapter}{Bibliograf\'{\i }a}{77}{chapter*.34}
+\contentsline {chapter}{\numberline {6}Patrones de Mal Uso}{60}{chapter.6}
+\contentsline {section}{\numberline {6.1}Identificando Amenazas y Patrones de Mal Uso}{60}{section.6.1}
+\contentsline {section}{\numberline {6.2}Identificando amenazas}{60}{section.6.2}
+\contentsline {section}{\numberline {6.3}Template de Patrones de Mal Uso}{63}{section.6.3}
+\contentsline {section}{\numberline {6.4}Patr\IeC {\'o}n de Mal Uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser}{65}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Intent}{65}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Contexto}{66}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Problema}{66}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Soluci\IeC {\'o}n}{67}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Din\IeC {\'a}mica}{67}{subsection.6.4.5}
+\contentsline {subsubsection}{Sumario}{68}{subsubsection*.28}
+\contentsline {subsubsection}{Actor}{68}{subsubsection*.29}
+\contentsline {subsubsection}{Precondiciones}{69}{subsubsection*.30}
+\contentsline {subsubsection}{Descripci\IeC {\'o}n}{69}{subsubsection*.31}
+\contentsline {subsubsection}{Post condiciones}{70}{subsubsection*.32}
+\contentsline {subsubsection}{Usos Conocidos}{70}{subsubsection*.33}
+\contentsline {subsection}{\numberline {6.4.6}Consecuencias}{70}{subsection.6.4.6}
+\contentsline {subsection}{\numberline {6.4.7}Contramedidas}{71}{subsection.6.4.7}
+\contentsline {subsection}{\numberline {6.4.8}Evidencia Forense}{71}{subsection.6.4.8}
+\contentsline {subsection}{\numberline {6.4.9}Patrones relacionados}{72}{subsection.6.4.9}
+\contentsline {chapter}{\numberline {7}Conclusiones}{73}{chapter.7}
+\contentsline {section}{\numberline {7.1}Contribuciones}{73}{section.7.1}
+\contentsline {section}{\numberline {7.2}Sumario}{74}{section.7.2}
+\contentsline {section}{\numberline {7.3}Trabajo Futuro}{74}{section.7.3}
+\contentsline {chapter}{\numberline {8}Glosario}{76}{chapter.8}
+\contentsline {chapter}{Bibliograf\'{\i }a}{79}{chapter*.34}
