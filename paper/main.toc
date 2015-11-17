@@ -71,28 +71,28 @@
 \contentsline {subsubsection}{Browser User (BU)}{48}{subsubsection*.16}
 \contentsline {subsubsection}{Host (H)}{48}{subsubsection*.17}
 \contentsline {subsubsection}{Provider (P)}{48}{subsubsection*.18}
-\contentsline {subsection}{\numberline {5.1.2}Casos de Uso}{48}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Casos de Uso}{49}{subsection.5.1.2}
 \contentsline {subsubsection}{Casos de Uso para Browser User (BU)}{49}{subsubsection*.19}
 \contentsline {subsubsection}{Casos de Uso para el Host (H)}{49}{subsubsection*.20}
 \contentsline {subsubsection}{Casos de Uso para el Proveedor (P)}{50}{subsubsection*.21}
-\contentsline {section}{\numberline {5.2}Patr\IeC {\'o}n Browser Infrastructure}{50}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Intent}{50}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.2}Patr\IeC {\'o}n Browser Infrastructure}{51}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Intent}{51}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Ejemplo}{51}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Contexto}{51}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Problema}{51}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.4}Problema}{52}{subsection.5.2.4}
 \contentsline {subsection}{\numberline {5.2.5}Soluci\IeC {\'o}n}{52}{subsection.5.2.5}
 \contentsline {subsection}{\numberline {5.2.6}Estructura}{52}{subsection.5.2.6}
 \contentsline {subsection}{\numberline {5.2.7}Din\IeC {\'a}mica}{53}{subsection.5.2.7}
-\contentsline {subsubsection}{Sumario}{53}{subsubsection*.22}
+\contentsline {subsubsection}{Sumario}{54}{subsubsection*.22}
 \contentsline {subsubsection}{Actor}{54}{subsubsection*.23}
 \contentsline {subsubsection}{Precondiciones}{54}{subsubsection*.24}
 \contentsline {subsubsection}{Descripci\IeC {\'o}n}{54}{subsubsection*.25}
 \contentsline {subsubsection}{Curso Alternativo}{55}{subsubsection*.26}
-\contentsline {subsubsection}{Condiciones p\IeC {\'o}stumas}{55}{subsubsection*.27}
-\contentsline {subsection}{\numberline {5.2.8}Implementaci\IeC {\'o}n}{55}{subsection.5.2.8}
-\contentsline {subsection}{\numberline {5.2.9}Consecuencias}{56}{subsection.5.2.9}
-\contentsline {subsection}{\numberline {5.2.10}Ejemplo Resuelto}{57}{subsection.5.2.10}
-\contentsline {subsection}{\numberline {5.2.11}Usos Com\IeC {\'u}nes}{57}{subsection.5.2.11}
+\contentsline {subsubsection}{Condiciones p\IeC {\'o}stumas}{56}{subsubsection*.27}
+\contentsline {subsection}{\numberline {5.2.8}Implementaci\IeC {\'o}n}{56}{subsection.5.2.8}
+\contentsline {subsection}{\numberline {5.2.9}Consecuencias}{57}{subsection.5.2.9}
+\contentsline {subsection}{\numberline {5.2.10}Usos Com\IeC {\'u}nes}{57}{subsection.5.2.10}
+\contentsline {subsection}{\numberline {5.2.11}Ejemplo Resuelto}{58}{subsection.5.2.11}
 \contentsline {subsection}{\numberline {5.2.12}Patrones Asociados}{58}{subsection.5.2.12}
 \contentsline {chapter}{\numberline {6}Patrones de Mal Uso}{59}{chapter.6}
 \contentsline {section}{\numberline {6.1}Identificando Amenazas y Patrones de Mal Uso}{59}{section.6.1}
@@ -113,9 +113,10 @@
 \contentsline {subsection}{\numberline {6.4.6}Consecuencias}{69}{subsection.6.4.6}
 \contentsline {subsection}{\numberline {6.4.7}Contramedidas}{70}{subsection.6.4.7}
 \contentsline {subsection}{\numberline {6.4.8}Evidencia Forense}{70}{subsection.6.4.8}
-\contentsline {subsection}{\numberline {6.4.9}Patrones relacionados}{71}{subsection.6.4.9}
-\contentsline {chapter}{\numberline {7}Conclusiones}{72}{chapter.7}
-\contentsline {section}{\numberline {7.1}Contribuciones}{72}{section.7.1}
-\contentsline {section}{\numberline {7.2}Trabajo Futuro}{73}{section.7.2}
+\contentsline {subsection}{\numberline {6.4.9}Patrones relacionados}{70}{subsection.6.4.9}
+\contentsline {chapter}{\numberline {7}Conclusiones}{71}{chapter.7}
+\contentsline {section}{\numberline {7.1}Contribuciones}{71}{section.7.1}
+\contentsline {section}{\numberline {7.2}Sumario}{72}{section.7.2}
+\contentsline {section}{\numberline {7.3}Trabajo Futuro}{72}{section.7.3}
 \contentsline {chapter}{\numberline {8}Glosario}{74}{chapter.8}
 \contentsline {chapter}{Bibliograf\'{\i }a}{77}{chapter*.34}

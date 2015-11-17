@@ -8,13 +8,13 @@ Para poder entender algún Browser se buscó en específico trabajos, papers, do
 En vista a la poca, casi nula, documentación formal sobre el Navegador Web, la necesidad de hacer una Arquitectura de Referencia (AR) para entender cómo la arquitectura de este sistema puede relacionarse con el futuro desarrollo de otros sistemas, puede llegar a ser de gran utilidad para explicar los conceptos de seguridad detrás del Navegador. Se sabe que el Browser es un pieza de Software que ha sufrido varios cambios desde la década de los 90, por lo tanto entre los desarrolladores de esta herramienta ya existen convenciones de qué elementos funcionan mejor. Por consiguiente, no es de extrañar que diferentes browsers estén construidos de formas muy similares, y puedan ser conceptualizados en una AR que manifieste los componentes, mecanismos de comunicación y funciones de esta pieza de Software. 
 
 
-La AR a construir en este trabajo, fue realizada principalmente a través de la abstracción de las propuestas actuales de los Web Browsers más usados: Google Chrome, Internet Explorer y Firefox (propuesta Electrolysis). Primero se identificarán y analizarán los stakeholders, se identificarán los casos de uso relacionados a cada uno de estos stakeholders y se dará una descripción breve. Luego se presentan 2 patrones que formarán parte de nuestra AR; Browser Infrastructure Pattern donde están los componentes principales, la comunicación con el host y la interacción entre éstos. Y luego el patrón RendererContentTab que muestra el interior del encargado de renderizar una página web. Éstos patrones serán descritos utilizando un template POSA \cite{buschman1996system} y notación UML para precisar cómo en una AR se relaciona los componentes. 
+La AR a construir en este trabajo, fue realizada principalmente a través de la abstracción de las propuestas actuales de los Web Browsers más usados: Google Chrome, Internet Explorer y Firefox (propuesta Electrolysis). Primero se identificarán y analizarán los stakeholders, se identificarán los casos de uso relacionados a cada uno de estos stakeholders y se dará una descripción breve. Se han identificado 3 patrones: Browser Infrastructure, RendererContentTab y BrowserChromeFrame. El primero corresponde a la infraestructura completa del Browser, mientras los otros dos son subsistemas internos que en conjunto forman el Navegador. Para este trabajo solamente se desarrollará el patrón que representa el sistema completo, es decir, el patrón BrowserInfrastructure; en éste están los componentes principales, la comunicación con el host y la interacción entre éstos. El patrón Browser Insfrastructure será descrito utilizando un template POSA \cite{buschman1996system} y notación UML para precisar cómo en una AR se relacionan los componentes. 
 
 \section{Casos de Uso del Browser}
 	\subsection{Stakeholders (actores) y Concerns de estos}
 	Se es necesario encontrar los actores (definido por sus roles) que participan en el uso y operación del Navegador, éstos son:
 		\subsubsection{Browser User (BU)}
-		De este stakeholder depende que se realice el inicio de una petición para buscar una página web, recurso o servicio (Sin éste la utilidad del Web Browser es nula). Una entidad no humana, como un plugin, extensión o instancia de una página web, pueden requerir hacer peticiones por medio de las interfaces del navegador, con la intención de cumplir con el deseo del usuario del host de mostrar el contenido en el Browser.
+		En principio, representa a un usuario del Host que utiliza el Navegador. De este stakeholder depende que se realice el inicio de una petición para buscar una página web, recurso o servicio (Sin éste la utilidad del Web Browser es nula). Puede tratarse de una entidad no humana, como un plugin, extensión o instancia de una página web, pueden requerir hacer peticiones por medio de las interfaces del navegador, con la intención de cumplir con el deseo del usuario del host de mostrar el contenido en el Browser.
 		\subsubsection{Host (H)}
 		Para este caso nos referiremos solamente a la máquina cliente dónde se aloja el Web Browser. Ésta crea los procesos necesarios para iniciar el Navegador, además de entregar un ambiente al Browser para que éste pueda funcionar adecuadamente.  Esta identidad se encarga de aplicar políticas de seguridad sobre el Browser cuando se necesiten realizar operaciones o el navegador desee crear nuevos procesos.
 		\subsubsection{Provider (P)}
@@ -68,13 +68,14 @@ El patron Browser Infrastructure pattern permite la realización de la solicitud
 Dentro de un host es posible que exista una falta de recursos que necesite el usuario que lo opera. La solicitud de servicios o recursos externos es una de las razones de existir de la Internet. Esta operación es posible de realizarla de diferentes maneras, todo depende de lo que el Provider desea entregar.
 
 \subsection{Contexto}
-Browser User se encuentra al interior del Host y el Provider es accedido a través de Internet.  Es común que el contacto se da a través de aplicaciones web, servers que se comunican a través del protocolo HTTP. Para poder visualizar los recursos que el usuario del host puede necesitar y que el proveedor pueda quizás entregar, un navegador web permite completar tal labor de forma transparente al usuario.
+Browser User se encuentra al interior del Host y el Provider es accedido a través de Internet.  Es común que el contacto se da a través de aplicaciones Web, servers que se comunican a través del protocolo HTTP. Para poder visualizar los recursos que el BU puede necesitar y que el proveedor pueda quizás entregar, un navegador web permite completar tal labor de forma transparente al usuario.
 \subsection{Problema}
-Algunos usuario del Host puede que necesiten obtener recursos desde un Provider, pero el usuario puede que necesite utilizarlos en algún formato en especial o que sean presentados por pantalla para ser mejor visualizados. En este caso, si no se utiliza la herramienta adecuada puede que no sirva de mucho haber conseguido el recurso si no se puede ocupar correctamente. ¿Cómo pueden el Host y Provider estar preparados para esta situación?
+Algunos BU puede que necesiten obtener recursos desde un Provider, pero el usuario puede que necesite utilizarlos en algún formato en especial o que sean presentados por pantalla para ser mejor visualizados. En este caso, si no se utiliza la herramienta adecuada puede que no sirva de mucho haber conseguido el recurso si no se puede ocupar correctamente. ¿Cómo pueden el Host y Provider estar preparados para esta situación?
 La solución a este problema debe resolver las siguientes problemáticas:
 \begin{itemize}
 	\item Transparencia: el usuario detrás del Host no se debe preocupar de la maquinaria que existe mientras se realiza una petición a un Provider.
-	\item Estabilidad/Aislación: cada \textit{request} realizada no debe interferir con las otras.
+	\item Estabilidad: el Browser debe ser capaz de seguir funcionando, aún cuando una página haya tenido problemas para ser mostrada o exista un error.
+	\item Aislación: cada \textit{request} realizada no debe interferir con las demás peticiones que se estén realizando.
 	\item Heterogeneidad: Sin importar el tipo de Provider con el que se comunique, el Browser User debe poder comunicarse con cualquier tipo de Provider y también debe poder mostrar adecuadamente al usuario el recurso obtenido.
 	\item Disponibilidad: El usuario del Host debe ser capaz de poder realizar peticiones en todo momento, sin perder fluidez.
 \end{itemize}
@@ -107,18 +108,18 @@ Detallaremos el caso de uso Realizar Request (Figura \ref{fig:SecReq}):
 \subsubsection{Actor} Browser User
 \subsubsection{Precondiciones} El Host debe tener uno o más Browser Client para el usuario del Host. Además de estar conectado a una red o Internet. El Provider al que se desea contactar también debe estar disponible.
 \subsubsection{Descripción}
-Nota: Los mensajes entre el Browser Client y el Sandbox pueden ser tanto síncronos como asíncronos. No especificaremos en gran detalle , pues lo que importa en este trabajo será el origen y destino de los mensajes (no está dentro del ámbito ver la sincronización).
+Nota: Los mensajes entre el Browser Client y el Sandbox pueden ser tanto síncronos como asíncronos \cite{firefoxIPC,GCIPC}. No especificaremos en gran detalle , pues lo que importa en este trabajo será el origen y destino de los mensajes (no está dentro del ámbito ver la sincronización).
 	\begin{enumerate}
-		\item Un Browser User requiere acceder a una URL para obtener cierto recurso de un Provider, para esto usa un Browser Client ya instanciado por el Host. En el interior del Sandbox, existe una instancia del patrón RendererContentTab en su interior. 
-\item El Sandbox requiere los recursos del Host para obtener lo que hay detrás de la URL. Una petición es realizada desde el Sandbox al Browser Client a través de un canal de comunicación como: IPC, IPDL o COM (dependiendo el tipo de Browser usado), usando la API limitada que posee para comunicarse a un proceso de mayor privilegio. 
-\item El Browser Client recibe la solicitud, verifica a través de su motor de políticas/normas si la acción del Sandbox puede ser permitida.
-\item Si es permita la acción del Sandbox, se utilizará la Network API que contiene el Browser Client para obtener recursos del Host (a través de llamadas al sistema). El Browser Client se comunica internamente con el Host, y este último debe revisar sus políticas y asegurarse que el Browser Client posee el privilegio de hacer la petición del recurso del Host.
-\item Si se permite el acceso el recurso, el Browser Client podrá realizar un \textit{request} a través de la Network API. Si el \textit{request} no es del tipo \textit{pre-flight}, el Provider recibirá el \textit{request} y trabajará sobre la petición.
-\item El Provider enviará un response al \textit{request} enviado. Dependiendo como esté implementado el Browser Client, este podría o no tener que esperar a la respuesta (síncrono o asíncrono) del Provider.
-\item Una vez obtenida la respuesta esta es almacenada en cache o podría ser guardada dentro del Host. 
-\item La respuesta del \textit{request} es enviada por el canal de comunicación al Sandbox del que se originó y posteriormente al RendererContentTab. Si fue recibida una respuesta por parte de la \textit{request}, el RendererContentTab está listo para preparar el parsing de la página web o utiliza un plugin o GPU para apoyar la visualización del recurso obtenido por la URL. En caso contrario el RendererContentTab dentro del Sandbox creará una página de error.
-\item El \textit{Renderer} obtiene un bitmap que debe enviar al Browser Client, para que el Host pueda mostrarlo visualmente. Antes de realizarlo, debe revisar que el Sandbox que contiene el RendererContentTab posea los permisos.
-\item Si los permisos son suficientes, el Browser Client envía el bitmap como parámetro en la llamada al sistema realizada al Host. Finalmente, el Host debe revisar que la llamada al sistema que realizó el Browser Client, tenga los permisos necesarios; de poseerlos, el bitmap se mostrará al Browser User por pantalla.
+		\item Un Browser User requiere acceder a una URL para obtener cierto recurso de un Provider, para esto usa un Browser Client ya instanciado por el Host. En el interior del Sandbox existe una instancia del patrón RendererContentTab. 
+		\item El Sandbox requiere los recursos del Host para obtener lo que hay detrás de la URL. Una petición es realizada desde el Sandbox al Browser Client a través de un canal de comunicación como: IPC, IPDL o COM (dependiendo el tipo de Browser usado), usando la API limitada que posee para comunicarse a un proceso de mayor privilegio. 
+		\item El Browser Client recibe la solicitud, verifica a través de su motor de políticas/normas si la acción del Sandbox puede ser permitida.
+		\item Si es permitada la acción del Sandbox, se utilizará la Network API que contiene el Browser Client para obtener recursos del Host (a través de llamadas al sistema). El Browser Client se comunica internamente con el Host, y este último debe revisar sus políticas y asegurarse que el Browser Client posee el privilegio de hacer la petición del recurso del Host.
+		\item Si se permite el acceso el recurso, el Browser Client podrá realizar un \textit{request} a través de la Network API. Si el \textit{request} no es del tipo \textit{pre-flight}, el Provider recibirá el \textit{request} y trabajará sobre la petición.
+		\item El Provider enviará un response al \textit{request} enviado. Dependiendo como esté implementado el Browser Client, éste podría o no tener que esperar a la respuesta (síncrono o asíncrono) del Provider.
+		\item Una vez obtenida la respuesta ésta es almacenada en cache, salvo que indique de no hacerlo.
+		\item La respuesta del \textit{request} es enviada por el canal de comunicación al Sandbox del que se originó y posteriormente al RendererContentTab. Si fue recibida una respuesta por parte de la \textit{request}, el RendererContentTab está listo para preparar el parsing de la página web o utiliza un plugin o GPU para apoyar la visualización del recurso obtenido por la URL. En caso contrario el RendererContentTab dentro del Sandbox creará una página de error.
+		\item El \textit{Renderer} obtiene un bitmap que debe enviar al Browser Client, para que el Host pueda mostrarlo visualmente. Antes de realizarlo, debe revisar que el Sandbox que contiene el RendererContentTab posea los permisos.
+		\item Si los permisos son suficientes, el Browser Client envía el bitmap como parámetro en la llamada al sistema realizada al Host. Finalmente, el Host debe revisar que la llamada al sistema que realizó el Browser Client, tenga los permisos necesarios; de poseerlos, el bitmap se mostrará al Browser User por pantalla.
 	\end{enumerate}
 \subsubsection{Curso Alternativo} 
 \begin{itemize}
@@ -135,33 +136,35 @@ Nota: Los mensajes entre el Browser Client y el Sandbox pueden ser tanto síncro
 	    \end{figure}
 \subsection{Implementación}
 \begin{itemize}
-\item El Sandbox puede ser implementado de diversas maneras. Google Chrome [referencia a página de sandbox de cg] se basa en no reinventar la rueda y utiliza los mecanismos de protección que Windows ya tiene incorporados para proteger al usuario, evitando que el proceso no tenga acceso al sistema de archivos y teniendo una API de llamadas al sistema muy restrictivas en el RendererContentTab. Google Chrome, Firefox e Internet Explorer asumen que los Sandoboxs son procesos que deben regirse bajo el principio de menor privilegio (least privilege). La mínima configuración del Sandbox se compone de 2 procesos: El proceso privilegiado o Broker que es representado por el BrowserClient, y el o los procesos que están bajo el Sandbox o targets.
-\item Para hacer cumplir con el Same Origin Policy Google Chrome, Firefox e Internet Explorer utilizan diferentes esquemas, por ejemplo: Google Chrome deja el trabajo a su Renderer (RendererContentTab en este caso) para dejar aisladas las páginas/recursos de diversos sitios.
+\item El Sandbox puede ser implementado de diversas maneras. Google Chrome \cite{sandboxGC} se basa en no reinventar la rueda y utiliza los mecanismos de protección que el Sistema Operativo (por ejemplo: Windows o Linux) del Host ya tiene incorporados para proteger al usuario, evitando que el proceso no tenga acceso al sistema de archivos y teniendo una API de llamadas al sistema muy restrictivas en el RendererContentTab. Google Chrome, Firefox e Internet Explorer asumen que los Sandoboxs son procesos que deben regirse bajo el principio de menor privilegio (least privilege). La mínima configuración del Sandbox se compone de 2 procesos: El proceso privilegiado o Broker que es representado por el BrowserClient, y el o los procesos que están bajo el Sandbox o targets.
+\item Para hacer cumplir con el Same Origin Policy, Google Chrome, Firefox e Internet Explorer utilizan diferentes esquemas; por ejemplo: Google Chrome deja el trabajo a su Renderer (RendererContentTab en este caso) para dejar aisladas las páginas/recursos de diversos sitios.
 \end{itemize}
 \subsection{Consecuencias}
 El patrón Browser Infrastructure provee los siguientes beneficios:
 \begin{itemize}
 	\item Transparencia: La navegación del usuario se realizará casi de manera automática, solo en casos muy puntuales el usuario tendrá que tomar una decisión sobre el recurso que desea pedir.
-\item Estabilidad/Aislación: Gracias a que el Browser Client, Sandbox, Plugin y GPU Instance son procesos del Host independientes, el fallo de uno no generará problemas en el otro (crash, corrupción de memoria, etc).
+	\item Estabilidad: Gracias a que el Browser Client, Sandbox, Plugin y GPU Instance son procesos del Host independientes, el fallo de uno no generará problemas en el otro (crash, corrupción de memoria, etc).
+	\item Aislación: Dependiendo del tipo de aislación es posible separar los distintas peticiones, de manera que no interfieran entre sí, a menos que se desee.
 	\item Heterogeneidad: Dado que cada Browser Client trata de seguir los estándares de la W3C, toda página que también siga éstas guías podrá ser visualizada, así como también otro tipo de recursos.
-	\item Disponibilidad: Cada proceso es independiente y posee sus propias hebras de ejecución, y fueron creadas específicamente para que la interfaz de usuaria pueda mantenerse fluida para el usuario.
+	\item Disponibilidad: Cada proceso es independiente y posee sus propias hebras de ejecución, y fueron creadas específicamente para que la interfaz de usuario pueda mantenerse fluida.
 \end{itemize}
-Al mismo tiempo el patrón posee las siguientes debilidades:
+Al mismo tiempo, el patrón posee las siguientes debilidades:
 \begin{itemize}
 	\item Dado que se inician procesos independientes para navegar a un recurso (dependiendo el esquema que utilice el browser), es posible que una gran cantidad de recursos se vayan a usar para mantener todo abierto.
-	\item Aquellos Provider que no hayan cumplido con las especificaciones de la W3C, mostraran su resource de forma incorrecta por el Web Browser.
+	\item Aquellos Provider que no hayan cumplido con las especificaciones de la W3C, mostrarán su resource de forma incorrecta por el Web Browser.
+\end{itemize}
+\subsection{Usos Comúnes}
+\begin{itemize}
+	\item Actualmente, la separación de los componentes del Browser en varios procesos, con diferentes niveles de acceso, se conoce como una Arquitectura Modular \cite{Vrbanec2013}. Esto permite la separación de preocupaciones del Navegador, lo que se traduce en una mayor estabilidad, aislación, seguridad y rapidez.
+	\item Google Chrome se basa en la arquitectura modular, donde cada proceso Renderer se comunica con el Browser Kernel \cite{multiProcGC}. Internet Explorer, por ser privativo no da mucha información sobre su estructura o detalles de su implementación; \cite{Crowley2010} sobre la arquitectura Loosely-Coupled \cite{IE8-LCIE} y sus componentes, pero sin entrar tanto en detalle. Firefox, por su parte posee las dos implementaciones: monoprocesos y multiproceso. Electrolysis es el nombre de la arquitectura modular que se está implementado, pero que aún no ha sido finalizada completamente.
 \end{itemize}
 \subsection{Ejemplo Resuelto}
 Con el patrón entregado ahora es posible poder navegar de forma fluida a todos los recursos en la Internet que deseamos. Es posible proveer a través de la aislación de los componentes: rapidez, seguridad y estabilidad. El Browser User solamente se molestará en la navegación, cuando se requiera de su autorización para ingresar a ciertos recursos del Host que sean privilegiados, como el sistema de archivos. Cada usuario del Host, puede utilizar el Browser Client que desee, dado que cada uno de ellos es aislado por procesos independientes, así también los otros Browser Clients entre si.
 
-\subsection{Usos Comúnes}
-\begin{itemize}
-	\item Google Chrome
-	\item Internet Explorer
-	\item Firefox
-\end{itemize}
+
 \subsection{Patrones Asociados}
 \begin{itemize}
-	\item Reference Monitor [Fer13]
-	\item Policy authorization
+	\item El patrón RendererContentTab, el cuál está en proceso de desarrollo, representa el subsistema dentro del Sandbox que permite realizar el parsing del \textit{resource} o recurso obtenido por medio de una petición.
+	\item El patrón Browser--, también en desarrollo, representa el subsistema que representa el Navegador Web. Este componente actua como un Reference Monitor \cite{fernandez2013security} para todas las solicitudes que el Renderer llegara a necesitar.
+	\item El Sandbox se comunica con el Browser Client siguiendo un patrón como el que indica el Policy Authorization \cite{fernandez2013security}. Por cada petición del Renderer, el Sandbox tendrá el acceso si las políticas que el Browser Client permiten tal acción.
 \end{itemize}
