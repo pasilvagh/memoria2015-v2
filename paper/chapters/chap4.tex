@@ -55,7 +55,7 @@ Podemos ver en los trabajos que algunos construyen una Arquitectura de Referenci
 
     En \cite{barth2008security} se explica que el objetivo principal de esta arquitectura es poder mitigar ataques muy severos sin tener que sacrificar la compatibilidad con los sitios web ya existentes. Para lograr el objetivo Google ha ganado muchas lecciones de cómo realizar esto \cite{reis2009browser}, pues explican que un gran desafío en la seguridad es proteger a los usuarios de los atacantes que se aprovechan de las vulnerabilidades y debilidades de los Web Browsers. En su arquitectura modular se puede ver que se intenta proveer una seguridad que evita afectar la compatibilidad con otros sitios. La arquitectura comentada se basa en dos decisiones de diseño: La arquitectura depende en el Rendering Engine para aquellos componentes de alto riesgo como JavaScript, el parser de HTML y la creación de DOM para hacer cumplir SOP; al estar rodeados por un Sandboxing, hace que el Rendering Engine se comporte como una caja negra. 
 
- \subsection{Browser Kernel/Process y Renderering Engine/Process - Blink}
+ \subsection{Browser Kernel/Process y Renderering Engine/Process}
     El Browser Process provee al usuario con lo necesario para el manejo de sesiones (cookies, tokens, etc), historial, almacenamiento de passwords, manejo de interfaz de usuario, barra de localización, sistema local de blacklist, API para realizar llamadas al sistema tanto para almacenar datos como para realizar peticiones del usuario, agente de descarga, entro otros. El Browser Kernel tiene la tarea de ser un interceptor de las llamadas de los procesos Rendering que están en un Sandbox, revisando las políticas y qué acciones están permitidas.
 
     \begin{figure}[h!t]

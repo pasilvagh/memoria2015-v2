@@ -11,12 +11,14 @@ La identificación de amenazas es base para poder tomar medidas adecuadas para p
 Usando los casos de uso listado en el capítulo anterior, es posible revelar una lista de amenazas extensas. Solo para sintetizar el proceso, se usará un caso de uso y de éste se extraerá un patrón de mal uso.
 La figura \ref{fig:ActDiagr} describe el diagrama de actividad compuesto, que involucra los casos de uso \textbf{Realizar Request} y \textbf{Recibir Request}. Varias amenazas pueden ser reveladas a través de las interacciones visualizadas en el diagrama, por ejemplo: Cuando se realiza la petición al servidor del recurso especificado por la URL, y se entrega otro recurso que no es el pedido. 
 
+\begin{landscape}
 \begin{figure}[h!t]
     \centering
-    \includegraphics[scale=0.45]{figures/chap5/activityDiag_2.jpg}
+    \includegraphics[scale=0.52]{figures/chap5/activityDiag_v3.jpg}
     \caption{Diagrama de Actividad Compuesto para los casos de uso \textbf{Realizar Request} y \textbf{Recibir Request}.}
     \label{fig:ActDiagr}
 \end{figure}
+\end{landscape}
 
 \begin{landscape}% Landscape page
 \begin{table}[h!t]
@@ -97,7 +99,7 @@ Un atacante podría cambiar contenido o dar uno diferente al esperado cuando el 
 Un Navegador web obtiene resources desde un Provider para poder satisfacer un Browser User que lo necesita. Un Provider posee resources en forma de páginas web, servicios web u otro tipo. El Provider generalmente consiste en una Web App o Web server, que puede permitir entrada y salida de datos a otras aplicaciones, normalmente éstos están construidos usando HTML, Javascript y CCS. Sea que éste desea entregar servicios, como también otros deseen conectarse a él, todo tipo de comunicación estará encima del protocolo HTTP. Un Provider, dependiendo del tipo, puede llegar a recibir muchas peticiones de diversos Host para obtener recursos de éste. Dependiendo del tipo de peticiones, éstas pueden o no ser permitidas. Aquellas que son permitidas, el Provider generará una response a la \textit{request} del Host, la cuál terminará llegando de vuelta (o no) al Browser Client que generó el \textit{request}.
 
 \subsection{Problema}
-¿Cómo podría un atacante engañar al Browser User y Host, por medio de la modificación de tráfico entre las entidades participantes en la comunicación? Es posible que un atacante esté escondido entre medio de la comunicación que hay entre el Host y el Provider, lo que resulta en que el contenido modificado podría afectar dentro del RendererContentTab o el Browser Client. Esto en consecuencia podría traer diferentes resultados, desde el robo de información privada del Browser User que utiliza el Browser Client para personalizar la navegación como también los token de autenticación hacia los Providers que el Browser User ha utilizado previamente. Dependiendo del tipo de atacante, es posible que éste pueda incluso afectar al Host del Browser, dejando que el atacante pueda realizar actos maliciosos con los recursos del Host. 
+¿Cómo podría un atacante engañar al Browser User y Host, por medio de la modificación de tráfico entre las entidades participantes en la comunicación? Es posible que un atacante esté escondido entre medio de la comunicación que hay entre el Host y el Provider, lo que resulta en que el contenido modificado podría afectar dentro del Web Content Renderer o el Browser Client. Esto en consecuencia podría traer diferentes resultados, desde el robo de información privada del Browser User que utiliza el Browser Client para personalizar la navegación como también los token de autenticación hacia los Providers que el Browser User ha utilizado previamente. Dependiendo del tipo de atacante, es posible que éste pueda incluso afectar al Host del Browser, dejando que el atacante pueda realizar actos maliciosos con los recursos del Host. 
 El ataque puede sacar ventaja de las siguientes vulnerabilidades:
 \begin{itemize}
 	\item El \textbf{origen} u \textbf{origin} que define el Same Origin Policy que hace cumplir el Browser difiere en cada tipo de Web Browser \cite{W3C-SOP,Reis2009, Jackson2008, Crowley2010, Paola2006}.
@@ -117,21 +119,25 @@ El ataque puede ser facilitado por:
 \end{itemize}
 \subsection{Solución}
 La solución estructural usada es la misma creada por el patrón Browser Infrastructure que se revisó en el capítulo 4. La clase Attacker es cualquier entidad que podría llevar a cabo una acción arriesgada contra la integridad del Browser, usuario, Host y Provider (Figura \ref{fig:BIMisuse}). El atacante es capaz tanto de interceptar las response que el Provider envía al Browser Client usando al Host como receptor, o haciendo que el Browser realice modificaciones en el input que va hacia el Provider, utilizando scripts u otro resources.
+\begin{landscape}
 \begin{figure}[h!t]
 	        \centering
-	        \includegraphics[scale=0.5]{figures/chap5/patronMisuse.jpg}
+	        \includegraphics[scale=0.62]{figures/chap5/patronMisuse_v2.jpg}
 	        \caption{Diagrama de Clases para el patrón de Misuse.}
 	        \label{fig:BIMisuse}
     \end{figure}
+\end{landscape}
 
 \subsection{Dinámica}
 En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para realizar uno de los tantos mal usos que se pueden realizar durante el caso de uso Realizar \textit{request}. El atacante queda entre el Browser Client y el Host, interceptando la realización del \textit{request} original y modificando el tráfico a su gusto; usualmente un ataque basado en este mal uso se le llama Man-in-the-Browser (MITB) \cite{Liu2012, Barth2010, Utakrit2009, Dougan2012}. Esto podría perfectamente suceder cuando el Browser User ha permitido la instalación de plugins, extensiones o programas externos en el Host y Browser Client.
+\begin{landscape}
 \begin{figure}[h!t]
 	        \centering
-	        \includegraphics[scale=0.45]{figures/chap5/patronMisuseSeq.jpg}
+	        \includegraphics[scale=0.66]{figures/chap5/patronMisuseSeq_v2.jpg}
 	        \caption{Diagrama de Secuencia para el Mal uso: Modificación de tráfico en el Web Browser.}
 	        \label{fig:SeqMisuse}
     \end{figure}
+\end{landscape}
 	
 	\subsubsection{Sumario} El atacante intercepta el tráfico entre Host y Browser Client.
 	\subsubsection{Actor} Atacante

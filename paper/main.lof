@@ -14,16 +14,16 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Arquitectura de Internet Explorer. Fuente: \cite {IEArchImg}}}{41}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de Internet Explorer m\IeC {\'a}s detallada. Fuente: \cite {IE8LCIE}}}{42}{figure.4.4}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Arquitectura Monoproceso obtenida en Fuente \cite {2005-grosskurth-browser-refarch, preprint-grosskurth-browser-archevol}}}{43}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Gecko Rendering Engine. Fuente: \cite {gecko}}}{45}{figure.4.6}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Gecko Rendering Engine. Fuente: \cite {gecko}}}{44}{figure.4.6}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Firefox Electrolysis, Comunicaci\IeC {\'o}n de procesos 1. Fuente: \cite {Firefox101}}}{46}{figure.4.7}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Firefox Electrolysis, Comunicaci\IeC {\'o}n de procesos 2. Fuente: \cite {Firefox101}}}{46}{figure.4.8}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de Caso de Uso del Web Browser.}}{51}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Componentes de alto nivel del Browser.}}{53}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Realizar Request.}}{56}{figure.5.3}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Componentes de alto nivel del Browser.}}{54}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de Secuencia: Realizar Request.}}{58}{figure.5.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso \textbf {Realizar Request} y \textbf {Recibir Request}.}}{61}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse.}}{68}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de Secuencia para el Mal uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser.}}{69}{figure.6.3}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Diagrama de Actividad Compuesto para los casos de uso \textbf {Realizar Request} y \textbf {Recibir Request}.}}{64}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagrama de Clases para el patr\IeC {\'o}n de Misuse.}}{71}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de Secuencia para el Mal uso: Modificaci\IeC {\'o}n de tr\IeC {\'a}fico en el Web Browser.}}{73}{figure.6.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
