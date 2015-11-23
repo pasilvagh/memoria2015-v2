@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\'on}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Contexto}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Seguridad...}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Desarrollo de Software y Seguridad}{6}{0}{1}
+\beamer@subsectionintoc {1}{4}{Motivación para estudiar este tema}{7}{0}{1}
+\beamer@subsectionintoc {1}{5}{Contribuciones}{8}{0}{1}
