@@ -2,38 +2,38 @@
 \label{chap5:ArqRefWB}
 
 
-Para poder entender algún Browser se buscó en específico trabajos, papers, documentación gris a través de buscadores web como: IEEE Xplore, ACM digital Libray, Scopus y otros más, con tal de encontrar documentos formales sobre sus arquitecturas. Lo que más se encontró fueron blogs de desarrollo y White papers sobre Google Chrome, sin embargo llama la atención la escases en literatura sobre el tema. 
+Para poder entender algún \textit{Browser} se buscó en específico trabajos, papers, documentación gris a través de buscadores web como: IEEE Xplore, ACM digital Libray, Scopus y otros más, con tal de encontrar documentos formales sobre sus arquitecturas. Lo que más se encontró fueron blogs de desarrollo y White papers sobre Google Chrome, sin embargo llama la atención la escases en literatura sobre el tema. 
 
 
-En vista a la poca, casi nula, documentación formal sobre el Navegador Web, la necesidad de hacer una Arquitectura de Referencia (AR) para entender cómo la arquitectura de este sistema puede relacionarse con el futuro desarrollo de otros sistemas, puede llegar a ser de gran utilidad para explicar los conceptos de seguridad detrás del Navegador. Se sabe que el Browser es un pieza de Software que ha sufrido varios cambios desde la década de los 90, por lo tanto entre los desarrolladores de esta herramienta ya existen convenciones de qué elementos funcionan mejor. Por consiguiente, no es de extrañar que diferentes browsers estén construidos de formas muy similares, y puedan ser conceptualizados en una AR que manifieste los componentes, mecanismos de comunicación y funciones de esta pieza de Software. 
+En vista a la poca, casi nula, documentación formal sobre el navegador Web, la necesidad de hacer una Arquitectura de Referencia (AR) para entender cómo la arquitectura de este sistema puede relacionarse con el futuro desarrollo de otros sistemas, puede llegar a ser de gran utilidad para explicar los conceptos de seguridad detrás del navegador. Se sabe que el \textit{Browser} es un pieza de Software que ha sufrido varios cambios desde la década de los 90, por lo tanto entre los desarrolladores de esta herramienta ya existen convenciones de qué elementos funcionan mejor. Por consiguiente, no es de extrañar que diferentes browsers estén construidos de formas muy similares, y puedan ser conceptualizados en una AR que manifieste los componentes, mecanismos de comunicación y funciones de esta pieza de Software. 
 
 
-La AR a construir en este trabajo, fue realizada principalmente a través de la abstracción de las propuestas actuales de los Web Browsers más usados: Google Chrome, Internet Explorer y Firefox (propuesta Electrolysis). Primero se identificarán y analizarán los stakeholders, se identificarán los casos de uso relacionados a cada uno de estos stakeholders y se dará una descripción breve. Se han identificado 3 patrones: Browser Infrastructure, Web Content Renderer y Browser Kernel. El primero corresponde a la infraestructura completa del Browser, mientras los otros dos son subsistemas internos que en conjunto forman el Navegador. Para este trabajo solamente se desarrollará el patrón que representa el sistema completo, es decir, el patrón Browser Infrastructure; en éste están los componentes principales, la comunicación con el host y la interacción entre éstos. El patrón Browser Insfrastructure será descrito utilizando un template POSA \cite{buschman1996system} y notación UML para precisar cómo en una AR se relacionan los componentes. 
+La AR a construir en este trabajo, fue realizada principalmente a través de la abstracción de las propuestas actuales de los Web Browsers más usados: Google Chrome, Internet Explorer y Firefox (propuesta Electrolysis). Primero se identificarán y analizarán los stakeholders, se identificarán los casos de uso relacionados a cada uno de estos stakeholders y se dará una descripción breve. Se han identificado 3 patrones: Browser Infrastructure, Web Content Renderer y Browser Kernel. El primero corresponde a la infraestructura completa del \textit{Browser}, mientras los otros dos son subsistemas internos que en conjunto forman el navegador. Para este trabajo solamente se desarrollará el patrón que representa el sistema completo, es decir, el patrón Browser Infrastructure; en éste están los componentes principales, la comunicación con el host y la interacción entre éstos. El patrón Browser Insfrastructure será descrito utilizando un template POSA \cite{buschman1996system} y notación UML para precisar cómo en una AR se relacionan los componentes. 
 
 \section{Casos de Uso del Browser}
 	\subsection{Stakeholders (actores) y Concerns de estos}
 	Se es necesario encontrar los actores (definido por sus roles) que participan en el uso y operación del Navegador, éstos son:
 		\subsubsection{Browser User (BU)}
-		En principio, representa a un usuario del Host que utiliza el Navegador. De este stakeholder depende que se realice el inicio de una petición para buscar una página web, recurso o servicio (Sin éste la utilidad del Web Browser es nula). Puede tratarse de una entidad no humana, como un plugin, extensión o instancia de una página web, pueden requerir hacer peticiones por medio de las interfaces del navegador, con la intención de cumplir con el deseo del usuario del host de mostrar el contenido en el Browser.
+		En principio, representa a un usuario del Host que utiliza el navegador. De este stakeholder depende que se realice el inicio de una petición para buscar una página web, recurso o servicio (Sin éste la utilidad del \textit{Web Browser} es nula). Puede tratarse de una entidad no humana, como un plugin, extensión o instancia de una página web, pueden requerir hacer peticiones por medio de las interfaces del navegador, con la intención de cumplir con el deseo del usuario del host de mostrar el contenido en el \textit{Browser}.
 		\subsubsection{Host (H)}
-		Para este caso nos referiremos solamente a la máquina cliente dónde se aloja el Web Browser. Ésta crea los procesos necesarios para iniciar el Navegador, además de entregar un ambiente al Browser para que éste pueda funcionar adecuadamente.  Esta identidad se encarga de aplicar políticas de seguridad sobre el Browser cuando se necesiten realizar operaciones o el navegador desee crear nuevos procesos.
+		Para este caso nos referiremos solamente a la máquina cliente dónde se aloja el \textit{Web Browser}. Ésta crea los procesos necesarios para iniciar el navegador, además de entregar un ambiente al \textit{Browser} para que éste pueda funcionar adecuadamente.  Esta identidad se encarga de aplicar políticas de seguridad sobre el \textit{Browser} cuando se necesiten realizar operaciones o el navegador desee crear nuevos procesos.
 		\subsubsection{Provider (P)}
-		Es toda la infraestructura relacionada con el Servicio Web que pudiera entregar una máquina remota a un Navegador. Este puede ser un: Web Server, Web Aplicación, Servicio de actualización del Browser, etc. Su interacción con el Browser se limita a entregar contenido a éste.
+		Es toda la infraestructura relacionada con el Servicio Web que pudiera entregar una máquina remota a un navegador. Este puede ser un: Web Server, Web Aplicación, Servicio de actualización del \textit{Browser}, etc. Su interacción con el \textit{Browser} se limita a entregar contenido a éste.
 		\subsection{Casos de Uso}
-Los casos de usos y actores están listados a continuación. Notar que se presentarán aquellos casos de uso relacionados exclusivamente con el Browser.
+Los casos de usos y actores están listados a continuación. Notar que se presentarán aquellos casos de uso relacionados exclusivamente con el \textit{Browser}.
 
 \subsubsection{Casos de Uso para Browser User (BU)}
-		El BU representa todas las interacciones posibles del usuario con el Browser y sin él no habría razón para la existencia del navegador; un servidor tampoco existiría dado el mismo principio. Al encontrar los casos de uso de este stakeholder veremos las preocupaciones de éste, lo que nos permitirá entender las necesidades de seguridad para proteger al navegador. Los casos de uso principales de éste son: Realizar Request, Cancelar Request y Guardar Recurso.
+		El BU representa todas las interacciones posibles del usuario con el \textit{Browser} y sin él no habría razón para la existencia del navegador; un servidor tampoco existiría dado el mismo principio. Al encontrar los casos de uso de este stakeholder veremos las preocupaciones de éste, lo que nos permitirá entender las necesidades de seguridad para proteger al navegador. Los casos de uso principales de éste son: Realizar Request, Cancelar Request y Guardar Recurso.
 			\begin{enumerate}	
 				\item Realizar Petición/Request: El caso de uso más importante de este sistema, se basa en la arquitectura cliente/servidor. Esta acción considera la petición de recursos al Provider (P) y la búsqueda del recurso bajo la URI dada y la consecuente respuesta de éste. La descarga no es siempre necesaria, pues existe lo que se conoce como una petición \textit{preflight} donde solo se envía una petición para saber si es seguro realizar una petición/\textit{request}. Tanto petición como respuesta se han condensado en un solo caso de uso. Este caso de uso considera la visualización del recurso en el Host a través del periférico predeterminado.
-				\item Cancelar request: Un BU pide al Browser detener la búsqueda y todo proceso en tránsito. Si el recurso es obtenido por el Browser, la detención de éste puede considerar la detención del componente Renderer para mostrar por pantalla la proyección de la página web obtenida.			
+				\item Cancelar request: Un BU pide al \textit{Browser} detener la búsqueda y todo proceso en tránsito. Si el recurso es obtenido por el \textit{Browser}, la detención de éste puede considerar la detención del componente Renderer para mostrar por pantalla la proyección de la página web obtenida.			
 				\item Guardar recurso: Un BU puede necesitar guardar el recurso recientemente adquirido en el sistema de archivos del host (H). El caso de uso inicia una vez que el BU haya manifestado dónde desea guardar el recurso.
 			\end{enumerate}
 
 \subsubsection{Casos de Uso para el Host (H)}
-Los casos de uso del Host representan todas las interacciones que relacionan servicios provistos al BU al hacer uso de \textit{system calls}, por medio del Browser. El Host debe para esto contar con la respuesta explícita del usuario detrás de BU. Los casos de uso principales de H son: Operación CRUD en el sistema de archivos del host, Monitorear proceso y Pedir recursos.
+Los casos de uso del Host representan todas las interacciones que relacionan servicios provistos al BU al hacer uso de \textit{system calls}, por medio del \textit{Browser}. El Host debe para esto contar con la respuesta explícita del usuario detrás de BU. Los casos de uso principales de H son: Operación CRUD en el sistema de archivos del host, Monitorear proceso y Pedir recursos.
 			\begin{enumerate}
-				\item Operación CRUD en el sistema de archivos del host: Acción realizada cuando el Browser obtiene una solicitud explícita o no (automática), del usuario para realizar acciones que involucren permitir el acceso al sistema de archivos para: leer, escribir o modificar/eliminar algún recurso del host.
+				\item Operación CRUD en el sistema de archivos del host: Acción realizada cuando el \textit{Browser} obtiene una solicitud explícita o no (automática), del usuario para realizar acciones que involucren permitir el acceso al sistema de archivos para: leer, escribir o modificar/eliminar algún recurso del host.
 
 				\item Monitorear proceso: En un browser es normal la comunicación entre los procesos que lo componen y el Sistema Operativo por medio de un canal de comunicación, en especial cuando se necesita ver la cantidad de recursos usados.
 
@@ -44,9 +44,9 @@ Los casos de uso del Host representan todas las interacciones que relacionan ser
 		La meta del Proveedor es escuchar las peticiones provenientes de diversos tipos de BU que necesiten los servicios o recursos del Proveedor. En este escenario tan heterogéneo y distribuido que es la Internet, se enfocará solamente en las peticiones de BU. Además, no para toda \textit{request} del BU habrá un \textit{response} de P, pues puede pasar que BU esté solamente intentando averiguar si P existe.
 			\begin{enumerate}
 				\item Escuchar requests: P siempre está escuchando en sus puertos habilitados a posibles peticiones de sus clientes. Una petición es recibida en un formato que P pueda interpretar y en consecuencia realizar las acciones correspondientes que BU le pide. 
-				\item Enviar Response: Por cada solicitud del cliente, en este caso el Web Browser, habrá una respuesta/response por parte del P con la data Resource asociada. Este caso de uso no se realiza, si dentro del header de uno de los paquetes está indicado que la petición fue hecha en modo \textit{preflight}.
+				\item Enviar Response: Por cada solicitud del cliente, en este caso el \textit{Web Browser}, habrá una respuesta/response por parte del P con la data Resource asociada. Este caso de uso no se realiza, si dentro del header de uno de los paquetes está indicado que la petición fue hecha en modo \textit{preflight}.
 				\item Crear recurso: Por cada recurso que P crea, una URL única será usada para ser identificada en la Internet. Un BU hace uso de tal URL para adquirir el recurso, mientras el host del Proveedor lo deje visible.
-				\item Configurar opciones: definir distintas medidas en el Proveedor como: acceso a recursos, acceso de Browser users, etc.
+				\item Configurar opciones: definir distintas medidas en el Proveedor como: acceso a recursos, acceso de Browser Users, etc.
 			\end{enumerate}
 
 		Los casos de Uso descritos anteriormente se pueden divisar en la Figura \ref{fig:CUBrowser}
@@ -54,7 +54,7 @@ Los casos de uso del Host representan todas las interacciones que relacionan ser
 	    \begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.77]{figures/chap4/UCBrowser.jpg}
-	        \caption{Diagrama de Caso de Uso del Web Browser.}
+	        \caption{Diagrama de Caso de Uso del \textit{Web Browser}.}
 	        \label{fig:CUBrowser}
 	    \end{figure}
 	\end{landscape}
@@ -75,23 +75,23 @@ Algunos BU puede que necesiten obtener recursos desde un Provider, pero el usuar
 La solución a este problema debe resolver las siguientes problemáticas:
 \begin{itemize}
 	\item Transparencia: el usuario detrás del Host no se debe preocupar de la maquinaria que existe mientras se realiza una petición a un Provider.
-	\item Estabilidad: el Browser debe ser capaz de seguir funcionando, aún cuando una página haya tenido problemas para ser mostrada o exista un error.
+	\item Estabilidad: el \textit{Browser} debe ser capaz de seguir funcionando, aún cuando una página haya tenido problemas para ser mostrada o exista un error.
 	\item Aislación: cada \textit{request} realizada no debe interferir con las demás peticiones que se estén realizando.
 	\item Heterogeneidad: Sin importar el tipo de Provider con el que se comunique, el Browser User debe poder comunicarse con cualquier tipo de Provider y también debe poder mostrar adecuadamente al usuario el recurso obtenido.
 	\item Disponibilidad: El usuario del Host debe ser capaz de poder realizar peticiones en todo momento, sin perder fluidez.
 \end{itemize}
 
 \subsection{Solución}
-Un Web Browser puede satisfacer las \textit{request} del user del Host a través de un Browser User, ya sea por una o varias instancias de Browser User, lo que permite tener una diversidad de opciones para navegar por sitios de Internet. Un Browser debe ser capaz de poder entregar una navegación rápida y estable, sin que cada sitio accedido afecte a los otros recursos adquiridos.
+Un \textit{Web Browser} puede satisfacer las \textit{request} del user del Host a través de un Browser User, ya sea por una o varias instancias de Browser User, lo que permite tener una diversidad de opciones para navegar por sitios de Internet. Un \textit{Browser} debe ser capaz de poder entregar una navegación rápida y estable, sin que cada sitio accedido afecte a los otros recursos adquiridos.
 \subsection{Estructura}
-El Browser Client (BC) es la entidad que representa el proceso principal de un Navegador Web y comprende la cantidad mínima de componentes que constituye un Web Browser. Un Host (H) que aloja e interactua con el BC, está compuesto por Hardware (HW) y un Sistema Operativo (SO). Al mismo tiempo, el Provider (P) posee también HW y SO, pero adicionalmente posee un Web Server (WS) que se encarga de recibir las peticiones externas. Browser Client, Sandbox, GPU Instance (GPUI) y Plugin son del tipo Process (Pr), que residen dentro de un Host (H) con un cierto tipo de sistema Operativo (OS). La mayoría de los navegadores existentes usan un componente central para realizar las operaciones que necesitan afectar al Host del Browser. La figura \ref{fig:BIPatt} muestra el diagrama del clases para el patrón Browser Infrastructure. Por cada recurso que un BC solicite, se crearán Sandbox (S) que alojarán una instancia del patrón Web Content Renderer el que permiten realizar la navegación y posterior visualización del recurso.
+El Browser Client (BC) es la entidad que representa el proceso principal de un navegador Web y comprende la cantidad mínima de componentes que constituye un \textit{Web Browser}. Un Host (H) que aloja e interactua con el BC, está compuesto por Hardware (HW) y un Sistema Operativo (SO). Al mismo tiempo, el Provider (P) posee también HW y SO, pero adicionalmente posee un Web Server (WS) que se encarga de recibir las peticiones externas. Browser Client, Sandbox, GPU Instance (GPUI) y Plugin son del tipo Process (Pr), que residen dentro de un Host (H) con un cierto tipo de sistema Operativo (OS). La mayoría de los navegadores existentes usan un componente central para realizar las operaciones que necesitan afectar al Host del \textit{Browser}. La figura \ref{fig:BIPatt} muestra el diagrama del clases para el patrón Browser Infrastructure. Por cada recurso que un BC solicite, se crearán Sandbox (S) que alojarán una instancia del patrón Web Content Renderer el que permiten realizar la navegación y posterior visualización del recurso.
 El componente BC actúa como un broker de las solicitudes de las Sandbox, lo que permite tener un control fino de los mensajes enviados, usando IPC/IPDL/COM, entre los procesos que se comunican. El GPU Instance y Plugins son elementos que pueden comunicarse directamente con el Sandbox, de esta manera cualquier necesidad de recursos del Host pasarán también por el Browser Client. 
 Un usuario que desee hacer un \textit{request} de un recurso en Internet por medio de un navegador es lo que llamaremos Browser User (BU). Éste usa el Browser Client para realizar peticiones al Provider, donde éste último posiblemente utilice un Web Server para ese cometido (Figura \ref{fig:BIPatt})
 	\begin{landscape}
 	    \begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.73]{figures/chap4/browserInfraPattern_v3.jpg}
-	        \caption{Componentes de alto nivel del Browser.}
+	        \caption{Componentes de alto nivel del \textit{Browser}.}
 	        \label{fig:BIPatt}
 	    \end{figure}
 	\end{landscape}
@@ -113,7 +113,7 @@ Detallaremos el caso de uso Realizar Request (Figura \ref{fig:SecReq}):
 Nota: Los mensajes entre el Browser Client y el Sandbox pueden ser tanto síncronos como asíncronos \cite{firefoxIPC,GCIPC}. No especificaremos en gran detalle , pues lo que importa en este trabajo será el origen y destino de los mensajes (no está dentro del ámbito ver la sincronización).
 	\begin{enumerate}
 		\item Un Browser User requiere acceder a una URL para obtener cierto recurso de un Provider, para esto usa un Browser Client ya instanciado por el Host. En el interior del Sandbox existe una instancia del patrón Web Content Renderer. 
-		\item El Sandbox requiere los recursos del Host para obtener lo que hay detrás de la URL. Una petición es realizada desde el Sandbox al Browser Client a través de un canal de comunicación como: IPC, IPDL o COM (dependiendo el tipo de Browser usado), usando la API limitada que posee para comunicarse a un proceso de mayor privilegio. 
+		\item El Sandbox requiere los recursos del Host para obtener lo que hay detrás de la URL. Una petición es realizada desde el Sandbox al Browser Client a través de un canal de comunicación como: IPC, IPDL o COM (dependiendo el tipo de \textit{Browser} usado), usando la API limitada que posee para comunicarse a un proceso de mayor privilegio. 
 		\item El Browser Client recibe la solicitud, verifica a través de su motor de políticas/normas si la acción del Sandbox puede ser permitida.
 		\item Si es permitada la acción del Sandbox, se utilizará la Network API que contiene el Browser Client para obtener recursos del Host (a través de llamadas al sistema). El Browser Client se comunica internamente con el Host, y este último debe revisar sus políticas y asegurarse que el Browser Client posee el privilegio de hacer la petición del recurso del Host.
 		\item Si se permite el acceso el recurso, el Browser Client podrá realizar un \textit{request} a través de la Network API. Si el \textit{request} no es del tipo \textit{pre-flight}, el Provider recibirá el \textit{request} y trabajará sobre la petición.
@@ -129,7 +129,7 @@ Nota: Los mensajes entre el Browser Client y el Sandbox pueden ser tanto síncro
 \item El recurso al que apunta la URL no exista.
 \item Se cancela el \textit{request} realizado.
 	\end{itemize}
-\subsubsection{Condiciones póstumas} El Browser recibe el recurso indicado por la URL y se muestra por el perísférico la salida del recurso al usuario del Host.
+\subsubsection{Condiciones póstumas} El \textit{Browser} recibe el recurso indicado por la URL y se muestra por el perísférico la salida del recurso al usuario del Host.
 	\begin{landscape}
 	    \begin{figure}[h!t]
 	        \centering
@@ -155,11 +155,11 @@ El patrón Browser Infrastructure provee los siguientes beneficios:
 Al mismo tiempo, el patrón posee las siguientes debilidades:
 \begin{itemize}
 	\item Dado que se inician procesos independientes para navegar a un recurso (dependiendo el esquema que utilice el browser), es posible que una gran cantidad de recursos se vayan a usar para mantener todo abierto.
-	\item Aquellos Provider que no hayan cumplido con las especificaciones de la W3C, mostrarán su resource de forma incorrecta por el Web Browser.
+	\item Aquellos Provider que no hayan cumplido con las especificaciones de la W3C, mostrarán su resource de forma incorrecta por el \textit{Web Browser}.
 \end{itemize}
 \subsection{Usos Comúnes}
 \begin{itemize}
-	\item Actualmente, la separación de los componentes del Browser en varios procesos, con diferentes niveles de acceso, se conoce como una Arquitectura Modular \cite{Vrbanec2013}. Esto permite la separación de preocupaciones del Navegador, lo que se traduce en una mayor estabilidad, aislación, seguridad y rapidez.
+	\item Actualmente, la separación de los componentes del \textit{Browser} en varios procesos, con diferentes niveles de acceso, se conoce como una Arquitectura Modular \cite{Vrbanec2013}. Esto permite la separación de preocupaciones del navegador, lo que se traduce en una mayor estabilidad, aislación, seguridad y rapidez.
 	\item Google Chrome se basa en la arquitectura modular, donde cada proceso Renderer se comunica con el Browser Kernel \cite{multiProcGC}. Internet Explorer, por ser privativo no da mucha información sobre su estructura o detalles de su implementación; \cite{Crowley2010} sobre la arquitectura Loosely-Coupled \cite{IE8-LCIE} y sus componentes, pero sin entrar tanto en detalle. Firefox, por su parte posee las dos implementaciones: monoprocesos y multiproceso. Electrolysis es el nombre de la arquitectura modular que se está implementado, pero que aún no ha sido finalizada completamente.
 \end{itemize}
 \subsection{Ejemplo Resuelto}
@@ -169,6 +169,6 @@ Con el patrón entregado ahora es posible poder navegar de forma fluida a todos 
 \subsection{Patrones Asociados}
 \begin{itemize}
 	\item El patrón Web Content Renderer, el cuál está en proceso de desarrollo, representa el subsistema dentro del Sandbox que permite realizar el parsing del \textit{resource} o recurso obtenido por medio de una petición.
-	\item El patrón Browser--, también en desarrollo, representa el subsistema que representa el Navegador Web. Este componente actua como un Reference Monitor \cite{fernandez2013security} para todas las solicitudes que el Renderer llegara a necesitar.
+	\item El patrón Browser Kernel, también en desarrollo, representa el subsistema que representa el navegador Web. Este componente actua como un Reference Monitor \cite{fernandez2013security} para todas las solicitudes que el Renderer llegara a necesitar.
 	\item El Sandbox se comunica con el Browser Client siguiendo un patrón como el que indica el Policy Authorization \cite{fernandez2013security}. Por cada petición del Renderer, el Sandbox tendrá el acceso si las políticas que el Browser Client permiten tal acción.
 \end{itemize}

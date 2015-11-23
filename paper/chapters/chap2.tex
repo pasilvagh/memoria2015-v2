@@ -5,7 +5,7 @@
 
 \section{Arquitectura Cliente/Servidor}
     \label{chap2:ArqCS}
-    La web emplea lo que se conoce como una Arquitectura Cliente-Servidor, donde la comunicación entre ambas entidades se basa mediante mensajes de \textit{request-response} o solicitud-respuesta. Con el tiempo la forma en que se comunican estos programas ha cambiado, desde iniciar solicitudes de forma secuencial e independiente, hasta solicitar asíncronamente varias peticiones. La evolución que ha tenido el cliente web ha permitido una mejor experiencia para el usuario, pero que conlleva ciertos riesgos que es necesario que el que usa el Browser esté consciente. De la misma manera que podemos afectar a un servidor a través de las solicitudes, las respuestas que el servidor envía al cliente pueden tener consecuencias graves \cite{alcorn2014browser}.
+    La web emplea lo que se conoce como una Arquitectura Cliente-Servidor, donde la comunicación entre ambas entidades se basa mediante mensajes de \textit{request-response} o solicitud-respuesta. Con el tiempo la forma en que se comunican estos programas ha cambiado, desde iniciar solicitudes de forma secuencial e independiente, hasta solicitar asíncronamente varias peticiones. La evolución que ha tenido el cliente web ha permitido una mejor experiencia para el usuario, pero que conlleva ciertos riesgos que es necesario que el que usa el \textit{Browser} esté consciente. De la misma manera que podemos afectar a un servidor a través de las solicitudes, las respuestas que el servidor envía al cliente pueden tener consecuencias graves \cite{alcorn2014browser}.
 
 
 \section{Comunicación e Información de Estado}
@@ -22,7 +22,7 @@
 
             \item XMLHttpRequest o XHR: \cite{XHR} define una API que proporciona una guía de funcionalidad al cliente, para que éste pueda transferir datos del cliente al servidor. Dicho de otra manera, XHR es un objeto que permite la obtención de recursos en la Internet. Soporta peticiones en HTTP o HTTPS, en general soporta toda actividad relacionada con un \textit{HTTP request or response}, para los métodos definidos.
 
-            \item WebSockets \cite{WebSocket}: Es una tecnología nativa del Navegador que permite abrir un canal de comunicación interactivo, responsivo y \textit{full-duplex} entre el cliente y el servidor. Éste comportamiento permite tener \textit{event-driven actions} rigurosas sin necesidad explícita de sondear el servidor en todo momento. Websockets intenta reemplazar las tecnologías \textit{Push} basada en AJAX.
+            \item WebSockets \cite{WebSocket}: Es una tecnología nativa del navegador que permite abrir un canal de comunicación interactivo, responsivo y \textit{full-duplex} entre el cliente y el servidor. Éste comportamiento permite tener \textit{event-driven actions} rigurosas sin necesidad explícita de sondear el servidor en todo momento. Websockets intenta reemplazar las tecnologías \textit{Push} basada en AJAX.
 
             \item WebRTC \cite{WebRTC}: O mejor conocido como \textit{Web Real-Time Communication}, es una API basada en la especificcación de la W3C, que utiliza las capacidades de Javascript y HTML5 (sin la utilización de plugins externos o internos) para transmitir audio, video y compartir archivos por medio de P2P. Esta herramienta permite a los browsers comunicarse entre ellos a muy baja latencia y entrega un gran ancho de banda/\textit{bandwidth} para poder realizar comunicaciones multimedia en tiempo real. Hasta el momento Google Chrome/Chromium y Firefox han implementado esta tecnología, con el objetivo de: mejorar la experiencia de usuario al no necesitar plugins para ser usada, y entregar seguridad dado que impone el uso de cifrado en los datos.
         \end{enumerate}
@@ -37,11 +37,11 @@
 
     El proceso que permite el inicio de una comunicación mediante SSL/TLS es:
     \begin{enumerate}
-        \item Un usuario desea conectarse por el Browser a un Web Server.
-        \item Se inicia el proceso de \textit{Handshake} entre el Browser y Servidor. Éstos dos se ponen de acuerdo en cómo se cifrará la comunicación (parámetros e información de los certificados) e intercambian una llave asimétrica.
-        \item El Navegador valida el certificado, ejemplo: revisa si está expirado, revocado o fue creado por una CA \textit{Certificate Authority} confiable.
-        \item Si el servidor requiere un certificado por parte del cliente, el Browser le enviará el suyo. Esto permitirá tener una autenticación mutua entre las partes.
-        \item El Web Browser y el Servidor usan las llaves públicas del otro para poder acordar una clave simétrica, que es aquella que permitirá cifrar los mensajes. Sólo estas dos entidades conocerán tal clave.
+        \item Un usuario desea conectarse por el \textit{Browser} a un Web Server.
+        \item Se inicia el proceso de \textit{Handshake} entre el \textit{Browser} y Servidor. Éstos dos se ponen de acuerdo en cómo se cifrará la comunicación (parámetros e información de los certificados) e intercambian una llave asimétrica.
+        \item El navegador valida el certificado, ejemplo: revisa si está expirado, revocado o fue creado por una CA \textit{Certificate Authority} confiable.
+        \item Si el servidor requiere un certificado por parte del cliente, el \textit{Browser} le enviará el suyo. Esto permitirá tener una autenticación mutua entre las partes.
+        \item El \textit{Web Browser} y el Servidor usan las llaves públicas del otro para poder acordar una clave simétrica, que es aquella que permitirá cifrar los mensajes. Sólo estas dos entidades conocerán tal clave.
         \item El proceso de \textit{handshake} termina y todo lo posterior se realiza cifrando los paquetes con la llave simétrica acordada por las partes.
     \end{enumerate}
 
@@ -61,7 +61,7 @@
 
         \subsubsection{HTML: HyperText Markup Language}
         \label{chap2:HTML}
-        HTML \cite{htmlSpec}, en especial la actual versión HTML5, es conocido por ser un \textit{Simple Markup Language} o lenguage de marcado simple, usado principalmente para crear documentos de hypertextos que son posibles de portar desde una plataforma a otra, sin problemas de compatibilidad. Un documento HTML consiste de un árbol de elementos y texto, cada uno de esos elementos es denotado por un \textit{tag}/etiqueta inicial y uno final; estos \textit{tags} pueden ir anidados y la idea es que no se superponen entre ellos. Un HTML User Agent o Browser consume el HTML y lo parsea para crear un árbol DOM, que es la representación en memoria del documento HTML.
+        HTML \cite{htmlSpec}, en especial la actual versión HTML5, es conocido por ser un \textit{Simple Markup Language} o lenguage de marcado simple, usado principalmente para crear documentos de hypertextos que son posibles de portar desde una plataforma a otra, sin problemas de compatibilidad. Un documento HTML consiste de un árbol de elementos y texto, cada uno de esos elementos es denotado por un \textit{tag}/etiqueta inicial y uno final; estos \textit{tags} pueden ir anidados y la idea es que no se superponen entre ellos. Un HTML User Agent o \textit{Browser} consume el HTML y lo parsea para crear un árbol DOM, que es la representación en memoria del documento HTML.
         Una característica importante de este lenguaje de marcado es su flexibilidad ante los errores, esto es que en alguna ocasiones el programador perfectamente podría sobrarle un signo y HTML no le daría mayor importancia mientras no afecte a la estructura global de la página. Normalmente esta característica es aprovechada por los atacantes para insertar nuevos elementos HTML que ejecuten scripts que afectarían al navegador.
 
 
@@ -96,11 +96,11 @@
             
     Javascript puede funcionar tanto como un lenguage de programación procedural o como uno orientado a objetos. Firefox usa una implementación en C de Javascript llamada \textit{Spider Monkey}, Google Chrome/Chromium tiene un motor de JavaScript llamado \textit{V8}, e Internet Explorer no usa realmente JavaScript, sino que \textit{JScript} (hace lo mismo que las otras implementaciones solo que difiere en el sistema operativo que utiliza) que en este caso se llama \textit{Chakra}.
             
-    Si bien es posible comprender que JavaScript posee increíbles posibilidades para la creación de \textit{RIA} (Rich Internet Applications), en \cite{barth2009attacks, Barth2009, Barth2010, Liu2012, Singh2014} se muestran que puede llegar a ser un fracaso si es que no se toman en cuenta ciertas vulnerabilidades inherentes al lenguage. Estas vulnerabilidades que pueden llegar a ser crticas, a menudo permiten a un comunicante comprometer completamente a la otra parte. La misma naturaleza de JavaScript que permite la modificación en runtime de los objetos, puede llegar a ser aprovechada de esta situación; en la cita toma por ejemplo la comunicación entre los elementos de un \textit{Mashup}.
+    Si bien es posible comprender que JavaScript posee increíbles posibilidades para la creación de \textit{RIA} (Rich Internet Applications), en \cite{barth2009attacks, Barth2009, Barth2010, Liu2012, Singh2014} se muestran que puede llegar a ser un fracaso si es que no se toman en cuenta ciertas vulnerabilidades inherentes al lenguage. Estas vulnerabilidades que pueden llegar a ser críticas, a menudo permiten a un comunicante comprometer completamente a la otra parte. La misma naturaleza de JavaScript que permite la modificación en runtime de los objetos, puede llegar a ser aprovechada de esta situación; en la cita toma por ejemplo la comunicación entre los elementos de un \textit{Mashup}.
 
 
     \subsection{Geolocalización}
-    Cada Browser posee una API que permite obtener los datos de la localización del host donde el browser está alojado. Ésta es obtenida ya sea del GPS, si es un dispositivo móvil, como de la triangulación de la señal del celular, localización de IP del movil o \textit{access point}.
+    Cada \textit{Browser} posee una API que permite obtener los datos de la localización del host donde el browser está alojado. Ésta es obtenida ya sea del GPS, si es un dispositivo móvil, como de la triangulación de la señal del celular, localización de IP del movil o \textit{access point}.
 
     \subsection{WebWorkers}
     \label{chap2:WWs}
@@ -113,7 +113,7 @@
         \item Navegación a todo tipo de contenidos/compatibilidad: sin importar el esquema de la página web, el navegador debe ser capaz de presentar todo tipo de contenido al usuario. \cite{barth2008security} asegura que los usuarios demandan compatibilidad, por que el browser es sólo útil mientras pueda mostrar las páginas.
         \item Navegación personalizada: el browser debe ser capaz de entregar la información a la Web Aplicación/sistema, para que identifique al usuario por detrás, de manera que la navegación sea personalizada.
         \item Navegación sin inconvenientes: el navegador debe ser capaz de aislar los errores que se presenten en algunas páginas, de tal manera que no molesten a las otras páginas web que se ven al mismo tiempo \cite{IE8-LCIE, preprint-grosskurth-browser-archevol, barth2008security}
-        \item Seguridad: Los datos de los usuarios y el host donde se mantiene el Browser no deben ser expuestos a terceras partes \cite{Reis2009, barth2009securing, Barth2010, Liu2012, barth2009attacks, Saini2014}.
+        \item Seguridad: Los datos de los usuarios y el host donde se mantiene el \textit{Browser} no deben ser expuestos a terceras partes \cite{Reis2009, barth2009securing, Barth2010, Liu2012, barth2009attacks, Saini2014}.
     \end{itemize}
 
 
@@ -136,12 +136,12 @@ Actualmente no hay un consenso de cómo definir una AR, lo que debería contener
 
 Las ventajas y usos que se obtienen al construir una AR en este trabajo son:
 \begin{itemize}
-    \item Comprender la estructura subyacente de un Web Browser y las interacciones que tendrá con otros sistemas.
+    \item Comprender la estructura subyacente de un \textit{Web Browser} y las interacciones que tendrá con otros sistemas.
     \item Proveer una base tecnológica modular y flexible. Al tener los subsistemas compartimentalizados es posible quitar y sacar piezas, que poseen interfaces similares, y de esa manera reusar lo otro sin tener que construir un sistema nuevo.
     \item Entrega una base para el desarrollo de otros Navegadores Web, sin explicar detalles de implementación.
 \end{itemize}
 
-En este trabajo el enfoque estará en el primer punto, donde se quiere entender las interacciones entre un desarrollo de Software y la utilización de las funcionalidades del Navegador. Dado que parte de la investigación es obtener Patrones de Mal Uso o Uso Indebido del Navegador Web, es primordial concebir una Arquitectura de Referencia que permita encontrar dónde es posible aplicar Patrones de Seguridad para poder mitigar los malos usos del Browser \cite{Submitted2014}. 
+En este trabajo el enfoque estará en el primer punto, donde se quiere entender las interacciones entre un desarrollo de Software y la utilización de las funcionalidades del navegador. Dado que parte de la investigación es obtener Patrones de Mal Uso o Uso Indebido del navegador Web, es primordial concebir una Arquitectura de Referencia que permita encontrar dónde es posible aplicar Patrones de seguridad para poder mitigar los malos usos del \textit{Browser} \cite{Submitted2014}. 
 
 Una AR es una herramienta que facilita el entendimiento de sistemas complejos y la apropiada implementación a sistemas reales. Si bien una AR es usada principalmente para capturar las preocupaciones de los \textit{Stakeholders} al comienzo de un Desarrollo de Software, también puede ser usada para educar al realizar la unión de ideas y terminologías usadas por diversos sistemas que se asemejen. Una Arquitectura de Referencia debe ser en lo posible descrita de la forma más abstracta posible, pues su función de guiar la construcción de arquitecturas concretas, sin tener en cuenta detalles de las tecnologías usadas. 
 
@@ -155,9 +155,9 @@ Una AR es una herramienta que facilita el entendimiento de sistemas complejos y 
 \section{Desarrollo de Software Seguro y Diseño de Software Seguro}
 \label{chap2:SSD}
 
-La filosofía detrás de \textit{Secure Software Developmet} es que detrás de cada etapa de desarrollo del software, se tengan en cuenta los prinicipios de Seguridad: Confidencialidad, Integridad, Disponibilidad y Auditoría. Para cumplir este cometido es que se deben llegar a políticas y reglas que aseguren la Seguridad como una propiedad sistémica.
+La filosofía detrás de \textit{Secure Software Developmet} es que detrás de cada etapa de desarrollo del software, se tengan en cuenta los prinicipios de seguridad: confidencialidad, integridad, disponibilidad y auditoría. Para cumplir este cometido es que se deben llegar a políticas y reglas que aseguren la seguridad como una propiedad sistémica.
 
-Varias comunidades tienen diferentes enfoques y técnicas de cómo asegurar la Seguridad en los sistemas, muchas pueden incluso tener similitudes y hasta trabajar juntas. En este trabajo, el enfoque tomado es aquel que busca entregar la propiedad de seguridad a través del entendimiento de un sistema a un alto nivel, identificando las amenazas durante la elicitación de requerimientos, de manera que se pueda extraer las posibles amenazas que podrían existir y utilizando elementos de diseño para hacer cumplir los principios de seguridad necesarios por el sistema; este enfoque es el que se dedica la comunidad de \textit{Secure Software Design}. 
+Varias comunidades tienen diferentes enfoques y técnicas de cómo asegurar la seguridad en los sistemas, muchas pueden incluso tener similitudes y hasta trabajar juntas. En este trabajo, el enfoque tomado es aquel que busca entregar la propiedad de seguridad a través del entendimiento de un sistema a un alto nivel, identificando las amenazas durante la elicitación de requerimientos, de manera que se pueda extraer las posibles amenazas que podrían existir y utilizando elementos de diseño para hacer cumplir los principios de seguridad necesarios por el sistema; este enfoque es el que se dedica la comunidad de \textit{Secure Software Design}. 
 
 Fernandez \cite{Fernandez2011a,fernandez2013security} sostiene que para construir un sistema seguro es necesario realizarlo de manera sistemática de tal manera que la seguridad sea parte integral de cada una de las etapas del Desarrollo de Software - de inicio a fin. El enfoque que propone es ingenieril y, por tanto, es aplicable incluso para sistemas \textit{legacy}, donde es posible hacer ingeniería inversa para comprobar si existen o no los requerimiento de seguridad implementados, de manera que permite generar un estudio con la intención de comparar y mejorar nuevos sistemas. Fernandez en su libro \cite{fernandez2013security} presenta una completa metodología para construir sistemas seguros a partir del Diseño Orientado a Objetos, UML y patrones, a los cuales nombra como \textbf{Security Patterns}.
 
@@ -182,9 +182,9 @@ La Arquitectura de Referencia a confeccionar será realizada por medio de patron
 \section{Patrones de Mal Uso}
 Para diseñar sistemas seguros, se es necesario identificar las posibles amenazas que un sistema puede sufrir. Papers como \cite{fernandez2006defining, fernandez2007attack, braz2008eliciting, fernandez2013security} describen el desarrollo de una metodología completa para encontrar amenazas, a través del análisis de actividades de los casos de uso del sistema, buscando como podría un atacante interno o externo socavar las bases de esas actividades. Es importante no confundir \textit{Attack Patterns} con \textit{Misuse Pattern}, pues claramente en \cite{ModMisusePatt, fernandez2013security} dejan explícito que un \textit{Attack Patttern} es una acción que lleva a un mal uso o \textit{misuse}, o acciones \textbf{específicas} que toman ventaja de las vulnerabilidades de un sistema, como por ejemplo un \textit{buffer overflow}. A partir de los trabajos \cite{fernandez2007attack, yoshioka2006development, yoshioka2007integration}  se hace la unión de los conceptos de \textit{Attack Patttern} para dar forma a la definición de \textit{Misuse Pattern} \cite{ModMisusePatt, pelaez2009misuse, fernandez2010worm, hashizume2011misuse, munoz2011misuse, fernandez2012misuse, alkazimi2014, encinamisuse}:
 \begin{center}
-    Un patrón de mal uso o \textit{Misuse Pattern} describe desde el punto de vista del atacante, cómo un tipo de ataque es realizado (qué unidades usa y cómo), analiza las maneras de detener el ataque através de la enumeración de posibles Patrones de Seguridad que pueden ser aplicados, y describe cómo rastrear un ataque una vez que ha ocurrido por medio de una recolección y observación apropiada de datos forenses.
+    Un patrón de mal uso o \textit{Misuse Pattern} describe desde el punto de vista del atacante, cómo un tipo de ataque es realizado (qué unidades usa y cómo), analiza las maneras de detener el ataque através de la enumeración de posibles Patrones de seguridad que pueden ser aplicados, y describe cómo rastrear un ataque una vez que ha ocurrido por medio de una recolección y observación apropiada de datos forenses.
 \end{center}
 
-Sin embargo, cuando un sistema ya está diseño y construido, como es el caso del Web Browser, lo que va a importar es saber \textbf{cómo} los componentes del sistema, pueden ser usados por el atacante para alcanzar sus objetivos. Importante es entender que éste patrón describe un contexto en dónde puede ocurrir el ataque.
+Sin embargo, cuando un sistema ya está diseño y construido, como es el caso del \textit{Web Browser}, lo que va a importar es saber \textbf{cómo} los componentes del sistema, pueden ser usados por el atacante para alcanzar sus objetivos. Importante es entender que éste patrón describe un contexto en dónde puede ocurrir el ataque.
 
-Un catálogo de \textit{Misuse Patterns} podría ser de gran valor en el Desarrollo de Sistemas que interactúan con el Navegador, pues provee a desarrolladores un medio para evaluar los diseños de sus sistemas, al analizar las posibles amenazas del Browser que pudieran afectar al software que está siendo construido.
+Un catálogo de \textit{Misuse Patterns} podría ser de gran valor en el Desarrollo de Sistemas que interactúan con el navegador, pues provee a desarrolladores un medio para evaluar los diseños de sus sistemas, al analizar las posibles amenazas del \textit{Browser} que pudieran afectar al software que está siendo construido.

@@ -3,7 +3,7 @@
 
 
 \section{Identificando Amenazas y Patrones de Mal Uso}
-En este capítulo presentaremos el análisis e identificación de las amenazas dentro del patrón presentado en el capítulo anterior, y 2 patrones de mal uso. Estos artefactos servirán de ejemplo de cómo usar la Arquitectura de Referencia obtenida. El objetivo de éste capítulo es conocer y visualizar los mal usos del sistema, en este caso del Browser, para poder educar a los desarrolladores de proyectos que basan sus sistemas en el uso de éste.
+En este capítulo presentaremos el análisis e identificación de las amenazas dentro del patrón presentado en el capítulo anterior, y 2 patrones de mal uso. Estos artefactos servirán de ejemplo de cómo usar la Arquitectura de Referencia obtenida. El objetivo de éste capítulo es conocer y visualizar los mal usos del sistema, en este caso del \textit{Browser}, para poder educar a los desarrolladores de proyectos que basan sus sistemas en el uso de éste.
 Este capítulo realiza los siguientes ítems: Un análisis de amenazas realizado sobre las actividades relacionadas en el caso de uso \textbf{Realizar Request} y \textbf{Recibir Request}, luego a partir del resultado del análisis se aplica la metodología explicada en el trabajo de [Bra08] para obtener una lista de amenazas. A través del listado de amenazas es posible detectar o inferir actividades de mal uso que pueden aparecer en uno o más casos de uso, que podrían resultar en una vulneración del sistema. Se presentarán los mal usos de actividades a través de patrones. Se han identificado 2 patrones y serán presentados a continuación.
 
 \section{Identificando amenazas}
@@ -48,7 +48,7 @@ Actor & Acción & ID & Sec. Attrib (CO/IN/AV/ACC) & Source (AIn/UIn/Out) & Descr
 \end{table}
 \end{landscape}
 
-Hemos identificado algunas amenazas al analizar el curso de los eventos de los casos de uso: \textbf{Realizar Request} y \textbf{Recibir Request} (Figura \ref{fig:ActDiagr}). La tabla \ref{tab:threats} hace un sumario del análisis de cada acción en el diagrama de actividad, teniendo en cuenta los atributos de seguridad que podrían ser comprometidos, el origen de la amenaza y los recursos que pueden peligrar. Los atributos de seguridad principales son: Confidencialidad (CO), Integridad (IN), Disponibilidad (AV) y Responsabilidad (AC). El origen de la amenaza puede ser: actor autorizado (Ain), un actor no autorizado (UIn) o un externo (Out).
+Hemos identificado algunas amenazas al analizar el curso de los eventos de los casos de uso: \textbf{Realizar Request} y \textbf{Recibir Request} (Figura \ref{fig:ActDiagr}). La tabla \ref{tab:threats} hace un sumario del análisis de cada acción en el diagrama de actividad, teniendo en cuenta los atributos de seguridad que podrían ser comprometidos, el origen de la amenaza y los recursos que pueden peligrar. Los atributos de seguridad principales son: Confidencialidad (CO), Integridad (IN), Disponibilidad (AV) y Auditoría (AC). El origen de la amenaza puede ser: actor autorizado (Ain), un actor no autorizado (UIn) o un externo (Out).
 %Listar las amenazas que pueden ocurrir en el sistema no es suficiente para entender como los ataques ocurren. Es por esto que utilizaremos 2 patrones de mal uso, que permitirán describir como un ataque ocurre desde el punto de vista del atacante.
 
 \section{Template de Patrones de Mal Uso}
@@ -88,24 +88,24 @@ Discute otros patrones de mal uso o uso indebido con diferentes objetivos pero r
 
 %PATRÓN
 
-\section{Patrón de Mal Uso: Modificación de tráfico en el Web Browser}
+\section{Patrón de Mal Uso: Modificación de tráfico en el \textit{Web Browser}}
 En esta sección presentaremos un patrones de mal uso que describe la amenaza encontrada en el patrón Browser Infrastructure que hemos obtenido en este trabajo.
 Una de las amenazas es que un atacante haya sido capaz de comprometer la respuesta obtenida desde el Provider contactado. El atacante podría tratar de reemplazar algunos parámetros de la respuesta del provider, entregando al Browser User un contenido distinto al original.
 
 \subsection{Intent}
-Un atacante podría cambiar contenido o dar uno diferente al esperado cuando el Web Browser (Browser User) recibe la response del Servidor o Provider. Realizando esta acción, el Navegador podría interpretar la información de una manera distinta a que si hubiera recibido el tráfico original.
+Un atacante podría cambiar contenido o dar uno diferente al esperado cuando el \textit{Web Browser} (Browser User) recibe la response del Servidor o Provider. Realizando esta acción, el navegador podría interpretar la información de una manera distinta a que si hubiera recibido el tráfico original.
 
 \subsection{Contexto}
-Un Navegador web obtiene resources desde un Provider para poder satisfacer un Browser User que lo necesita. Un Provider posee resources en forma de páginas web, servicios web u otro tipo. El Provider generalmente consiste en una Web App o Web server, que puede permitir entrada y salida de datos a otras aplicaciones, normalmente éstos están construidos usando HTML, Javascript y CCS. Sea que éste desea entregar servicios, como también otros deseen conectarse a él, todo tipo de comunicación estará encima del protocolo HTTP. Un Provider, dependiendo del tipo, puede llegar a recibir muchas peticiones de diversos Host para obtener recursos de éste. Dependiendo del tipo de peticiones, éstas pueden o no ser permitidas. Aquellas que son permitidas, el Provider generará una response a la \textit{request} del Host, la cuál terminará llegando de vuelta (o no) al Browser Client que generó el \textit{request}.
+Un navegador web obtiene resources desde un Provider para poder satisfacer un Browser User que lo necesita. Un Provider posee resources en forma de páginas web, servicios web u otro tipo. El Provider generalmente consiste en una Web App o Web server, que puede permitir entrada y salida de datos a otras aplicaciones, normalmente éstos están construidos usando HTML, Javascript y CCS. Sea que éste desea entregar servicios, como también otros deseen conectarse a él, todo tipo de comunicación estará encima del protocolo HTTP. Un Provider, dependiendo del tipo, puede llegar a recibir muchas peticiones de diversos Host para obtener recursos de éste. Dependiendo del tipo de peticiones, éstas pueden o no ser permitidas. Aquellas que son permitidas, el Provider generará una response a la \textit{request} del Host, la cuál terminará llegando de vuelta (o no) al Browser Client que generó el \textit{request}.
 
 \subsection{Problema}
-¿Cómo podría un atacante engañar al Browser User y Host, por medio de la modificación de tráfico entre las entidades participantes en la comunicación? Es posible que un atacante esté escondido entre medio de la comunicación que hay entre el Host y el Provider, lo que resulta en que el contenido modificado podría afectar dentro del Web Content Renderer o el Browser Client. Esto en consecuencia podría traer diferentes resultados, desde el robo de información privada del Browser User que utiliza el Browser Client para personalizar la navegación como también los token de autenticación hacia los Providers que el Browser User ha utilizado previamente. Dependiendo del tipo de atacante, es posible que éste pueda incluso afectar al Host del Browser, dejando que el atacante pueda realizar actos maliciosos con los recursos del Host. 
+¿Cómo podría un atacante engañar al Browser User y Host, por medio de la modificación de tráfico entre las entidades participantes en la comunicación? Es posible que un atacante esté escondido entre medio de la comunicación que hay entre el Host y el Provider, lo que resulta en que el contenido modificado podría afectar dentro del Web Content Renderer o el Browser Client. Esto en consecuencia podría traer diferentes resultados, desde el robo de información privada del Browser User que utiliza el Browser Client para personalizar la navegación como también los token de autenticación hacia los Providers que el Browser User ha utilizado previamente. Dependiendo del tipo de atacante, es posible que éste pueda incluso afectar al Host del \textit{Browser}, dejando que el atacante pueda realizar actos maliciosos con los recursos del Host. 
 El ataque puede sacar ventaja de las siguientes vulnerabilidades:
 \begin{itemize}
-	\item El \textbf{origen} u \textbf{origin} que define el Same Origin Policy que hace cumplir el Browser difiere en cada tipo de Web Browser \cite{W3C-SOP,Reis2009, Jackson2008, Crowley2010, Paola2006}.
+	\item El \textbf{origen} u \textbf{origin} que define el Same Origin Policy que hace cumplir el \textit{Browser} difiere en cada tipo de \textit{Web Browser} \cite{W3C-SOP,Reis2009, Jackson2008, Crowley2010, Paola2006}.
 	\item El \textbf{origin} no es suficiente como método de aislación entre resources (páginas web, scripts, css y otros) \cite{Silic2010, Barth2009, Yason, Liu2012}.
-	\item Cualquiera puede crear una extensión o plugin, etc. para algún tipo de Browser y hacerlo pasar como algo inofensivo, pero el usuario no se daría cuenta que un ataque Man in the Browser podría estar ocurriendo \cite{Dougan2012,Utakrit2009,Liu2012,Barth2010}.  Éste programa, posiblemente malicioso, podría afectar el tráfico sin que queden rastros, pues tiene permisos del usuario al ser éste mismo quien autorizó su instalación.
-	\item Es posible afectar al Browser Client, y en consecuencia al Host, sin tener que buscar vulnerabilidades en el Web Browser. Solamente utilizando métodos de ingeniería social, sobre el usuario del Host basta para lograr un ataque, pues es \textbf{el eslabón más débil}.
+	\item Cualquiera puede crear una extensión o plugin, etc. para algún tipo de \textit{Browser} y hacerlo pasar como algo inofensivo, pero el usuario no se daría cuenta que un ataque Man-in-the-Browser podría estar ocurriendo \cite{Dougan2012,Utakrit2009,Liu2012,Barth2010}.  Éste programa, posiblemente malicioso, podría afectar el tráfico sin que queden rastros, pues tiene permisos del usuario al ser éste mismo quien autorizó su instalación.
+	\item Es posible afectar al Browser Client, y en consecuencia al Host, sin tener que buscar vulnerabilidades en el \textit{Web Browser}. Solamente utilizando métodos de ingeniería social, sobre el usuario del Host basta para lograr un ataque, pues es \textbf{el eslabón más débil}.
 	\item La arquitectura para extender la funcionalidad del navegador, a través de extensiones, plugins y otros, depende demasiado del manufacturador. Y probablemente posee una gran superficie de ataque.
 \end{itemize}
 
@@ -117,8 +117,8 @@ El ataque puede ser facilitado por:
 	\item Los métodos de cifrado no pueden hacer nada contra un ataque que puede modificar el tráfico antes de enviar o después de recibir el mensaje.
 	\item No existen mecanismos de defensa estandarizados, pues cada manufacturador realiza lo necesario para la marca a la que se acopla. Si el Host posee muchos browser, la superficie de ataque es bastante mayor.
 \end{itemize}
-\subsection{Solución}
-La solución estructural usada es la misma creada por el patrón Browser Infrastructure que se revisó en el capítulo 4. La clase Attacker es cualquier entidad que podría llevar a cabo una acción arriesgada contra la integridad del Browser, usuario, Host y Provider (Figura \ref{fig:BIMisuse}). El atacante es capaz tanto de interceptar las response que el Provider envía al Browser Client usando al Host como receptor, o haciendo que el Browser realice modificaciones en el input que va hacia el Provider, utilizando scripts u otro resources.
+\subsection{Solución - Estructura}
+La solución estructural usada es la misma creada por el patrón Browser Infrastructure que se revisó en el capítulo 4. La clase Attacker es cualquier entidad que podría llevar a cabo una acción arriesgada contra la integridad del \textit{Browser}, usuario, Host y Provider (Figura \ref{fig:BIMisuse}). El atacante es capaz tanto de interceptar las response que el Provider envía al Browser Client usando al Host como receptor, o haciendo que el \textit{Browser} realice modificaciones en el input que va hacia el Provider, utilizando scripts u otro resources.
 \begin{landscape}
 \begin{figure}[h!t]
 	        \centering
@@ -134,7 +134,7 @@ En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para r
 \begin{figure}[h!t]
 	        \centering
 	        \includegraphics[scale=0.66]{figures/chap5/patronMisuseSeq_v2.jpg}
-	        \caption{Diagrama de Secuencia para el Mal uso: Modificación de tráfico en el Web Browser.}
+	        \caption{Diagrama de Secuencia para el Mal uso: Modificación de tráfico en el \textit{Web Browser}.}
 	        \label{fig:SeqMisuse}
     \end{figure}
 \end{landscape}
@@ -145,16 +145,16 @@ En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para r
 	\subsubsection{Descripción}
 			\begin{enumerate}
 				\item Un atacante utiliza alguna técnica de ingeniería social o vulnerabilidad en el sistema, para crear una entidad que se encargará de estar entre medio del Browser Client y el Provider. Para esto realiza el caso de uso \textbf{Pedir Resources} para que el proceso, plugin o extensión se aloje en el Host.
-				\item Un Browser Consumer desea hacer un \textit{request} a cierta URL, por lo que los primeros pasos de \textbf{Realizar Request} son similares.
+				\item Un Browser User desea hacer un \textit{request} a cierta URL, por lo que los primeros pasos de \textbf{Realizar Request} son similares.
 				\item En el momento en que el Browser Client va a realizar la llamada al sistema para enviar el mensaje del Host al Provider, el Browser Client llamará al plugin, extensión o process malicioso, pues el Browser Client ha sido intervenido para que realice esa acción de este modo.
 				\item El atacante entonces recibirá todo el tráfico del Browser Client, el cuál podría modificar a su antojo.
 				\item Finalmente la víctima está totalmente comprometida.
 			\end{enumerate}
 	\subsubsection{Post condiciones} La víctima quedará completamente comprometida y probablemente no sea posible detectar la alteración del mensaje, pues también es posible que se modifiquen los log del Host.
-	\subsubsection{Usos Conocidos} El Web Browser es un software que posee diversas implementaciones, por lo tanto la cantidad de vectores de ataque es significativa. Algunos de éstos son:
+	\subsubsection{Usos Conocidos} El \textit{Web Browser} es un software que posee diversas implementaciones, por lo tanto la cantidad de vectores de ataque es significativa. Algunos de éstos son:
 			\begin{itemize}
 				\item  Una extensión basada en la arquitectura de Chrome o la API WebExtension Firefox, podría interceptar los datos antes que llegue al Browser Client \cite{Paola2006} o dado a una vulnerabilidad del mismo elemento un atacante se está aprovechando de su funcionalidad para realizar ataques \cite{Liu2012, Barth2010}. Dado que el Plugin, la extensión o el process son elementos que el Host confía, es posible que el ataque sea indetectable y los métodos de cifrado no sirven como medida de mitigación.
-				\item Éste tipo de ataque puede ser usado como base para otros ataques más avanzados. Un ejemplo es cuando el Browser posee vulnerabilidades \textit{cross-origin javascript capability leaks}, donde los diferentes modelos de seguridad usados por Javascript y el DOM pueden interferir entre sí, causando que una petición \textit{cross-origin} se pueda realizar aún cuando SOP debería ser capaz de detener tal ataque \cite{Barth2009}.
+				\item Éste tipo de ataque puede ser usado como base para otros ataques más avanzados. Un ejemplo es cuando el \textit{Browser} posee vulnerabilidades \textit{cross-origin javascript capability leaks}, donde los diferentes modelos de seguridad usados por Javascript y el DOM pueden interferir entre sí, causando que una petición \textit{cross-origin} se pueda realizar aún cuando SOP debería ser capaz de detener tal ataque \cite{Barth2009}.
 			\end{itemize}
 
 
@@ -167,7 +167,7 @@ En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para r
 	\end{itemize}
 	Posibles fuentes de fallo:
 	\begin{itemize}
-		\item Si el Browser User es capaz de evitar o ignorar el ataque de Ingeniería Social realizado al comienzo, no existiría este mal uso. Esto debe considerar que el usuario también no se encuentre con páginas o contenido malicioso, que podrían afectar otro componente de Browser, pero que causarían en el mismo efecto del Mal Uso señalado.
+		\item Si el Browser User es capaz de evitar o ignorar el ataque de Ingeniería Social realizado al comienzo, no existiría este mal uso. Esto debe considerar que el usuario también no se encuentre con páginas o contenido malicioso, que podrían afectar otro componente de \textit{Browser}, pero que causarían en el mismo efecto del Mal Uso señalado.
 	\end{itemize}
 
 \subsection{Contramedidas} 
@@ -181,7 +181,7 @@ En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para r
 
 \subsection{Evidencia Forense}
 	¿Dónde es posible encontrar evidencia?
-	Dependiendo de lo deseado por el atacante, las acciones que cometerá pueden diferir. Sin embargo el log interno del browser debería de poder servir para auditar el sistema, esto gracias a que mientras no se haya encontrado una vulnerabilidad en el Sandbox del Browser, el atacante no puede borrar completamente sus huellas.
+	Dependiendo de lo deseado por el atacante, las acciones que cometerá pueden diferir. Sin embargo el log interno del browser debería de poder servir para auditar el sistema, esto gracias a que mientras no se haya encontrado una vulnerabilidad en el Sandbox del \textit{Browser}, el atacante no puede borrar completamente sus huellas.
 
 \subsection{Patrones relacionados}
 	\begin{itemize}
