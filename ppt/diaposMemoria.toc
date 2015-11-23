@@ -4,5 +4,15 @@
 \beamer@subsectionintoc {1}{1}{Contexto}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Seguridad...}{5}{0}{1}
 \beamer@subsectionintoc {1}{3}{Desarrollo de Software y Seguridad}{6}{0}{1}
-\beamer@subsectionintoc {1}{4}{Motivación para estudiar este tema}{7}{0}{1}
+\beamer@subsectionintoc {1}{4}{Motivaci\'on para estudiar este tema}{7}{0}{1}
 \beamer@subsectionintoc {1}{5}{Contribuciones}{8}{0}{1}
+\beamer@sectionintoc {2}{Marco Te\'orico de un Browser}{10}{0}{2}
+\beamer@sectionintoc {3}{(In)Seguridad en el Browser}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Mecanismos de Defensa}{14}{0}{3}
+\beamer@sectionintoc {4}{Estado del Arte}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{Google Chrome y Chromium}{16}{0}{4}
+\beamer@subsectionintoc {4}{2}{Internet Explorer}{18}{0}{4}
+\beamer@subsectionintoc {4}{3}{Firefox - Electrolysis}{20}{0}{4}
+\beamer@sectionintoc {5}{Arquitectura de Referencia}{22}{0}{5}
+\beamer@sectionintoc {6}{Patrón de Mal Uso}{25}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones}{28}{0}{7}

@@ -35,4 +35,41 @@ B.~Whyte and J.~Harrison, ``\BIBforeignlanguage{English}{{State of Practice in
   \url{http://www.igi-global.com/chapter/state-practice-secure-software/48404}
 \BIBentrySTDinterwordspacing
 
+\bibitem{preprint-grosskurth-browser-archevol}
+A.~Grosskurth and M.~W. Godfrey, ``{Architecture and evolution of the modern
+  web browser},'' uRL: {\tt
+  http://grosskurth.ca/papers.html\#browser-archevol}. Note: submitted for
+  publication.
+
+\bibitem{multiProcGC}
+\BIBentryALTinterwordspacing
+``{Multi-process Architecture - The Chromium Projects}.'' [Online]. Available:
+  \url{https://www.chromium.org/developers/design-documents/multi-process-architecture}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ChrRenderPipe}
+\BIBentryALTinterwordspacing
+``{Chromium Rendering Pipeline}.'' [Online]. Available:
+  \url{http://www.slideshare.net/HyungwookLee/android-chromium-rendering-pipeline}
+\BIBentrySTDinterwordspacing
+
+\bibitem{IEArchImg}
+\BIBentryALTinterwordspacing
+``{Internet Explorer Architecture (Internet Explorer)}.'' [Online]. Available:
+  \url{https://msdn.microsoft.com/en-us/library/aa741312(v=vs.85).aspx}
+\BIBentrySTDinterwordspacing
+
+\bibitem{IE8LCIE}
+\BIBentryALTinterwordspacing
+``{IE8 and Loosely-Coupled IE (LCIE) - IEBlog - Site Home}.'' [Online].
+  Available:
+  \url{http://blogs.msdn.com/b/ie/archive/2008/03/11/ie8-and-loosely-coupled-ie-lcie.aspx}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Firefox101}
+\BIBentryALTinterwordspacing
+``{Firefox Electrolysis 101}.'' [Online]. Available:
+  \url{https://timtaubert.de/blog/2011/08/firefox-electrolysis-101/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

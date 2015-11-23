@@ -15,45 +15,45 @@ Warning--empty booktitle in WhyteHarrison
 Warning--empty year in WhyteHarrison
 
 Done.
-You've used 2 entries,
+You've used 8 entries,
             4039 wiz_defined-function locations,
-            823 strings with 7564 characters,
-and the built_in function-call counts, 907 in all, are:
-= -- 60
-> -- 13
+            847 strings with 8459 characters,
+and the built_in function-call counts, 2653 in all, are:
+= -- 168
+> -- 27
 < -- 0
-+ -- 6
-- -- 3
-* -- 57
-:= -- 178
-add.period$ -- 5
-call.type$ -- 2
-change.case$ -- 2
++ -- 15
+- -- 5
+* -- 115
+:= -- 458
+add.period$ -- 17
+call.type$ -- 8
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 66
-empty$ -- 84
-format.name$ -- 4
-if$ -- 172
+cite$ -- 10
+duplicate$ -- 236
+empty$ -- 287
+format.name$ -- 7
+if$ -- 547
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 13
-newline$ -- 33
-num.names$ -- 2
-pop$ -- 44
+int.to.str$ -- 8
+missing$ -- 52
+newline$ -- 61
+num.names$ -- 3
+pop$ -- 192
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 63
+skip$ -- 192
 stack$ -- 0
-substring$ -- 2
-swap$ -- 33
+substring$ -- 10
+swap$ -- 107
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 2
+type$ -- 8
 warning$ -- 2
-while$ -- 2
-width$ -- 3
-write$ -- 42
+while$ -- 3
+width$ -- 9
+write$ -- 89
 (There were 2 warnings)
