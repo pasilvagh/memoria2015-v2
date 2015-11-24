@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  24 NOV 2015 00:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  24 NOV 2015 01:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1154,13 +1154,13 @@ Overfull \hbox (110.58704pt too wide) detected at line 41
 
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 47.
+(hyperref)                setting the option has no effect on input line 46.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1173,14 +1173,14 @@ Package epstopdf Info: Source file: <utfsm.eps>
 (epstopdf)                    size: 70842 bytes
 (epstopdf)             Command: <repstopdf --outfile=utfsm-eps-converted-to.pdf
  utfsm.eps>
-(epstopdf)             \includegraphics on input line 53.
+(epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
 <utfsm-eps-converted-to.pdf, id=113, 845.1575pt x 410.53375pt>
 File: utfsm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use utfsm-eps-converted-to.pdf>
-Package pdftex.def Info: utfsm-eps-converted-to.pdf used on input line 53.
+Package pdftex.def Info: utfsm-eps-converted-to.pdf used on input line 52.
 (pdftex.def)             Requested size: 113.81102pt x 55.28185pt.
  [1
 
@@ -1191,7 +1191,7 @@ LaTeX Info: Redefining \% on input line 2.
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 59.
+(Font)              size <5> substituted on input line 58.
 
 
 Overfull \hbox (110.58704pt too wide) has occurred while \output is active
@@ -1242,7 +1242,7 @@ File: figures/StatCounter-browser-ww-yearly-2010-2015.png Graphic file (type pn
 g)
  <use figures/StatCounter-browser-ww-yearly-2010-2015.png>
 Package pdftex.def Info: figures/StatCounter-browser-ww-yearly-2010-2015.png us
-ed on input line 85.
+ed on input line 84.
 (pdftex.def)             Requested size: 307.28987pt x 179.91365pt.
 
 Overfull \hbox (110.58704pt too wide) has occurred while \output is active
@@ -1720,7 +1720,14 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
 
 [75
 
-] <figures/SEAttacks.jpg, id=3834, 451.6875pt x 451.6875pt>
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[76
+
+] <figures/SEAttacks.jpg, id=3882, 451.6875pt x 451.6875pt>
 File: figures/SEAttacks.jpg Graphic file (type jpg)
 
 <use figures/SEAttacks.jpg>
@@ -1731,10 +1738,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[76
+[77
 
  <./figures/SEAttacks.jpg>]
-<figures/fbporn3.png, id=3886, 443.40656pt x 261.97874pt>
+<figures/fbporn3.png, id=3935, 443.40656pt x 261.97874pt>
 File: figures/fbporn3.png Graphic file (type png)
 
 <use figures/fbporn3.png>
@@ -1745,10 +1752,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[77
+[78
 
  <./figures/fbporn3.png>]
-<figures/Adblock.png, id=3937, 1606.0pt x 990.70125pt>
+<figures/Adblock.png, id=3985, 1606.0pt x 990.70125pt>
 File: figures/Adblock.png Graphic file (type png)
 
 <use figures/Adblock.png>
@@ -1759,16 +1766,9 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[78
-
- <./figures/Adblock.png>]
-Overfull \hbox (110.58704pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
- []
-
 [79
 
-]
+ <./figures/Adblock.png>]
 Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
@@ -1796,7 +1796,14 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
 
 [83
 
-] <figures/_58291188_malware_464v2.jpg, id=4229, 349.305pt x 180.675pt>
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[84
+
+] <figures/_58291188_malware_464v2.jpg, id=4278, 349.305pt x 180.675pt>
 File: figures/_58291188_malware_464v2.jpg Graphic file (type jpg)
 
 <use figures/_58291188_malware_464v2.jpg>
@@ -1813,16 +1820,9 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[84
-
- <./figures/_58291188_malware_464v2.jpg>]
-Overfull \hbox (110.58704pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
- []
-
 [85
 
-]
+ <./figures/_58291188_malware_464v2.jpg>]
 Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
@@ -1885,7 +1885,14 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
 
 [94
 
-] <figures/archGC.jpg, id=4765, 526.96875pt x 488.57532pt>
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[95
+
+] <figures/archGC.jpg, id=4813, 526.96875pt x 488.57532pt>
 File: figures/archGC.jpg Graphic file (type jpg)
 
 <use figures/archGC.jpg>
@@ -1901,10 +1908,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[95
+[96
 
  <./figures/archGC.jpg>]
-<figures/chromium-rendering-pipeline-28-638.jpg, id=4815, 640.3925pt x 381.425p
+<figures/chromium-rendering-pipeline-28-638.jpg, id=4864, 640.3925pt x 381.425p
 t>
 File: figures/chromium-rendering-pipeline-28-638.jpg Graphic file (type jpg)
  <use figures/chromium-rendering-pipeline-28-638.jpg>
@@ -1916,10 +1923,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[96
+[97
 
  <./figures/chromium-rendering-pipeline-28-638.jpg>]
-<figures/IEArch.jpg, id=4867, 306.39468pt x 315.42844pt>
+<figures/IEArch.jpg, id=4916, 306.39468pt x 315.42844pt>
 File: figures/IEArch.jpg Graphic file (type jpg)
 
 <use figures/IEArch.jpg>
@@ -1930,10 +1937,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[97
+[98
 
  <./figures/IEArch.jpg>]
-<figures/11_IE8andLooselyCoupledIELCIE_2.png, id=4919, 675.52374pt x 519.9425pt
+<figures/11_IE8andLooselyCoupledIELCIE_2.png, id=4968, 675.52374pt x 519.9425pt
 >
 File: figures/11_IE8andLooselyCoupledIELCIE_2.png Graphic file (type png)
  <use figures/11_IE8andLooselyCoupledIELCIE_2.png>
@@ -1945,10 +1952,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[98
+[99
 
  <./figures/11_IE8andLooselyCoupledIELCIE_2.png>]
-<figures/electrolysis.png, id=4972, 1006.76125pt x 492.84125pt>
+<figures/electrolysis.png, id=5020, 1006.76125pt x 492.84125pt>
 File: figures/electrolysis.png Graphic file (type png)
 
 <use figures/electrolysis.png>
@@ -1959,10 +1966,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[99
+[100
 
  <./figures/electrolysis.png>]
-<figures/e10s-processes.png, id=5024, 1003.75pt x 434.62375pt>
+<figures/e10s-processes.png, id=5073, 1003.75pt x 434.62375pt>
 File: figures/e10s-processes.png Graphic file (type png)
 
 <use figures/e10s-processes.png>
@@ -1973,10 +1980,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[100
+[101
 
  <./figures/e10s-processes.png>]
-<figures/chap4/UCBrowser.jpg, id=5076, 803.0pt x 420.57124pt>
+<figures/chap4/UCBrowser.jpg, id=5124, 803.0pt x 420.57124pt>
 File: figures/chap4/UCBrowser.jpg Graphic file (type jpg)
 
 <use figures/chap4/UCBrowser.jpg>
@@ -1987,10 +1994,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[101
+[102
 
  <./figures/chap4/UCBrowser.jpg>]
-<figures/chap4/browserInfraPattern_v3.jpg, id=5128, 842.14626pt x 541.02126pt>
+<figures/chap4/browserInfraPattern_v3.jpg, id=5176, 842.14626pt x 541.02126pt>
 File: figures/chap4/browserInfraPattern_v3.jpg Graphic file (type jpg)
 
 <use figures/chap4/browserInfraPattern_v3.jpg>
@@ -2002,10 +2009,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[102
+[103
 
  <./figures/chap4/browserInfraPattern_v3.jpg>]
-<figures/chap4/requestResource_v2.jpg, id=5178, 828.84656pt x 670.00313pt>
+<figures/chap4/requestResource_v2.jpg, id=5227, 828.84656pt x 670.00313pt>
 File: figures/chap4/requestResource_v2.jpg Graphic file (type jpg)
 
 <use figures/chap4/requestResource_v2.jpg>
@@ -2017,10 +2024,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[103
+[104
 
  <./figures/chap4/requestResource_v2.jpg>]
-<figures/chap5/activityDiag_v3.jpg, id=5228, 984.67876pt x 783.92876pt>
+<figures/chap5/activityDiag_v3.jpg, id=5276, 984.67876pt x 783.92876pt>
 File: figures/chap5/activityDiag_v3.jpg Graphic file (type jpg)
 
 <use figures/chap5/activityDiag_v3.jpg>
@@ -2032,10 +2039,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[104
+[105
 
  <./figures/chap5/activityDiag_v3.jpg>]
-<figures/chap5/patronMisuse_v2.jpg, id=5280, 842.14626pt x 641.39626pt>
+<figures/chap5/patronMisuse_v2.jpg, id=5329, 842.14626pt x 641.39626pt>
 File: figures/chap5/patronMisuse_v2.jpg Graphic file (type jpg)
 
 <use figures/chap5/patronMisuse_v2.jpg>
@@ -2047,10 +2054,10 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[105
+[106
 
  <./figures/chap5/patronMisuse_v2.jpg>]
-<figures/chap5/patronMisuseSeq_v2.jpg, id=5330, 951.555pt x 488.57532pt>
+<figures/chap5/patronMisuseSeq_v2.jpg, id=5378, 951.555pt x 488.57532pt>
 File: figures/chap5/patronMisuseSeq_v2.jpg Graphic file (type jpg)
 
 <use figures/chap5/patronMisuseSeq_v2.jpg>
@@ -2062,16 +2069,9 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[106
-
- <./figures/chap5/patronMisuseSeq_v2.jpg>]
-Overfull \hbox (110.58704pt too wide) has occurred while \output is active
-  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
- []
-
 [107
 
-]
+ <./figures/chap5/patronMisuseSeq_v2.jpg>]
 Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
@@ -2141,6 +2141,13 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
 
 [117
 
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[118
+
 ] (./diaposMemoria.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
@@ -2153,14 +2160,14 @@ Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[118
+[119
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>])
 Overfull \hbox (110.58704pt too wide) has occurred while \output is active
   [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[119]
+[120]
 \tf@nav=\write6
 \openout6 = `diaposMemoria.nav'.
 
@@ -2179,7 +2186,7 @@ LaTeX Info: Redefining \% on input line 25.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
 Package rerunfilecheck Info: File `diaposMemoria.out' has not changed.
-(rerunfilecheck)             Checksum: DB39060E31D157D406AF6A10EF6A7322;1038.
+(rerunfilecheck)             Checksum: 079DE390426653DEE117517B78ABE837;1039.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2191,9 +2198,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
  ) 
 Here is how much of TeX's memory you used:
- 19576 strings out of 493105
- 361404 string characters out of 6137072
- 459143 words of memory out of 5000000
+ 19578 strings out of 493105
+ 361427 string characters out of 6137072
+ 459253 words of memory out of 5000000
  22288 multiletter control sequences out of 15000+600000
  10872 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2209,10 +2216,10 @@ nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
 ts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pf
 b>
-Output written on diaposMemoria.pdf (119 pages, 2603263 bytes).
+Output written on diaposMemoria.pdf (120 pages, 2608318 bytes).
 PDF statistics:
- 6131 PDF objects out of 6186 (max. 8388607)
- 5869 compressed objects within 59 object streams
- 280 named destinations out of 1000 (max. 500000)
+ 6180 PDF objects out of 6186 (max. 8388607)
+ 5916 compressed objects within 60 object streams
+ 282 named destinations out of 1000 (max. 500000)
  363 words of extra memory for PDF output out of 10000 (max. 10000000)
 

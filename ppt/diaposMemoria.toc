@@ -7,12 +7,12 @@
 \beamer@subsectionintoc {1}{4}{Motivaci\'on para estudiar el Browser}{28}{0}{1}
 \beamer@subsectionintoc {1}{5}{Contribuciones}{37}{0}{1}
 \beamer@sectionintoc {2}{Marco Te\'orico de un Browser}{56}{0}{2}
-\beamer@sectionintoc {3}{(In)Seguridad en el Browser}{76}{0}{3}
-\beamer@subsectionintoc {3}{1}{Mecanismos de Defensa}{85}{0}{3}
-\beamer@sectionintoc {4}{Estado del Arte}{93}{0}{4}
-\beamer@subsectionintoc {4}{1}{Google Chrome y Chromium}{95}{0}{4}
-\beamer@subsectionintoc {4}{2}{Internet Explorer}{97}{0}{4}
-\beamer@subsectionintoc {4}{3}{Firefox - Electrolysis}{99}{0}{4}
-\beamer@sectionintoc {5}{Arquitectura de Referencia}{101}{0}{5}
-\beamer@sectionintoc {6}{Patr\'on de Mal Uso}{104}{0}{6}
-\beamer@sectionintoc {7}{Conclusiones}{107}{0}{7}
+\beamer@sectionintoc {3}{(In)Seguridad en el Browser}{77}{0}{3}
+\beamer@subsectionintoc {3}{1}{Mecanismos de Defensa}{86}{0}{3}
+\beamer@sectionintoc {4}{Estado del Arte}{94}{0}{4}
+\beamer@subsectionintoc {4}{1}{Google Chrome y Chromium}{96}{0}{4}
+\beamer@subsectionintoc {4}{2}{Internet Explorer}{98}{0}{4}
+\beamer@subsectionintoc {4}{3}{Firefox - Electrolysis}{100}{0}{4}
+\beamer@sectionintoc {5}{Arquitectura de Referencia}{102}{0}{5}
+\beamer@sectionintoc {6}{Patr\'on de Mal Uso}{105}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones}{108}{0}{7}
