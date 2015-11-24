@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  23 NOV 2015 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.4.28)  24 NOV 2015 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -764,6 +764,225 @@ Package babel Info: Making . an active character on input line 617.
 Package babel Info: Making < an active character on input line 662.
 Package babel Info: Making > an active character on input line 662.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2014/04/30 v1.2b Input encoding file
+\inpenc@prehook=\toks45
+\inpenc@posthook=\toks46
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeFrankfu
 rt.sty
 Package: beamerthemeFrankfurt 2010/06/17  (rcs-revision d02a7cf4d8ae)
@@ -783,11 +1002,7 @@ Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewh
 ale.sty
 Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemeli
-ly.sty
-Package: beamercolorthemelily 2010/06/17  (rcs-revision d02a7cf4d8ae)
-) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen193
 )
 (./diaposMemoria.aux
@@ -795,25 +1010,28 @@ LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 
 
+LaTeX Warning: Label `fig:vulnExt' multiply defined.
+
+
 LaTeX Warning: Label `fig:UsageShare' multiply defined.
 
 )
 \openout1 = `diaposMemoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -856,12 +1074,12 @@ LaTeX Font Info:    ... okay on input line 38.
 \scratchbox=\box55
 \nofMPsegments=\count164
 \nofMParguments=\count165
-\everyMPshowfont=\toks45
+\everyMPshowfont=\toks47
 \MPscratchCnt=\count166
 \MPscratchDim=\dimen195
 \MPnumerator=\count167
 \makeMPintoPDFobject=\count168
-\everyMPtoPDFconversion=\toks46
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -879,7 +1097,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box56
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -889,9 +1107,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count169
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
 
 (./diaposMemoria.out) (./diaposMemoria.out)
 \@outlinefile=\write5
@@ -922,29 +1140,27 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 38.
+LaTeX Info: Redefining \includegraphics on input line 41.
 \c@lstlisting=\count170
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 38.
-LaTeX Info: Redefining \. on input line 38.
-LaTeX Info: Redefining \% on input line 38.
+LaTeX Info: Redefining \selectfont on input line 41.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
  (./diaposMemoria.nav)
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) detected at line 38
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) detected at line 41
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 44.
+(hyperref)                setting the option has no effect on input line 47.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -957,14 +1173,14 @@ Package epstopdf Info: Source file: <utfsm.eps>
 (epstopdf)                    size: 70842 bytes
 (epstopdf)             Command: <repstopdf --outfile=utfsm-eps-converted-to.pdf
  utfsm.eps>
-(epstopdf)             \includegraphics on input line 50.
+(epstopdf)             \includegraphics on input line 53.
 Package epstopdf Info: Output file is already uptodate.
 
-<utfsm-eps-converted-to.pdf, id=105, 845.1575pt x 410.53375pt>
+<utfsm-eps-converted-to.pdf, id=113, 845.1575pt x 410.53375pt>
 File: utfsm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use utfsm-eps-converted-to.pdf>
-Package pdftex.def Info: utfsm-eps-converted-to.pdf used on input line 50.
+Package pdftex.def Info: utfsm-eps-converted-to.pdf used on input line 53.
 (pdftex.def)             Requested size: 113.81102pt x 55.28185pt.
  [1
 
@@ -972,399 +1188,979 @@ Package pdftex.def Info: utfsm-eps-converted-to.pdf used on input line 50.
 df>] (./diaposMemoria.toc
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-Missing character: There is no ó in font cmr9!
 )
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 56.
+(Font)              size <5> substituted on input line 59.
 
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [2
 
 ]
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [3
 
 ]
-<figures/StatCounter-browser-ww-yearly-2010-2015.png, id=274, 685.762pt x 401.5
-pt>
-File: figures/StatCounter-browser-ww-yearly-2010-2015.png Graphic file (type pn
-g)
- <use figures/StatCounter-browser-ww-yearly-2010-2015.png>
-Package pdftex.def Info: figures/StatCounter-browser-ww-yearly-2010-2015.png us
-ed on input line 82.
-(pdftex.def)             Requested size: 307.28987pt x 179.91365pt.
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [4
 
- <./figures/StatCounter-browser-ww-yearly-2010-2015.png>]
-Missing character: There is no ¿ in font cmr9!
-Missing character: There is no ¿ in font cmr9!
-Missing character: There is no ¿ in font cmr9!
-Missing character: There is no ¿ in font cmr9!
-Missing character: There is no ¿ in font cmr9!
-Missing character: There is no ¿ in font cmr9!
-Missing character: There is no ¿ in font cmr9!
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [5
 
 ]
-Missing character: There is no ¿ in font cmr9!
-Missing character: There is no ¿ in font cmr9!
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [6
 
 ]
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [7
 
 ]
-Missing character: There is no ó in font cmr5!
+<figures/StatCounter-browser-ww-yearly-2010-2015.png, id=487, 685.762pt x 401.5
+pt>
+File: figures/StatCounter-browser-ww-yearly-2010-2015.png Graphic file (type pn
+g)
+ <use figures/StatCounter-browser-ww-yearly-2010-2015.png>
+Package pdftex.def Info: figures/StatCounter-browser-ww-yearly-2010-2015.png us
+ed on input line 85.
+(pdftex.def)             Requested size: 307.28987pt x 179.91365pt.
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [8
 
-]
-Missing character: There is no ñ in font cmr9!
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ <./figures/StatCounter-browser-ww-yearly-2010-2015.png>]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [9
 
 ]
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [10
 
 ]
-Missing character: There is no ñ in font cmr9!
-Missing character: There is no ñ in font cmr9!
-Missing character: There is no ñ in font cmr9!
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [11
 
 ]
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [12
 
 ]
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [13
 
 ]
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [14
 
-] <figures/archMoz.jpg, id=795, 332.74312pt x 255.95625pt>
-File: figures/archMoz.jpg Graphic file (type jpg)
-
-<use figures/archMoz.jpg>
-Package pdftex.def Info: figures/archMoz.jpg used on input line 265.
-(pdftex.def)             Requested size: 166.37114pt x 127.9778pt.
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
 [15
 
- <./figures/archMoz.jpg>]
-<figures/archGC.jpg, id=845, 526.96875pt x 488.57532pt>
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[16
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[17
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[18
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[19
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[20
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[21
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[22
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[23
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[24
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[25
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[26
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[27
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[28
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[29
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[30
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[31
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[32
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[33
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[34
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[35
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[36
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[37
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[38
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[39
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[40
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[41
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[42
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[43
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[44
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[45
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[46
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[47
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[48
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[49
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[50
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[51
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[52
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[53
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[54
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[55
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[56
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[57
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[58
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[59
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[60
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[61
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[62
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[63
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[64
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[65
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[66
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[67
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[68
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[69
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[70
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[71
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[72
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[73
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[74
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[75
+
+] <figures/SEAttacks.jpg, id=3834, 451.6875pt x 451.6875pt>
+File: figures/SEAttacks.jpg Graphic file (type jpg)
+
+<use figures/SEAttacks.jpg>
+Package pdftex.def Info: figures/SEAttacks.jpg used on input line 250.
+(pdftex.def)             Requested size: 180.67178pt x 180.67178pt.
+
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[76
+
+ <./figures/SEAttacks.jpg>]
+<figures/fbporn3.png, id=3886, 443.40656pt x 261.97874pt>
+File: figures/fbporn3.png Graphic file (type png)
+
+<use figures/fbporn3.png>
+Package pdftex.def Info: figures/fbporn3.png used on input line 260.
+(pdftex.def)             Requested size: 177.35948pt x 104.78964pt.
+
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[77
+
+ <./figures/fbporn3.png>]
+<figures/Adblock.png, id=3937, 1606.0pt x 990.70125pt>
+File: figures/Adblock.png Graphic file (type png)
+
+<use figures/Adblock.png>
+Package pdftex.def Info: figures/Adblock.png used on input line 270.
+(pdftex.def)             Requested size: 240.8896pt x 148.59877pt.
+
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[78
+
+ <./figures/Adblock.png>]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[79
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[80
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[81
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[82
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[83
+
+] <figures/_58291188_malware_464v2.jpg, id=4229, 349.305pt x 180.675pt>
+File: figures/_58291188_malware_464v2.jpg Graphic file (type jpg)
+
+<use figures/_58291188_malware_464v2.jpg>
+Package pdftex.def Info: figures/_58291188_malware_464v2.jpg used on input line
+ 291.
+(pdftex.def)             Requested size: 244.51183pt x 126.47162pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:vulnExt})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.291 \end{frame}
+                 
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[84
+
+ <./figures/_58291188_malware_464v2.jpg>]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[85
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[86
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[87
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[88
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[89
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[90
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[91
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[92
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[93
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[94
+
+] <figures/archGC.jpg, id=4765, 526.96875pt x 488.57532pt>
 File: figures/archGC.jpg Graphic file (type jpg)
 
 <use figures/archGC.jpg>
-Package pdftex.def Info: figures/archGC.jpg used on input line 276.
+Package pdftex.def Info: figures/archGC.jpg used on input line 327.
 (pdftex.def)             Requested size: 184.44182pt x 171.00392pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:UsageShar
 e}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.276 \end{frame}
+l.327 \end{frame}
                  
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[16
+[95
 
  <./figures/archGC.jpg>]
-<figures/chromium-rendering-pipeline-28-638.jpg, id=893, 640.3925pt x 381.425pt
->
+<figures/chromium-rendering-pipeline-28-638.jpg, id=4815, 640.3925pt x 381.425p
+t>
 File: figures/chromium-rendering-pipeline-28-638.jpg Graphic file (type jpg)
  <use figures/chromium-rendering-pipeline-28-638.jpg>
 Package pdftex.def Info: figures/chromium-rendering-pipeline-28-638.jpg used on
- input line 286.
+ input line 337.
 (pdftex.def)             Requested size: 256.15245pt x 152.56729pt.
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[17
+[96
 
  <./figures/chromium-rendering-pipeline-28-638.jpg>]
-<figures/IEArch.jpg, id=943, 306.39468pt x 315.42844pt>
+<figures/IEArch.jpg, id=4867, 306.39468pt x 315.42844pt>
 File: figures/IEArch.jpg Graphic file (type jpg)
 
 <use figures/IEArch.jpg>
-Package pdftex.def Info: figures/IEArch.jpg used on input line 297.
+Package pdftex.def Info: figures/IEArch.jpg used on input line 348.
 (pdftex.def)             Requested size: 153.19696pt x 157.71382pt.
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[18
+[97
 
  <./figures/IEArch.jpg>]
-<figures/11_IE8andLooselyCoupledIELCIE_2.png, id=992, 675.52374pt x 519.9425pt>
+<figures/11_IE8andLooselyCoupledIELCIE_2.png, id=4919, 675.52374pt x 519.9425pt
+>
 File: figures/11_IE8andLooselyCoupledIELCIE_2.png Graphic file (type png)
-<use figures/11_IE8andLooselyCoupledIELCIE_2.png>
+ <use figures/11_IE8andLooselyCoupledIELCIE_2.png>
 Package pdftex.def Info: figures/11_IE8andLooselyCoupledIELCIE_2.png used on in
-put line 307.
+put line 358.
 (pdftex.def)             Requested size: 236.43684pt x 181.9826pt.
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[19
+[98
 
  <./figures/11_IE8andLooselyCoupledIELCIE_2.png>]
-<figures/electrolysis.png, id=1044, 1006.76125pt x 492.84125pt>
+<figures/electrolysis.png, id=4972, 1006.76125pt x 492.84125pt>
 File: figures/electrolysis.png Graphic file (type png)
 
 <use figures/electrolysis.png>
-Package pdftex.def Info: figures/electrolysis.png used on input line 318.
+Package pdftex.def Info: figures/electrolysis.png used on input line 369.
 (pdftex.def)             Requested size: 302.0307pt x 147.8535pt.
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[20
+[99
 
  <./figures/electrolysis.png>]
-<figures/e10s-processes.png, id=1094, 1003.75pt x 434.62375pt>
+<figures/e10s-processes.png, id=5024, 1003.75pt x 434.62375pt>
 File: figures/e10s-processes.png Graphic file (type png)
 
 <use figures/e10s-processes.png>
-Package pdftex.def Info: figures/e10s-processes.png used on input line 328.
+Package pdftex.def Info: figures/e10s-processes.png used on input line 379.
 (pdftex.def)             Requested size: 307.28987pt x 133.05411pt.
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[21
+[100
 
  <./figures/e10s-processes.png>]
-<figures/chap4/UCBrowser.jpg, id=1144, 803.0pt x 420.57124pt>
+<figures/chap4/UCBrowser.jpg, id=5076, 803.0pt x 420.57124pt>
 File: figures/chap4/UCBrowser.jpg Graphic file (type jpg)
 
 <use figures/chap4/UCBrowser.jpg>
-Package pdftex.def Info: figures/chap4/UCBrowser.jpg used on input line 339.
+Package pdftex.def Info: figures/chap4/UCBrowser.jpg used on input line 390.
 (pdftex.def)             Requested size: 281.05421pt x 147.20213pt.
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[22
+[101
 
  <./figures/chap4/UCBrowser.jpg>]
-<figures/chap4/browserInfraPattern_v3.jpg, id=1194, 842.14626pt x 541.02126pt>
+<figures/chap4/browserInfraPattern_v3.jpg, id=5128, 842.14626pt x 541.02126pt>
 File: figures/chap4/browserInfraPattern_v3.jpg Graphic file (type jpg)
 
 <use figures/chap4/browserInfraPattern_v3.jpg>
 Package pdftex.def Info: figures/chap4/browserInfraPattern_v3.jpg used on input
- line 349.
+ line 400.
 (pdftex.def)             Requested size: 294.7556pt x 189.36028pt.
-Missing character: There is no ó in font cmr10!
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[23
+[102
 
  <./figures/chap4/browserInfraPattern_v3.jpg>]
-<figures/chap4/requestResource_v2.jpg, id=1242, 828.84656pt x 670.00313pt>
+<figures/chap4/requestResource_v2.jpg, id=5178, 828.84656pt x 670.00313pt>
 File: figures/chap4/requestResource_v2.jpg Graphic file (type jpg)
 
 <use figures/chap4/requestResource_v2.jpg>
 Package pdftex.def Info: figures/chap4/requestResource_v2.jpg used on input lin
-e 360.
+e 411.
 (pdftex.def)             Requested size: 232.07545pt x 187.5996pt.
-Missing character: There is no á in font cmr10!
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[24
+[103
 
  <./figures/chap4/requestResource_v2.jpg>]
-<figures/chap5/activityDiag_v3.jpg, id=1289, 984.67876pt x 783.92876pt>
+<figures/chap5/activityDiag_v3.jpg, id=5228, 984.67876pt x 783.92876pt>
 File: figures/chap5/activityDiag_v3.jpg Graphic file (type jpg)
 
 <use figures/chap5/activityDiag_v3.jpg>
-Package pdftex.def Info: figures/chap5/activityDiag_v3.jpg used on input line 3
-71.
+Package pdftex.def Info: figures/chap5/activityDiag_v3.jpg used on input line 4
+22.
 (pdftex.def)             Requested size: 226.47134pt x 180.29982pt.
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[25
+[104
 
  <./figures/chap5/activityDiag_v3.jpg>]
-<figures/chap5/patronMisuse_v2.jpg, id=1341, 842.14626pt x 641.39626pt>
+<figures/chap5/patronMisuse_v2.jpg, id=5280, 842.14626pt x 641.39626pt>
 File: figures/chap5/patronMisuse_v2.jpg Graphic file (type jpg)
 
 <use figures/chap5/patronMisuse_v2.jpg>
-Package pdftex.def Info: figures/chap5/patronMisuse_v2.jpg used on input line 3
-81.
+Package pdftex.def Info: figures/chap5/patronMisuse_v2.jpg used on input line 4
+32.
 (pdftex.def)             Requested size: 252.64583pt x 192.42035pt.
-Missing character: There is no ó in font cmr8!
-Missing character: There is no ó in font cmr10!
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[26
+[105
 
  <./figures/chap5/patronMisuse_v2.jpg>]
-<figures/chap5/patronMisuseSeq_v2.jpg, id=1388, 951.555pt x 488.57532pt>
+<figures/chap5/patronMisuseSeq_v2.jpg, id=5330, 951.555pt x 488.57532pt>
 File: figures/chap5/patronMisuseSeq_v2.jpg Graphic file (type jpg)
 
 <use figures/chap5/patronMisuseSeq_v2.jpg>
 Package pdftex.def Info: figures/chap5/patronMisuseSeq_v2.jpg used on input lin
-e 391.
+e 442.
 (pdftex.def)             Requested size: 304.50381pt x 156.34729pt.
-Missing character: There is no ó in font cmr8!
-Missing character: There is no á in font cmr8!
-Missing character: There is no ó in font cmr8!
-Missing character: There is no á in font cmr8!
-Missing character: There is no ó in font cmr10!
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[27
+[106
 
  <./figures/chap5/patronMisuseSeq_v2.jpg>]
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[28
+[107
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[108
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[109
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[110
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[111
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[112
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[113
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[114
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[115
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[116
+
+]
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
+ []
+
+[117
 
 ] (./diaposMemoria.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `English'. Using the pattern for
 ** the default language instead.
-Missing character: There is no â in font cmr9!
-Missing character: There is no € in font cmr9!
-Missing character: There is no ™ in font cmr9!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Missing character: There is no ó in font cmr5!
 
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[29
+[118
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>])
-Missing character: There is no ó in font cmr5!
-
-Overfull \hbox (107.1842pt too wide) has occurred while \output is active
-  [] [][][][][][][][] [] [][] [][][][][][][] [] [] []  
+Overfull \hbox (110.58704pt too wide) has occurred while \output is active
+  [] [][][][][][][][][][] [] [][] [][][][][][][] [] [] []  
  []
 
-[30]
+[119]
 \tf@nav=\write6
 \openout6 = `diaposMemoria.nav'.
 
@@ -1374,16 +2170,16 @@ Overfull \hbox (107.1842pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `diaposMemoria.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
  (./diaposMemoria.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 482.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
 Package rerunfilecheck Info: File `diaposMemoria.out' has not changed.
-(rerunfilecheck)             Checksum: 62A0C82F428A6D05AE8D38746A8ADC0D;1030.
+(rerunfilecheck)             Checksum: DB39060E31D157D406AF6A10EF6A7322;1038.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1392,16 +2188,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 403.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
  ) 
 Here is how much of TeX's memory you used:
- 18964 strings out of 493105
- 354705 string characters out of 6137072
- 445221 words of memory out of 5000000
- 21874 multiletter control sequences out of 15000+600000
- 10527 words of font info for 41 fonts, out of 8000000 for 9000
+ 19576 strings out of 493105
+ 361404 string characters out of 6137072
+ 459143 words of memory out of 5000000
+ 22288 multiletter control sequences out of 15000+600000
+ 10872 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,20n,62p,613b,943s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,20n,62p,420b,947s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -1410,12 +2206,13 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf
 nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mtt9.pfb>
-Output written on diaposMemoria.pdf (30 pages, 1487626 bytes).
+ts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pf
+b>
+Output written on diaposMemoria.pdf (119 pages, 2603263 bytes).
 PDF statistics:
- 1649 PDF objects out of 1728 (max. 8388607)
- 1533 compressed objects within 16 object streams
- 98 named destinations out of 1000 (max. 500000)
- 300 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6131 PDF objects out of 6186 (max. 8388607)
+ 5869 compressed objects within 59 object streams
+ 280 named destinations out of 1000 (max. 500000)
+ 363 words of extra memory for PDF output out of 10000 (max. 10000000)
 

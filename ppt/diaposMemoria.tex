@@ -2,6 +2,7 @@
 \usepackage{color,listings}
 \usepackage{ragged2e}
 \usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -22,10 +23,12 @@
 \def\C{\mathbb{C}}
 \def\N{\mathbb{N}}
 
+\setbeamercovered{transparent}
+
 
 \usetheme{Frankfurt}
 %\usecolortheme{rose}
-\usecolortheme{lily}
+%\usecolortheme{lily}
 \usepackage{amsmath, multirow}
 %\usepackage{color, amsmath, wrapfig, anysize, graphicx, hyperref, amsthm, fancyhdr, amssymb,geometry,amsfonts,float}
 
@@ -62,11 +65,11 @@ Departamento de Inform\'atica - UTFSM\\ \medskip
 \frametitle{Contexto}
 
 	\begin{itemize}
-		\item La guerra de los Navegadores: construir y parchar.
-		\item El navegador web: herramienta de uso cotidiano.
-		\item El usuario com\'un utiliza servicios.
-		\item Distintos tipos, distintas implementaciones.
-		\item Web 2.0 y 3.0: AJAX (Asynchronous Javascript and XML).
+		\item<1-> La guerra de los Navegadores: construir y parchar.
+		\item<2-> El navegador web: herramienta de uso cotidiano.
+		\item<3-> El usuario com\'un utiliza servicios.
+		\item<4-> Distintos tipos, distintas implementaciones.
+		\item<5-> Web 2.0 y 3.0: AJAX (Asynchronous Javascript and XML).
 	\end{itemize}
 \end{frame}
 
@@ -81,83 +84,118 @@ Departamento de Inform\'atica - UTFSM\\ \medskip
 	\end{figure}
 \end{frame}
 
+\begin{frame}
+	\frametitle{El Problema...}
+	\begin{itemize}
+		\item<1-> Sistemas actuales son muy complejos.
+		\item<2-> Es necesario utilizar metodologías que aseguren: Requerimientos Funcionales y No-Funcionales.
+		\item<3-> Defectos y errores en el Software generan vulnerabilidades.
+		\item<4-> La Seguridad es un costo ``extra", a veces no considerado.
+	\end{itemize}
+	\begin{block}<5->{Las vulnerabilidades...}
+		Ocurren por que no se ha tomado en cuenta la seguridad en el desarrollo.
+	\end{block}
+\end{frame}
+
 
 \subsection{Seguridad...}
 \begin{frame}
 \frametitle{Seguridad...}
-	\begin{block}{Desde la perspectiva de seguridad \cite{WhyteHarrison}:}
+	\begin{block}<1->{Desde la perspectiva de seguridad \cite{WhyteHarrison}:}
 		\begin{itemize}		
-			\item �Qu\'e realizan las universidades o la industria respecto a estas preocupaciones?
-			\item Projectos de desarrollo de software, �cuanto se le dedica a la seguridad?
+			\item<2-> ¿Qu\'e realizan las universidades o la industria?
+			\item<3-> Proyectos de desarrollo de software, ¿cuanto se le dedica a la seguridad?
+			\item<4-> ¿La industria asegura que los sistemas a construir, sean seguros?
 		\end{itemize}
 	\end{block}
-	\begin{block}{�Qu\'e conceptos de seguridad sabe en promedio un estudiante graduado de carrera relacionada a Computer Science?}
+	\begin{block}<5->{¿Qu\'e conceptos de seguridad sabe en promedio un estudiante graduado de carrera relacionada a Computer Science?}
 		\begin{itemize}
-			\item �La gente es autodidacta? o �aprende por necesidad?
-			\item �La malla curricular es suficiente?
-			\item �La industria asegura que los sistemas a construir, sean seguros?
+			\item<6-> ¿La gente es autodidacta? o ¿aprende por necesidad?
+			\item<7-> ¿La malla curricular es suficiente?
 		\end{itemize}
 	\end{block}
 \end{frame}
-
 
 
 \subsection{Desarrollo de Software y Seguridad}
 \begin{frame}
 \frametitle{Desarrollo de Software y Seguridad}
 	\begin{itemize}
-		\item �Qu\'e tanto se diferencian las preocupaciones del usuario com\'un y el desarrollador que crea los sistemas?
-		\item �C\'omo desarrollar software seguro?
+		\item<1-> ¿Qu\'e tanto se diferencian las preocupaciones del usuario com\'un y el desarrollador que crea los sistemas?
+		\item<2-> ¿C\'omo desarrollar software seguro?
 	\end{itemize}
-	\begin{block}{Construcci\'on de Software Seguro...}
+	\begin{block}<3->{Construcci\'on de Software Seguro...}
 		\begin{itemize}
-			\item Los que participan en la construcci\'on: deben entender los problemas de seguridad.
-			\item No basta saber como est\'a construido.
-			\item Considerar la Seguridad desde el inicio del Proyecto.
-			\item Seguridad como una Propiedad Sist\'emica.
+			\item<4-> Los que participan en la construcci\'on: deben entender los problemas de seguridad.
+			\item<5-> No basta saber como est\'a construido.
+			\item<6-> Considerar la Seguridad desde el inicio del Proyecto.
+			\item<7-> Seguridad como una Propiedad Sist\'emica.
 		\end{itemize}
 	\end{block}
 \end{frame}
 
-\subsection{Motivaci\'on para estudiar este tema}
+
+\subsection{Motivaci\'on para estudiar el Browser}
 \begin{frame}
-	\frametitle{Motivaci\'on}
+	\frametitle{Motivaci\'on para estudiar el Browser}
+	\onslide<1->{El browser es una herramienta indispensable, \'este permite:}
 	\begin{itemize}
-		\item Nuevas formas de interactuar.
-		\item Permite disminuir los costos de construir un programa Cliente (desde cero) para
+		\item<2-> Nuevas formas de interactuar.
+		\item<3-> Disminuir los costos de construir un programa Cliente (desde cero) para
 el usuario del sistema.
-		\item Seguridad implementada que los Web Browser es bastante buena.
-		\item El browser es una herramienta indispensable.
+		\item<4-> Seguridad (la que est\'a implementada en los Web Browser es bastante buena).
+		\item<5-> Es una herramienta indispensable, por lo tanto el reuso es lógico.
 	\end{itemize}
-
-	\begin{block}{Las preocupaciones principales}
+	
+	\begin{block}<6->{Las preocupaciones principales}
 	\begin{itemize}
-		\item Los sistemas, a los que un usuario hace referencia, son llamados desde un Web Browser.
-		\item El stakeholder afectado: el usuario del Browser, el Host del usuario y hasta el Servicio externo usado.
-		\item Falta de conocimientos de seguridad con respecto al Browser, podr\'ia afectar de forma directa el desarrollo de aplicaciones que lo utilizan.
+		\item<7-> Los sistemas, a los que un usuario hace referencia, son llamados desde un Web Browser.
+		\item<8-> Los stakeholders afectados: el usuario del Browser, el Host del usuario y hasta el Servicio extero usado.
+		\item<9-> Falta de conocimientos de seguridad con respecto al Browser, podr\'ia afectar de forma directa el desarrollo de aplicaciones que lo utilizan y Stakeholders.
 	\end{itemize}
-
 	\end{block}
 \end{frame}
+
 
 \subsection{Contribuciones}
 \begin{frame}
 	\frametitle{Contribuciones}
-	\begin{block}{Objetivo General}
+	\begin{block}<1->{Objetivo General}
 		\begin{itemize}
-			\item Generar un cuerpo organizado de informaci\'on sobre el Web Browser y su seguridad, de tal manera que se pueda sistematizar, organizar y clasificar el conocimiento adquirido en un documento, con formato semi-formal, tanto para Profesionales como Estudiantes del \'area Inform\'atica que est\'en insertos en el \'area de Desarrollo de Software.
+			\item<2-> Generar un cuerpo organizado de informaci\'on sobre el Web Browser y su seguridad.
+			\item<3-> Sistematizar, organizar y clasificar el conocimiento adquirido en un documento, con formato semi-formal.Dado que hay conceptos poco claros y poca documentación formal.
+			\item<4-> Para: profesionales como Estudiantes del \'area Inform\'atica que est\'en insertos en el \'area de Desarrollo de Software.
 		\end{itemize}
 	\end{block}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Contribuciones}
-	\begin{block}{Objetivos Espec\'ificos}
+	\begin{block}<1->{Objetivos Espec\'ificos}
 		\begin{itemize}
-			\item Comprender los conceptos relacionados al navegador web, sus componentes, interacciones o formas de comunicaci\'on, amenazas y ataques a los que puede estar sometido, como tambi\'en los mecanismos de defensa. Esto se realizar\'a a trav\'es del desarrollo de un Estado del Arte sobre el Browser.
-			\item Identificar actores, componentes, funciones, relaciones, requerimientos y restricciones del navegador, para lograr abstraer una Arquitectura de Referencia (AR) a partir de documentaci\'on disponible en Internet, blogs de desarrolladores, papers e iniciar un peque�o cat\'alogo de Patrones de Mal Uso. Esto permitir\'a condensar el conocimiento obtenido en el punto anterior a trav\'es de documentos semi-formales, lo que permitir\'a generar una gu\'ia para comunicar los conceptos relevantes que pudieran afectar la relaci\'on existente entre un desarrollo de software y el navegador.
-			\item Profundizar el conocimiento en ataques relacionados con m\'etodos de Ingenier\'ia Social
+			\item<2-> Comprender los conceptos relacionados al navegador web, sus componentes, interacciones o formas de comunicaci\'on, amenazas y ataques a los que puede estar sometido, como tambi\'en los mecanismos de defensa. Esto se realizar\'a a trav\'es del desarrollo de un Estado del Arte sobre el Browser.
+			\item<3-> Identificar actores, componentes, funciones, relaciones, requerimientos y restricciones del navegador, para lograr abstraer una Arquitectura de Referencia (AR) a partir de documentaci\'on disponible en Internet, blogs de desarrolladores, papers e iniciar un pequeño cat\'alogo de Patrones de Mal Uso. 
+			\item<4-> Condensar el conocimiento obtenido en el punto anterior a trav\'es de documentos semi-formales.
+			\item<5-> Una gu\'ia para comunicar los conceptos relevantes que pudieran afectar la relaci\'on existente entre un desarrollo de software y el navegador.
+			\item<6-> Profundizar el conocimiento en ataques relacionados con m\'etodos de Ingenier\'ia Social.
 		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Metodología basada en Fernandez \cite{braz2008eliciting,fernandez2013security}}
+	\begin{block}<1->{Arquitectura de Referencia (AR)}
+		\begin{itemize}
+			\item<2-> Especifica la decomposici\'on del sistema en subsistemas, las interacciones entre estas partes y la distribuci\'on de funcionalidad entre ellas.
+			\item<3-> Capturar la esencia de la arquitectura a trav\'es de una colecci\'on de sistemas similares, por medio del reuso arquitect\'onico
+			\item<4-> Ayudar a los implementors o desarrolladores del software, a entender los trade-off cuando se diseñan nuevos sistemas
+			\item<5-> Ayudar a los mantenedores de estos sistemas a entender el c\'odigo legacy usado.
+			\item<6-> Comparar las diferencias en decisiones de diseño y poder entender los cambios realizados a lo largo del Desarrollo de un sistema.
+			\item<7-> Mirada hol\'istica del Sistema.
+		\end{itemize}
+	\end{block}
+	\begin{block}<8->{Patrones del Mal Uso}
+		\onslide<9->{Permitir\'an enseñar y comunicar las posibles formas en que tal sistema puede ser usado inapropiadamente.}
 	\end{block}
 \end{frame}
 
@@ -165,41 +203,21 @@ el usuario del sistema.
 \begin{frame}
 	\frametitle{Marco Te\'orico de un Browser}
 	\begin{itemize}
-		\item Arquitectura cliente/servidor
-		\item Comunicaci\'on e Informaci\'on de estado: HTTP y canales.
-		\item SSL/TLS
-		\item HTML5 y XML (Markup Languages)
-		\item CSS
-		\item DOM
-		\item Javascript (ECMAScript)
-		\item Geolocalizaci\'on, WebWorkers y otros...
+		\item<1-> Arquitectura cliente/servidor
+		\item<2-> Comunicaci\'on e Informaci\'on de estado: HTTP y canales.
+		\item<3-> SSL/TLS
+		\item<4-> HTML5 y XML (Markup Languages)
+		\item<5-> CSS
+		\item<6-> DOM
+		\item<7-> Javascript (ECMAScript)
+		\item<8-> Geolocalizaci\'on, WebWorkers y otros...
 	\end{itemize}
-	\begin{block}{Desaf\'ios del navegador}
+	\begin{block}<9->{Desaf\'ios del navegador}
 		\begin{itemize}
-			\item Contenido y compatibilidad
-			\item Navegaci\'on personalizada
-			\item Navegaci\'on sin inconvenientes
-			\item Seguridad
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Arquitectura de Referencia (AR) y Patrones de Mal Uso}
-	\begin{block}{AR}
-		\begin{itemize}
-			\item Especifica la decomposici\'on del sistema en subsistemas, las interacciones entre estas partes y la distribuci\'on de funcionalidad entre ellas.
-			\item Capturar la esencia de la arquitectura a trav\'es de una colecci\'on de sistemas similares, por medio del reuso arquitect\'onico
-			\item Ayudar a los implementors o desarrolladores del software, a entender los trade-off cuando se dise�an nuevos sistemas
-			\item Ayudar a los mantenedores de estos sistemas a entender el c\'odigo legacy usado.
-			\item Comparar las diferencias en decisiones de dise�o y poder entender los cambios realizados a lo largo del Desarrollo de un sistema.
-			\item Mirada hol\'istica del Sistema.
-		\end{itemize}
-	\end{block}
-	\begin{block}{Patrones del Mal Uso}
-		\begin{itemize}
-			\item Permitir\'an ense�ar y comunicar las posibles formas en que tal sistema puede ser usado inapropiadamente.
+			\item<10-> Contenido y compatibilidad
+			\item<11-> Navegaci\'on personalizada
+			\item<12-> Navegaci\'on sin inconvenientes
+			\item<13-> Seguridad
 		\end{itemize}
 	\end{block}
 \end{frame}
@@ -207,44 +225,83 @@ el usuario del sistema.
 \begin{frame}
 	\frametitle{Arquitectura de Referencia (AR)}
 	\begin{itemize}
-		\item Describir los Stakeholders que interactuan con el sistema y que poseen preocu paciones/concerns de \'este.
-		\item Patrones de Arquitectura.
-		\item Atributos de calidad deseables que el sistema debe garantizar. Es importante solo destacar aquellos realmente necesarios, dado que un sistema sobrecargado con ellos tampoco es conveniente.
+		\item<1-> Describir los Stakeholders que interactuan con el sistema y que poseen preocu paciones/concerns de \'este.
+		\item<2-> Patrones de Arquitectura.
+		\item<3-> Atributos de calidad deseables que el sistema debe garantizar. Es importante solo destacar aquellos realmente necesarios, dado que un sistema sobrecargado con ellos tampoco es conveniente.
 	\end{itemize}
-	\begin{block}{Ventajas}
+	\begin{block}<4->{Ventajas}
 		\begin{itemize}
-			\item Comprender la estructura subyacente de un Web Browser y las interacciones que tendr\'a con otros sistemas.
-			\item Proveer una base tecnol\'ogica modular y flexible. Al tener los subsistemas compartimentalizados es posible quitar y sacar piezas, que poseen interfaces similares, y de esa manera reusar lo otro sin tener que construir un sistema nuevo.
-			\item Entrega una base para el desarrollo de otros Navegadores Web, sin explicar detalles de implementaci\'on.
+			\item<5-> Comprender la estructura subyacente de un Web Browser y las interacciones que tendr\'a con otros sistemas.
+			\item<6-> Proveer una base tecnol\'ogica modular y flexible. Al tener los subsistemas compartimentalizados es posible quitar y sacar piezas, que poseen interfaces similares, y de esa manera reusar lo otro sin tener que construir un sistema nuevo.
+			\item<7-> Entrega una base para el desarrollo de otros Navegadores Web, sin explicar detalles de implementaci\'on.
 		\end{itemize}
 	\end{block}
 \end{frame}
 
 \section{(In)Seguridad en el Browser}
 \begin{frame}
-	\frametitle{Ataques y Amenazas}
-	\begin{itemize}
-		\item Social Engineering Attacks o Ataques de Ingenier\'ia Social: Phishing
-		\item Instalaci\'on de Malware o extensiones malignas
-		\item Extensiones Vulnerables
-		\item Ejecuci\'on de c\'odigo Javascript
-		\item XSS-DOM
-		\item Man-in-the-Browser
-	\end{itemize}
+	\frametitle{Social Engineering Attacks o Ataques de Ingenier\'ia Social: Phishing}
+	\begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.4]{figures/SEAttacks.jpg}
+        \caption{Esquematizaci\'on de ataques de tipo Social Engineering.}
+        \label{fig:SEattack}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Instalaci\'on de Malware o extensiones maliciosas}
+	\begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.4]{figures/fbporn3.png}
+        \caption{Fijarse en la barra de direcciones, para la p\'agina que supuestamente es Facebook.}
+        \label{fig:Malware}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Extensiones Vulnerables}
+	\begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.15]{figures/Adblock.png}
+        \caption{¿Qu\'e suceder\'ia si una extensi\'on, confiable para los usuarios, permitiera generar ataques?}
+        \label{fig:vulnExt}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ejecuci\'on de c\'odigo Javascript y XSS-DOM}
+		\begin{itemize}
+			\item<1-> Ambos generan cambios en el DOM, pero de diferentes maneras (Uno es una especializaci\'on).
+			\item<2-> La ejecuci\'on de javascript podr\'ia pasar ciertos controles de acceso (Javascript Capabilities).
+			\item<3-> Puede terminar realizando conexiones con servidores maliciosos, sin que el usuario se de cuenta (XHR).
+			\item<4-> El DOM puede ser modificado, de tal manera de engañar al usuario.
+			\item<5-> XSS-DOM, el c\'odigo al lado del cliente se ejecuta de una manera distinta dada las modificaciones maliciosas que se han hecho al DOM.
+		\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Man-in-the-Browser}
+	\begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.7]{figures/_58291188_malware_464v2.jpg}
+        \caption{Normalmente el ataque se realiza cuando el usuario ha permitido la instalaci\'on en el Host de un ente malicioso: extensi\'on o programa}
+        \label{fig:vulnExt}
+    \end{figure}
 \end{frame}
 
 \subsection{Mecanismos de Defensa}
 \begin{frame}
-	\frametitle{Ataques y Amenazas}
+	\frametitle{Mecanismos de Defensa}
 	\begin{itemize}
-		\item SOP o Same Origin Policy
-		\item CORS o Cross-Origin Resource Sharing
-		\item HTTP Fields o Campos HTTP
-		\item Sandboxing: Google Chrome/Chromium e Internet Explorer
-		\item Aislaci\'on de Contenido
-		\item Blacklist y Whitelist
-		\item Sistema de Reputaci\'on
-		\item Actualizaciones peri\'odicas en background
+		\item<1-> SOP o Same Origin Policy
+		\item<2-> CORS o Cross-Origin Resource Sharing
+		\item<3-> HTTP Fields o Campos HTTP
+		\item<4-> Sandboxing: Google Chrome/Chromium e Internet Explorer
+		\item<5-> Aislaci\'on de Contenido
+		\item<6-> Blacklist y Whitelist
+		\item<7-> Sistema de Reputaci\'on
+		\item<8-> Actualizaciones peri\'odicas en background
 	\end{itemize}
 \end{frame}
 
@@ -253,15 +310,9 @@ el usuario del sistema.
 \begin{frame}
 	\frametitle{Estado del Arte}
 	\begin{itemize}
-		\item No se encontr\'o informaci\'on actualizada sobre una Arquitectura de Referencia del Browser. Hay una \cite{preprint-grosskurth-browser-archevol}, pero es muy antigua.
-		\item Poca documentaci\'on y no hay conceptos unificados.
+		\item<1-> No se encontr\'o informaci\'on actualizada sobre una Arquitectura de Referencia del Browser. Hay una \cite{preprint-grosskurth-browser-archevol}, pero es muy antigua.
+		\item<2-> Poca documentaci\'on y no hay conceptos unificados.
 	\end{itemize}
-	\begin{figure}[h]
-	    \centering
-	    \includegraphics[scale=0.5]{figures/archMoz.jpg}
-	    \caption{Arquitectura de Browser monoproceso. Fuente: \cite{preprint-grosskurth-browser-archevol}}
-	    \label{fig:armonoproceso}
-	\end{figure}
 \end{frame}
 
 \subsection{Google Chrome y Chromium}
@@ -309,7 +360,7 @@ el usuario del sistema.
 \subsection{Firefox - Electrolysis}
 \begin{frame}
 	\frametitle{Firefox - Electrolysis}
-	\begin{figure}[h!t]
+	\begin{figure}[h]
         \centering
         \includegraphics[scale=0.3]{figures/electrolysis.png}
         \caption{Firefox Electrolysis, Comunicaci\'on de procesos 1. Fuente: \cite{Firefox101}}
@@ -319,7 +370,7 @@ el usuario del sistema.
 
 \begin{frame}
 	\frametitle{Firefox - Electrolysis}
-	\begin{figure}[h!t]
+	\begin{figure}[h]
         \centering
         \includegraphics[width=1\textwidth]{figures/e10s-processes.png}
         \caption{Firefox Electrolysis, Comunicaci\'on de procesos 2. Fuente: \cite{Firefox101}}
@@ -339,7 +390,7 @@ el usuario del sistema.
 \end{frame}
 
 \begin{frame}
-	\frametitle{Patr�n Browser Infrastructure}
+	\frametitle{Patr\'on Browser Infrastructure}
 	\begin{figure}[h]
 	    \centering
 	    \includegraphics[scale=0.35]{figures/chap4/browserInfraPattern_v3.jpg}
@@ -350,7 +401,7 @@ el usuario del sistema.
 
 
 \begin{frame}
-	\frametitle{Din�mica: Realizar Request}
+	\frametitle{Din\'amica: Realizar Request}
 	\begin{figure}[h]
 	    \centering
 	    \includegraphics[scale=0.28]{figures/chap4/requestResource_v2.jpg}
@@ -359,7 +410,7 @@ el usuario del sistema.
 	\end{figure}
 \end{frame}
 
-\section{Patr�n de Mal Uso}
+\section{Patr\'on de Mal Uso}
 \begin{frame}
 	\frametitle{Diagrama de Actividad}
 	\begin{figure}[h]
@@ -371,31 +422,59 @@ el usuario del sistema.
 \end{frame}
 
 \begin{frame}
-	\frametitle{Diagrama de Clases para el patr�n de Mal Uso.}
+	\frametitle{Diagrama de Clases para el patr\'on de Mal Uso.}
 	\begin{figure}[h]
 	    \centering
 	    \includegraphics[scale=0.3]{figures/chap5/patronMisuse_v2.jpg}
-	    \caption{Diagrama de Clases para el patr�n de Misuse.}
+	    \caption{Diagrama de Clases para el patr\'on de Misuse.}
 	    \label{fig:BIMisuse}
 	\end{figure}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Diagrama de Clases para el patr�n de Mal Uso.}
+	\frametitle{Diagrama de Clases para el patr\'on de Mal Uso.}
 	\begin{figure}[h]
         \centering
         \includegraphics[scale=0.32]{figures/chap5/patronMisuseSeq_v2.jpg}
-        \caption{Diagrama de Secuencia para el Mal uso: Modificaci�n de tr�fico en el \textit{Web Browser}.}
+        \caption{Diagrama de Secuencia para el Mal uso: Modificaci\'on de tr\'afico en el \textit{Web Browser}.}
         \label{fig:SeqMisuse}
     \end{figure}
 \end{frame}
 
-
 \section{Conclusiones}
 \begin{frame}
 	\frametitle{Conclusiones}
+	\begin{block}<1->{}
+		Un navegador Web pareciera ser un Software de mediana complejidad: pero éste permite realizar una variadad de vectores de ataque, tanto en un usuario usándolo como en el sistema con el que 
+	interactúa.
+	\end{block}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Contribuciones}	
+	\begin{itemize}
+		\item<1-> Base Conceptual: términos de seguridad relacionados al navegador Web.
+		\item<2-> Construcción del primer Patrón Arquitectural sobre la infraestructura del Web Browser.
+		\item<3-> Una parte de la Arquitectura de Referencia ha sido construída, a través de la abstracción del Patrón Browser Infrastructure.
+		\item<4-> Stakeholders y Casos de Uso más importantes
+		\item<5-> Patrones de Mal Uso.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Resumen}	
+	\begin{itemize}
+		\item<1-> Una śintesis y abstracción de la información correspondiente a los Web Browsers, para generar un lenguaje de comunicación de los conceptos. El uso de patrones permite ayudar a un conjunto de personas a unificar conceptos, así como también puede ser guía en futuros desarrollos.
+		\item<2-> El trabajo propuesto permite comprender mejor, por medio de la Arquitectura de Referencia parcialmente construída, tanto componentes como amenazas existentes. Además como no está sujeto a implementaciones específicas, es posible generalizar ciertos resultados en otros Browsers.
+		\item<3-> Comunicar en primera instancia, los conceptos de seguridad básicos para un mejor entendimiento de los subsistemas que interactuan en la Internet. Los patrones de Mal Uso permiten condensar la información y transmitirla, de forma ordenada y descriptiva.
+		\item<4-> Entregar el conocimiento básico de los componentes e interacciones entre el Web Browser y un proveedor de recursos externo; así como también de las amenazas que existen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{¿Preguntas?}
+	¡Muchas Gracias!	
+\end{frame}
 
 \bibliography{refTodas}
 \bibliographystyle{IEEEtran}
