@@ -3,8 +3,8 @@
 
 
 \section{Identificando Amenazas y Patrones de Mal Uso}
-En este capítulo presentaremos el análisis e identificación de las amenazas dentro del patrón presentado en el capítulo anterior, y 2 patrones de mal uso. Estos artefactos servirán de ejemplo de cómo usar la Arquitectura de Referencia obtenida. El objetivo de éste capítulo es conocer y visualizar los mal usos del sistema, en este caso del \textit{Browser}, para poder educar a los desarrolladores de proyectos que basan sus sistemas en el uso de éste.
-Este capítulo realiza los siguientes ítems: Un análisis de amenazas realizado sobre las actividades relacionadas en el caso de uso \textbf{Realizar Request} y \textbf{Recibir Request}, luego a partir del resultado del análisis se aplica la metodología explicada en el trabajo de [Bra08] para obtener una lista de amenazas. A través del listado de amenazas es posible detectar o inferir actividades de mal uso que pueden aparecer en uno o más casos de uso, que podrían resultar en una vulneración del sistema. Se presentarán los mal usos de actividades a través de patrones. Se han identificado 2 patrones y serán presentados a continuación.
+En este capítulo presentaremos el análisis e identificación de las amenazas dentro del patrón presentado en el capítulo anterior, y un patrón de mal uso. Estos artefactos servirán de ejemplo de cómo usar la Arquitectura de Referencia obtenida. El objetivo de éste capítulo es conocer y visualizar los mal usos del sistema, en este caso del \textit{Browser}, para poder educar a los desarrolladores de proyectos que basan sus sistemas en el uso de éste.
+Este capítulo realiza los siguientes ítems: Un análisis de amenazas realizado sobre las actividades relacionadas en el caso de uso \textbf{Realizar Request} y \textbf{Recibir Request}, luego a partir del resultado del análisis se aplica la metodología explicada en el trabajo de \cite{braz2008eliciting} para obtener una lista de amenazas. A través del listado de amenazas es posible detectar o inferir actividades de mal uso que pueden aparecer en uno o más casos de uso, que podrían resultar en una vulneración del sistema. Se presentarán los mal usos de actividades a través de patrones. Se han identificado 2 patrones y serán presentados a continuación.
 
 \section{Identificando amenazas}
 La identificación de amenazas es base para poder tomar medidas adecuadas para poder evitarlas. A través de la metodología de \cite{braz2008eliciting} es posible detectar y enumerar las amenazas de manera sistemática, al considerar cada actividad en cada caso de uso. Para enumerar las amenazas los diagramas de actividad ayudan en esta tarea.
@@ -93,7 +93,7 @@ En esta sección presentaremos un patrones de mal uso que describe la amenaza en
 Una de las amenazas es que un atacante haya sido capaz de comprometer la respuesta obtenida desde el Provider contactado. El atacante podría tratar de reemplazar algunos parámetros de la respuesta del provider, entregando al Browser User un contenido distinto al original.
 
 \subsection{Intent}
-Un atacante podría cambiar contenido o dar uno diferente al esperado cuando el \textit{Web Browser} (Browser User) recibe la response del Servidor o Provider. Realizando esta acción, el navegador podría interpretar la información de una manera distinta a que si hubiera recibido el tráfico original.
+Un atacante podría cambiar contenido o dar uno diferente al esperado cuando el \textit{Web Browser user} (Browser User) recibe la response del Servidor o Provider. Realizando esta acción, el navegador podría interpretar la información de una manera distinta a que si hubiera recibido el tráfico original.
 
 \subsection{Contexto}
 Un navegador web obtiene resources desde un Provider para poder satisfacer un Browser User que lo necesita. Un Provider posee resources en forma de páginas web, servicios web u otro tipo. El Provider generalmente consiste en una Web App o Web server, que puede permitir entrada y salida de datos a otras aplicaciones, normalmente éstos están construidos usando HTML, Javascript y CCS. Sea que éste desea entregar servicios, como también otros deseen conectarse a él, todo tipo de comunicación estará encima del protocolo HTTP. Un Provider, dependiendo del tipo, puede llegar a recibir muchas peticiones de diversos Host para obtener recursos de éste. Dependiendo del tipo de peticiones, éstas pueden o no ser permitidas. Aquellas que son permitidas, el Provider generará una response a la \textit{request} del Host, la cuál terminará llegando de vuelta (o no) al Browser Client que generó el \textit{request}.
@@ -180,10 +180,10 @@ En la figura \ref{fig:SeqMisuse} se muestra la serie de pasos necesarios, para r
 	\end{itemize}
 
 \subsection{Evidencia Forense}
-	¿Dónde es posible encontrar evidencia?
-	Dependiendo de lo deseado por el atacante, las acciones que cometerá pueden diferir. Sin embargo el log interno del browser debería de poder servir para auditar el sistema, esto gracias a que mientras no se haya encontrado una vulnerabilidad en el Sandbox del \textit{Browser}, el atacante no puede borrar completamente sus huellas.
-
+	Where it is possible to find evidence? Depending on what is desired by the attacker, the committed actions may differ. However, the internal log of the browser could be used to audit the system. This solution can work out until a vulnerability on the sandbox is found, because the attacker lacks the privileges it can not completely erase its tracks.
+	
 \subsection{Patrones relacionados}
 	\begin{itemize}
-		\item En el patrón Browser Infrastructure, el Browser Client actúa como el Reference Monitor explicado en \cite{fernandez2001pattern}.
+		\item The Browser Infrastructure pattern obtained in a previous work and in which we have based this paper.
+		\item The Browser Client in out Class Diagram for the misuse explained, acts as a Reference Monitor in \cite{fernandez2001pattern}.
 	\end{itemize}
